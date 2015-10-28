@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.9.8)  26 OCT 2015 19:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.9.8)  28 OCT 2015 10:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -722,13 +722,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 136--145
  []
 
 
-Overfull \hbox (28.09888pt too wide) in paragraph at lines 160--162
-\T1/lmr/m/n/10.95 bar. $\OMS/lmsy/m/n/10.95 )$ \T1/lmr/m/n/10.95 Be-trach-te ^^
-Rklei-ne^^P Stö-run-gen $\OML/lmm/m/it/10.95 H[]\OT1/lmr/m/n/10.95 (\OML/lmm/m/
-it/10.95 t\OT1/lmr/m/n/10.95 )$\T1/lmr/m/n/10.95 : $[]$ 
- []
-
-
 Overfull \hbox (52.9936pt too wide) in paragraph at lines 169--169
 [] 
  []
@@ -740,13 +733,13 @@ Overfull \hbox (52.9936pt too wide) in paragraph at lines 169--169
 
 
 ]
-<Ersatzgraph1.jpg, id=57, 3276.24pt x 2457.18pt>
+<Ersatzgraph1.jpg, id=56, 3276.24pt x 2457.18pt>
 File: Ersatzgraph1.jpg Graphic file (type jpg)
  <use Ersatzgraph1.jpg>
 Package pdftex.def Info: Ersatzgraph1.jpg used on input line 84.
 (pdftex.def)             Requested size: 284.52756pt x 213.3755pt.
 
-<Ersatzgraph2.jpg, id=58, 3276.24pt x 2457.18pt>
+<Ersatzgraph2.jpg, id=57, 3276.24pt x 2457.18pt>
 File: Ersatzgraph2.jpg Graphic file (type jpg)
  <use Ersatzgraph2.jpg>
 Package pdftex.def Info: Ersatzgraph2.jpg used on input line 99.
@@ -775,7 +768,7 @@ Package marginnote Info: right page because not two side mode on input line 168
 .
 Package marginnote Info: xpos seems to be 157.43645pt,
 (marginnote)             \marginnoterightadjust ignored on input line 168.
- <Ersatzgraph3.jpg, id=65, 3276.24pt x 2457.18pt>
+ <Ersatzgraph3.jpg, id=64, 3276.24pt x 2457.18pt>
 File: Ersatzgraph3.jpg Graphic file (type jpg)
 
 <use Ersatzgraph3.jpg>
@@ -812,38 +805,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--27
 [15
 
 
-] [16] [17] [18]
-Underfull \hbox (badness 5878) in paragraph at lines 227--227
-[]\T1/lmr/m/n/10.95 warum $\OT1/lmr/m/n/10.95 1\OML/lmm/m/it/10.95 =\OT1/lmr/m/
-n/10.95 3$
- []
-
-
-Underfull \hbox (badness 1603) in paragraph at lines 227--227
-\T1/lmr/m/n/10.95 wird nächs-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 227--227
-\T1/lmr/m/n/10.95 te Stun-de
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 227--227
-\T1/lmr/m/n/10.95 ge-nau-er
- []
-
-
-LaTeX Warning: Marginpar on page 19 moved.
-
-) [19]
+] [16] [17] [18]) [19]
 \openout2 = `2015-10-26.aux'.
 
  (./2015-10-26.tex
 
 LaTeX Warning: Marginpar on page 20 moved.
 
-<Bild1.jpg, id=89, 3276.24pt x 2457.18pt>
+<Bild1.jpg, id=88, 3276.24pt x 2457.18pt>
 File: Bild1.jpg Graphic file (type jpg)
  <use Bild1.jpg>
 Package pdftex.def Info: Bild1.jpg used on input line 54.
@@ -863,38 +832,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--60
 [21 <./Bild1.jpg>] [22] [23] [24]) [25] (./main.aux (./2015-10-12.aux)
 (./2015-10-15.aux) (./2015-10-19.aux) (./2015-10-22.aux) (./2015-10-26.aux)) ) 
 Here is how much of TeX's memory you used:
- 5758 strings out of 493117
- 86092 string characters out of 6138985
+ 5756 strings out of 493117
+ 86066 string characters out of 6138985
  209607 words of memory out of 5000000
- 9011 multiletter control sequences out of 15000+600000
- 52317 words of font info for 61 fonts, out of 8000000 for 9000
+ 9010 multiletter control sequences out of 15000+600000
+ 49322 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  47i,18n,42p,360b,290s stack positions out of 5000i,500n,10000p,200000b,80000s
 {
 c:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2014/te
-xmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2014/texmf-dist/fonts/enc/dvi
-ps/lm/lm-rm.enc}{c:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c
+xmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2014/texmf-dist/fonts/enc/dvi
+ps/lm/lm-mathit.enc}{c:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c
 :/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}<c:/texlive/2014/tex
 mf-dist/fonts/type1/public/doublestroke/dsrom10.pfb><c:/texlive/2014/texmf-dist
 /fonts/type1/public/doublestroke/dsrom8.pfb><c:/texlive/2014/texmf-dist/fonts/t
-ype1/public/lm/lmbx10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lme
-x10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texliv
-e/2014/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/texlive/2014/texmf-dist/f
-onts/type1/public/lm/lmmi8.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/l
-m/lmmi9.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/tex
-live/2014/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2014/texmf-dist
-/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/
-lm/lmr9.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/
-texlive/2014/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2014/texmf
--dist/fonts/type1/public/lm/lmsy6.pfb><c:/texlive/2014/texmf-dist/fonts/type1/p
-ublic/lm/lmsy8.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmsy9.pfb>
-<c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/
-texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texl
-ive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (25 pages, 9006080 bytes).
+ype1/public/lm/lmex10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmm
+i10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/texlive
+/2014/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2014/texmf-dist/fo
+nts/type1/public/lm/lmmi9.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm
+/lmr10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texli
+ve/2014/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2014/texmf-dist/f
+onts/type1/public/lm/lmr9.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm
+/lmssbx10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/
+texlive/2014/texmf-dist/fonts/type1/public/lm/lmsy6.pfb><c:/texlive/2014/texmf-
+dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2014/texmf-dist/fonts/type1/pu
+blic/lm/lmsy9.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbo
+ls/msam10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/m
+sbm10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7
+.pfb>
+Output written on main.pdf (25 pages, 8983158 bytes).
 PDF statistics:
- 181 PDF objects out of 1000 (max. 8388607)
- 128 compressed objects within 2 object streams
+ 177 PDF objects out of 1000 (max. 8388607)
+ 125 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

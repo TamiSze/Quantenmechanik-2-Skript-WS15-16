@@ -22,7 +22,7 @@
 		\begin{align*}
 			H &= \frac{1}{2m} \left( \vec{p} + \frac{e}{c} \vec{A}' (\vec{r} , t)\right)^2
 			- e \phi' (\vec{r} , t) 
-			&\text{mit~} \vec{A}' &= \vec{A}_{proton} + \underbrace{\vec{A} (\vec{r} , t)}_{\mathclap{\text{Photen von Welle}}}		
+			&\text{mit~} \vec{A}' &= \vec{A}_{\text{Proton}} + \underbrace{\vec{A} (\vec{r} , t)}_{\mathclap{\text{Photen von Welle}}}		
 		\end{align*}
 	$\vec{A}' (\vec{r} , t)$ und $\phi' (\vec{r} , t)$ sind Beiträge von elektromagnetischer Welle und vom Proton (statisch). \marginpar{das kann so auch nicht stimmen}
 		\begin{align*}
@@ -167,7 +167,7 @@
 					W_{m \rightarrow n} &= \frac{16 \pi^2 \alpha c}{\hbar} u(\omega_{mn}) 
 					\left|\braket{m | \vec{\epsilon} \cdot \vec{r} | n}\right|^2\\
 					&= \frac{4 \pi}{\hbar^2} u(\omega_{mn}) 
-					\left|\braket{m | \vec{\epsilon} \cdot \vec{d}}\right|^2\\
+					\left|\braket{m | \vec{\epsilon} \cdot \vec{d} | n}\right|^2\\
 					&\text{mit Dipoloperator:~} \vec{d} = e \vec{r} = \sqrt{4 \pi \hbar c \alpha} \cdot \vec{r}
 		\end{empheq}
 		\begin{equation*}
@@ -179,9 +179,10 @@
 			\braket{n' \ell' m' | \vec{r} | n \ell m} &\neq 0 \\
 			&\Rightarrow \int \diff \Omega~Y^*_{\ell' m'}(\Omega)~\vec{r}~Y_{\ell m} (\Omega) \neq 0 \\
 			\vec{r} &= \sqrt{\frac{4 \pi}{3}} r 
-			\left( \vphantom{-\frac{1}{\sqrt{2}}} \right. -\frac{1}{\sqrt{2}} 
-				\underbrace{(Y_{1,1} + Y_{1,-1})}_{\mathclap{\sin \Theta \cos \phi}},
-				\frac{1}{\sqrt{2}} \underbrace{(Y_{1,1} - Y_{1,-1})}_{\mathclap{\sin \Theta \sin \phi}},
+			\left( \vphantom{-\frac{1}{\sqrt{2}}} \right. 
+				\frac{1}{\sqrt{2}} 
+				\underbrace{(-Y_{1,1} + Y_{1,-1})}_{\mathclap{\sin \Theta \cos \phi}},
+				\frac{1}{\sqrt{2}} \underbrace{(Y_{1,1} + Y_{1,-1})}_{\mathclap{\sin \Theta \sin \phi}},
 				Y_{1,0}
 			\left. \vphantom{-\frac{1}{\sqrt{2}}} \right) \\
 			&= r \sum_{i,\lambda} \vec{e}_i d_{i,\lambda} Y_{1,\lambda} \\
@@ -224,7 +225,7 @@
 		\end{empheq}
 	$\Delta m = 0$ tritt nur für $\braket{\ell' , m' | z | \ell, m}$ auf \marginpar{was zur Hölle ist z?}
 	
-	Betrachte inkohärente Überlagerung von elektromagnetischen Wellen (keine Polarisation):\marginpar{warum $1/3$ wird nächste Stunde genauer gezeigt}
+	Betrachte inkohärente Überlagerung von elektromagnetischen Wellen (keine Polarisation):
 		\begin{align*}
 			\frac{1}{4 \pi} \int 
 			\underbrace{\diff \Omega_{\vec{\epsilon}}}_{\mathclap{\text{Mittel über alle~} \vec{\epsilon}}} 
