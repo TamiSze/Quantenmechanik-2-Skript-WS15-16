@@ -1,0 +1,64 @@
+	Beim letzten Mal hatten wir $\vec{A} (\vec{r}, t)$ quantisiert wie folgt:\marginpar{29.10.2015}
+		\begin{align*}
+			\hat{\vec{A}} (\vec{r})= \sqrt{\frac{\hbar}{2V}} ~c
+			\sum_{\vec{k}, \lambda \in \{+ , i\}}
+			\frac{1}{\sqrt{\omega_k}} \vec{\epsilon}_\lambda (\vec{k}) 
+			\left\{ a_\lambda (\vec{k}) e^{i \vec{k} \vec{r}}
+			+ a^\dagger_\lambda (\vec{k}) e^{-i \vec{k} \vec{r}}
+			\right\}
+		\end{align*}
+	Wobei
+		\begin{align*}
+			a^\dagger_\lambda (\vec{k}) \ket{0} 
+			&= \overbrace{\ket{\lambda, \vec{k}}}^{\mathclap{\text{Photon}}} \\
+			a_\lambda (\vec{k}) \ket{0} &= 0 \\
+			\vec{\epsilon}_\lambda (\vec{k}) &: \text{Polarisation} \\
+			\hat{\vec{A}} (\vec{r}) &: \text{Operator (keine gewöhnliche Welle)} \\
+			\hat{\vec{A}} (\vec{r}) \ket{0} &= \vec{A} (\vec{r})\ket{0} 
+		\end{align*}
+	D.h $\vec{A} (\vec{r})$ ist ein Eigenwert und enthält keine $a$ oder $a^\dagger$.
+		\begin{empheq}[box=\boxed]{align*}
+			H = \sum_{\vec{k}, \lambda} \hbar \omega_k
+			\underbrace{a^\dagger_\lambda (\vec{k})~a_\lambda (\vec{k})}_{\substack{\text{Nummern oder} \\ \text{Teilchenoperator}}}
+		\end{empheq}
+	Wobei $\omega_k = c |\vec{k}|$ und kein $\frac{1}{2} \hbar \omega$ vorhanden ist, was damit zutun hat, dass wir nur den Grundzustand betrachten (glaube ich \^{}\^{}).
+	
+	Auf jeden Fall gilt für $n=1$:
+		\begin{align*}
+			H \ket{\lambda, \vec{k}} &= \hbar \omega_k \ket{\lambda , \vec{k}} \\
+			\hat{\vec{p}} &= \hbar \vec{k} \ket{\lambda , \vec{k}} \\
+			E = |\vec{p}| c &\curvearrowright H = |\hat{p}| c \\
+			H \ket{0} (&= E_0 \ket{0} = 0 \ket{0} ) = 0
+ 		\end{align*}
+ 	Unendliches Volumen: 
+	 	\begin{align*}
+		 	\frac{1}{V} \sum_{\vec{k}} &\longmapsto \int \frac{\diff^3 k}{(2 \pi)^3}
+		 	& \text{Wobei das~} \vec{k} \text{~so aufgebaut ist:~}k_i &= n_i \frac{2 \pi}{L}, n_i \in \mathds{Z}
+	 	\end{align*} \marginpar{Bleibt die Frage, was $n_i$ sind}
+		\begin{align*}
+			V \delta_{\vec{k} , 0} &\longmapsto (2 \pi)^2 \delta^{(3)} (\vec{k}) \\
+			a_\lambda (\vec{k}) &\longmapsto \frac{1}{\sqrt{\lambda}} 
+			& &\text{(wegen Infrarot cutoff)}
+		\end{align*} \marginpar{kA was das genau ist}
+		\begin{align*}
+			\vec{A} (\vec{r}) =
+			\sqrt{\hbar} \int \frac{\diff^3 k}{(2 \pi)^3} \frac{c}{\sqrt{2 \omega_k}}
+			\sum_\lambda \vec{\epsilon}_\lambda (\vec{k})
+			\left\{ a_\lambda (\vec{k}) e^{i \vec{k} \vec{r}}
+			+ a^\dagger_\lambda (\vec{k}) e^{-i \vec{k} \vec{r}}
+			\right\}
+		\end{align*}
+	Wir betrachten ab jetzt den Fall: 
+		\begin{figure*} [ht]
+			\begin{center}
+				\includegraphics[width=10cm]{Bild2.jpg}
+			\end{center}
+		\end{figure*}
+		\begin{align*}
+			H &= H_e + H_\gamma & H_e &: \text{für Elektron}, ~ H_\gamma : \text{für Photon} \\
+			H_e &= \underbrace{\frac{\vec{p}^2}{2 m_e} - e \Phi}_{\mathclap{H_e^0}}
+			+ \frac{e \vec{A} \vec{p}}{m c}
+			+ \frac{e^2}{2 m c^2} \vec{A}^2 &
+			&\text{(Coulombeichung)}\\
+			&= H_e^0 + H^1 + H^2
+		\end{align*}
