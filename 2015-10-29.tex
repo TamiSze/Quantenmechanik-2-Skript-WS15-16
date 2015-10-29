@@ -60,5 +60,57 @@
 			+ \frac{e \vec{A} \vec{p}}{m c}
 			+ \frac{e^2}{2 m c^2} \vec{A}^2 &
 			&\text{(Coulombeichung)}\\
-			&= H_e^0 + H^1 + H^2
+			&= H_e^0 + H^1 + H^2 \\
+			H_e^0 &= \frac{\vec{p}^2}{2 m} - Z \alpha \hbar c \frac{1}{r} & 
+			Z &~\text{ist Kernladung},~ \alpha = \frac{e^2}{4 \pi \hbar c}\\
+			H_e^0 \ket{n} &= E_n \ket{n} = \hbar \omega_n \ket{n} & 
+			\ket{n} &~ \text{ist Elektronzustand}
+		\end{align*}	
+für ein H-Atom:
+		\begin{align*}
+			E_n &= - \frac{1}{2} (Z \alpha)^2 m c^2 \frac{1}{n^2}
+			= \frac{1}{2} Z \alpha \hbar c \overbrace{\erw{r^{-1}}}^{\mathclap{\frac{Z}{a_B n^2}}}
+			= - \frac{1}{2 n^2} \frac{Z^2 \alpha \hbar c}{a_B} &
+			a_B &= \frac{\hbar}{m \alpha c} \\
+			H_\gamma &= \int \frac{\diff^3 k}{(2 \pi)^3}
+			\sum_{\lambda \in \{+,-\}} \hbar \omega_k
+			~a_\lambda (\vec{k})~a^\dagger_\lambda (\vec{k})
+		\end{align*}
+	Anfangszustand: 
+		\begin{align*}
+			\ket{i} &= \ket{n(\ell, \ell_z); 0} = \ket{n} \otimes \ket{0}
+		\end{align*}
+	wobei im \underline{ersten Term} $n$ die Hauptquantenzahl ist, die $\ell$'s sind eigentlich immer da, aber aus Faulheit schreiben wir die fast nie mit, die $0$ bedeutet, dass wir kein Photon haben. Im \underline{zweiten Term} ist $\ket{n}$ der Zustand vom H-Atom und $\ket{0}$ der Zustand von der elektromagnetischen Welle.
+	
+	Endzustand:
+		\begin{align*}
+			\ket{f} &= \ket{m(\ell', \ell_z'); \vec{k}, \lambda} 
+			= \ket{m} \otimes \ket{\vec{k}, \lambda}
+		\end{align*} 
+	Der Energieunterschied ist dann:\footnote{Ich habe den Betrag in $\omega_{mn}$ gesetzt, damit wir nicht mit Minuszeichen oder so durcheinander kommen.}
+		\begin{align*}
+			\Delta E &= E_f - E_i = \hbar 
+			\underbrace{(|\omega_m - \omega_n)|}_{\mathclap{\omega_{mn}}} 
+			+ \hbar c |\vec{k}| = \hbar (\omega_{mn} + \omega_k)
+		\end{align*}
+	Übergangsrate: 
+		\begin{align*}
+			W_{f \leftarrow i} &= 
+			\int \frac{\diff^3 k}{(2 \pi)^3} \sum_\lambda
+			\frac{2 \pi}{\hbar^2} \delta(\omega_{mn} + \omega_k)
+			\left|\braket{f | H_e^1 + H_e^2 | i}\right|^2
+		\end{align*}	
+	Und $H_e^1 + H_e^2$ ist die Störung (Lösung für $H_e^0 + H_\gamma$ ist bekannt).
+	
+	Mit Hilfe von
+		\begin{align*}
+			\int \diff^3 k &= \int \diff k ~k^2 \int \diff \Omega_k
+			= \frac{1}{c^3} \int \diff \omega_k ~\omega^2 \int \diff \Omega_k
+		\end{align*}
+	Können wir schreiben:
+		\begin{align*}
+			W_{f \leftarrow i} &= \int \diff \Omega_k 
+			\frac{\omega_{mn}^2}{4 \pi^2 \hbar^2 c^3}
+			\sum_\lambda 
+			\left|\braket{f | H_e^1 + H_e^2 | i}\right|^2
 		\end{align*}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.9.8)  29 OCT 2015 14:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.9.8)  29 OCT 2015 16:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -855,13 +855,13 @@ Package pdftex.def Info: Bild2.jpg used on input line 54.
  [26
 
 
-]) [27 <./Bild2.jpg>] (./main.aux (./2015-10-12.aux) (./2015-10-15.aux) (./2015
--10-19.aux)
+] [27 <./Bild2.jpg>]) [28] (./main.aux (./2015-10-12.aux) (./2015-10-15.aux) (.
+/2015-10-19.aux)
 (./2015-10-22.aux) (./2015-10-26.aux) (./2015-10-29.aux)) ) 
 Here is how much of TeX's memory you used:
  5984 strings out of 493117
  88344 string characters out of 6138985
- 209758 words of memory out of 5000000
+ 210758 words of memory out of 5000000
  9227 multiletter control sequences out of 15000+600000
  49322 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -886,10 +886,10 @@ blic/lm/lmsy8.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmsy9.pfb><
 c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/t
 exlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texli
 ve/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (27 pages, 10690359 bytes).
+Output written on main.pdf (28 pages, 10697425 bytes).
 PDF statistics:
- 184 PDF objects out of 1000 (max. 8388607)
- 129 compressed objects within 2 object streams
+ 187 PDF objects out of 1000 (max. 8388607)
+ 131 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
