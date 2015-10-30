@@ -10,3 +10,4 @@
 \contentsline {subsection}{\numberline {1.3}Periodische St\IeC {\"o}rungen}{13}
 \contentsline {subsection}{\numberline {1.4}Absorpiton und Emission von elektromagnetischer Strahlung}{15}
 \contentsline {subsection}{\numberline {1.5}Spontane Emissions}{21}
+\contentsline {subsection}{\numberline {1.6}Beispiel: $2p \rightarrow 1s$ Wasserstoff: Spontane Emission}{30}

@@ -112,5 +112,119 @@ für ein H-Atom:
 			W_{f \leftarrow i} &= \int \diff \Omega_k 
 			\frac{\omega_{mn}^2}{4 \pi^2 \hbar^2 c^3}
 			\sum_\lambda 
-			\left|\braket{f | H_e^1 + H_e^2 | i}\right|^2
+			\left|\braket{f | H_e^1 + H_e^2 | i}\right|^2 \\
+			\braket{f | H_e^1 | i} &= 
+			\frac{e}{mc} \braket{m | \braket{\vec{k} , \lambda | \hat{\vec{A}}(\vec{k}) | 0} \hat{p} | n} & &\vec{A}\text{~Operator nicht diagonal}\\
+			\braket{\vec{k} ,\lambda | \vec{A} (\vec{r}) | 0} &= 
+			\sqrt{\hbar} \int \frac{\diff^3 k'}{(2 \pi)^3} \frac{c}{\sqrt{2 \omega_k}}
+			\sum_{\lambda'} \vec{\epsilon}_{\lambda'} (\vec{k}') e^{-i \vec{k}' \vec{r}} 
+			\cdot \braket{0 | a_\lambda (\vec{k}) a_{\lambda'} (\vec{k}') | 0} 
+			& &\text{im Photonraum} 
+		\end{align*} 
+	Hierbei ist gut zu wissen, dass $\ket{\vec{k} , \lambda} = a_\lambda^\dagger \ket{0}$ und $\bra{\vec{k}, \lambda} = \bra{0}a_\lambda (\vec{k})$.
+		\begin{align*}
+			\braket{0 | a_\lambda (\vec{k}) a_{\lambda'} (\vec{k}') | 0} &=
+			\braket{0 | 
+				\underbrace{\left[ a_\lambda (\vec{k}), a_{\lambda'} (\vec{k}') \right]}_{\mathclap{\delta_{\lambda \lambda'} (2 \pi)^3 \delta^{(3)}(\vec{k} - \vec{k'}) \mathds{1}}}  
+			| 0} \\
+			\braket{\vec{k}, \lambda | \vec{A} (\vec{r}) | 0} &=
+			\sqrt{\frac{\hbar}{2 \omega_k}} c~ \vec{\epsilon}_\lambda (\vec{k}) e^{-i \vec{k} \vec{r}} \\
+			\braket{f | H_e^1 | i} &= 
+			\frac{e}{m} \sqrt{\frac{\hbar}{2 \omega_k}}
+			\braket{m | e^{-i \vec{k} \vec{r}} \vec{\epsilon} \vec{p} | n} 
 		\end{align*}
+	Im Übrigen gilt $\omega_k = |\omega_n - \omega_m| = |-\omega_{mn}| = |\omega_{nm}|$ (siehe $\delta-$Fkt. oben)
+	
+	Dipolapproximation:
+		\begin{align*}
+			e^{-i \vec{k} \vec{r}} &= 1 + \mathscr{O} (Z\alpha) \\
+			\vec{p} &= \frac{m}{\hbar} i \left[H_e^0, \vec{r}\right] \\
+			\Rightarrow 
+			\braket{f | H_e^1 | i} &= 
+			\frac{-i e}{\sqrt{2}} \sqrt{\hbar \omega_k} 
+			\braket{m | \vec{\epsilon}_\lambda \cdot \vec{r}| n}
+		\end{align*}
+		\begin{align*}
+			W_{f \leftarrow i} &= \frac{\omega_{mn}^2 e^2}{8 \pi^2 \hbar c^3}
+			\int \diff \Omega_k \sum_\lambda \left|\braket{m | \vec{\epsilon}_\lambda (\vec{k}) ~\vec{r} | n}\right|^2
+		\end{align*}
+	Der Beitrag im Betrag ins Quadrat ist
+		\begin{align*}
+			\vec{\epsilon}_{\lambda i}^{~*} (\vec{k}) ~\vec{\epsilon}_{\lambda j} (\vec{k}) 
+			\braket{m | r_i | n} \braket{n | r_j | m}
+		\end{align*}
+	Und mit dem Integral:
+		\begin{align*}
+			\int \diff \Omega_k (\vec{\epsilon}_{\lambda i}(\vec{k}))^2 &= \frac{4 \pi}{3} \\
+			\frac{1}{4 \pi} \int \diff \Omega_k \sum_\lambda 
+			\vec{\epsilon}_{\lambda i} (\vec{k}) ~\vec{\epsilon}_{\lambda j} (\vec{k}) 
+			&= \frac{2}{3} \delta_{ij}
+		\end{align*}
+	Somit haben wir nun die Übergangsrate für Spontane Emission in Dipolapproximation:
+		\begin{empheq}[box=\boxed]{align*}
+			W_{f \leftarrow i} = \frac{\omega^3_{nm} e^2}{3 \pi \hbar c^3}
+			\left|\braket{m | \vec{r} | n}\right|^2 
+			= \frac{4}{3} \frac{\omega_{nm}^3 \alpha}{c^2}
+			\left|\braket{m | \vec{r} | n}\right|^2
+		\end{empheq}
+	Spontane Emission:
+		\begin{equation*}
+			W_{m \leftarrow n} = A_{mn} = \frac{4}{3} \frac{\omega_{nm}^3 \alpha}{c^2}
+			\left|\braket{m | \vec{r} | n}\right|^2
+		\end{equation*}
+	Induzierte Emission:
+		\begin{equation*}
+			W_{m \leftarrow n} = B_{mn} u (\omega_{nm})
+			= \frac{4 \pi e^2}{3 \hbar^2} \left|\braket{m | \vec{r} | n}\right|^2
+			u (\omega_{nm})
+		\end{equation*}
+	Induzierte Absorption
+		\begin{equation*}
+			W_{n \leftarrow m} = B_{nm} u(\omega_{nm})
+		\end{equation*}
+	Und $B_{mn} = B_{nm}$ sind Einsteinkoeffizienten.
+	
+	$N_n$ Atome im Zustand $\ket{n}$
+	
+	$N_m$ Atome im Zustand $\ket{m}$
+	
+	Leistung:
+		\begin{align*}
+			&\text{Spontane Emission} & &:  
+			&P_{SE} &= 
+			\overbrace{N_n A_{mn}}^{\mathclap{\text{Rate~} \left[\frac{1}{\text{Zeit}}\right]}} 
+			\underbrace{\hbar \omega_{nm}}_{\mathclap{\text{Energie}}}\\
+			&\text{Induzierte Emission} & &:
+			&P_{IE} &= N_n B_{mn} ~\hbar \omega_{nm} ~u(\omega_{nm})\\
+			&\text{Induzierte Absorption} & &:
+			&P_{IA} &= N_m B_{mn} ~\hbar \omega_{mn} ~u(\omega_{nm}) < 0
+		\end{align*}
+	2 Zustandssysteme $\ket{n}$, $\ket{m}$ im Wärmebad von Photonen im Gleichgewicht: 
+		\begin{align*}
+			N_n A_{mn} + (N_n B_{mn} - N_m B_{mn}) ~u(\omega_{nm}) &= 0 \\
+			N_n &= \gamma \overbrace{e^{- \beta E_n}}^{\mathclap{Boltzmannfaktor}} 
+			,& N_m &= \gamma e^{-\beta E_m}
+		\end{align*}
+	mit $\beta = \frac{1}{k_B ~T}$ \\
+	$T$: Temperatur und $\gamma$: Konstante
+		\begin{align*}
+			\Rightarrow 
+			e^{-\beta \hbar \omega_n} \left( A_{mn} + B_{mn} u(\omega_{nm}) \right)
+			&= e^{-\beta \hbar \omega_{m}} B_{mn} u(\omega_{nm}) \\
+			\Leftrightarrow u(\omega_{nm}) &= \frac{A_{mn}}{B_{mn}} \frac{1}{e^{\beta \hbar \omega_{mn}} - 1}
+		\end{align*}
+	Und das ist die Energiedichte des elektromagnetischen Feldes im thermischen Gleichgewicht $\left(T=\frac{1}{k_B \beta}\right)$.
+	
+	Planck:
+		\begin{align*}
+			\frac{A_{mn}}{B_{mn}} &= \frac{\hbar \omega_{nm}^3}{\pi^2 c^3} \\
+			B_{mn} &= \frac{\pi e^2}{3 \hbar^2} \left|\braket{n | \vec{r} | m}\right|^2 \\
+			A_{mn} &= \frac{\omega_{mn}^3 e^2}{3 \pi \hbar c^3} \left|\braket{n | \vec{r} | m}\right|^2 
+			= \frac{4}{3} \frac{\omega_{mn}^3}{c^2} \alpha \left|\braket{n | \vec{r} | m}\right|^2 
+		\end{align*}
+	\subsection{Beispiel: $2p \rightarrow 1s$ Wasserstoff: Spontane Emission}
+		\begin{figure*} [h]
+			\begin{center}
+				\includegraphics[width=10cm]{Bild3.jpg}
+			\end{center}
+		\end{figure*}
