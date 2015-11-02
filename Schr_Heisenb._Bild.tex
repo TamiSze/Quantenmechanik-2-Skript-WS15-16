@@ -1,0 +1,47 @@
+\subsection{Schrödinger- und Heisenbergbild}
+		\begin{tabular*}{\linewidth}{l l}
+			Schrödinger Bild: & Heisenberg Bild: \\ %hier irgendwie noch abtrennung einbauen
+			zeitunabhängige Operatoren $\hat{A}$ & zeitabhängige Operatoren $\hat{A}_H(t)$ \\
+			zeitabhängige Zustände $\ket{\psi(t)}$ & zeitunabhängige Zustände $\ket{\psi}_H$
+		\end{tabular*}
+	Damit 
+		\begin{align*} %H vor braket sieht nicht schön aus
+			&\braket{\psi'(t) | \hat{A} | \psi(t)} \equiv~_H\braket{\psi' | \hat{A}_H(t) | \psi}_H \\
+			&\Rightarrow \hat{A}_H(t) = \hat{\U}_t^\dagger \hat{A} \hat{\U}_t ~,~ \ket{\psi}_H = \ket{\psi(0)}
+		\end{align*}	
+	Energie Eigenzustände:
+		\begin{align*}
+			\hat{H} \ket{n} &= E_n \ket{n} \Rightarrow H \ket{n(t)} = E_n \ket{n(t)} = i\hbar \frac{\partial}{\partial t} \ket{n(t)} \\
+			\ket{n(t)} &= \ket{n(0)} e^{-\frac{i}{\hbar} E_n t} = \ket{n} e^{- \frac{i}{\hbar} E_n t} = \ket{n} e^{-\frac{i}{\hbar} E_n t} 
+		\end{align*}
+	$\Rightarrow \ket{n} = \ket{n}_H$ für \grqq stationäre \grqq Zustände.
+	
+	\underline{Ehrenfesttheorem:}
+		\begin{align*}
+			i \hbar \frac{\diff}{\diff t} \langle \hat{A} \rangle_\psi
+			&= i \hbar \frac{\diff}{\diff t} \Braket{\psi(t) | \hat{A} | \psi(t)} \\ 
+			&= i \hbar \left( \Braket{\dot{\psi} | \hat{A} | \psi} + \Braket{\psi | \hat{A} | \dot{\psi}} + \Braket{\psi | \dot{\hat{A}} | \psi} \right) \\ 
+			&= \left( \Braket{\psi | - \hat{H} \hat{A} | \psi} + \Braket{\psi | \hat{H} \hat{A} | \psi} + i\hbar \frac{\partial \erw{\hat{A}}}{\partial t} 
+			\right) \\ 
+			&= \Erw{\left[\hat{A} , \hat{H} \right]}_\psi + i\hbar \frac{\partial \erw{\hat{A}}}{\partial t} 		\\
+			&\Rightarrow \boxed{\frac{\diff}{\diff t} \erw{\hat{A}}_\psi = -\frac{i}{\hbar} \Erw{\left[ \hat{A} , \hat{B} \right]} + \frac{\partial}{\partial t} \erw{\hat{A}}}	
+		\end{align*} %fänd schöner, wenn die mitte linkts zentriert wäre.
+	\underline{Beispiel:}
+		\begin{align*}
+			\hat{A} &= \hat{p} , \text{~mit~} \hat{p} = \frac{i}{\hbar} \frac{\partial}{\partial x} \text{~und~}
+			\hat{V} = V(x) \\
+			\frac{\diff \erw{\hat{p}}}{\diff t} &=
+			- \frac{i}{\hbar} \Erw{\left[ \hat{p}, \hat{V}\right]} = - \Erw{\frac{\partial \hat{V}}{\partial x}} 
+		\end{align*}
+	\underline{Heisenberggleichung:}
+		\begin{align*}
+			\boxed{\frac{\diff \hat{A}_H(t)}{\diff t}
+					= - \frac{i}{\hbar} \left[ \hat{A}_H , \hat{H}\right]
+					+ \frac{\partial \hat{A}_H}{\partial t}	}
+		\end{align*}
+	ist äquivalent zur \underline{Schrödingergleichung:}
+		\begin{equation*}
+			\boxed{\frac{\diff \ket{\psi(t)}}{\diff t} =
+					- \frac{i}{\hbar} \hat{H} \ket{\psi(t)}
+					}
+		\end{equation*}

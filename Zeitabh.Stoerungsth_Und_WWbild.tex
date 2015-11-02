@@ -1,0 +1,250 @@
+\section{Zeitabhängige Störung}
+%\numberwithin{equation}{chapter}
+%\setcounter{equation}{1}
+	\subsection{Zeitabhängige Störungstheorie und das Wechselwirkungsbild}
+	Betrachte 
+		\begin{equation*}
+			H(t) = H^0 + H^1 (t)
+		\end{equation*}
+	$H^0$ ist zeitunabhängig: $H^1(t) = 0$ für $t < t_i$ oder $t > t_f$
+	Ungestörtes System: 
+		\begin{align*}
+			H^0 \ket{n} &= E_n \ket{n} = \hbar \omega_n \ket{n} \\
+			\ket{\psi(t)} &= \sum_n \braket{n | \psi(t_0)} e^{-i \omega_n (t-t_0)} \ket{n} \text{~für~} t, t_0 < t_i (\text{oder~} t, t_0 > t_f)
+		\end{align*}
+	Von nun an: $\ket{\psi(t_0)} = \ket{n}$ für $t_0 < t_i$
+		\begin{equation*}
+			\Rightarrow \boxed{\ket{\psi (t)} = e^{-i \omega_n (t-t_0)} \ket{n}
+			} \text{~für~} t_0, t < t_i
+		\end{equation*}		
+	Formale Lösung von 
+		\begin{equation*}
+			i \hbar \frac{\diff}{\diff t} \ket{\psi(t)}
+			= H^0 \ket{\psi(t)}
+		\end{equation*}			
+	Ist
+		\begin{equation*}
+			\Rightarrow \ket{\psi(t)} = \text{T} e^{-\frac{i}{\hbar} H^0 (t-t_0)} 
+			\ket{\psi(t_0)} = \U^0(t-t_0) \ket{\psi(t_0)}
+		\end{equation*}
+	Achntung: T ist Zeit\underline{ordnungs}operator und $\U^0(t-t_0)$ ist Zeit\underline{entwicklungs}operator.
+	Eigenschaften:
+		\begin{align*}
+			\left.
+			\begin{aligned}
+				\U^0(t_1) \U^0(t_2) &= \U^0(t_1 + t_2) \\
+				\U^0(-t) &= \U^{0\dagger} (t)		
+			\end{aligned}
+			\right\} \U^{0\dagger} (t) \U^0 (t) = \mathds{1}
+		\end{align*}
+		\begin{align*}
+			1 &= \braket{\psi(t) | \psi(t)} \\
+			&= \braket{\psi(t_0) | \U^{0 \dagger} (t-t_0) \U^0 (t-t_0) | \psi(t_0)} \\
+			&= \braket{\psi(t_0) | \psi(t_0)}
+		\end{align*}
+	Norm bleibt erhalten $\Rightarrow U^0$ ist unitär! \\
+	Betrachte nun 
+		\begin{equation*}
+			i \hbar \frac{\diff}{\diff t} \ket{\psi(t)} = H(t) \ket{\psi(t)}
+		\end{equation*}
+	Endzustand ($t>t_f$):
+		\begin{equation*}
+			\boxed{ \ket{\psi(t)} = 
+			\sum_m c_m(t) e^{-i \omega_m (t-t_0)} \ket{m}
+			}
+		\end{equation*}
+	Übergangswahrscheinlichkeit von $\ket{n}$ in den Zustand $\ket{m}$:
+		\begin{equation*}
+			\boxed{P_{mn} (t) = |c_m(t)|^2}
+		\end{equation*}
+	Das gestörte System
+		\begin{equation*}
+			i \hbar \frac{\diff}{\diff t} \ket{\psi(t)}
+			= \left( H^0 + H^1(t) \right) \ket{\psi(t)}
+		\end{equation*}
+	wird im Allgemeinen nicht durch
+		\begin{equation*}
+			\ket{\psi(t)} = \text{T} e^{-\frac{i}{\hbar} H(t) (t-t_0)} \ket{\psi(t_0}
+		\end{equation*}
+	gestört! $H(t)$ ist zeitabhängig.
+	Aber 
+		\begin{align*}
+			\braket{\psi(t) | \psi(t)} &= \braket{\psi(t_0) | \psi(t_0)} \\
+			\Rightarrow \ket{\psi(t)} &= \U(t-t_0) \ket{\psi(t_0)}
+		\end{align*}
+	$\U(t,t_0)$ ist ein noch unbekannter unitärer Zeitentwicklungsoperator.\\
+	$\ket{\psi(t)}$ ist Wellenfunktion im Schrödingerbild.
+	
+	Betrachte:
+		\begin{equation*}
+			\ket{\psi_W(t)} = {(\U^0)}^{-1} (t-t_0) \ket{\psi(t)} 
+			= \text{T} e^{\frac{i}{\hbar} H^0 (t-t_0)} \ket{\psi(t)} 
+		\end{equation*}
+	Für $H^1=0$ gilt:\footnote{hier ist wieder das Runtergeschriebene W für Wechselwirkung und H für Heisenberg.}
+		\begin{equation*}
+			\ket{\psi_W(t)} = \ket{\psi(t_0)} = \ket{\psi_W} = \ket{\psi}_H
+		\end{equation*}
+	Nun ist aber $H^1(t) \neq 0$
+		\begin{align}
+			i\hbar \frac{\diff}{\diff t} \ket{\psi_W(t)} &=
+			i\hbar \frac{\diff}{\diff t} \left[\text{T} e^{\frac{i}{\hbar} H^0(t-t_0)} \ket{\psi(t)}\right] \nonumber \\ \nonumber
+			&= \text{T} e^{\frac{i}{\hbar} H^0(t-t_0)} [ -H^0 + \underbrace{i\hbar \frac{\diff}{\diff t}] \ket{\psi(t)}}_{\mathclap{N \text{: Nummernoperator(Teilchenzahloperator)}}} \\ \nonumber
+			&= \text{T} \left\{ e^{\frac{i}{\hbar} H^0(t-t_0)} H^1(t) e^{-\frac{i}{\hbar} H^0(t-t_0)} \ket{\psi_W(t)}\right\}  \\ 
+			\boxed{
+		\begin{aligned}i\hbar \frac{\diff}{\diff t} \ket{\psi_W(t)} 
+				&= H^1_W(t) \ket{\psi_W(t)}  \\ 
+				H^1_W(t)& = \U^{0\dagger} (t-t_0) H^1(t) \U^0(t-t_0) 
+		\end{aligned}
+			} \label{Wechselwirkung}
+		\end{align}
+		\begin{tabular*}{\linewidth}{l l l}
+			Bild & Zustand & Operator \\
+			Heisenberg & zeitunabhängig & Entwicklung durch $H$ \\
+			Schrödinger & Zeitentwicklung durch $H$ & Zeitunabhängig (hier aber $H(t))$ \\
+			Wechselwirkungs- & Entwicklung durch $H^1(t)$ & Entwicklung durch $H^0$
+		\end{tabular*} %bitte noch abtrennungen einführen
+		 \\ \\
+	Berechnung der $c_m(t)$:
+	
+	Aus dem Schrödingerbild: 
+		\begin{align}
+			\ket{\psi(t)} &= \sum_m c_m(t) \ket{m} e^{-i \omega_m (t-t_0)} ,& t&>t_f \nonumber \\
+			\ket{\psi_W(t)} &= \sum_m c_m(t) \ket{m} &\Rightarrow c_m(t) &= \braket{m | \psi_W(t)} \nonumber \\
+			i\hbar \frac{\diff}{\diff t} c_m(t) 
+			&= \Braket{m | i\hbar \frac{\diff}{\diff t} | \psi(t)} \nonumber\\
+			&\overset{\eqref{Wechselwirkung}}{=} \braket{m | H^1_W(t) | \psi_W(t)} \nonumber\\
+			&= \sum_k \braket{m | H^1(t) | k} \underbrace{\braket{k | \psi_W(t)}}_{\substack{c_k(t)}} \nonumber\\ 
+			\label{gekopp-nlinear-Sys}
+			&= \sum_k \braket{m | H^1(t) | k} e^{-i(\omega_k - \omega_m)(t - t_0)} c_k(t) 
+		\end{align}
+	Anfangsbedingung: $(t_0 < t_i \Rightarrow H^1(t_0) = 0):$
+		\begin{align*} 
+			c_k(t_0) = \braket{k | \psi_n(t_0)} = \braket{k | \psi(t_0)} = \braket{k | n} = \delta_{kn}
+		\end{align*} 	
+	Das gekoppelte nicht-lineare System von Differentialgleichungen \eqref{gekopp-nlinear-Sys} ist nicht leicht lösbar. $\Rightarrow$ Betrachte \glqq kleine\grqq{} Störungen $H^1(t)$: 
+		\begin{align*}
+			\ket{\psi_W(t)} &= \underbrace{\ket{\psi(t_0)}}_{\substack{=\ket{\psi_W(t_0)}}} 
+			\frac{i}{\hbar} \int_{t_0}^{t} \diff t' H^1_W(t') \ket{\psi(t_0)} + \ldots 
+			\left( \text{linearisierung von~} i\hbar \frac{\diff}{\diff t} \ket{\psi_W(t)} = H^1(t) \ket{\psi_W(t)}\right) \\
+			c_m(t) &= \braket{m | \psi_W(t)} 
+			= \delta_{mn} - \frac{i}{\hbar} \sum_k \int_{t_0}^{t} \diff t' \braket{m | H^1(t') | k} e^{-i(\omega_n - \omega_m)(t'-t_0)} 
+			\underbrace{c_k(t_0)}_{\substack{\delta_{kn}}} + \ldots
+		\end{align*}
+	Setze $t_0=0 (t_i>0)$
+		\begin{equation*}
+			\Rightarrow \boxed{c_m(t) = \delta_{mn} 
+				- \frac{i}{\hbar} \int_{t_0}^{t} \diff t' \braket{m | H^1(t') | n} e^{-i(\omega_n - \omega_m) t'} + \ldots}
+		\end{equation*}
+	Formale Lösung zu allen Ordnungen in $H^1$:	
+		\begin{align*}
+			\ket{\psi_W(t)} &= \U^{0\dagger} (t-t_0) \ket{\psi(t)}
+			= \U^{0\dagger} (t-t_0) \underbrace{\U (t,t_0)}_{\substack{t>t_f}} \ket{\psi_W(t)}
+		\end{align*}
+		\begin{align*}
+		\boxed{	
+		\begin{aligned}
+			\ket{\psi_W(t)} &= W(t,t_0) \ket{\psi(t_0)} &\text{mit~} W(t,t_0) &= \U^{0\dagger} (t-t_0) \U (t,t_0) 
+		\end{aligned}
+		}
+		\end{align*}
+		\begin{equation*}
+			i \hbar \frac{\diff}{\diff t} \ket{\psi_W(t)} = H^1_W(t) \ket{\psi_(t)}
+		\end{equation*}	
+		\begin{align*}
+		\Rightarrow
+		\boxed{	
+			\begin{aligned}
+				i \hbar \frac{\diff}{\diff t} W(t,t_0) 
+				&= H^1_W(t) W(t,t_0) &\text{für~} t>t_0 \text{~mit~} W(t_0,t_0) = \mathds{1}
+			\end{aligned}
+		}
+		\end{align*}
+		\begin{equation*}
+			\boxed{ W(t,t_0) = \mathds{1} 
+				- \frac{i}{\hbar} \int_{t_0}^{t} \diff t' H^1_W(t') W(t',t_0)
+				}
+		\end{equation*}
+	Integralgleichung: Lösung durch Iteration (Dyson-Reihe)
+		\begin{align*}
+			W^0(t,t_0) &= \mathds{1} \\
+			W^n(t,t_0) &= \mathds{1} - \frac{i}{\hbar} \int_{t_0}^{t} \diff t' H^1_W(t') W^{n-1}(t',t_0)
+		\end{align*}
+	\underline{Beispiele:}
+		\begin{align*}
+			W^1(t,t_0) &= \mathds{1}
+			- \frac{i}{\hbar} \int_{t_0}^{t} \diff t' H^1_W(t') \underbrace{W^{0}(t',t_0)}_{\substack{\mathds{1}}} \\
+			W^2(t,t_0) &= \mathds{1} 
+			- \frac{i}{\hbar} \int_{t_0}^{t} \diff t' H^1_W(t')
+			+ \left( -\frac{i}{\hbar}\right)^2 \int_{t_0}^{t} \diff t' \int_{t_0}^{t'} \diff t'' H^1_W(t') H^1_W(t'') \\
+			W^n(t,t_0) &= \mathds{1} 
+			+ \sum_{n=1}^{\infty} \left(-\frac{i}{\hbar}\right)^n 
+			\int_{t_0}^{t} \diff t_n
+			\int_{t_0}^{t_n} \diff t_{n-1} \cdots 
+			\int_{t_0}^{t_2} \diff t_1 H^1_W(t_n) H^1_W(t_{n-1}) \cdots H^1_W(t_1)
+		\end{align*}
+		Zeitordnungsoperator T : \marginpar{19.10.2015}
+		\begin{align*}
+		\T A(t_1) A(t_2) = 
+		\left\{
+		\begin{aligned}
+		A(t_1) A(t_2) &, t_1 \geq t_2 \\
+		A(t_2) A(t_1) &, t_1 \leq t_2 
+		\end{aligned}
+		\right.
+		\end{align*}
+		\begin{equation*}
+		\Rightarrow \T A(t_1) A(t_2) \cdots A(t_k) = A(t_{\pi(1)}) A(t_{\pi(2)}) \cdots A(t_{\pi(k)})
+		\end{equation*}
+		mit $\pi \in S_k$ (Gruppe der Permutationen von k Elementen (mit Mächtigkeit $k!$))
+		sodass wenn $t_{\pi(1)} \geq t_{\pi(2)} \geq \ldots \geq t_{\pi(k)}$
+		\begin{align*}
+		W(t) &= \T 
+		\left\{
+		\sum_{k=0}^\infty \left( \frac{-i}{\hbar}\right)^k \frac{1}{k!} 
+		\int_{0}^{t} \diff t_k \int_{0}^{t} \diff t_{k-1} \cdots
+		\int_{0}^{t} \diff t_1 
+		H_W^1(t_k) H_W^1(t_{k-1}) \cdots H_W^1(t_1) \mathds{1} 
+		\right\} \\
+		&= \T
+		\left\{\vphantom{\sum_{k=0}^{\infty}} \right.
+		\sum_{k=0}^{\infty} 
+		\left( \frac{-i}{\hbar}\right)^k \frac{1}{k!}
+		\underbrace{
+			\int_{0}^{t} \diff t_k H_W^1(t_k) 
+			\int_{0}^{t} \diff t_{k-1} H_W^1(t_{k-1}) \cdots
+			\int_{0}^{t} \diff t_1 H_W^1(t_1)
+		}_{\mathclap{\left( \int_{0}^{t} \diff t' H_W^1(t') \right)^k }}
+		\left. \vphantom{\sum_{k=0}^{\infty}}\right\} \\
+		% bemerkung: mit \vphantom sind die klammern jetzt nicht mehr so riesig.
+		&= \T \exp 
+		\left\{
+		- \frac{i}{\hbar} \int_{0}^{t} \diff t' H_W^1(t')
+		\right\}
+		\end{align*}
+		mit
+		\begin{align*}
+		i\hbar \frac{\diff}{\diff t} \ket{\psi_W(t)} &= H_W^1(t) \ket{\psi_W(0)} \\
+		\Rightarrow 
+		\ket{\psi_W(t)} &= \T e^{-\frac{i}{\hbar} \int_{0}^{t} \diff t' H_W^1(t')} \ket{\psi(0)}
+		\end{align*}
+		Hier kommt ein mathematischer Einschub oder sowas (what so ever):
+		\begin{align*}
+		\int_{0}^{t} \diff t' \int_{0}^{t'} \diff t'' f(t') f(t'') 
+		&= \int_{0}^{t} \diff t' 
+		\left( \vphantom{\int_{0}^{t'} \diff t''} \right.
+		\int_{0}^{t'} \diff t'' \underbrace{f(t')}_{\mathclap{t' > t''}} f(t'') 
+		+ \int_{t'}^{t} \diff t'' \underbrace{f(t'')}_{\mathclap{t'' > t'}} f(t')
+		\left. \vphantom{\int_{0}^{t'} \diff t''} 
+		\right) 
+		\frac{1}{2} \\
+		\int_{0}^{t} \diff t' \int_{t'}^{t} \diff t'' f(t'') f(t') 
+		&= \int_{0}^{t} \diff t'' \int_{0}^{t'} \diff t' f(t'') f(t') = \int_{0}^{t} \diff t' \int_{0}^{t'} \diff t'' f(t') f(t'') 
+		\end{align*}	
+		Die Übergangswahrscheinlichkeit vom Zustand $\ket{n}$ zur Zeit $t_0$ in den Zustand $\ket{m}$ zur Zeit $t>t_0$ lautet:
+		\begin{align*}
+		P_{mn} &= \left| c_m(t) \right|^2 \\
+		&= \left| \braket{m | \psi_W(t)} \right|^2 \\
+		&= \left| \braket{m | W(t,t_0) | \psi_W(t_0)} \right|^2 \\
+		&= \left| \braket{m | W(t,t_0) | n}\right|^2
+		\end{align*}
+		Hier ist wieder $\ket{n} = \ket{\psi(t_0)}$.

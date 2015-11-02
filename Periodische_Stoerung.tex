@@ -1,0 +1,63 @@
+\subsection{Periodische Störungen}
+		\begin{align*}
+			H^1(t) &= \left[H_\omega e^{-i \omega t} + H^\dagger_\omega e^{i \omega t}\right]
+			\Theta(t) ,& \omega &> 0 \\
+			H^{1 \dagger}(t) &= H^1(t) &\Rightarrow H^1(t) &= 0 \text{~für~} t < 0 
+		\end{align*}
+		\begin{align*}	
+			c_m(t) - \delta_{mn} &= - \frac{i}{\hbar} \int_{0}^{t'} \diff t'
+			\left\{ \braket{m | H_\omega | n} e^{i (\omega_m - \omega_n - \omega) t'} +
+			\braket{m | H_\omega^\dagger | n} e^{i (\omega_m - \omega_n + \omega) t'}
+			\right\} + \ldots \\
+			\marginnote{Zitat Balis: jetzt bekommen wir hier viele Sinüsse. XD}
+			&= - \frac{i}{\hbar} 
+			\left\{ \braket{m | H_\omega | n} 
+				\frac{\sin \left[\frac{1}{2} (\omega_m - \omega_n + \omega) t 
+					\right]}{\frac{1}{2} (\omega_m - \omega_n + \omega)}
+				e^{\frac{i}{2} (\omega_m - \omega_n - \omega) t} ~+ \right. \\
+			&+ \left. \braket{m | H_\omega^\dagger | n}
+				\frac{\sin \left[\frac{1}{2} (\omega_m - \omega_n - \omega) t 
+					\right]}{\frac{1}{2} (\omega_m - \omega_n - \omega)}
+				e^{\frac{i}{2} (\omega_m - \omega_n + \omega) t}	
+			\right\} \\
+		\end{align*}
+		\begin{align*}
+			\Rightarrow \left|c_m(t) - \delta_{mn}\right|^2 
+			&= \frac{1}{\hbar^2} 
+			\left\{ \left|\braket{m | H_\omega | n}\right|^2
+				\frac{4 \sin^2 \left( \frac{1}{2} \left( \omega_{mn} - \omega\right) t
+				\right)}{(\omega_{mn} - \omega)^2} ~+ \right. \\
+			&+ \left. \left|\braket{m | H^\dagger_\omega | n}\right|^2
+			\frac{4 \sin^2 \left( \frac{1}{2} \left( \omega_{mn} + \omega\right) t
+				\right)}{(\omega_{mn} + \omega)^2}
+			+ \text{gemischte Terme}
+			\right\}
+		\end{align*}
+	mit $\omega_{mn} = \omega_m - \omega_n$
+	
+		\begin{figure*} [tbp]
+			\begin{center}
+				\includegraphics[width=10cm]{Ersatzgraph3.jpg}
+			\end{center}
+		\end{figure*}
+	HIER GRAPH EINFÜGEN
+	\FloatBarrier
+		\begin{align*}
+			\omega_m &= \omega_n + \omega &\Rightarrow E_m &= E_n + \hbar \omega: \text{Absorption} \\
+			\omega_m &= \omega_n - \omega &\Rightarrow E_m &= E_n - \hbar \omega: \text{Emission}
+		\end{align*}
+		\underline{Goldene Regel:} für periodische Störung\marginpar{22.10.2015}
+		\begin{align*} 
+		W_{m \leftarrow n} &= 
+		\frac{2 \pi}{\hbar} \rho (E_n + \hbar \omega) \left|\braket{m | H_\omega | n}\right|^2 &
+		E_m &= E_m + \hbar \omega \text{~(Absorption)} \\
+		W_{m \leftarrow n} &= 
+		\frac{2 \pi}{\hbar} \rho (E_n - \hbar \omega) \left| \braket{m | H_\omega^\dagger | n}\right|^2 &
+		E_m &= E_n - \hbar \omega \text{~(Emission)}
+		\end{align*} \marginpar{bei dem 2ten braket fehlte das Betragsquadrat}
+		Dichte
+		\begin{align*}
+		\rho (E) = \int \diff \alpha \delta(E_\alpha - E)
+		\end{align*}
+		für kontinuierliches Spektrum $\ket{m} \sim \ket{\alpha}$.
+		

@@ -1,0 +1,99 @@
+\subsection{Quantenmechanik}
+		\^{A} ist Operator. Und $e$ hoch eine Matrix ist definiert als:
+			\begin{equation*}
+				e^{\hat{A}}= \sum_{n=0}^{\infty} \frac{\hat{A}^n}{n!}
+			\end{equation*}
+		Der Operator $\hat{p}$ erzeugt Translationen
+			\begin{align*}
+				e^{\frac{i}{\hbar} a \hat{p}} \psi(x) &= 
+				\psi(x+a) \\
+				&= e^{a \frac{\partial}{\partial x}} \psi(x) \\
+				&= \sum_{n=0}^{\infty} \frac{1}{n!} a^n \frac{\partial^n}{\partial x^n} \psi(x) \\
+				& \overset{Taylorreihe}{=} 
+				\sum_{n} \frac{a^n}{n!} \psi^{(n)}(x)				
+			\end{align*}
+		$\Rightarrow \hat{p} = \frac{\hbar}{i} \frac{\partial}{\partial x}$
+			\begin{align*}
+				(\hat{x} \hat{p} - \hat{p} \hat{x}) \psi(x) &= \\
+				&= [\hat{x}, \hat{p}] \psi(x) \\
+				&= \frac{\hbar}{i} 
+				\left( x \frac{\partial}{\partial x} \psi 
+				- \frac{\partial}{\partial x} x \psi
+				\right) \\
+				&=\frac{\hbar}{i} \left( x \psi' - \psi - x\psi' \right) \\
+				&=i \hbar \psi(x) \text{~für alle~} \psi (x)
+			\end{align*}
+		$ \Rightarrow$ \fbox{$[\hat{x}, \hat{p}] = i\hbar $} \hspace{0.6cm} Born-Jordan Relation
+		
+		Beschränkte Operatoren wirken auf Zustände im Hilbertraum $L_2(\mathds{C}) = H$:
+			\begin{equation*}
+				\hat{A} \ket{n} = a_n \ket{n} 
+			\end{equation*}
+		Wobei $a_n$ Eigenwerte sind und $\ket{n}$ Eigenzustände\footnote{In der Vorlesung wurde $\ket{a_n}$. benutzt, ich finde aber, dass das nur zu Verwirrung führt.} $\in H$.
+		Da $\hat{A} = \hat{A}^\dagger$ selbstadjungiert ist, $\Rightarrow a_n \in \mathds{R}$ und es gilt $\braket{m | n} = \delta_{mn}$ (normiert) \grqq Strahl in H\grqq.
+		
+		Es gilt die Vollständigkeitsrelation:
+			\begin{equation*}
+				\sum_n \ket{n} \bra{n} = \mathds{1}
+			\end{equation*}
+		bzw. $\{ \ket{a_n} \}$ ist Basis von $H$, falls $\hat{A}$ ein rein diskretes Spektrum $\{a_n\}$ hat. 
+		
+		Allgemeiner: Das Gelfand Tripel:
+			\begin{equation*}
+				\{\Phi, H, \Phi'\} \text{~mit~} \Phi \subset H \subset \Phi'
+			\end{equation*}
+		Dann ist $\ket{a_n} \in \Phi \Rightarrow \braket{a_n | a_n} = 1$ normierbar.
+		
+		Sind alle $\ket{a_n} \in \Phi$ dann gilt $\Phi = H = \Phi'$ und $\hat{A}$ hat ein rein diskretes Spektrum.
+		Aber es gibt auch \underline{uneigentliche} Eigenvektoren
+			\begin{equation*}
+				\ket{x}, \ket{p} \in \Phi'
+			\end{equation*}
+		dies ist eine uneigentliche Basis von H, aber $\ket{x} \notin H$
+			\begin{align*}
+				\hat{x} \ket{x} &= x \ket{x} ~,& \braket{ x | x'} &= \delta(x-x') ~,& \int dx \ket{x} \bra{x} &= \mathds{1} \\		
+				\hat{p} \ket{p} &= p \ket{p} ~,& \braket{ p|p'} &= 2\pi \delta (x-x') ~,& \int \frac{dp}{2\pi} \ket{p} \bra{p} &= \mathds{1}
+			\end{align*}		
+		Wenn wir eine Fourier Transformation machen, fügt man im Endeffekt einfach eine $\mathds{1}$ ein:
+			\begin{align*}
+				\psi(x) =
+				\braket{ x|\psi } = \braket{x | \int \frac{\diff p}{2\pi} | p} \braket{p | |\psi} =
+				\int \frac{\diff p}{2\pi} \braket{x|p} \braket{p|\psi} = 
+				\int \frac{\diff p}{2\pi} e^{-ipx} \tilde{\psi}(p)
+			\end{align*}
+		Der Hamiltonoperator erzeugt zeitliche Translationen:
+			\begin{align*}
+				\hat{H} \ket{\psi(t)} &= i\hbar \frac{\partial}{\partial t} \ket{\psi(t)}
+				\Rightarrow \ket{\psi(t)} = \hat{\U}_t \ket{\psi(0)} \\
+				\text{mit~} \U_{\hat{t}} &= \text{T} \exp \left( -\frac{i}{\hbar} \hat{H} t \right)
+			\end{align*}
+		Wobei T ein Zeitoperator\footnote{Hier hat Prof. Bali kurz erklärt, wie T auf die Exponentialfunktion wirkt, aber ich konnte es bis jetzt nicht verstehen.} ist und $\hat{H}=H(\hat{x}, \hat{p})$ aber $[\hat{x}, \hat{p}] \neq 0$. 
+		Allgemein gilt $e^A e^B \neq e^{A+B}$ wenn $[A,B] \neq 0$.
+		
+		$\hat{\U}_t$ ist unitär: 		
+			\begin{equation*}
+				\hat{\U}_t + \hat{\U}_t = \hat{\U}_{-t} \hat{\U}_t = \mathds{1}.
+			\end{equation*}
+		Mögliche Messergebnisse von $A$ zur Zeit $t$: $a_n$
+		Erwartungswert:	
+			\begin{align*}
+				\erw{A}_\psi (t) = \braket{\psi(t) | \hat{A} | \psi(t)} = \sum_n \braket{\psi(t) | \hat{A} | n} \braket{n | \psi(t)} = \sum_n a_n 
+				\underbrace{\left| \braket{\psi(t) | n} \right|^2}_{\substack{|c_n(t)|^2}}				
+			\end{align*}
+		Dabei ist $|c_n(x)|^2$ die Wahrscheinlichkeit den Zustand $\ket{n}$ anzutreffen.
+			\begin{align*}
+				c_n(t) &= \\
+				&= \braket{\psi(t) | n} \\
+				&= \braket{\psi(0) | \hat{\U}_t^\dagger | n} \\
+				&= \braket{\psi(0) | \text{T} e^{\frac{i}{\hbar} \hat{H} t} | n} \\
+				& \overset{\hat{H}\ket{m} = E_m \ket{m}}{=} 
+				\sum_m \braket{\psi(0) | \text{T} e^{ \frac{i}{\hbar} \hat{H} t} | m} \braket{m | n} \\
+				&= \sum_m \braket{\psi(0) | m} \braket{m | n} e^{ \frac{i}{\hbar} E_m t}
+			\end{align*}
+		So kann man auch schreiben:
+			\begin{equation*}
+				\erw{A}_\psi (t) =
+				\sum_{n,m,k} a_n e^{ \frac{i}{\hbar} (E_m - E_k) t} 
+				\braket{\psi(0) | m} \braket{k | \psi(0)} \braket{m | n} \braket{n | k}
+			\end{equation*}
+		Falls $[\hat{H} , \hat{A}] = 0$, dann existiert simultanes System von Eigenzuständen $\leadsto \braket{m | n} = \delta_{mn}$ (für nicht-entarteten Fall).

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.9.8)  30 OCT 2015 14:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.9.8)  2 NOV 2015 18:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -38,12 +38,17 @@ Package tocbasic Info: omitting babel extension for `lof'
 Package tocbasic Info: omitting babel extension for `lot'
 (tocbasic)             because of feature `nobabel' available
 (tocbasic)             for `lot' on input line 117.
-Class scrartcl Info: File `scrsize11pt.clo' used instead of
-(scrartcl)           file `scrsize11.clo' to setup font sizes on input line 153
-1.
+Package scrartcl Info: You've used standard option `12pt'.
+(scrartcl)             This is correct!
+(scrartcl)             Internally I'm using `fontsize=12pt'.
+(scrartcl)             If you'd like to set the option with \KOMAoptions,
+(scrartcl)             you'd have to use `fontsize=12pt' there
+(scrartcl)             instead of `12pt', too.
+Class scrartcl Info: File `scrsize12pt.clo' used to setup font sizes on input l
+ine 1531.
 
-(c:/texlive/2014/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
-File: scrsize11pt.clo 2013/12/19 v3.12 KOMA-Script font size class option (11pt
+(c:/texlive/2014/texmf-dist/tex/latex/koma-script/scrsize12pt.clo
+File: scrsize12pt.clo 2013/12/19 v3.12 KOMA-Script font size class option (12pt
 )
 )
 (c:/texlive/2014/texmf-dist/tex/latex/koma-script/typearea.sty
@@ -60,21 +65,21 @@ Package typearea, 2013/12/19 v3.12 KOMA-Script package (type area)
 \ta@temp=\skip44
 \footheight=\skip45
 Package typearea Info: These are the values describing the layout:
-(typearea)             DIV  = 10
+(typearea)             DIV  = 12
 (typearea)             BCOR = 0.0pt
 (typearea)             \paperwidth      = 597.50793pt
-(typearea)              \textwidth      = 418.25555pt
+(typearea)              \textwidth      = 448.13095pt
 (typearea)              DIV departure   = -6%
-(typearea)              \evensidemargin = 17.3562pt
-(typearea)              \oddsidemargin  = 17.3562pt
+(typearea)              \evensidemargin = 2.4185pt
+(typearea)              \oddsidemargin  = 2.4185pt
 (typearea)             \paperheight     = 845.04694pt
-(typearea)              \textheight     = 595.80026pt
-(typearea)              \topmargin      = -25.16531pt
-(typearea)              \headheight     = 17.0pt
-(typearea)              \headsep        = 20.40001pt
-(typearea)              \topskip        = 11.0pt
-(typearea)              \footskip       = 47.6pt
-(typearea)              \baselineskip   = 13.6pt
+(typearea)              \textheight     = 635.5pt
+(typearea)              \topmargin      = -41.72441pt
+(typearea)              \headheight     = 18.125pt
+(typearea)              \headsep        = 21.75pt
+(typearea)              \topskip        = 12.0pt
+(typearea)              \footskip       = 50.75pt
+(typearea)              \baselineskip   = 14.5pt
 (typearea)              on input line 1330.
 )
 \c@part=\count80
@@ -553,9 +558,30 @@ Package: empheq 2014/07/16 v2.14 Emphasizing equations
 )
 (c:/texlive/2014/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
+)
+(c:/texlive/2014/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(c:/texlive/2014/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen140
+\captionmargin@=\dimen141
+\captionwidth=\dimen142
+\caption@tempdima=\dimen143
+\caption@indent=\dimen144
+\caption@parindent=\dimen145
+\caption@hangindent=\dimen146
+)
+Package caption Info: KOMA-Script document class.
+\c@ContinuedFloat=\count113
+Package caption Info: float package is loaded.
 )) (./main.aux
-(./2015-10-12.aux) (./2015-10-15.aux) (./2015-10-19.aux) (./2015-10-22.aux)
-(./2015-10-26.aux) (./2015-10-29.aux))
+(./Mechanik.aux) (./Quantenmechanik.aux) (./Schr_Heisenb._Bild.aux)
+(./Harmonischer_Oszillator.aux) (./Zeitabh.Stoerungsth_Und_WWbild.aux)
+(./Fermis_Goldene_Regel.aux) (./Periodische_Stoerung.aux)
+(./Abs_und_Emiss_EM_Strahlung.aux) (./Spontane_Emissions.aux)
+(./BspWasserstoff_Spontane_Emission.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
@@ -577,16 +603,16 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 (c:/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count113
-\scratchdimen=\dimen140
+\scratchcounter=\count114
+\scratchdimen=\dimen147
 \scratchbox=\box33
-\nofMPsegments=\count114
-\nofMParguments=\count115
+\nofMPsegments=\count115
+\nofMParguments=\count116
 \everyMPshowfont=\toks27
-\MPscratchCnt=\count116
-\MPscratchDim=\dimen141
-\MPnumerator=\count117
-\makeMPintoPDFobject=\count118
+\MPscratchCnt=\count117
+\MPscratchDim=\dimen148
+\MPnumerator=\count118
+\makeMPintoPDFobject=\count119
 \everyMPtoPDFconversion=\toks28
 ) (c:/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -638,7 +664,9 @@ e
 ))
 Package marginnote Info: \pdfoutput not 0 and \pdflastxpos available.
 (marginnote)             Extended position detection mode activated.
-\Hy@linkcounter=\count119
+\Hy@linkcounter=\count120
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Try loading font information for T1+lmss on input line 5.
 
 (c:/texlive/2014/texmf-dist/tex/latex/lm/t1lmss.fd
@@ -665,7 +693,7 @@ LaTeX Font Info:    Try loading font information for OMX+lmex on input line 3.
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 3.
+(Font)              <12> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -691,221 +719,296 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
  [1
 
 {c:/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-\openout2 = `2015-10-12.aux'.
+\openout2 = `Mechanik.aux'.
 
- (./2015-10-12.tex [2
+ (./Mechanik.tex
+Overfull \hbox (3.73553pt too wide) in paragraph at lines 1--1
+[]\T1/lmr/m/n/12 12.10.2015 
+ []
+
+) [2
 
 ]
-LaTeX Font Info:    Try loading font information for U+dsrom on input line 73.
+\openout2 = `Quantenmechanik.aux'.
+
+ (./Quantenmechanik.tex
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 28.
 
 (c:/texlive/2014/texmf-dist/tex/latex/doublestroke/udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 77.
+(Font)              <10> on input line 32.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 77.
- [3]
-Underfull \hbox (badness 10000) in alignment at lines 146--150
+(Font)              <7> on input line 32.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 32.
+ [3
+
+
+]) [4] [5]
+\openout2 = `Schr_Heisenb._Bild.aux'.
+
+
+(./Schr_Heisenb._Bild.tex
+Underfull \hbox (badness 10000) in alignment at lines 2--6
 [][] 
  []
 
-[4]) [5]
-\openout2 = `2015-10-15.aux'.
-
- (./2015-10-15.tex [6
+) [6
 
 
-] [7]
-Underfull \hbox (badness 10000) in alignment at lines 137--142
+]
+\openout2 = `Harmonischer_Oszillator.aux'.
+
+ (./Harmonischer_Oszillator.tex
+Overfull \hbox (3.73553pt too wide) in paragraph at lines 13--13
+[]\T1/lmr/m/n/12 15.10.2015 
+ []
+
+) [7
+
+
+]
+\openout2 = `Zeitabh.Stoerungsth_Und_WWbild.aux'.
+
+ (./Zeitabh.Stoerungsth_Und_WWbild.tex [8
+
+
+]
+Underfull \hbox (badness 10000) in alignment at lines 100--105
 [][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--145
+Underfull \hbox (badness 10000) in paragraph at lines 99--108
 
  []
 
-
-Overfull \hbox (52.9936pt too wide) in paragraph at lines 169--169
+[9]
+Overfull \hbox (50.82614pt too wide) in paragraph at lines 132--132
 [] 
  []
 
-[8]) [9]
-\openout2 = `2015-10-19.aux'.
+[10]
+Overfull \hbox (3.73553pt too wide) in paragraph at lines 185--185
+[]\T1/lmr/m/n/12 19.10.2015 
+ []
 
- (./2015-10-19.tex [10
+[11]) [12]
+\openout2 = `Fermis_Goldene_Regel.aux'.
 
-
-]
-<Ersatzgraph1.jpg, id=56, 3276.24pt x 2457.18pt>
+ (./Fermis_Goldene_Regel.tex
+<Ersatzgraph1.jpg, id=62, 3276.24pt x 2457.18pt>
 File: Ersatzgraph1.jpg Graphic file (type jpg)
  <use Ersatzgraph1.jpg>
-Package pdftex.def Info: Ersatzgraph1.jpg used on input line 84.
+Package pdftex.def Info: Ersatzgraph1.jpg used on input line 18.
 (pdftex.def)             Requested size: 284.52756pt x 213.3755pt.
 
-<Ersatzgraph2.jpg, id=57, 3276.24pt x 2457.18pt>
+<Ersatzgraph2.jpg, id=63, 3276.24pt x 2457.18pt>
 File: Ersatzgraph2.jpg Graphic file (type jpg)
  <use Ersatzgraph2.jpg>
-Package pdftex.def Info: Ersatzgraph2.jpg used on input line 99.
+Package pdftex.def Info: Ersatzgraph2.jpg used on input line 33.
 (pdftex.def)             Requested size: 284.52756pt x 213.3755pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[11 <./Ersatzgraph1.jpg>]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 136.
+[13
 
+
+ <./Ersatzgraph1.jpg>]
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 70.
  (c:/texlive/2014/texmf-dist/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 136.
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 70.
 
-[12 <./Ersatzgraph2.jpg>]
-Package marginnote Info: right page because not two side mode on input line 168
-.
+[14 <./Ersatzgraph2.jpg>]) [15]
+\openout2 = `Periodische_Stoerung.aux'.
+
+ (./Periodische_Stoerung.tex
+Package marginnote Info: right page because not two side mode on input line 23.
+
 Package marginnote Info: xpos not known,
-(marginnote)             using \marginnoterightadjust on input line 168.
-Package marginnote Info: Margin note 13.2 is on absolute page 13
-(marginnote)              on input line 168.
-Package marginnote Info: right page because not two side mode on input line 168
-.
-Package marginnote Info: xpos seems to be 157.43645pt,
-(marginnote)             \marginnoterightadjust ignored on input line 168.
- <Ersatzgraph3.jpg, id=64, 3276.24pt x 2457.18pt>
+(marginnote)             using \marginnoterightadjust on input line 23.
+Package marginnote Info: Margin note 16.2 is on absolute page 16
+(marginnote)              on input line 23.
+Package marginnote Info: right page because not two side mode on input line 23.
+
+Package marginnote Info: xpos seems to be 151.68016pt,
+(marginnote)             \marginnoterightadjust ignored on input line 23.
+
+<Ersatzgraph3.jpg, id=74, 3276.24pt x 2457.18pt>
 File: Ersatzgraph3.jpg Graphic file (type jpg)
-
-<use Ersatzgraph3.jpg>
-Package pdftex.def Info: Ersatzgraph3.jpg used on input line 185.
+ <use Ersatzgraph3.jpg>
+Package pdftex.def Info: Ersatzgraph3.jpg used on input line 40.
 (pdftex.def)             Requested size: 284.52756pt x 213.3755pt.
- [13]) [14 <./Ersatzgraph3.jpg>]
-\openout2 = `2015-10-22.aux'.
 
- (./2015-10-22.tex
-Underfull \hbox (badness 10000) in paragraph at lines 9--9
-[]\T1/lmr/m/n/10.95 bei dem
+Overfull \hbox (3.73553pt too wide) in paragraph at lines 49--49
+[]\T1/lmr/m/n/12 22.10.2015 
+ []
+
+[16
+
+
+ <./Ersatzgraph3.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+[]\T1/lmr/m/n/12 bei dem
  []
 
 
-Underfull \hbox (badness 2012) in paragraph at lines 9--9
-\T1/lmr/m/n/10.95 2ten bra-ket
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+\T1/lmr/m/n/12 2ten
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--9
-\T1/lmr/m/n/10.95 fehl-te das
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+\T1/lmr/m/n/12 bra-ket
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--9
-\T1/lmr/m/n/10.95 Be-trags-qua-
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+\T1/lmr/m/n/12 Be-trags-
+ []
+
+) [17]
+\openout2 = `Abs_und_Emiss_EM_Strahlung.aux'.
+
+ (./Abs_und_Emiss_EM_Strahlung.tex
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+\T1/lmr/m/n/12 so auch
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--27
-\T1/lmr/m/n/10.95 auch nicht
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+\T1/lmr/m/n/12 nicht
  []
 
-[15
+[18
 
 
-] [16] [17] [18]) [19]
-\openout2 = `2015-10-26.aux'.
+] [19] [20]
+Underfull \hbox (badness 10000) in paragraph at lines 211--211
+[]\T1/lmr/m/n/12 was zur
+ []
 
- (./2015-10-26.tex
 
-LaTeX Warning: Marginpar on page 20 moved.
+Underfull \hbox (badness 4505) in paragraph at lines 211--211
+\T1/lmr/m/n/12 Höl-le ist
+ []
 
-<Bild1.jpg, id=88, 3276.24pt x 2457.18pt>
+[21]
+Overfull \hbox (3.73553pt too wide) in paragraph at lines 231--231
+[]\T1/lmr/m/n/12 26.10.2015 
+ []
+
+[22] <Bild1.jpg, id=97, 3276.24pt x 2457.18pt>
 File: Bild1.jpg Graphic file (type jpg)
  <use Bild1.jpg>
-Package pdftex.def Info: Bild1.jpg used on input line 54.
+Package pdftex.def Info: Bild1.jpg used on input line 284.
 (pdftex.def)             Requested size: 284.52756pt x 213.3755pt.
+) [23 <./Bild1.jpg>]
+\openout2 = `Spontane_Emissions.aux'.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[20
-
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 59--61
+ (./Spontane_Emissions.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--4
 
  []
 
-[21 <./Bild1.jpg>] [22] [23] [24]) [25]
-\openout2 = `2015-10-29.aux'.
+[24
 
- (./2015-10-29.tex
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-[]\T1/lmr/m/n/10.95 Bleibt die
+
+] [25] [26]
+Overfull \hbox (3.73553pt too wide) in paragraph at lines 249--249
+[]\T1/lmr/m/n/12 29.10.2015 
+ []
+
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 285--285
+\T1/lmr/m/n/12 Fra-ge,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-\T1/lmr/m/n/10.95 Fra-ge, was
+Underfull \hbox (badness 10000) in paragraph at lines 285--285
+\T1/lmr/m/n/12 was $\OML/lmm/m/it/12 n[]$
  []
 
-<Bild2.jpg, id=108, 3276.24pt x 2457.18pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--290
+[]\T1/lmr/m/n/12 kA was
+ []
+
+<Bild2.jpg, id=114, 3276.24pt x 2457.18pt>
 File: Bild2.jpg Graphic file (type jpg)
  <use Bild2.jpg>
-Package pdftex.def Info: Bild2.jpg used on input line 54.
+Package pdftex.def Info: Bild2.jpg used on input line 302.
 (pdftex.def)             Requested size: 284.52756pt x 213.3755pt.
- [26
-
-
-] [27 <./Bild2.jpg>]
-Overfull \hbox (42.85365pt too wide) in paragraph at lines 123--123
+ [28] [29 <./Bild2.jpg>]
+Overfull \hbox (41.12714pt too wide) in paragraph at lines 371--371
 [] 
  []
 
-[28] [29]
+[30] [31]) [32]
+\openout2 = `BspWasserstoff_Spontane_Emission.aux'.
+
+ (./BspWasserstoff_Spontane_Emission.tex
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 225.
- <Bild3.jpg, id=122, 3276.24pt x 2457.18pt>
+(Font)              <14.4> on input line 1.
+
+<Bild3.jpg, id=133, 3276.24pt x 2457.18pt>
 File: Bild3.jpg Graphic file (type jpg)
  <use Bild3.jpg>
-Package pdftex.def Info: Bild3.jpg used on input line 228.
+Package pdftex.def Info: Bild3.jpg used on input line 4.
 (pdftex.def)             Requested size: 284.52756pt x 213.3755pt.
-) [30 <./Bild3.jpg>] (./main.aux (./2015-10-12.aux) (./2015-10-15.aux) (./2015-
-10-19.aux)
-(./2015-10-22.aux) (./2015-10-26.aux) (./2015-10-29.aux)) ) 
+
+Overfull \hbox (3.73553pt too wide) in paragraph at lines 7--7
+[]\T1/lmr/m/n/12 02.11.2015 
+ []
+
+[33
+
+
+ <./Bild3.jpg>]) [34] (./main.aux (./Mechanik.aux) (./Quantenmechanik.aux)
+(./Schr_Heisenb._Bild.aux) (./Harmonischer_Oszillator.aux)
+(./Zeitabh.Stoerungsth_Und_WWbild.aux) (./Fermis_Goldene_Regel.aux)
+(./Periodische_Stoerung.aux) (./Abs_und_Emiss_EM_Strahlung.aux)
+(./Spontane_Emissions.aux) (./BspWasserstoff_Spontane_Emission.aux)) ) 
 Here is how much of TeX's memory you used:
- 6000 strings out of 493117
- 88539 string characters out of 6138985
- 210758 words of memory out of 5000000
- 9239 multiletter control sequences out of 15000+600000
- 53600 words of font info for 67 fonts, out of 8000000 for 9000
+ 7062 strings out of 493117
+ 109071 string characters out of 6138985
+ 232339 words of memory out of 5000000
+ 10264 multiletter control sequences out of 15000+600000
+ 60885 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,19n,42p,360b,304s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2014/tex
-mf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2014/texmf-dist/fonts/enc/
-dvips/lm/lm-rm.enc}{c:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
-}{c:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2014/texm
-f-dist/fonts/enc/dvips/lm/lm-mathex.enc}<c:/texlive/2014/texmf-dist/fonts/type1
-/public/doublestroke/dsrom10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public
-/doublestroke/dsrom8.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmex
-10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive
-/2014/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2014/texmf-dist/f
-onts/type1/public/lm/lmmi6.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/l
-m/lmmi8.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmmi9.pfb><c:/tex
-live/2014/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2014/texmf-dis
-t/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2014/texmf-dist/fonts/type1/publi
-c/lm/lmr6.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/te
-xlive/2014/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/texlive/2014/texmf-dis
-t/fonts/type1/public/lm/lmssbx10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/pu
-blic/lm/lmsy10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmsy6.pfb>
-<c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2014/te
-xmf-dist/fonts/type1/public/lm/lmsy9.pfb><c:/texlive/2014/texmf-dist/fonts/type
-1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/pu
-blic/amsfonts/symbols/msbm10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public
-/amsfonts/symbols/msbm7.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/rsfs
-/rsfs10.pfb>
-Output written on main.pdf (30 pages, 13222406 bytes).
+ 47i,19n,46p,367b,330s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texli
+ve/2014/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2014/texmf-dist/fon
+ts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm
+-rm.enc}{c:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texliv
+e/2014/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}<c:/texlive/2014/texmf-dist/
+fonts/type1/public/doublestroke/dsrom12.pfb><c:/texlive/2014/texmf-dist/fonts/t
+ype1/public/doublestroke/dsrom8.pfb><c:/texlive/2014/texmf-dist/fonts/type1/pub
+lic/lm/lmex10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmmi10.pfb>
+<c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2014/t
+exmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/texlive/2014/texmf-dist/fonts/typ
+e1/public/lm/lmmi7.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmmi8.
+pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/201
+4/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2014/texmf-dist/fonts/
+type1/public/lm/lmr6.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmr7
+.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/201
+4/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/texlive/2014/texmf-dist/fon
+ts/type1/public/lm/lmsy10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm
+/lmsy6.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texl
+ive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/
+2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2014
+/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb><c:/texlive/2014/texm
+f-dist/fonts/type1/public/rsfs/rsfs10.pfb>
+Output written on main.pdf (34 pages, 13227752 bytes).
 PDF statistics:
- 206 PDF objects out of 1000 (max. 8388607)
- 144 compressed objects within 2 object streams
+ 215 PDF objects out of 1000 (max. 8388607)
+ 150 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

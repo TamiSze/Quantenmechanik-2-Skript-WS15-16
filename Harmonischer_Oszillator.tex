@@ -1,0 +1,48 @@
+\subsection{Harmonischer Oszillator}
+	\begin{align*}
+		H &= \frac{p^2}{2m} + \frac{m}{2} \omega^2 x^2 
+		&y\coloneqq \sqrt{\frac{m \omega}{\hbar}} x \\
+		&\Rightarrow H 
+		= \hbar \omega \left(- \frac{1}{2} \frac{\partial^2}{\partial y^2} 
+		+ \frac{1}{2} y^2\right)
+		= \hbar \omega \tilde{H} 
+		&\text{mit~} \tilde{H} = \frac{1}{2} \left(\tilde{p}^2 + y^2\right)\\
+		&\Rightarrow \left[ y, \tilde{p}\right] = i 
+		&\text{~wobei~} \tilde{p} =-i \frac{\partial}{\partial y} \\
+	\end{align*} %find ich auch noch unschön.
+wobei \marginpar{15.10.2015}
+	\begin{align*}
+		\text{Vernichtnungsoperator:~} a &= \frac{1}{\sqrt{2}} 
+		\left( y + i \tilde{p} \right) \\
+		\text{Erzeugungsoperator:~} a^\dagger &= \frac{1}{\sqrt{2}} 
+		\left( y - i \tilde{p} \right)
+	\end{align*}
+Und da dann
+	\begin{align*}
+		[a , a^\dagger] &= 1 &\text{~oder~} a a^\dagger &= a^\dagger a + 1 \\
+		\Rightarrow \tilde{H} = \left( a^\dagger a + \frac{1}{2} \right)& \\
+		\text{und somit~} 
+		y &= \frac{1}{\sqrt{2}} \left( a + a^\dagger \right),& 
+		\tilde{p} &= \frac{1}{i\sqrt{2}} \left( a - a^\dagger \right)
+	\end{align*}
+Sei nun:
+	\begin{align*}
+		\tilde{H} \ket{n} &= \epsilon_n \ket{n} &\left( H \ket{n} = E_n \ket{n} 
+		\Rightarrow E_n = \hbar \omega \epsilon_n \right)
+		a^\dagger a \ket{n} = \left( \epsilon_n - \frac{1}{2} \right) \ket{n}
+	\end{align*}
+(n ist Anzahl der Knoten (Nullstellen) der Wellenfunktionen.)
+Aus QM 1:
+	\begin{align*}
+		a \ket{n} &= \sqrt{n} \ket{n-1} \\
+		a^\dagger \ket {n} &= \sqrt{n+1} \ket{n+1} \\
+		&\Rightarrow \epsilon_{n+1} = \epsilon_n + 1
+	\end{align*}
+mit $n = 0, 1, 2 \ldots$: \footnote{\text{N: Nummernoperator (Teilchenzahloperator)}}
+	\begin{align*}
+		&\epsilon_n = n + \frac{1}{2} \leadsto E_n = \hbar \omega \left(n + \frac{1}{2} \right) \\
+		&\text{und~} \underbrace{a^\dagger a}_{\substack{N}}
+		%\footnote{\text{Nummernoperator (Teilchenzahloperator)}}
+		\ket{n} = n \ket{n}
+	\end{align*} 
+Somit ist $\tilde{H} = N + \frac{1}{2}$

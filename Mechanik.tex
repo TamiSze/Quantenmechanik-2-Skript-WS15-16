@@ -1,0 +1,44 @@
+\section{Quantenmechanik} \marginpar{12.10.2015}
+	\subsection{Mechanik}
+		Der einfachste Lagrange lautet 
+			\begin{equation*}
+				L (x,\dot{x}) = \frac{m}{2} \dot{x}^2 - V(x) 
+			\end{equation*}
+		Um jetzt die Hamiltonfunktion zu konstruieren, schreiben wir:
+			\begin{equation*}
+				p=
+				\frac{\partial L}{\partial \dot{x}}
+				(=m \dot{x})
+			\end{equation*}
+		Sodass
+			\begin{equation*}
+				H(x,p)= 
+				p \dot{x} - L(x,\dot{x}) = 
+				\frac{p^2}{2m} + V(x)
+			\end{equation*}
+		Poisson-Klammern:
+			\begin{equation*}
+				\{A,B\}=
+				\frac{\partial A}{\partial x} \frac{\partial B}{\partial p}
+				- \frac{\partial B}{\partial x} \frac{\partial A}{\partial p}
+			\end{equation*}
+		Beispiele mit Spezialfällen:
+		\begin{tabbing}
+			\hspace{0.4\linewidth} \= \hspace{0.6\linewidth} \= \hfill \kill
+			$\frac{\diff F}{dt} = \dot{F} = \{F,H\} + \frac{\partial F}{\partial t}$ \> 
+			Phasenraumfunktion $F(x,p,t)$ \\ \\
+			$\frac{\diff H}{dt} = \{H,H\} + \frac{\partial H}{\partial t} = \frac{\partial H}{\partial t}$ \>
+			Falls $H$ nicht explizit zeitabhängig, dann ist Energie \\
+			\hfill \>  in H erhalten. \\  %Unschöne Lösung
+			$\frac{\diff x}{\diff t} = \{x,H\} = \frac{\partial H}{\partial p}$ \>
+			$=\frac{p}{m} \rightarrow$ Geschwindigkeit ist Impuls durch Masse. \\ \\
+			$\frac{\diff p}{\diff t} = \{p,H\} = -\frac{\partial H}{\partial x}$ \>
+			Newton: $F= ma= \dot{p} =$``$- \nabla V$''	
+		\end{tabbing}
+		Fundamentale Poissonklammern:
+			\begin{align*}
+				\begin{split}
+					\{x,x\} &=\{p,p\}= 0 \\
+					\{x,p\} &= 1
+				\end{split}
+			\end{align*}
