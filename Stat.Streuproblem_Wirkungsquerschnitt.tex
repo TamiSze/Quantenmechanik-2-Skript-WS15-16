@@ -1,0 +1,39 @@
+\section{Streutheorie}
+	\subsection{Stationäres Streuproblem und Wirkungsquerschnitt}
+	BILD
+		
+	Stromdichte des einlaufenden Teilchenstrahls: $\vec{j}_{ein}$
+	\\
+	BILD
+	
+	Anzahl der Teilchen, die durch $\diff \vec{A}$ läuft:
+		\begin{align*}
+			\diff N &= 
+			\underbrace{\vec{j}_{ein} \cdot \diff \vec{A}}_{\mathclap{\text{Strom}}}
+			\cdot \diff t
+		\end{align*}
+	NOCH EIN BILD
+		\begin{align*}
+			\diff A &= r^2 \diff \Omega = r^2 \diff \Theta \sin \Theta \diff \phi
+		\end{align*}
+	Differentieller Wirklungsquerschnitt $(r \rightarrow \infty)$
+		\begin{empheq}[box=\boxed]{align*}
+			\frac{\diff \sigma}{\diff \Omega} &=
+			\frac{1}{|\vec{j}_{ein}|} \frac{\diff N}{\diff \Omega ~\diff t}
+		\end{empheq}
+	Homogener Strahl von Punktteilchen : $\vec{j} = \vec{v} \rho$ ($\rho$ ist Dichte)
+		\begin{empheq}[box=\boxed]{align*}
+			\frac{\diff \sigma}{\diff \Omega} &=
+			\frac{|\vec{j}_{aus}(r, \Theta, \phi)|}{|\vec{j}_{ein}|} ~r^2
+		\end{empheq}
+	$ \leadsto |\vec{j}_{aus}| \propto \frac{1}{r^2}$ (bei gleichen Detektorflächen $\diff A$)
+	
+	Totaler Wirkungsquerschnitt:
+		\begin{align*}
+			\sigma = \int \diff \Omega \frac{\diff \sigma}{\diff \Omega}
+		\end{align*}
+	Beispiel: Streuung an Scheibe der Fläche A:
+	\\
+	BILD
+	\\
+	

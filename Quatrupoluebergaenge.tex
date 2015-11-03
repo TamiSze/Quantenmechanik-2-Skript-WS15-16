@@ -1,0 +1,46 @@
+\subsection{Quatrupolübergänge etc.}
+	Matrixelement:
+		\begin{align*}
+			\braket{f | e^{-i \vec{k} \vec{r}} \vec{\epsilon} \cdot \vec{p} | i} \\
+			e^{-i \vec{k} \vec{r}} &= 
+			\sum_{j = 0}^{\infty} \frac{(-i)^j}{j!} 
+			\underbrace{(\vec{k} \vec{r})^j}_{\mathclap{\mathscr{O} (Z \alpha)^j}} \\
+			\text{wobei gilt:~} r &\approx Z a_B ,&
+			|\vec{k}| &= \frac{\omega}{c} = \frac{\hbar \omega}{\hbar c} 
+			\sim \frac{Z^2 \alpha \hbar c}{2 a_B \hbar c} 
+			& &\rightarrow |\vec{k}| r \sim \frac{Z \alpha}{2} \\
+			\text{kann nicht sein, einsetzen!}\\
+			\text{Wir nehmen lieber:~} r &\approx \frac{a_B}{Z}
+		\end{align*} 
+		\begin{align*}
+			\Rightarrow e^{-i \vec{k} \vec{r}} &=
+			\underbrace{1}_{\mathclap{\text{Dipoloperator}}}
+			- \overbrace{i \vec{k} \vec{r}}^{\mathclap{\mathscr{O} (Z \alpha)}}
+			+ \underbrace{\ldots}_{\mathclap{\mathscr{O} (Z\alpha)^2}}
+		\end{align*}
+	Was ist mit $(\vec{k} \cdot \vec{r})(\vec{\epsilon} \cdot \vec{p})$?
+		\begin{align*}
+			(\vec{k} \cdot \vec{r})(\vec{\epsilon} \cdot \vec{p}) &=
+			\frac{1}{2} \left[
+				(\vec{k} \cdot \vec{r})(\vec{\epsilon} \cdot \vec{p})
+				+ (\vec{\epsilon} \cdot \vec{r})(\vec{k} \cdot \vec{p})
+				+ (\vec{k} \cdot \vec{r})(\vec{\epsilon} \cdot \vec{p})
+				- (\vec{\epsilon} \cdot \vec{r})(\vec{k} \cdot \vec{p})
+			\right] \\
+			&= \underbrace{\frac{1}{2} \left[
+				(\vec{k} \cdot \vec{r})(\vec{\epsilon} \cdot \vec{p})
+				+ (\vec{\epsilon} \cdot \vec{r})(\vec{k} \cdot \vec{p})
+			\right]}_{\mathclap{\text{elektrischer Quadrupol}}}
+			+ \underbrace{\frac{1}{2} 
+			(\vec{k} \times \vec{\epsilon})(\vec{r} \times \vec{p})}_{\mathclap{\text{magnetischer Dipol}}}
+		\end{align*}
+	Nützliche Relation: 
+		\begin{equation*}
+			\vec{p} = \frac{im}{\hbar} [H^0, \vec{r}]
+		\end{equation*}
+	Auswahlregeln:
+	
+	\begin{tabular}{l l} 
+		$3d \rightarrow 1s$ & verboten als Dipolübergang, aber erlaubt als elektrischer Quadrupolübergang \\
+		$3d \rightarrow 2p \rightarrow 1s$ & ist elektrischer Dipolübergang und hat höhere Rate
+	\end{tabular}

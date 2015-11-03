@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.9.8)  2 NOV 2015 18:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.9.8)  3 NOV 2015 09:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -558,30 +558,13 @@ Package: empheq 2014/07/16 v2.14 Emphasizing equations
 )
 (c:/texlive/2014/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
-)
-(c:/texlive/2014/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
-
-(c:/texlive/2014/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 57.
-\captionmargin=\dimen140
-\captionmargin@=\dimen141
-\captionwidth=\dimen142
-\caption@tempdima=\dimen143
-\caption@indent=\dimen144
-\caption@parindent=\dimen145
-\caption@hangindent=\dimen146
-)
-Package caption Info: KOMA-Script document class.
-\c@ContinuedFloat=\count113
-Package caption Info: float package is loaded.
 )) (./main.aux
 (./Mechanik.aux) (./Quantenmechanik.aux) (./Schr_Heisenb._Bild.aux)
 (./Harmonischer_Oszillator.aux) (./Zeitabh.Stoerungsth_Und_WWbild.aux)
 (./Fermis_Goldene_Regel.aux) (./Periodische_Stoerung.aux)
 (./Abs_und_Emiss_EM_Strahlung.aux) (./Spontane_Emissions.aux)
-(./BspWasserstoff_Spontane_Emission.aux))
+(./BspWasserstoff_Spontane_Emission.aux) (./Quatrupoluebergaenge.aux)
+(./Stat.Streuproblem_Wirkungsquerschnitt.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
@@ -603,16 +586,16 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 (c:/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count114
-\scratchdimen=\dimen147
+\scratchcounter=\count113
+\scratchdimen=\dimen140
 \scratchbox=\box33
-\nofMPsegments=\count115
-\nofMParguments=\count116
+\nofMPsegments=\count114
+\nofMParguments=\count115
 \everyMPshowfont=\toks27
-\MPscratchCnt=\count117
-\MPscratchDim=\dimen148
-\MPnumerator=\count118
-\makeMPintoPDFobject=\count119
+\MPscratchCnt=\count116
+\MPscratchDim=\dimen141
+\MPnumerator=\count117
+\makeMPintoPDFobject=\count118
 \everyMPtoPDFconversion=\toks28
 ) (c:/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -664,9 +647,7 @@ e
 ))
 Package marginnote Info: \pdfoutput not 0 and \pdflastxpos available.
 (marginnote)             Extended position detection mode activated.
-\Hy@linkcounter=\count120
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: End \AtBeginDocument code.
+\Hy@linkcounter=\count119
 LaTeX Font Info:    Try loading font information for T1+lmss on input line 5.
 
 (c:/texlive/2014/texmf-dist/tex/latex/lm/t1lmss.fd
@@ -970,45 +951,68 @@ Overfull \hbox (3.73553pt too wide) in paragraph at lines 7--7
 [33
 
 
- <./Bild3.jpg>]) [34] (./main.aux (./Mechanik.aux) (./Quantenmechanik.aux)
+ <./Bild3.jpg>]) [34]
+\openout2 = `Quatrupoluebergaenge.aux'.
+
+ (./Quatrupoluebergaenge.tex)
+Overfull \hbox (58.33754pt too wide) in paragraph at lines 43--22
+[][] 
+ []
+
+[35
+
+
+]
+\openout2 = `Stat.Streuproblem_Wirkungsquerschnitt.aux'.
+
+ (./Stat.Streuproblem_Wirkungsquerschnitt.tex
+Underfull \hbox (badness 10000) in paragraph at lines 34--39
+
+ []
+
+) [36
+
+
+] (./main.aux (./Mechanik.aux) (./Quantenmechanik.aux)
 (./Schr_Heisenb._Bild.aux) (./Harmonischer_Oszillator.aux)
 (./Zeitabh.Stoerungsth_Und_WWbild.aux) (./Fermis_Goldene_Regel.aux)
 (./Periodische_Stoerung.aux) (./Abs_und_Emiss_EM_Strahlung.aux)
-(./Spontane_Emissions.aux) (./BspWasserstoff_Spontane_Emission.aux)) ) 
+(./Spontane_Emissions.aux) (./BspWasserstoff_Spontane_Emission.aux)
+(./Quatrupoluebergaenge.aux) (./Stat.Streuproblem_Wirkungsquerschnitt.aux)) ) 
 Here is how much of TeX's memory you used:
- 7062 strings out of 493117
- 109071 string characters out of 6138985
- 232339 words of memory out of 5000000
- 10264 multiletter control sequences out of 15000+600000
+ 6078 strings out of 493117
+ 91318 string characters out of 6138985
+ 212522 words of memory out of 5000000
+ 9272 multiletter control sequences out of 15000+600000
  60885 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,19n,46p,367b,330s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texli
-ve/2014/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2014/texmf-dist/fon
-ts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm
--rm.enc}{c:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texliv
-e/2014/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}<c:/texlive/2014/texmf-dist/
-fonts/type1/public/doublestroke/dsrom12.pfb><c:/texlive/2014/texmf-dist/fonts/t
-ype1/public/doublestroke/dsrom8.pfb><c:/texlive/2014/texmf-dist/fonts/type1/pub
-lic/lm/lmex10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmmi10.pfb>
-<c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2014/t
-exmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/texlive/2014/texmf-dist/fonts/typ
-e1/public/lm/lmmi7.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmmi8.
-pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/201
-4/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2014/texmf-dist/fonts/
-type1/public/lm/lmr6.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmr7
-.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/201
-4/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/texlive/2014/texmf-dist/fon
-ts/type1/public/lm/lmsy10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm
-/lmsy6.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texl
-ive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/
-2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2014
-/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb><c:/texlive/2014/texm
-f-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on main.pdf (34 pages, 13227752 bytes).
+ 47i,19n,43p,367b,304s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c
+:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2014/texmf-d
+ist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2014/texmf-dist/fonts/enc/dvip
+s/lm/lm-rm.enc}{c:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:
+/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}<c:/texlive/2014/texm
+f-dist/fonts/type1/public/doublestroke/dsrom12.pfb><c:/texlive/2014/texmf-dist/
+fonts/type1/public/doublestroke/dsrom8.pfb><c:/texlive/2014/texmf-dist/fonts/ty
+pe1/public/lm/lmex10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmmi
+10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive
+/2014/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/texlive/2014/texmf-dist/fo
+nts/type1/public/lm/lmmi7.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm
+/lmmi8.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texl
+ive/2014/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2014/texmf-dist
+/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/
+lm/lmr7.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texl
+ive/2014/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/texlive/2014/texmf-d
+ist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/pu
+blic/lm/lmsy6.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><
+c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/t
+exlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texli
+ve/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb><c:/texlive/20
+14/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
+Output written on main.pdf (36 pages, 13233814 bytes).
 PDF statistics:
- 215 PDF objects out of 1000 (max. 8388607)
- 150 compressed objects within 2 object streams
+ 221 PDF objects out of 1000 (max. 8388607)
+ 154 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
