@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.9.8)  3 NOV 2015 09:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.9.8)  3 NOV 2015 12:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -558,6 +558,14 @@ Package: empheq 2014/07/16 v2.14 Emphasizing equations
 )
 (c:/texlive/2014/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
+)
+(c:/texlive/2014/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2014/04/23 v1.1a Standard LaTeX Color (DPC)
+
+(c:/texlive/2014/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 137.
 )) (./main.aux
 (./Mechanik.aux) (./Quantenmechanik.aux) (./Schr_Heisenb._Bild.aux)
 (./Harmonischer_Oszillator.aux) (./Zeitabh.Stoerungsth_Und_WWbild.aux)
@@ -871,24 +879,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--12
 
 
 ] [19] [20]
-Underfull \hbox (badness 10000) in paragraph at lines 211--211
+Underfull \hbox (badness 10000) in paragraph at lines 212--212
 []\T1/lmr/m/n/12 was zur
  []
 
 
-Underfull \hbox (badness 4505) in paragraph at lines 211--211
+Underfull \hbox (badness 4505) in paragraph at lines 212--212
 \T1/lmr/m/n/12 Höl-le ist
  []
 
 [21]
-Overfull \hbox (3.73553pt too wide) in paragraph at lines 231--231
+Overfull \hbox (3.73553pt too wide) in paragraph at lines 232--232
 []\T1/lmr/m/n/12 26.10.2015 
  []
 
 [22] <Bild1.jpg, id=97, 3276.24pt x 2457.18pt>
 File: Bild1.jpg Graphic file (type jpg)
  <use Bild1.jpg>
-Package pdftex.def Info: Bild1.jpg used on input line 284.
+Package pdftex.def Info: Bild1.jpg used on input line 285.
 (pdftex.def)             Requested size: 284.52756pt x 213.3755pt.
 ) [23 <./Bild1.jpg>]
 \openout2 = `Spontane_Emissions.aux'.
@@ -980,13 +988,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--39
 (./Spontane_Emissions.aux) (./BspWasserstoff_Spontane_Emission.aux)
 (./Quatrupoluebergaenge.aux) (./Stat.Streuproblem_Wirkungsquerschnitt.aux)) ) 
 Here is how much of TeX's memory you used:
- 6078 strings out of 493117
- 91318 string characters out of 6138985
- 212522 words of memory out of 5000000
- 9272 multiletter control sequences out of 15000+600000
+ 6127 strings out of 493117
+ 92117 string characters out of 6138985
+ 213462 words of memory out of 5000000
+ 9317 multiletter control sequences out of 15000+600000
  60885 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,19n,43p,367b,304s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,19n,43p,367b,309s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c
 :/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2014/texmf-d
 ist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2014/texmf-dist/fonts/enc/dvip
@@ -1009,7 +1017,7 @@ c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/t
 exlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texli
 ve/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb><c:/texlive/20
 14/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on main.pdf (36 pages, 13233814 bytes).
+Output written on main.pdf (36 pages, 13234563 bytes).
 PDF statistics:
  221 PDF objects out of 1000 (max. 8388607)
  154 compressed objects within 2 object streams
