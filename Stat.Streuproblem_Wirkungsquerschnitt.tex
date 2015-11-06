@@ -36,4 +36,124 @@
 	\\
 	BILD
 	\\
+		\begin{align*}
+			\sigma &= \int \diff \Omega \frac{\diff \sigma}{\diff \Omega}
+			= \frac{1}{|\vec{j}_{ein}|} \int \diff \Omega \frac{\diff N}{\diff \Omega ~\diff t}\\
+			&= \frac{1}{|j_{ein}|} \frac{\diff N}{\diff t} & &\frac{\diff N}{\diff t}: 
+			\text{~Zahl gestreuter Teichen pro Zeit} \\
+			&= \frac{1}{|j_ein|} \cdot |j_{ein}| \cdot A = A
+		\end{align*}
+	Schrödingergleichung: 
+		\begin{equation*}
+			i \hbar \frac{\partial \Psi (\vec{r}, t)}{\partial t} = H \Psi (\vec{r} , t) 
+		\end{equation*}
+	Einlaufendes Wellenpaket
 	
+	BILD
+	
+		\begin{equation*}
+			\psi (\vec{r} , t) = 
+			\int \frac{\diff^3 k}{(2 \pi)^3} A(\vec{k}) e^{i(\vec{k} \vec{r} - \omega(\vec{k}) t)}
+		\end{equation*}
+	Annahme:
+		\begin{align*}
+			v_G << c &\Rightarrow \omega(\vec{k}) = \frac{\hbar \vec{k}^2}{2 m} & &(V(\vec{r}) = 0 (\text{Potential}))
+		\end{align*}
+	Nebenbemerkung:
+	
+	Wir kennen bislang nur die nichtrelativistische Quantenmechanik. Die Streutheorie relativistischer Teilchen unterscheidet sich nicht \underline{wesentlich}.
+	
+	Bild
+	
+		\begin{align*}
+			r &>> R ,& r &>> \lambda = \frac{2 \pi}{k} &\Rightarrow 
+			&\text{gestreute Welle ist \underline{lokal} eine Kugelwelle} 
+		\end{align*}
+	Betrachte \underline{elastische} Streuung an Kugelsymmetrischem Störpotenial $V(r)$:
+		\begin{align*}
+			\psi_S (\vec{r}, t) &= 
+			\int \frac{\diff^3 k}{(2 \pi)^3} A(\vec{k}) \phi_S (\vec{r}, \vec{k})
+			e^{-i \omega (\vec{k}) t} \\
+			&\text{Einfallender Strahl:} & \phi_0 (\vec{r}) &= e^{i \vec{k}_0 \vec{r}} = e^{i k_0 z}\\
+			&\text{Gestreuter Strahl:} & \phi_S (\vec{r}) 
+		\end{align*}
+	Für $r >> R$: Asymptotisch freie Wellen
+	
+	Einfallender Strahl:
+		\begin{align*}
+			\vec{p} &= \hbar k_0 \vec{e}_z ,& E &= \frac{\hbar^2 k_0}{2 m}\\
+			-\frac{\hbar^2}{2 m} \vec{\nabla}^2 \phi_0 (\vec{r}) &= E \phi_0 (\vec{r})
+		\end{align*}
+	Wahrscheinlichkeitsstromdichte
+		\begin{align*}
+			\vec{j}_0 (\vec{r}, t) &=
+			\frac{1}{2 m} 
+			\left(\psi^* (\vec{r} , t) \vec{p} \psi (\vec{r}, t) - \psi (\vec{r}, t) \vec{p} \psi^* (\vec{r}, t)
+			\right) \\
+			&= \frac{\hbar k_0}{m} \vec{e}_z
+		\end{align*}
+	Nebenbemerkung: Teilchenstrom für $N_0$ Teilchen: $N_0 \frac{\hbar k}{m} \vec{e}_z$
+	
+	zu lösen ist:
+		\begin{empheq}[box=\boxed]{align*}
+			H \phi(\vec{r}) &= E \phi (\vec{r}) & &\text{für } E= \frac{\hbar k_0^2}{2 m} > 0\\
+			H &= \frac{\vec{p}^2}{2 m} + V (r) & &V(r) \text{ begrenzt auf } r<R \\
+			\phi (\vec{r}) &= e^{i k z} + \phi_S (\vec{r})
+		\end{empheq}
+	Ansatz:
+		\begin{align*}
+			\phi_S (\vec{r}) &\underset{r \rightarrow \infty}{\sim} f(\Theta) \frac{e^{i k_0 r}}{r} &
+			&\text{mit Streuamplitude } f(\Theta)\\
+			\vec{j} &= \frac{\hbar k_0}{m} \frac{|f(\Theta)|^2}{r^2}
+			\hat{e}_r (\Theta , \phi) + \mathscr{O} \left(\frac{1}{r^3}\right)
+		\end{align*}
+		\begin{empheq}[box = \boxed]{align*}
+			\frac{\diff \sigma}{\diff \Omega} = r^2 \frac{|\vec{j}_S|}{|\vec{j}_0|}
+			= |f(\Theta)|^2
+		\end{empheq}
+	Dieser Ansatz löst die Schrödingergleichung für $r \rightarrow \infty$ 
+		\begin{align*}
+			\underset{r \rightarrow \infty}{\lim} r V(r) &= 0 &
+			&(\text{kein Coulomb-Potential})
+		\end{align*}
+	Streutheorie \marginpar{5.11.15}
+	
+	Kurze Wiederholung \marginpar{heute nicht Bali}
+	
+	BILD
+	
+		\begin{align*}
+			\diff A &= r^2 \diff \Omega ,& 
+			\vec{j} &= \frac{\hbar}{2 m i} \left(\psi^* \vec{\nabla} \psi - \psi \vec{\nabla} \psi^* \right)
+		\end{align*}
+	$\diff N$ in diesem $\diff A$, in einem kleinen Zeitraum $\diff t$ \marginpar{??}
+		\begin{align*}
+			\frac{\diff \sigma}{\diff \Omega}
+			&= \frac{|\vec{j}_{Streu}| ~\diff t ~ \diff A}{ |\vec{j}_{ein}| ~\diff t ~ \diff \Omega}
+			=\frac{|\vec{j}_{Streu}| r^2}{|\vec{j}_{ein}|} :&
+			&\text{hat Dimension Fläche}
+		\end{align*}
+	Annahmen:
+		\begin{itemize}
+			\item[-] 	Elastische Streuung, $\hbar k = \hbar k'$
+			\item[-]	Stationäre Situation
+			\item[-]	$V(\vec{r}) = V(|\vec{r}|)$ (Kugelsymmetrie)
+			\item[-]	keine Absorption oder Emission
+		\end{itemize}
+	Wir wissen
+		\begin{align*}
+			\phi = \phi_0 + \phi_S = e^{i k z} + \phi_S
+		\end{align*}
+	$\phi$ ist im Bereich $r>R$ übereinstimmend mit Lösung der freien Schrödinger Gleichung.
+		\begin{align*}
+			\phi = \sum_{\ell = 0}^{\infty} R_\ell (r) 
+			\underbrace{P_\ell (\cos \Theta)}_{\mathclap{\sqrt{\frac{4 \pi}{2\ell+1}} 
+					Y_{\ell 0}(\cos \Theta)}} 
+			& &[H, L_z] = 0 ~(\text{Drehimpulserhaltung})
+		\end{align*}
+	BILD \\
+	\underline{Legendre-Polynome $P_\ell (\cos \Theta)$}
+		\begin{align*}
+			P_0 (\cos \Theta) &= P_0 (z) = 1\\
+			P_1 (z) &= z
+		\end{align*}
