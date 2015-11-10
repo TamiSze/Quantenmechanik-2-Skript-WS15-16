@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.9.8)  9 NOV 2015 11:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.9.8)  10 NOV 2015 11:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -567,7 +567,13 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 137.
 )) (./main.aux
-(./Anwendung1.aux))
+(./Mechanik.aux) (./Quantenmechanik.aux) (./Schr_Heisenb._Bild.aux)
+(./Harmonischer_Oszillator.aux) (./Zeitabh.Stoerungsth_Und_WWbild.aux)
+(./Fermis_Goldene_Regel.aux) (./Periodische_Stoerung.aux)
+(./Abs_und_Emiss_EM_Strahlung.aux) (./Spontane_Emissions.aux)
+(./BspWasserstoff_Spontane_Emission.aux) (./Quatrupoluebergaenge.aux)
+(./Stat.Streuproblem_Wirkungsquerschnitt.aux) (./Streuung_an_harter_Kugel.aux)
+(./Born-Naeherung.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
@@ -655,43 +661,43 @@ LaTeX Font Info:    Try loading font information for T1+lmss on input line 5.
 (c:/texlive/2014/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) (./main.toc
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 2.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 3.
 
 (c:/texlive/2014/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 2.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 3.
 
 (c:/texlive/2014/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 2.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 3.
 
 (c:/texlive/2014/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 2.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 3.
 
 (c:/texlive/2014/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 2.
+(Font)              <12> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 2.
+(Font)              <8> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 2.
-LaTeX Font Info:    Try loading font information for U+msa on input line 2.
+(Font)              <6> on input line 3.
+LaTeX Font Info:    Try loading font information for U+msa on input line 3.
 
 (c:/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 2.
+LaTeX Font Info:    Try loading font information for U+msb on input line 3.
 
 (c:/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 2.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 3.
 
 (c:/texlive/2014/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -702,52 +708,355 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
  [1
 
 {c:/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-\openout2 = `Anwendung1.aux'.
+\openout2 = `Mechanik.aux'.
 
- (./Anwendung1.tex
+ (./Mechanik.tex
+Overfull \hbox (3.73553pt too wide) in paragraph at lines 1--1
+[]\T1/lmr/m/n/12 12.10.2015 
+ []
+
+) [2
+
+]
+\openout2 = `Quantenmechanik.aux'.
+
+ (./Quantenmechanik.tex
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 28.
+
+(c:/texlive/2014/texmf-dist/tex/latex/doublestroke/udsrom.fd
+File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 32.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 32.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 32.
+ [3
+
+
+]) [4] [5]
+\openout2 = `Schr_Heisenb._Bild.aux'.
+
+
+(./Schr_Heisenb._Bild.tex
+Underfull \hbox (badness 10000) in alignment at lines 2--6
+[][] 
+ []
+
+) [6
+
+
+]
+\openout2 = `Harmonischer_Oszillator.aux'.
+
+ (./Harmonischer_Oszillator.tex
+Overfull \hbox (3.73553pt too wide) in paragraph at lines 13--13
+[]\T1/lmr/m/n/12 15.10.2015 
+ []
+
+) [7
+
+
+]
+\openout2 = `Zeitabh.Stoerungsth_Und_WWbild.aux'.
+
+ (./Zeitabh.Stoerungsth_Und_WWbild.tex [8
+
+
+]
+Underfull \hbox (badness 10000) in alignment at lines 100--105
+[][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--108
+
+ []
+
+[9]
+Overfull \hbox (50.82614pt too wide) in paragraph at lines 132--132
+[] 
+ []
+
+[10]
+Overfull \hbox (3.73553pt too wide) in paragraph at lines 185--185
+[]\T1/lmr/m/n/12 19.10.2015 
+ []
+
+[11]) [12]
+\openout2 = `Fermis_Goldene_Regel.aux'.
+
+ (./Fermis_Goldene_Regel.tex
+<Ersatzgraph1.jpg, id=62, 3276.24pt x 2457.18pt>
+File: Ersatzgraph1.jpg Graphic file (type jpg)
+ <use Ersatzgraph1.jpg>
+Package pdftex.def Info: Ersatzgraph1.jpg used on input line 18.
+(pdftex.def)             Requested size: 284.52756pt x 213.3755pt.
+
+<Ersatzgraph2.jpg, id=63, 3276.24pt x 2457.18pt>
+File: Ersatzgraph2.jpg Graphic file (type jpg)
+ <use Ersatzgraph2.jpg>
+Package pdftex.def Info: Ersatzgraph2.jpg used on input line 33.
+(pdftex.def)             Requested size: 284.52756pt x 213.3755pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[13
+
+
+ <./Ersatzgraph1.jpg>]
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 70.
+ (c:/texlive/2014/texmf-dist/tex/latex/lm/omslmr.fd
+File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 70.
+
+[14 <./Ersatzgraph2.jpg>]) [15]
+\openout2 = `Periodische_Stoerung.aux'.
+
+ (./Periodische_Stoerung.tex
+Package marginnote Info: right page because not two side mode on input line 23.
+
+Package marginnote Info: xpos not known,
+(marginnote)             using \marginnoterightadjust on input line 23.
+Package marginnote Info: Margin note 16.2 is on absolute page 16
+(marginnote)              on input line 23.
+Package marginnote Info: right page because not two side mode on input line 23.
+
+Package marginnote Info: xpos seems to be 151.68016pt,
+(marginnote)             \marginnoterightadjust ignored on input line 23.
+
+<Ersatzgraph3.jpg, id=74, 3276.24pt x 2457.18pt>
+File: Ersatzgraph3.jpg Graphic file (type jpg)
+ <use Ersatzgraph3.jpg>
+Package pdftex.def Info: Ersatzgraph3.jpg used on input line 40.
+(pdftex.def)             Requested size: 284.52756pt x 213.3755pt.
+
+Overfull \hbox (3.73553pt too wide) in paragraph at lines 49--49
+[]\T1/lmr/m/n/12 22.10.2015 
+ []
+
+[16
+
+
+ <./Ersatzgraph3.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+[]\T1/lmr/m/n/12 bei dem
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+\T1/lmr/m/n/12 2ten
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+\T1/lmr/m/n/12 bra-ket
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+\T1/lmr/m/n/12 Be-trags-
+ []
+
+) [17]
+\openout2 = `Abs_und_Emiss_EM_Strahlung.aux'.
+
+ (./Abs_und_Emiss_EM_Strahlung.tex
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+\T1/lmr/m/n/12 so auch
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+\T1/lmr/m/n/12 nicht
+ []
+
+[18
+
+
+] [19] [20]
+Underfull \hbox (badness 10000) in paragraph at lines 212--212
+[]\T1/lmr/m/n/12 was zur
+ []
+
+
+Underfull \hbox (badness 4505) in paragraph at lines 212--212
+\T1/lmr/m/n/12 Höl-le ist
+ []
+
+[21]
+Overfull \hbox (3.73553pt too wide) in paragraph at lines 232--232
+[]\T1/lmr/m/n/12 26.10.2015 
+ []
+
+[22] <Bild1.jpg, id=97, 3276.24pt x 2457.18pt>
+File: Bild1.jpg Graphic file (type jpg)
+ <use Bild1.jpg>
+Package pdftex.def Info: Bild1.jpg used on input line 285.
+(pdftex.def)             Requested size: 284.52756pt x 213.3755pt.
+) [23 <./Bild1.jpg>]
+\openout2 = `Spontane_Emissions.aux'.
+
+ (./Spontane_Emissions.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--4
+
+ []
+
+[24
+
+
+] [25] [26]
+Overfull \hbox (3.73553pt too wide) in paragraph at lines 249--249
+[]\T1/lmr/m/n/12 29.10.2015 
+ []
+
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 285--285
+\T1/lmr/m/n/12 Fra-ge,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 285--285
+\T1/lmr/m/n/12 was $\OML/lmm/m/it/12 n[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--290
+[]\T1/lmr/m/n/12 kA was
+ []
+
+<Bild2.jpg, id=114, 3276.24pt x 2457.18pt>
+File: Bild2.jpg Graphic file (type jpg)
+ <use Bild2.jpg>
+Package pdftex.def Info: Bild2.jpg used on input line 302.
+(pdftex.def)             Requested size: 284.52756pt x 213.3755pt.
+ [28] [29 <./Bild2.jpg>]
+Overfull \hbox (41.12714pt too wide) in paragraph at lines 371--371
+[] 
+ []
+
+[30] [31]) [32]
+\openout2 = `BspWasserstoff_Spontane_Emission.aux'.
+
+ (./BspWasserstoff_Spontane_Emission.tex
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 1.
+
+<Bild3.jpg, id=133, 3276.24pt x 2457.18pt>
+File: Bild3.jpg Graphic file (type jpg)
+ <use Bild3.jpg>
+Package pdftex.def Info: Bild3.jpg used on input line 4.
+(pdftex.def)             Requested size: 284.52756pt x 213.3755pt.
+
+Overfull \hbox (3.73553pt too wide) in paragraph at lines 7--7
+[]\T1/lmr/m/n/12 02.11.2015 
+ []
+
+[33
+
+
+ <./Bild3.jpg>]) [34]
+\openout2 = `Quatrupoluebergaenge.aux'.
+
+ (./Quatrupoluebergaenge.tex)
+Overfull \hbox (58.33754pt too wide) in paragraph at lines 43--22
+[][] 
+ []
+
+[35
+
+
+]
+\openout2 = `Stat.Streuproblem_Wirkungsquerschnitt.aux'.
+
+ (./Stat.Streuproblem_Wirkungsquerschnitt.tex
+Underfull \hbox (badness 10000) in paragraph at lines 34--39
+
+ []
+
+[36
+
+
+] [37]
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
+[]\T1/lmr/m/n/12 heute
+ []
+
+
+LaTeX Warning: Marginpar on page 38 moved.
+
+[38]
+Overfull \hbox (10.30902pt too wide) in paragraph at lines 196--196
+[] 
+ []
+
+[39] [40]) [41]
+\openout2 = `Streuung_an_harter_Kugel.aux'.
+
+ (./Streuung_an_harter_Kugel.tex
 Overfull \hbox (3.73553pt too wide) in paragraph at lines 1--1
 []\T1/lmr/m/n/12 09.11.2015 
  []
 
 
-Overfull \hbox (17.00745pt too wide) in paragraph at lines 39--39
+Overfull \hbox (17.00745pt too wide) in paragraph at lines 37--37
 [] 
  []
 
+[42
 
-Overfull \hbox (77.05945pt too wide) in paragraph at lines 76--76
-[] 
- []
 
-[2
+]) [43]
+\openout2 = `Born-Naeherung.aux'.
 
-]) [3] (./main.aux (./Anwendung1.aux)) ) 
+ (./Born-Naeherung.tex [44
+
+
+]) [45] (./main.aux (./Mechanik.aux)
+(./Quantenmechanik.aux) (./Schr_Heisenb._Bild.aux)
+(./Harmonischer_Oszillator.aux) (./Zeitabh.Stoerungsth_Und_WWbild.aux)
+(./Fermis_Goldene_Regel.aux) (./Periodische_Stoerung.aux)
+(./Abs_und_Emiss_EM_Strahlung.aux) (./Spontane_Emissions.aux)
+(./BspWasserstoff_Spontane_Emission.aux) (./Quatrupoluebergaenge.aux)
+(./Stat.Streuproblem_Wirkungsquerschnitt.aux) (./Streuung_an_harter_Kugel.aux)
+(./Born-Naeherung.aux)) ) 
 Here is how much of TeX's memory you used:
- 5883 strings out of 493117
- 86762 string characters out of 6138985
- 205219 words of memory out of 5000000
- 9179 multiletter control sequences out of 15000+600000
- 37523 words of font info for 42 fonts, out of 8000000 for 9000
+ 6149 strings out of 493117
+ 92669 string characters out of 6138985
+ 214046 words of memory out of 5000000
+ 9325 multiletter control sequences out of 15000+600000
+ 60885 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,15n,43p,258b,277s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2014/texmf-dist/fonts/enc/d
-vips/lm/lm-mathit.enc}{c:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.
-enc}{c:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2014/t
-exmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{c:/texlive/2014/texmf-dist/fonts/en
-c/dvips/lm/lm-ec.enc}<c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmex10.p
-fb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/201
-4/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/texlive/2014/texmf-dist/fonts/
-type1/public/lm/lmmi8.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmr
-12.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2
-014/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2014/texmf-dist/fonts
-/type1/public/lm/lmssbx10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm
-/lmsy10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/tex
-live/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive
-/2014/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on main.pdf (3 pages, 135869 bytes).
+ 47i,19n,43p,367b,309s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-ec.e
+nc}{c:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/201
+4/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2014/texmf-dist/fonts/enc
+/dvips/lm/lm-mathit.enc}{c:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-mathe
+x.enc}<c:/texlive/2014/texmf-dist/fonts/type1/public/doublestroke/dsrom12.pfb><
+c:/texlive/2014/texmf-dist/fonts/type1/public/doublestroke/dsrom8.pfb><c:/texli
+ve/2014/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2014/texmf-dist
+/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/publi
+c/lm/lmmi12.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:
+/texlive/2014/texmf-dist/fonts/type1/public/lm/lmmi7.pfb><c:/texlive/2014/texmf
+-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2014/texmf-dist/fonts/type1/p
+ublic/lm/lmr10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmr12.pfb>
+<c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2014/tex
+mf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2014/texmf-dist/fonts/type1/
+public/lm/lmr8.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmssbx10.p
+fb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/201
+4/texmf-dist/fonts/type1/public/lm/lmsy6.pfb><c:/texlive/2014/texmf-dist/fonts/
+type1/public/lm/lmsy8.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfon
+ts/symbols/msam10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/s
+ymbols/msbm10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbo
+ls/msbm7.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
+Output written on main.pdf (45 pages, 13265702 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
- 51 compressed objects within 1 object stream
+ 252 PDF objects out of 1000 (max. 8388607)
+ 176 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

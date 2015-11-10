@@ -157,5 +157,139 @@
 			P_0 (\cos \Theta) &= P_0 (z) = 1\\
 			P_1 (z) &= z \\
 			P_2 (z) &= \frac{1}{2} (3z^2-1) \\
-			(\ell + 1) P_{\ell + 1} (z) &= (2 \ell + 1) z P_\ell (z) - \ell P_{\ell - 1} (z)
+			(\ell + 1) P_{\ell + 1} (z) &= (2 \ell + 1) z P_\ell (z) - \ell P_{\ell - 1} (z) \\
+			\int_{-1}^{1} \diff z P_\ell (z) P_{\ell'} (z) &= 
+			\frac{2}{2\ell + 1} \delta_{\ell \ell'} &
+			&\leftarrow \text{ sind orthogonal}
+		\end{align*}
+		\begin{align*}
+			-\frac{\hbar^2}{2m} \Delta \phi &= \frac{\hbar k^2}{2m} \phi \\
+			\left( \frac{\partial^2}{\partial r^2} + \frac{2}{r} \frac{\partial}{\partial r} 
+			- \frac{|\hat{L}|^2}{\hbar^2 r^2} + k^2
+			\right) \phi &= 0 \\
+			\sum_{\ell = 0}^{\infty} \underbrace{P_\ell (\cos \Theta)}_{\mathclap{\text{orthogonal}}}
+			\left( \frac{\partial^2}{\partial r^2} + \frac{2}{r} \frac{\partial}{\partial r} 
+			- \frac{\ell(\ell+1)}{r^2} + k^2
+			\right) R_\ell (r) &= 0
+		\end{align*}
+	$\Rightarrow$ Jeder Summand muss für sich verschwinden!
+		\begin{align*}
+			R_\ell &= \frac{u_\ell}{r} &\rightarrow &\text{ Ratialgleichung für } u_\ell \\
+			\left( \frac{\partial^2}{\partial r^2} - \frac{\ell(\ell+1)}{r^2} + k^2
+			\right) u(r) &= 0
+		\end{align*}
+	Beschränkung auf $r\gg R$ (wir können den Term $\frac{\ell(\ell+1)}{r^2}$ vernachlässigen)
+		\begin{align*}
+			\rightarrow u_\ell(r \gg R) &\rightarrow \text{ Kombination aus } \sin (kr) \text{ und } \cos(kr) \\
+			u_\ell(r) &= c_\ell (k) \sin \left( kr - \frac{\ell \pi}{2} + \delta_\ell \right)
+		\end{align*}
+	Wobei $\delta_\ell$ die Streuphase ist. 
+	
+	Teile der Radialgleichung von $u_\ell$ durch $k^2$, $y=kr$ \marginpar{???}
+		\begin{align*}
+			\left( \frac{\diff^2}{\diff y^2} - \frac{\ell(\ell+1)}{y^2} + 1
+			\right) u_\ell (y) &= 0 \\
+			u_\ell^r &= y j_\ell (y) & & \text{ist reguläre Klasse (was auch immer das bedeutet)} \\
+			&j_\ell (y) : & &\text{sphärische Besselfunktion} \\
+			u_\ell^{ir} &= y n_\ell(y) & &\text{ist irreguläre Klasse}\\
+			&n_\ell(y) : & &\text{sphärische Neumann-Funktionen}
+		\end{align*}
+		\begin{align*}
+			j_0 &= \frac{\sin y}{y} ,& j_1 &= \frac{\sin y}{y^2}- \frac{\cos y}{y} \\
+			n_0 &= -\frac{\cos y}{y} ,& n_1 &= -\frac{\cos y}{y^2} - \frac{\sin y}{y}
+		\end{align*}
+		\begin{align*}
+			y ~j_\ell &= y^{\ell + 1} \left(-\frac{1}{y} \frac{\diff}{\diff y}\right)^\ell 
+			\frac{\sin y}{y} &
+			y ~n_\ell &= - y^{\ell+1} \left(-\frac{1}{y} \frac{\diff}{\diff y}\right)^\ell
+			\frac{\cos y}{y}\\
+			j_\ell(kr) &\overset{\text{große }kr}{\longrightarrow} 
+			\frac{\sin(kr-\frac{\ell \pi}{2})}{kr} &
+			n_\ell(kr) &\overset{\text{große }kr}{\longrightarrow} 
+			- \frac{\cos(kr-\frac{\ell \pi}{2})}{kr} \\
+			\phi_0 &= e^{ikz} = e^{ikr \cos \Theta} =
+		\end{align*}
+		\begin{empheq}[box=\boxed]{align*}
+			= \sum_{\ell = 0}^{\infty} (2\ell + 1) i^\ell j_\ell(kr) P_\ell (\cos \Theta)
+		\end{empheq}
+	Für große $r$:
+		\begin{align*}	
+			\phi_S &= \phi - \phi_0 \\
+			&= \sum_{\ell = 0}^{\infty} 
+			\left[ \frac{c_\ell(kr)}{kr} \sin \left(kr-\frac{\ell \pi}{2} + \delta_\ell \right)
+				-(2\ell +1)i^\ell \frac{\sin \left(kr-\frac{\ell \pi}{2}\right)}{kr}
+			\right] P_\ell (\cos \Theta)
+		\end{align*}
+	wobei $\delta_\ell \neq 0$ wegen $V \neq 0$.
+	
+	Diese Form enthält einlaufende und auslaufende Wellen. Wir wollen also nur $\frac{e^{+ikr}}{r}$ Terme behalten und $\frac{e^{-ikr}}{r}$ ist die Welle die vom Detektor zum Potential geht und diese soll sich wegheben $\rightarrow \delta_\ell$.
+		\begin{align*}
+			-c_\ell i^\ell e^{-i\delta_\ell} + (2 \ell + 1) i^{-2\ell} &= 0 &
+			&(\text{ist nur erfüllt mit } e^{i\frac{\pi}{2}} = i^\ell) \\
+			c_\ell &= i^{\ell} (2\ell + 1) e^{i \delta_\ell}\\
+			\phi = \phi_0 + \phi_S &= e^{ikr \cos \Theta} + f(\Theta, k) \frac{e^{ikr}}{r}
+		\end{align*}
+	$f(\Theta,k)$ ist die Streuamplitude.
+		\begin{align*}
+			f(\Theta,k) &= \frac{1}{2ik} \sum_{\ell = 0}^{\infty} (2 \ell +1) P_\ell (\cos \Theta) 
+			\left(e^{2i\delta_\ell} - 1\right) & 
+			&\text{ist } 0 \text{ für } \delta_\ell \rightarrow 0 \\
+			\vec{j}_{\text{aus}} &= 
+			\frac{\hbar}{2mi} \left(\phi_S^* \vec{\nabla} \phi_S
+				- \phi_S \vec{\nabla} \phi_S^*
+			\right) 
+			= \frac{\hbar k}{m} \frac{|f(\Theta, k)|^2}{r^2} \vec{e}_r
+			+ \mathscr{O}\left(\frac{1}{r^3}\right) \\
+			\vec{j}_{\text{ein}} &= \frac{\hbar k}{m} \vec{e}_r \\
+			&\Rightarrow \frac{\diff \sigma}{\diff \Omega} = |f(\Theta, k)|^2
+		\end{align*}
+	Der totale Wirkungsqerschnitt ist nun:
+		\begin{align*}
+			\sigma &= \int \diff \Omega \left(\frac{\diff \sigma}{\diff \Omega}\right)
+			= \int \diff \Omega ~|f(\Theta, k)|^2 
+			= 2 \pi \int \diff \cos \Theta ~|f(\Theta, k)|^2 \\
+			&= 2 \pi \sum_{\ell, \ell'} \int \diff \cos \Theta 
+			\frac{P_\ell (\cos \Theta)~P_{\ell'} (\cos \Theta)}{k^2} 
+			\sin\delta_\ell ~\sin\delta_{\ell'} (2\ell+1) (2\ell' +1) \\
+			&\left(
+				\int_{-1}^{1} \diff \cos \Theta ~ P_\ell P_{\ell'} = \frac{2}{2 \ell + 1} \delta_{\ell,\ell'}
+			\right) \\
+			&= \frac{4 \pi}{k^2} \sum_{\ell = 0}^{\infty}
+			(2 \ell + 1) \sin^2 \delta_\ell
+		\end{align*}
+	Für kleine Energien nur $\delta_{\ell=0}$ wichtig
+		\begin{align*}
+			0 \lesssim \frac{4 \pi}{k^2} \\
+			f(\Theta, k) &= \sum_{\ell = 0}^{\infty} \frac{2 \ell + 1}{k} e^{i \delta_\ell}
+			\sin \delta_\ell 
+			\underbrace{P_\ell (\cos \Theta)}_{\mathclap{P_\ell(\cos \Theta = 1) = 1}} \\
+			\mathrm{Im} f(\Theta =0, k) &= \sum_\ell \frac{2 \ell + 1}{k} \sin^2 \delta_\ell
+		\end{align*}
+		\begin{empheq}[box=\boxed]{align*}
+			0 = \frac{4 \pi}{k} 
+			\underbrace{\mathrm{Im} f(\Theta = 0, k)}_{\substack{\text{Imaginärteil der Vorwärtsamplitude}}}
+		\end{empheq}
+	Dies ist das optische Theorem.
+	
+	Behauptung: Bei kleinen Energien dominieren kleine $\ell$
+	
+	BILD
+	
+	Wir haben den Stoßparameter $b$ und es gilt
+		\begin{align*}
+			L &= r \times p = \sqrt{2mE} ~b & &\text{ wenn } b > R \rightarrow \text{ kaum Streuung} \\
+			|L| &\leq \sqrt{2 m E} ~R & &\text{ für Streuung}
+		\end{align*}
+	Interessante Observablen bei kleinen Energien:
+	
+	\underline{Streulänge} $a$ und ``effektive Reichweite $r_{\text{eff}}$''
+		\begin{empheq}[box=\boxed]{align*}
+			\ell = 0
+		\end{empheq}
+		\begin{align*}
+			k \cot \delta_0 &= 
+			-\frac{1}{a_0} + \frac{r_{\text{eff}}}{2} k^2 + \mathscr{O}(k^4) 
+			& &a_0 \text{ ist S-Wellen Streulänge} \\
+			\text{Für } k &\rightarrow 0 \\
+			0 &\rightarrow 4\pi a_0^2
 		\end{align*}

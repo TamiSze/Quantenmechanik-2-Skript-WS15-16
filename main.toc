@@ -1,2 +1,18 @@
 \select@language {ngerman}
-\contentsline {subsection}{\numberline {-1.1}Anwendung : Streuung an harter Kugel}{2}
+\contentsline {section}{\numberline {0}Quantenmechanik}{2}
+\contentsline {subsection}{\numberline {0.1}Mechanik}{2}
+\contentsline {subsection}{\numberline {0.2}Quantenmechanik}{3}
+\contentsline {subsection}{\numberline {0.3}Schr\IeC {\"o}dinger- und Heisenbergbild}{6}
+\contentsline {subsection}{\numberline {0.4}Harmonischer Oszillator}{7}
+\contentsline {section}{\numberline {1}Zeitabh\IeC {\"a}ngige St\IeC {\"o}rung}{8}
+\contentsline {subsection}{\numberline {1.1}Zeitabh\IeC {\"a}ngige St\IeC {\"o}rungstheorie und das Wechselwirkungsbild}{8}
+\contentsline {subsection}{\numberline {1.2}Fermis Goldene Regel}{13}
+\contentsline {subsection}{\numberline {1.3}Periodische St\IeC {\"o}rungen}{16}
+\contentsline {subsection}{\numberline {1.4}Absorpiton und Emission von elektromagnetischer Strahlung}{18}
+\contentsline {subsection}{\numberline {1.5}Spontane Emissions}{24}
+\contentsline {subsection}{\numberline {1.6}Beispiel: $2p \rightarrow 1s$ Wasserstoff: Spontane Emission}{33}
+\contentsline {subsection}{\numberline {1.7}Quatrupol\IeC {\"u}berg\IeC {\"a}nge etc.}{35}
+\contentsline {section}{\numberline {2}Streutheorie}{36}
+\contentsline {subsection}{\numberline {2.1}Station\IeC {\"a}res Streuproblem und Wirkungsquerschnitt}{36}
+\contentsline {subsection}{\numberline {2.2}Anwendung : Streuung an harter Kugel}{42}
+\contentsline {subsection}{\numberline {2.3}Die Born-N\IeC {\"a}herung}{44}
