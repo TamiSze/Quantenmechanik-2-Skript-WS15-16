@@ -36,4 +36,125 @@ Normierung:
 		&\mapsto \prod_i |\lambda_i|^2 \braket{\phi_i | \phi_i} &= \prod_i |\lambda_i|^2
 		&\Rightarrow 1 &= \prod_i |\lambda_i|^2 = 1 
 	\end{align*}
-Andere Normierung ist...
+Andere Normierung ist im Prinzip möglich, so lange $\prod_i |\lambda_i|^2 = 1$.
+
+Addition einer Linearkombination $\sum \limits_{j \neq i} c_j \phi_j$ zu $\phi_i$ ändert die Determinante nicht.
+	\begin{align*}
+		\braket{\psi | H | \psi} &=
+		\sum_{i=1}^{N} \braket{\phi_i | H^{(i)} | \phi_i}
+		+ \sum_{i<j} \braket{\phi_i | \braket{\phi_j | V_{ij} | \phi_j} | \phi_i}
+		- \sum_{i<j} \braket{\phi_i | \braket{\phi_j | V_{ij} | \phi_i} | \phi_j} \\
+		&= \sum_i \int \diff^3 r_i \phi_i^* (\vec{r}_i) H^{(i)} \phi_i (\vec{r}_i) 
+		+ \sum_{i<j} \int \diff^3 r_i \diff^3 r_j |\phi_i (\vec{r}_i)|^2 |\phi_j (\vec{r}_j)|^2 V_{ij} -\\
+		&- \sum_{i<j} \int \diff^3 r_i \diff^3 r_j \phi_i^* (\vec{r}_i) \phi_j^* (\vec{r}_j) 
+		 \phi_i (\vec{r}_i) \phi_j (\vec{r}_j) V_{ij}(\vec{r}_i, \vec{r}_j) 
+		 \delta_{S_z^{(i)} S_z^{(j)}}
+	\end{align*}
+Nebenbedingung
+	\begin{align*}
+		\delta \left[ \braket{\psi | H | \psi} - \sum_{i,j} (\braket{\phi_i | \phi_j} - \delta_{ij}) \lambda_{ij}
+		\right] &= 0 \\
+		\mathrm{Im} [\ldots] &= 
+		\frac{1}{2i} \left(\delta[\ldots] - \delta[\ldots]^*\right) \\
+		&= \frac{1}{2i} \sum_{i,j} \left(\lambda_{ji} - \lambda_{ij}^*\right)
+		\delta \braket{\phi_i | \phi_i} = 0
+	\end{align*}
+$\Rightarrow \lambda_{ij} = \lambda_{ji}^*$ und $(\lambda_{ii})$ ist Hermitesche Matrix. \marginpar{warum lambda ii?}
+	\begin{align*}
+		\delta \int \diff^3 r_i \phi_i^* (\vec{r}_i) H^{(i)} \phi_i (\vec{r}_i)
+		&= \int \diff^3 r_i
+		\left(
+			\delta \phi_i^* (\vec{r}_i) H^{(i)} \phi_i (\vec{r}_i) 
+			+ \phi_i^* (\vec{r}_i) H^{(i)} \delta \phi_i (\vec{r}_i) 
+		\right) \\
+		\delta [\ldots] &= \sum_i \int \diff^3 r_i \delta \phi_i^* (\vec{r}_i)
+		\left[
+			M \phi_i(\vec{r}_i) - \sum_j \lambda_{ij} \phi_j (\vec{r}_i)
+		\right] + \text{c.c.}
+	\end{align*}
+Mit
+	\begin{align*}
+		M \phi_i (\vec{r}_i) &=
+		H^{(i)} \phi_i (\vec{r}_i) + \sum_{j \neq i} \int \diff^3 r_j |\phi_j (\vec{r}_i)|^2 V_{ij} \phi_i(\vec{r}_i) \\
+		&- \sum_{j \neq i} \int \diff^3 r_j \phi_j^* (\vec{r}_j) \phi_j (\vec{r}_i) V_{ij}
+		\phi_i (\vec{r}_j) \delta_{S_z^{(i)} S_z^{(j)}} \\
+		&= \left[H^{(i)} + C_i - A_i\right] \phi_i(\vec{r}_i)
+	\end{align*}
+Hier $C_i$ ist Coulombenergieoperator und $A_i$ ist Austauschoperator.
+	\begin{align*}
+		M \phi_i (\vec{r}_i) &= \sum_{j=1}^{N} \lambda_{ij} \phi_j (\vec{r}_i)
+		& &(\text{Koeffizientenvergleich der Variation})
+	\end{align*}
+Diagonalisiere
+	\begin{align*}
+		\lambda &= \lambda^\dagger = (\lambda_{ij}) = (\lambda_{ij}^*) 
+		= \U \in \U^\dagger 
+		,& \epsilon &=
+		\begin{pmatrix}
+			\epsilon_1 & & 0 \\
+			 & \ddots &  \\
+			 0 &  & \epsilon_N
+		\end{pmatrix} \\
+		\phi_j &= \sum_i \U_{ji} \phi_i' \\
+		& & \det
+		\begin{pmatrix}
+			\phi &  & \phi \\
+			& \phi & \\
+			\phi & & \ddots
+		\end{pmatrix}
+		&= \det
+		\begin{pmatrix}
+			\phi' & & \\
+			& \ddots & \\
+			& & \phi'
+		\end{pmatrix} = \psi
+	\end{align*}
+	$\Rightarrow$
+	\begin{empheq}[box = \boxed]{align*}
+		(H^{(i)} + C_i - A_i) \phi_i' (\vec{r}_i) &= \epsilon_i \phi_i'(\vec{r}_i)
+		& \braket{\phi_i'| \phi_j'} &= \delta_{ij}
+	\end{empheq}
+Hartre-Fock Gleichungen
+
+	\begin{tabular}{l l}
+		NB: & Ohne Slaterdeterminante ergibt sich $A_i = 0$ (Hartre-Gleichung) \\
+		NB2: & Elektron $i$ bewegt sich im Feld des Kerns $(H^{(i)})$ und der restlichen $e^- (V_{ij})$, \\
+		 & repräsentiert durch $C_i, A_i$ \\
+		NB3: & $C_i - A_i$ muss für alle $i$ gleich sein, da die $e^-$ ununterscheidbar sind. \\
+		 & $C_i$ und $A_i$ separat können aber von Zustand des Elektrons $i$ abhängen. \hfill \\
+	\end{tabular} \\
+		
+Iteratives Lösungsverfahren
+
+Wähle $\phi_i^{(0)}$, z.B. $H^{(i)} \phi_i^{(0)} = \epsilon_i \phi_i^{(0)}$
+	\begin{align*}
+		&\Rightarrow \left(H^{(i)} + C_i^{(0)} - A_i^{(0)}\right) \phi_i^{(1)}
+		= \epsilon_i^{(1)} \phi_i^{(1)} \\
+		&\Rightarrow \phi_i^{(1)} \curvearrowright C_i^{(1)} 
+		,~ A_i^{(i)} \curvearrowright \phi_i^{(2)} \text{ etc.}
+	\end{align*}
+Grundzustandsenergie: \marginpar{23.11.2015}
+	\begin{align*}
+		E_0^{HF} &= \braket{\psi | H | \psi} 
+		= \sum_{i = 1}^{N} \braket{\phi_i^{(n)} | H^{(i)}| \phi_i^{(n)}}
+		+ \frac{1}{2} \sum_i \braket{\phi_i^{(n)} | C_i - A_i | \phi_i^{(n)}} \\
+		&= \sum_i \epsilon_i - \frac{1}{2} \sum_i \braket{\phi_i^{(n)} | C_i - A_i | \phi_i^{(n)}}
+	\end{align*}
+Mit 
+	\begin{align*}
+		\sum_{i = 1}^{N} \braket{\phi_i | C_i | \phi_i}
+		&= \sum_{\substack{i,j \\ i \neq j}}\int \diff^3 r_1 \diff^3 r_2 |\phi_i (\vec{r}_1)|^2 |\phi_j (\vec{r}_2)|^2 V_{ij} \\
+		\sum_{i = 1}^{N} \braket{\phi_i | A_i | \phi_i}
+		&= \sum_{\substack{i,j \\ i \neq j}} \int \diff^3 r_1 \diff^3 r_2 \phi_i^* (\vec{r}_1) \phi_j^* (\vec{r}_2) 
+		V_{ij} \phi_i (\vec{r}_2) \phi_j (\vec{r}_1) \delta_{S_z^{(1)} S_z^{(2)}}
+	\end{align*}
+
+\subsection{Die Born-Oppenheimer Approximation}
+	Beispiel: 2-atomige Moleküle $H C\ell, CO, H_2, O_2, \ldots$ 
+		\begin{align*}
+			m &: \text{Reduzierte Masse} ,& m_e &: \text{Elektronmasse} \\
+			a &: \text{räumliche Ausdehnung } \sim 10^{-10}\mathrm{m} \\
+			m_{\text{proton}} &\approx 1830 m_{e^-} &
+			m_{H_2} &\approx \frac{m_{\text{proton}} \cdot m_{\text{proton}}}{m_{\text{proton}} + m_{\text{proton}}} \approx \frac{m_{\text{proton}}}{2} \gg m_e
+		\end{align*}	
+	Energieniveaus (hier nummerierung mit (a) usw., weiß ich noch nicht, wie ich das machen werde)

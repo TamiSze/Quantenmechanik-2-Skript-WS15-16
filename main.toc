@@ -22,3 +22,4 @@
 \contentsline {subsection}{\numberline {3.3}Ritz-Variationsverfahren}{53}
 \contentsline {subsection}{\numberline {3.4}Atombau}{55}
 \contentsline {subsection}{\numberline {3.5}Hartrei-Fock-Approximation}{56}
+\contentsline {subsection}{\numberline {3.6}Die Born-Oppenheimer Approximation}{58}
