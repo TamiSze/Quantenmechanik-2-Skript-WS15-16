@@ -16,3 +16,7 @@
 \contentsline {subsection}{\numberline {2.1}Station\IeC {\"a}res Streuproblem und Wirkungsquerschnitt}{36}
 \contentsline {subsection}{\numberline {2.2}Anwendung : Streuung an harter Kugel}{42}
 \contentsline {subsection}{\numberline {2.3}Die Born-N\IeC {\"a}herung}{44}
+\contentsline {section}{\numberline {3}Systeme mit mehr als 2 ``Teilchen''}{49}
+\contentsline {subsection}{\numberline {3.1}Das Pauliprinzip}{49}
+\contentsline {subsection}{\numberline {3.2}Das Heliumatom}{51}
+\contentsline {subsection}{\numberline {3.3}Ritz-Variationsverfahren}{53}

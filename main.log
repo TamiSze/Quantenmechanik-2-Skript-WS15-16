@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.9.8)  10 NOV 2015 11:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.9.8)  23 NOV 2015 08:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1016,47 +1016,105 @@ Overfull \hbox (17.00745pt too wide) in paragraph at lines 37--37
  (./Born-Naeherung.tex [44
 
 
-]) [45] (./main.aux (./Mechanik.aux)
+]
+Overfull \hbox (3.73553pt too wide) in paragraph at lines 92--92
+[]\T1/lmr/m/n/12 12.11.2015 
+ []
+
+[45]
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
+[]\T1/lmr/m/n/12 beim
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
+\T1/lmr/m/n/12 zwei-ten
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
+\T1/lmr/m/n/12 bruch
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
+\T1/lmr/m/n/12 steht
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
+\T1/lmr/m/n/12 noch
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
+\T1/lmr/m/n/12 ein q
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
+\T1/lmr/m/n/12 ir-gend-wie
+ []
+
+[46] [47]) [48]
+\openout2 = `Pauliprinzip.aux'.
+
+ (./Pauliprinzip.tex [49
+
+
+]
+Overfull \hbox (3.73553pt too wide) in paragraph at lines 68--68
+[]\T1/lmr/m/n/12 16.11.2015 
+ []
+
+) [50]
+\openout2 = `Heliumatom.aux'.
+
+ (./Heliumatom.tex [51
+
+
+] [52]) [53] (./main.aux (./Mechanik.aux)
 (./Quantenmechanik.aux) (./Schr_Heisenb._Bild.aux)
 (./Harmonischer_Oszillator.aux) (./Zeitabh.Stoerungsth_Und_WWbild.aux)
 (./Fermis_Goldene_Regel.aux) (./Periodische_Stoerung.aux)
 (./Abs_und_Emiss_EM_Strahlung.aux) (./Spontane_Emissions.aux)
 (./BspWasserstoff_Spontane_Emission.aux) (./Quatrupoluebergaenge.aux)
 (./Stat.Streuproblem_Wirkungsquerschnitt.aux) (./Streuung_an_harter_Kugel.aux)
-(./Born-Naeherung.aux)) ) 
+(./Born-Naeherung.aux) (./Pauliprinzip.aux) (./Heliumatom.aux)) ) 
 Here is how much of TeX's memory you used:
- 6149 strings out of 493117
- 92669 string characters out of 6138985
+ 6165 strings out of 493117
+ 92953 string characters out of 6138985
  214046 words of memory out of 5000000
- 9325 multiletter control sequences out of 15000+600000
+ 9331 multiletter control sequences out of 15000+600000
  60885 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  47i,19n,43p,367b,309s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-ec.e
-nc}{c:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/201
-4/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2014/texmf-dist/fonts/enc
-/dvips/lm/lm-mathit.enc}{c:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-mathe
-x.enc}<c:/texlive/2014/texmf-dist/fonts/type1/public/doublestroke/dsrom12.pfb><
-c:/texlive/2014/texmf-dist/fonts/type1/public/doublestroke/dsrom8.pfb><c:/texli
-ve/2014/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2014/texmf-dist
-/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/publi
-c/lm/lmmi12.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:
-/texlive/2014/texmf-dist/fonts/type1/public/lm/lmmi7.pfb><c:/texlive/2014/texmf
--dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2014/texmf-dist/fonts/type1/p
-ublic/lm/lmr10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmr12.pfb>
-<c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2014/tex
-mf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2014/texmf-dist/fonts/type1/
-public/lm/lmr8.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmssbx10.p
-fb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/201
-4/texmf-dist/fonts/type1/public/lm/lmsy6.pfb><c:/texlive/2014/texmf-dist/fonts/
-type1/public/lm/lmsy8.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfon
-ts/symbols/msam10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/s
-ymbols/msbm10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbo
-ls/msbm7.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on main.pdf (45 pages, 13265702 bytes).
+{c:/texlive/20
+14/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2014/texmf-dist/fonts/en
+c/dvips/lm/lm-mathsy.enc}{c:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-rm.e
+nc}{c:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/201
+4/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}<c:/texlive/2014/texmf-dist/fonts
+/type1/public/doublestroke/dsrom12.pfb><c:/texlive/2014/texmf-dist/fonts/type1/
+public/doublestroke/dsrom8.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/l
+m/lmex10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/t
+exlive/2014/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2014/texmf-
+dist/fonts/type1/public/lm/lmmi6.pfb><c:/texlive/2014/texmf-dist/fonts/type1/pu
+blic/lm/lmmi7.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><
+c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2014/tex
+mf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2014/texmf-dist/fonts/type1
+/public/lm/lmr6.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmr7.pfb>
+<c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2014/tex
+mf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/texlive/2014/texmf-dist/fonts/ty
+pe1/public/lm/lmsy10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmsy
+6.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2
+014/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2014/
+texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2014/texm
+f-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb><c:/texlive/2014/texmf-dis
+t/fonts/type1/public/rsfs/rsfs10.pfb>
+Output written on main.pdf (53 pages, 13293460 bytes).
 PDF statistics:
- 252 PDF objects out of 1000 (max. 8388607)
- 176 compressed objects within 2 object streams
+ 277 PDF objects out of 1000 (max. 8388607)
+ 193 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
