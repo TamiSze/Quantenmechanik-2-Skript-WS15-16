@@ -20,3 +20,5 @@
 \contentsline {subsection}{\numberline {3.1}Das Pauliprinzip}{49}
 \contentsline {subsection}{\numberline {3.2}Das Heliumatom}{51}
 \contentsline {subsection}{\numberline {3.3}Ritz-Variationsverfahren}{53}
+\contentsline {subsection}{\numberline {3.4}Atombau}{55}
+\contentsline {subsection}{\numberline {3.5}Hartrei-Fock-Approximation}{56}

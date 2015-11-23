@@ -1,0 +1,39 @@
+\subsection{Hartrei-Fock-Approximation}
+	\begin{align*}
+		H &= \sum_i H^{(i)} + \sum_{i<j} V_{ij}
+	\end{align*}
+$H^{(i)}$ ist Hamiltonopertor für nicht mit anderen (ununterscheidbaren) Fermionen wechselwirkendes Fermion $i$.
+	\begin{align*}
+		H \psi_0 &= E_0 \psi_0 
+		&\text{mit } E_0 &= \underset{\braket{\psi | \psi} = 1}{\mathrm{min}} \braket{\psi | H | \psi}
+	\end{align*}
+Grundzustandsenergie
+
+Approximation:
+	\begin{align*}
+		\psi (1, \ldots, N) 
+		&= \frac{1}{\sqrt{N!}} \det 
+		\begin{pmatrix}
+		\phi_{1}(1) & \cdots & \phi_{1}(N) \\
+		\vdots & \ddots & \vdots\\
+		\phi_{N}(1) & \cdots & \phi_{N}(N)
+		\end{pmatrix} 
+	\end{align*}
+In der Matrix jeweils in der Klammer stehen Position, Spin etc. und unten sind die Quantenzahlen.
+	\begin{align*}
+		\phi_i (k) &=
+		\underbrace{\phi_i (\vec{r}_k)}_{\mathclap{\text{Bahnwellenfunktion}}}
+		\overbrace{\chi_i (\sigma_k)}^{\mathclap{\text{Spinwellenfunktion}}} \\
+		\text{Nebenbedingung } &\braket{\phi_i | \phi_j} = \delta_{ij}
+	\end{align*}
+Dies schränkt nicht die Algemeinheit ein.
+
+Normierung:
+	\begin{align*}
+		1 &= \braket{\psi | \psi} = \prod_i \braket{\phi_i | \phi_i} 
+		& \phi_i &\mapsto \lambda_i \phi_i \\
+		1 &= \braket{\psi | \psi} 
+		&\mapsto \prod_i |\lambda_i|^2 \braket{\phi_i | \phi_i} &= \prod_i |\lambda_i|^2
+		&\Rightarrow 1 &= \prod_i |\lambda_i|^2 = 1 
+	\end{align*}
+Andere Normierung ist...

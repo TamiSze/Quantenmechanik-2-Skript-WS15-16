@@ -146,4 +146,64 @@ Heliumatom
 Dies ist motiviert durch Wasserstoffwellenfunktion, aber mit ``effektiver'' Kernladung 
 $Z* < Z = 2$, da das andere Elektron die Kernladung teilwese abschirmt.
 	\marginpar{19.11.15}
+	\begin{align*}
+		H &= \underbrace{\frac{\vec{p}^{(1)2}}{2m} - \frac{Z^* \alpha \hbar c}{r_1}}_{\mathclap{*}}
+		\underbrace{- \frac{(Z-Z^*)\alpha \hbar c}{r_1}}_{\mathclap{**}} \\
+		&\underbrace{+ \frac{\vec{p}^{(2)2}}{2m} - \frac{Z^* \alpha \hbar c}{r_2}}_{\mathclap{*}}
+		\underbrace{- \frac{(Z-Z^*)\alpha \hbar c}{r_2}}_{\mathclap{**}} \\
+		&\underbrace{+ \frac{\alpha \hbar c}{|\vec{r}_1 - \vec{r}_2|}}_{\mathclap{V_e(\vec{r}_1, \vec{r}_2)}} + (\text{Spinabhängiger Term})
+	\end{align*}
+	\begin{align*}
+		\braket{\psi_{100}(Z^*) | H | \psi_{100}(Z*)} 
+		&= \underbrace{2E_1(Z^*)}_{\mathclap{*}} 
+		\underbrace{- 2 \alpha \hbar c (Z - Z*) \erw{\frac{1}{r}}_{10}}_{\mathclap{**}}
+	\end{align*}
+Wobei * Grundzustandsenergie von $H$-Problem mit Kernladung $Z^* e$ und die $10$ beim Erwartungswert sind die $n \ell$ für Wasserstoff.
+	\begin{align*}
+		E_1(Z*) &= - \frac{1}{2} (Z^*)^2 m c^2 \alpha^2 ,&
+		\erw{\frac{1}{r}}_{10} &= \frac{Z*}{a_B} \\
+		\Rightarrow \braket{\psi | H | \psi} &= 
+		-\frac{1}{2} m c^2 \alpha^2 
+		\left( 2 (Z^*)^2 - 4 (Z^* - Z)Z^* \frac{5}{4} Z^* \right)\\
+		&= \frac{1}{2} m c^2 \alpha^2 
+		\left( 2 (Z^*)^2 - 8Z^* + \frac{5}{4} Z^* \right) & &\text{hier sind irgendwo Rechenfehler}
+	\end{align*}
+	\begin{align*}
+		\frac{\partial \left(
+			\frac{\braket{\psi | H | \psi}}{\braket{\psi | \psi}}
+			\right)}{\partial Z^*}
+		&= \frac{1}{2} m c^2 \alpha^2 \left( 4 Z^* - \frac{27}{4} \right) = 0 \\
+		& \Rightarrow \boxed{Z^* = \frac{27}{16}} \\
+		E_{\text{min}} &= - m c^2 \alpha^2 (Z- (Z - Z^*))^2 = -77,5eV
+	\end{align*}
+Zum Vergleich 
+
+Störungstheorie, alles in $eV$ \\
+	\begin{tabular}{c | c | c | c | c | c | c | c | c}
+		Ordung & 0 & 1 & 2 & 3 & 4 & 5 & ``Exakt'' & Experiment \\
+		\hline
+		E & -108,832 & -74,822 & - 79,112 & -78,998 & -78,999 & -79,003 & -79,005 & -78,975
+	\end{tabular}
+Das Experiment weicht wegen der Wechselwirkungsterme, die wir vernachlässigt haben, ab.
 	
+	Ritz mit 2 Parametern $\psi \sim (1 + b_2 r) e^{-\frac{Z^* r}{a_B}} \leadsto -78,6eV$
+
+\subsection{Atombau}
+
+	\begin{tabular}{c c c c c c}
+		$n$ & $\ell$ & Bezeichnung & Maximalzahl von $e^-$ & Besetzungsreihenfole & $Z$ \\
+		\hline
+		1 & 0 & $1s$ & 2 & 1 & 1-2 \\
+		\hline
+		2 & 0 & $2s$ & 2 & 2 & 3-4 \\
+		  & 1 & $2p$ & 6 & 3 & 5-10 \\
+		\hline
+		3 & 0 & $3s$ & 2 & 4 & 11-12 \\
+		  & 1 & $3p$ & 6 & 5 & 13-18 \\
+		  & 2 & $3d$ & 10 & 6 & 19-30 \\
+		\hline
+		4 & 0 & $4s$ & 2 & 6 & 19-30 \\
+		  & 1 & $4p$ & 6 & 7 & 31-36 \\
+		  & 2 & $4d$ & 10 & 8 & 37-48 \\
+		  & 3 & $4f$ & 14 & 10 & 55-80 \\
+	\end{tabular}
