@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.9.8)  24 NOV 2015 15:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.9.8)  25 NOV 2015 13:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1035,48 +1035,56 @@ Package pdftex.def Info: Born-Oppenh_Approx2.jpg used on input line 36.
 (pdftex.def)             Requested size: 284.52756pt x 213.3755pt.
  [53
 
- <./Born-Oppenh_Approx2.jpg>]
-<Born-Oppenh_Approx3.jpg, id=203, 3272.225pt x 1732.4725pt>
-File: Born-Oppenh_Approx3.jpg Graphic file (type jpg)
+ <./Born-Oppenh_Approx2.jpg>])
+(./Homonukleare_Molekuele.tex
+<Homonukleare_Molekuele1.jpg, id=203, 3272.225pt x 1732.4725pt>
+File: Homonukleare_Molekuele1.jpg Graphic file (type jpg)
 
-<use Born-Oppenh_Approx3.jpg>
-Package pdftex.def Info: Born-Oppenh_Approx3.jpg used on input line 92.
+<use Homonukleare_Molekuele1.jpg>
+Package pdftex.def Info: Homonukleare_Molekuele1.jpg used on input line 4.
 (pdftex.def)             Requested size: 284.52756pt x 150.62872pt.
-) [54 <./Born-Oppenh_Approx3.jpg>] (./main.aux) ) 
+ [54 <./Homonukleare_Molekuele1.jpg>]
+<Homonukleare_Molekuele2.jpg, id=208, 3275.23625pt x 1364.09625pt>
+File: Homonukleare_Molekuele2.jpg Graphic file (type jpg)
+
+<use Homonukleare_Molekuele2.jpg>
+Package pdftex.def Info: Homonukleare_Molekuele2.jpg used on input line 33.
+(pdftex.def)             Requested size: 284.52756pt x 118.49641pt.
+ [55 <./Homonukleare_Molekuele2.jpg>])
+[56] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 6150 strings out of 493117
- 92079 string characters out of 6138985
+ 6161 strings out of 493117
+ 92417 string characters out of 6138985
  212366 words of memory out of 5000000
- 9358 multiletter control sequences out of 15000+600000
+ 9365 multiletter control sequences out of 15000+600000
  60885 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  47i,19n,43p,365b,387s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2014/texmf-dist/fo
-nts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-ec
-.enc}{c:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2
-014/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2014/texmf-dist/fon
-ts/enc/dvips/lm/lm-mathex.enc}<c:/texlive/2014/texmf-dist/fonts/type1/public/do
-ublestroke/dsrom12.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/doublestr
-oke/dsrom8.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:
-/texlive/2014/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2014/texm
-f-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2014/texmf-dist/fonts/type1
-/public/lm/lmmi6.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmmi7.pf
-b><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2014/
-texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2014/texmf-dist/fonts/ty
-pe1/public/lm/lmr12.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmr6.
-pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2014
-/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2014/texmf-dist/fonts/ty
-pe1/public/lm/lmssbx10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lm
-sy10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmsy6.pfb><c:/texliv
-e/2014/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2014/texmf-dist/f
-onts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2014/texmf-dist/fonts
-/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2014/texmf-dist/fonts/typ
-e1/public/amsfonts/symbols/msbm7.pfb><c:/texlive/2014/texmf-dist/fonts/type1/pu
-blic/rsfs/rsfs10.pfb>
-Output written on main.pdf (54 pages, 15831317 bytes).
+{c:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:
+/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2014/texmf-di
+st/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2014/texmf-dist/fonts/enc/dvips
+/lm/lm-mathit.enc}{c:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}
+<c:/texlive/2014/texmf-dist/fonts/type1/public/doublestroke/dsrom12.pfb><c:/tex
+live/2014/texmf-dist/fonts/type1/public/doublestroke/dsrom8.pfb><c:/texlive/201
+4/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2014/texmf-dist/fonts
+/type1/public/lm/lmmi10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/l
+mmi12.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/texli
+ve/2014/texmf-dist/fonts/type1/public/lm/lmmi7.pfb><c:/texlive/2014/texmf-dist/
+fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/
+lm/lmr10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/te
+xlive/2014/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2014/texmf-dis
+t/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public
+/lm/lmr8.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:
+/texlive/2014/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2014/texm
+f-dist/fonts/type1/public/lm/lmsy6.pfb><c:/texlive/2014/texmf-dist/fonts/type1/
+public/lm/lmsy8.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/sym
+bols/msam10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols
+/msbm10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msb
+m7.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
+Output written on main.pdf (56 pages, 16317445 bytes).
 PDF statistics:
- 285 PDF objects out of 1000 (max. 8388607)
- 197 compressed objects within 2 object streams
+ 294 PDF objects out of 1000 (max. 8388607)
+ 202 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
