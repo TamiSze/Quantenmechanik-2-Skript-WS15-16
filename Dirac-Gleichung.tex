@@ -28,3 +28,132 @@ Ortsraum:
 		\item unsymmetrisch im Raum und Zeit (nicht forminvariant unter Lorentz-Transformation)
 		\item Hohe Ableitungen
 	\end{enumerate}
+Zwei Möglichkeiten der relativen Verallgemeinerung der (freien) Schrödingergleichung 
+\marginpar{?? punkt 2 kam nie vor}
+	\begin{align*}
+		H^2 \ket{\psi} &= (c^2 \hat{p}^2 + m^2 c^4) \ket{\psi} \\
+		-\hbar^2 \frac{\partial^2 \psi}{\partial t^2}
+		&= (-\hbar^2 c^2 \vec{\nabla}^2 + m^2 c^4) \psi (\vec{r} , t) \\
+		&\Rightarrow
+		\boxed{
+			\left(
+			\frac{1}{c^2} \frac{\partial^2 \psi}{\partial t^2} - \vec{\nabla}^2 
+			+ \left(\frac{mc}{\hbar}\right)^2
+			\right)
+			\psi (\vec{r} , t) = 0
+		}
+	\end{align*} 
+Klein-Gordon-Gleichung, und $\frac{1}{c^2} \frac{\partial^2 \psi}{\partial t^2} - \vec{\nabla}^2 = \Box$ d'Alembertoperator.
+
+Kein ``Spin'' Möglich für skalare Teilchen
+
+Spin $=0$: Higgs, Pionen, $\alpha-$Teilchen etc.
+\\
+Dirac: erste Ableitun in $t \Rightarrow$ sollte linear in $p_x, p_y, p_z$ sein, damit forminvariant unter Lorentz-Transformation.
+
+Ansatz:
+	\begin{align*}
+		H^2 &= p^2 c^2 + m^2 c^4 = c^2 (\vec{\alpha} \cdot \vec{p} + \beta m c)^2\\
+		&= c^2 
+		\left[
+			\alpha_x^2 p_x^2 + \alpha_y^2 p_y^2 +\alpha_z^2 p_z^2
+			+ \beta^2m^2c^2 + \alpha_x \beta p_x m c + \beta \alpha_x p_x mc \right.\\
+			&\left.\vphantom{\alpha_x^2 p_x^2} + \{\alpha_y, \beta\} p_y mc + \{\alpha_z \beta \} p_z mc 
+			+ \{\alpha_x, \alpha_y\} p_x p_y + \{\alpha_y, \alpha_z\} p_y p_z
+			+\{\alpha_z, \alpha_x\}p_z p_x
+ 		\right]
+	\end{align*}
+Koeffizientenvergleich:
+	\begin{align*}
+		\alpha_x^2 &= \alpha_y^2 = \alpha_z^2 = 1 = \beta^2
+		& &\boxed{\{\alpha_i, \beta \} = 0}\\
+		& & &\{\alpha_i, \beta \} = 0 \text{ für } i \neq j \\
+		&\Rightarrow \boxed{\{\alpha_i, \beta \} = 2 \delta_{ij}}
+	\end{align*}
+$\Rightarrow \alpha_i, \beta$ sind keine Zahlen. (vllt Matrizen?)
+	\begin{align*}
+		\alpha_i &= \alpha_i^\dagger ,&
+		\beta &= \beta^\dagger ,& 
+		\text{weil } H &= H^\dagger \\
+		\text{EW }: \alpha_i^2 &= \mathds{1} ,&
+		\beta^2 &= \mathds{1} 
+		&\Rightarrow \mathrm{ EW } &\in \{\pm 1\}  
+	\end{align*}
+	\begin{align*}
+		\mathrm{Sp}(\alpha_x) = \mathrm{Sp}(\alpha_x\alpha_y^2) 
+		= \mathrm{Sp} (\alpha_y \alpha_x \alpha_y) 
+		= - \mathrm{Sp}(\alpha_x \alpha_y^2) = -\mathrm{Sp}(\alpha_x) = 0
+	\end{align*}
+$\alpha_i, \beta$ sind spurlose hermitesche Matrizen mit EW $\pm 1$
+	\begin{align*}
+		\text{spurlos } \Rightarrow \# (\mathrm{EW } = + 1)
+		= \# (\mathrm{EW } = - 1) \Rightarrow \text{ Dimension }d\text{ gerade}
+	\end{align*}
+Bei $d=2$ haben wir die Paulimatrizen: Basis über $\mathds{R}$ aller spurlosen hermiteschen $2 \times 2$ Matrizen.
+	\begin{align*}
+		\sigma_x &=
+		\begin{pmatrix}
+		0 & 1 \\
+		1 & 0
+		\end{pmatrix}&
+		\sigma_y &=
+		\begin{pmatrix}
+		0 & -i \\
+		i & 0
+		\end{pmatrix}&
+		\sigma_z &= 
+		\begin{pmatrix}
+		1 & 0 \\
+		0 & -1
+		\end{pmatrix} \\
+		\{\sigma_i, \sigma_j\} &= 2 \delta_{ij} 
+		&\text{Nehme } \sigma_0 &=
+		\begin{pmatrix}
+		1 & 0 \\
+		0 & 1
+		\end{pmatrix}
+		= \mathds{1}_2 \text{ hinzu} 
+	\end{align*}
+Problem: $\mathds{1}_2$ ist nicht spurlos
+
+Kleinste mögliche Dimension ist $d = 4$
+\\
+Dirac- $\alpha,\beta$ Matrizen:
+	\begin{align*}
+		\vec{\alpha} &=
+		\begin{pmatrix}
+		0 & \vec{\sigma} \\
+		\vec{\sigma} & 0
+		\end{pmatrix} 
+		& 4 \times 4 \text{ Matrix Beispiel: }
+		\alpha_z &=
+		\begin{pmatrix}
+		0 & \sigma_z \\
+		\sigma_z & 0
+		\end{pmatrix}
+		=
+		\begin{pmatrix}
+		0 & 0 & 1 & 0 \\
+		0 & 0 & 0 & -1 \\
+		1 & 0 & 0 & 0\\
+		0 & -1 & 0 & 0
+		\end{pmatrix} \\
+		\beta &=
+		\begin{pmatrix}
+		\mathds{1}_2 & 0 \\
+		0 & \mathds{1}_2
+		\end{pmatrix}
+	\end{align*}
+$\vec{\alpha}, \beta$ sind nicht eindeutig festgelegt, da auch $\vec{\alpha}', \beta'$ mit 
+$\alpha_i' = \U^\dagger \alpha_i \U,~ \beta' = \U^\dagger \beta \U$ ($\U$ unitäre Matrix) obige Bedingungen erfüllen.
+	\begin{align*}
+		-i\hbar \frac{\partial}{\partial t} \ket{\psi}
+		&= \left(\vec{\alpha} c \vec{p} + \beta m c^2\right) \ket{\psi} \\
+		\text{Ortsraum } i\hbar \frac{\partial \psi (\vec{r}, t)}{\partial t}
+		&= \left(-i\hbar c \vec{\alpha} \vec{\nabla} + \beta m c^2\right) \psi (\vec{r}, t)
+	\end{align*}
+DGL 1.Ordnung in $\frac{\partial}{\partial t}$ und $\frac{\partial}{\partial x}, \frac{\partial}{\partial y}, \frac{\partial}{\partial z}$ aber $\psi (\vec{r}, t)$ hat 4 Komponenten.
+
+$\Rightarrow$ Lorentz-Spinor
+\\
+Wdh: \marginpar{30.11.2015}
