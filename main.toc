@@ -24,3 +24,5 @@
 \contentsline {subsection}{\numberline {3.5}Hartrei-Fock-Approximation}{49}
 \contentsline {subsection}{\numberline {3.6}Die Born-Oppenheimer Approximation}{52}
 \contentsline {subsection}{\numberline {3.7}Homonukleare Molek\IeC {\"u}le (Beispiel $H_2$)}{54}
+\contentsline {section}{\numberline {4}Relativistische Quantenmechanik}{59}
+\contentsline {subsection}{\numberline {4.1}Die Dirac-Gleichung}{59}
