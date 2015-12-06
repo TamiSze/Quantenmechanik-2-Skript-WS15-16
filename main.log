@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.9.8)  4 DEC 2015 16:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.9.8)  6 DEC 2015 15:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1098,7 +1098,12 @@ Overfull \hbox (3.73553pt too wide) in paragraph at lines 159--159
 []\T1/lmr/m/n/12 30.11.2015 
  []
 
-) [61] (./main.aux) ) 
+[61] [62] [63]
+Overfull \hbox (22.93411pt too wide) in paragraph at lines 360--360
+[] 
+ []
+
+) [64] (./main.aux) ) 
 Here is how much of TeX's memory you used:
  6177 strings out of 493117
  92847 string characters out of 6138985
@@ -1128,10 +1133,10 @@ xmf-dist/fonts/type1/public/lm/lmsy6.pfb><c:/texlive/2014/texmf-dist/fonts/type
 ymbols/msam10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbo
 ls/msbm10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/m
 sbm7.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on main.pdf (61 pages, 18158767 bytes).
+Output written on main.pdf (64 pages, 18167451 bytes).
 PDF statistics:
- 312 PDF objects out of 1000 (max. 8388607)
- 213 compressed objects within 3 object streams
+ 321 PDF objects out of 1000 (max. 8388607)
+ 219 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

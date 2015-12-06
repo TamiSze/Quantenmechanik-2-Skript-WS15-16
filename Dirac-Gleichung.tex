@@ -156,4 +156,223 @@ DGL 1.Ordnung in $\frac{\partial}{\partial t}$ und $\frac{\partial}{\partial x},
 
 $\Rightarrow$ Lorentz-Spinor
 \\
-Wdh: \marginpar{30.11.2015}
+ \marginpar{30.11.2015}
+% Wdh
+%	\begin{align*}
+%		i \hbar \frac{\partial}{\partial t} \ket{\psi} &=
+%		\left(c \vec{\alpha} \cdot \vec{p} + \beta m c^2\right) \ket{\psi}
+%	\end{align*}
+Dirac-Spinor (auch Lorentz-Spinor)
+	\begin{align*}
+		\psi (\vec{r}, t) &=
+		\begin{pmatrix}
+		\psi_1 (\vec{r}, t) \\
+		\psi_2 (\vec{r}, t) \\
+		\psi_3 (\vec{r}, t) \\
+		\psi_4 (\vec{r}, t)
+		\end{pmatrix} &
+		\braket{\psi | \psi}
+		&= \int \diff^3 r 
+		\overbrace{\psi^\dagger (\vec{r}, t) \psi (\vec{r}, t)}^{\mathclap{\rho (\vec{r}, t)}} 
+		= const.
+	\end{align*}
+Denn $H$ ist selbstadjungiert. 
+
+$\leadsto$ Wahrscheinlichkeitsinterpretation mit $\braket{\psi | \psi} = 1$ ist möglich.
+\\
+Definiere Wahrscheinlichkeitsdichte $\rho (\vec{r}, t) = \psi^\dagger (\vec{r}, t) \psi (\vec{r}, t)$
+	\begin{align*}
+		\frac{\partial \rho}{\partial t} &= 
+		\frac{\partial \psi^\dagger}{\partial t} \cdot \psi + \psi^\dagger \frac{\partial \psi}{\partial t} 
+		= \left(
+			\frac{\beta m c^2}{i \hbar} - \frac{\beta m c^2}{i \hbar} 
+		\right)
+		\psi^\dagger \psi - c\psi^\dagger \vec{\alpha} \vec{\nabla} \psi 
+		- c \vec{\nabla} (\psi^\dagger \vec{\alpha}) \psi \\
+		&= -c \vec{\nabla} (\psi^\dagger \vec{\alpha} \psi) 
+	\end{align*}
+	\begin{empheq}[box = \boxed]{align*}
+		\Rightarrow \frac{\partial \rho}{\partial t} + \vec{\nabla} \vec{j} = 0&
+		& &\text{mit } \vec{j} = c \psi^\dagger \alpha \psi \\
+		\text{ Kontinuiätsgleichung}& & &\text{Wahrscheinlichkeitsstromdichte}
+	\end{empheq}
+	\begin{align*}
+		4 \text{ Vektoren } (X^\mu) &= (X^0, \vec{X})
+		& (X_\mu) &= (\eta_{\mu\nu} X^\nu) = (X^0, -\vec{X}) \\
+		\eta_{\mu\nu} &=
+		\begin{pmatrix}
+			1 & 0 & 0 & 0 \\
+			0 & -1 & 0 & 0 \\
+			0 & 0 & -1 & 0 \\
+			0 & 0 & 0 &-1
+		\end{pmatrix} &
+		\vec{X} &= 
+		\begin{pmatrix}
+		X^1 \\
+		X^2 \\
+		X^3 \\
+		X^4 
+		\end{pmatrix} \\
+		\frac{\partial}{\partial X^\mu} X^\nu 
+		&= \partial_\mu^\nu 
+		\leadsto \partial_\mu = \frac{\partial}{\partial X^\mu}
+	\end{align*}
+(aus unten oben wird oben unten) $\partial_\mu X^\nu = \partial_\mu^\nu$
+	\begin{align*}
+		\left(\partial_\mu\right) 
+		&= \left(\frac{\partial}{\partial X^\mu}\right)
+		= (\partial_0, \vec{\nabla}) &
+		(\partial^\mu) &=
+		\left(\frac{\partial}{\partial X_\mu}\right)
+		= (\partial^0, -\vec{\nabla}) \\
+		\partial_0 &= \frac{\partial}{\partial X^0} = \frac{1}{c} \frac{\partial}{\partial t}
+		& X^0 &= ct \\
+		\vec{p} &= -i\hbar \vec{\nabla} ,&
+		E &= i \hbar \frac{\partial}{\partial t} = i \hbar c \frac{\partial}{\partial X^0} 
+	\end{align*}
+4-Impuls $(p^\mu) = (E/c, \vec{p})$
+	\begin{align*}
+		p_\mu p^\mu &= \frac{E^2}{c^2} - \vec{p}^2 = m^2 c^2,&
+		\text{denn } E^2 &= m^2 c^4 + \vec{p}^2 c^2 \\
+		(p_\mu) &= \left(\frac{E}{c}, -\vec{p}\right) = i\hbar (\partial_0, \vec{\nabla})
+	\end{align*}
+	\begin{align*}
+		0 &= \left(
+			-i \hbar c \vec{\alpha}_i \vec{\nabla} - i\hbar \frac{\partial}{\partial t}
+			+ \beta m c^2
+		\right) \psi(\vec{r}, t) & 
+		&\left.\vphantom{\left(\frac{\partial}{\partial t}\right)}\right| \cdot (-\beta) \\
+		0 &= \left[
+			i \hbar \left(\beta \frac{\partial}{\partial X^0} \beta \vec{\alpha} \vec{\nabla}\right)
+			- mc
+		\right] \psi (\vec{r}, t) \\
+		\gamma^0 &= \beta ~,~~ \gamma^i =\beta \alpha^i \\
+		0 &= \left(i \hbar 
+			\left(\gamma^0 \frac{\partial}{\partial X^0} + \vec{\gamma} \cdot \vec{\nabla}\right)
+			- mc
+		\right) \psi (\vec{r}, t) 
+	\end{align*}
+	\begin{empheq}[box = \boxed]{align*}
+		(i\hbar \gamma^\mu \partial_\mu - mc) \psi(\vec{r}, t) &= 0 \\
+		\text{oder } (\gamma^\mu p_\mu - mc) \ket{\psi} &= 0
+	\end{empheq}
+Dirac Gleichung
+	
+Offensichtlich ist dies forminvariant unter Lorentz-Transformationen (relativistisch kovariant)
+	\begin{align*}
+		\gamma^0 &= \beta =
+		\begin{pmatrix}
+			\mathds{1} & 0 \\
+			0 & -\mathds{1}
+		\end{pmatrix}
+		& \beta \cdot \alpha^i &= -\alpha^i \beta &
+		&\{\alpha^i, \beta \} = 0 \\
+		\vec{\gamma} &= \beta \vec{\alpha} =
+		\begin{pmatrix}
+			0 & \vec{\sigma} \\
+			\vec{\sigma} & 0
+		\end{pmatrix} &
+		(\gamma^i)^\dagger &= (\beta \alpha^i)^\dagger
+		= (\alpha^i)^\dagger \beta^\dagger \\
+		& & &= \alpha^i \beta = -\beta \alpha^i = -\gamma^i
+		& &\text{ (anti-hermitesch)} \\
+		\gamma^0 &= (\gamma^0)^\dagger 
+		& \boxed{(\gamma^\mu)^\dagger = \gamma^0 \gamma^\mu \gamma^0}&
+	\end{align*}
+	\begin{align*}
+		\{\gamma^\mu, \gamma^\nu\} &= 2 g^{\mu \nu} = \mathds{1}_4\\
+		\{\gamma^i, \gamma^j\} &=
+		\{\beta \alpha^i, \beta \alpha^j\}
+		= - \beta^2 \{\alpha^i, \alpha^j\} = -2 \delta^{ij} \mathds{1}\\
+		\left[
+			(\gamma^\mu p_\mu - m c) \psi
+		\right]^\dagger &= 0 
+		= \psi^\dagger (\gamma^{\mu \dagger} p_\mu - mc) \\
+		&= \psi^\dagger \left(
+			\gamma^0 \gamma^\mu p_\mu \gamma^0 - \gamma^0 mc \gamma^0
+		\right) \\
+		0 &= \psi^\dagger \gamma^0 (\gamma^\mu p_\mu - mc) \\
+		\overline{\psi} \coloneqq \psi^\dagger \gamma^0
+	\end{align*}
+Wahrscheinlichkeitsstromdichte (0-Komponente):
+	\begin{align*}
+		j^0 &= c \rho = c \psi^\dagger \psi = c \overline{\psi} \gamma^0 \psi \\
+		\frac{\partial \rho}{\partial t}
+		&= \partial_0 j^0 = -\vec{\nabla} \psi^\dagger \vec{\alpha} \psi 
+		= - \partial_i \overline{\psi}
+		\underbrace{\gamma^0 \alpha^i}_{\mathclap{\beta \alpha^i = \gamma^i}} \psi \\
+		\Rightarrow \partial_\mu 
+		\underbrace{\overline{\psi} \gamma^\mu \psi}_{\mathclap{\text{Der 4-Strom }j^\mu \text{ ist erhalten}}} &= 0 ~~\text{(Kontinuitätsgleichung)}
+	\end{align*}
+	\begin{align*}
+		\psi &=
+		\begin{pmatrix}
+			\psi_1 \\
+			\psi_2 \\
+			\psi_3 \\
+			\psi_4
+		\end{pmatrix}
+		&\Rightarrow \overline{\psi} &=
+		(\psi_1^*, \psi_2^*, -\psi_3^*, -\psi_4^*) 
+	\end{align*}
+Ansatz ebene Welle:
+	\begin{align*}
+		\psi (\vec{r}, t) &=
+		u(\vec{k}) e^{i(\vec{k}\vec{r} - \omega(\vec{k}) t)} \\
+		&= u(\vec{k}) e^{ik.x} 
+		& &k. x= k_\mu X^\mu \\
+		\vec{X} &= \vec{r} ,& X^0 &= ct,& k^0 &= \frac{\omega}{c} \\
+		u &=
+		\begin{pmatrix}
+			u_1 \\
+			u_2 \\
+			u_3 \\
+			u_4
+		\end{pmatrix}
+		~ \text{ Dirac Spinor}
+	\end{align*}
+	\begin{align*}
+		\left(i \hbar \gamma^\mu \partial_\mu - mc\right)
+		\psi(\vec{r}, t) &= 0 \\
+		\text{ist OK für } p_\mu p^\mu &= m^2 c^2 \\
+		\Rightarrow (\gamma^\mu p_\mu - mc) u \left(\vec{k} = \frac{\vec{p}}{\hbar}\right) &= 0 
+	\end{align*}
+Lösung für $\vec{p} = \vec{0}$ mit 
+$ \gamma^0\begin{pmatrix}
+1 & & \\
+& 1 && \\
+&& -1 & \\
+&&& -1 
+\end{pmatrix}$
+	\begin{align*}
+		(\gamma^0 p_0 - mc) u = 0 \Rightarrow
+		(E-mc^2) u_1 &= 0 \\
+		(E-mc^2) u_2 &= 0 \\
+		(-E-mc^2) u_3 &= 0 \\
+		(-E-mc^2) u_4 &= 0 \\
+	\end{align*}
+	\begin{align*}
+		\Rightarrow 4 \text{ Lösungen }: 
+		E &= mc^2 u^{(1)} = (1, 0 ,0 ,0)^t &\text{ oder } 
+		u^{(2)} &= (0,1,0,0)^t \\
+		E &= -mc^2 ,& u^{(3)} &= (0, 0, 1, 0)^t &\text{ oder }
+		u^{(4)} &= (0,0,0,1)^t
+	\end{align*}
+Beliebiger Impuls:
+	\begin{align*}
+	u &= 
+		\begin{pmatrix}
+			\phi \\
+			\chi
+		\end{pmatrix} &
+	\phi &= 
+		\begin{pmatrix}
+		\phi_1 \\
+		\phi_2
+		\end{pmatrix} &
+	\chi &= 
+		\begin{pmatrix}
+		\chi_1 \\
+		\chi_2
+		\end{pmatrix}
+	\end{align*}
