@@ -353,7 +353,7 @@ $ \gamma^0\begin{pmatrix}
 	\end{align*}
 	\begin{align*}
 		\Rightarrow 4 \text{ Lösungen }: 
-		E &= mc^2 u^{(1)} = (1, 0 ,0 ,0)^t &\text{ oder } 
+		E &= mc^2 ,& u^{(1)} &= (1, 0 ,0 ,0)^t &\text{ oder } 
 		u^{(2)} &= (0,1,0,0)^t \\
 		E &= -mc^2 ,& u^{(3)} &= (0, 0, 1, 0)^t &\text{ oder }
 		u^{(4)} &= (0,0,0,1)^t
@@ -376,3 +376,118 @@ Beliebiger Impuls:
 		\chi_2
 		\end{pmatrix}
 	\end{align*}
+	\begin{align*}
+		\left( \gamma^\mu p_\mu - mc\right) u
+		&=\left[
+			\gamma^0 \left(
+				\mathds{1} p_0 +
+					\begin{pmatrix}
+						0 & \vec{\sigma} \\
+						\vec{\sigma} & 0
+					\end{pmatrix} \vec{p}
+				\right)
+			-mc \mathds{1}
+		\right]
+		\begin{pmatrix}
+			\phi \\
+			\chi
+		\end{pmatrix} \\
+		&= \begin{pmatrix}
+			(p_0 -mc) \phi - (\vec{p} ~\vec{\sigma}) \chi \\
+			(-p_0 -mc) \chi - (\vec{p} ~\vec{\sigma}) \phi
+		\end{pmatrix}
+		= \vec{0}
+	\end{align*}
+	\begin{align*}
+		\text{2.Zeile: }
+		\chi &= \frac{- \vec{p}~\vec{\sigma}}{p_0 +mc} \phi 
+		& (\vec{A}\vec{\sigma})(\vec{B}\vec{\sigma}) &=
+		\vec{A}\vec{B}+ i \vec{\sigma} (\vec{A} \times \vec{B}) \\
+		\text{1.Zeile: } 
+		\phi &= - \frac{\vec{p}~\vec{\sigma}}{p_0 - mc} \chi \\
+		&= \frac{(\vec{p}~\vec{\sigma})(\vec{p}~\vec{\sigma})}{p_0^2-m^2c^2} \phi \\
+		&= \frac{\vec{p}^2}{\vec{p}^2}\phi = \phi \checkmark
+	\end{align*}
+Also $\phi$ und $\chi$ nicht linear unabhängig.
+	\begin{align*}
+		\boxed{E^2 = \vec{p}^2c^2 + m^2 c^4}
+	\end{align*}
+$\Rightarrow$ Es existieren ebene Wellen als Lösungen der Dirac Gleichung, wobei $\phi$ oder $\chi$ frei gewählt werden kann.
+
+2 Fälle(analog zum $\vec{p}= \vec{0}$ Fall)
+	\begin{enumerate}[1.]
+		\item $E= \sqrt{m^2c^4 + \vec{p}^2 c^2}$
+		\begin{align*}
+			\psi (x) &= u(\vec{k}) e^{-ik.x} \\
+			\phi^{(1)} &= 
+			\begin{pmatrix}
+			1 \\ 0
+			\end{pmatrix}
+			&\Rightarrow 
+			\chi^{(1)} &= \frac{\vec{p}~\vec{\sigma}}{p_0 + mc}
+			\begin{pmatrix}
+			1 \\ 0
+			\end{pmatrix}
+			= \frac{c}{E + mc^2}
+			\begin{pmatrix}
+			p_3 \\ p_1 + ip_2
+			\end{pmatrix} 
+			\\
+			\phi^{(2)} &= 
+			\begin{pmatrix}
+			0 \\ 1
+			\end{pmatrix}
+			&\Rightarrow 
+			\chi^{(2)} &= \frac{\vec{p}~\vec{\sigma}}{p_0 + mc}
+			\begin{pmatrix}
+			0 \\ 1
+			\end{pmatrix}
+			= \frac{c}{E + mc^2}
+			\begin{pmatrix}
+			p_1 - ip_2 \\ -p_3
+			\end{pmatrix}
+		\end{align*}
+	Nicht relativistischer Grenzfall:
+		\begin{align*}
+			E &= mc^2 + E' &\text{mit } E' &\ll mc^2 \\
+			E' &\approx \frac{\vec{p}^2}{2m} &
+			\left|\chi^{(i)} \right| &\ll \left|\phi^{(i)} \right| \\
+			\phi &: \text{``große Komponenten''} ,& \chi &: \text{``kleine Komponenten''}
+		\end{align*}
+	\item $E=-\sqrt{m^2c^4 + \vec{p}^2 c^2}$
+		\begin{align*}
+			\psi &= u(\vec{k}) e^{-ik.x} \\
+			\Rightarrow 
+			\chi^{(3)} &= 
+			\begin{pmatrix}
+			1 \\ 0
+			\end{pmatrix}
+			&\Rightarrow 
+			\phi^{(3)} &= \frac{\vec{p}~\vec{\sigma}}{-p_0 + mc}
+			\begin{pmatrix}
+			1 \\ 0
+			\end{pmatrix}
+			= \frac{c}{|E| + mc^2}
+			\begin{pmatrix}
+			p_3 \\ p_1 + ip_2
+			\end{pmatrix} 
+			\\
+			\chi^{(4)} &= 
+			\begin{pmatrix}
+			0 \\ 1
+			\end{pmatrix}
+			&\Rightarrow 
+			\phi^{(4)} &= \frac{\vec{p}~\vec{\sigma}}{-p_0 + mc}
+			\begin{pmatrix}
+			0 \\ 1
+			\end{pmatrix}
+			= \frac{c}{|E| + mc^2}
+			\begin{pmatrix}
+			p_1 - ip_2 \\ -p_3
+			\end{pmatrix}
+			\\
+			\phi &: \text{``kleine Komponenten''} ,& \chi &: \text{``große Komponenten''}
+		\end{align*}
+	im nicht relativistischen Grenzfall.
+	\end{enumerate}
+\marginpar{03.12.2015}
