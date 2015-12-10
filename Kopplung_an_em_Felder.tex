@@ -1,0 +1,155 @@
+\subsection{Kopplung der Dirac-Gleichung an elektromagnetische Felder}
+``Rezept'' aus QM1 (2)
+	\begin{align*}
+		\vec{p} &\mapsto \vec{p} - \frac{q}{c} \vec{A},&
+		q &= -e \text{ für Elektronen}
+	\end{align*}		
+	\begin{align*}
+		&\boxed{
+				H = c\vec{\alpha}
+				\left(\vec{p} - \frac{q}{c} \vec{A}\right)
+				+ \beta m c^2 + q \Phi
+			} \\
+		&\Rightarrow
+		\boxed{
+				\left(
+					i \hbar \gamma^\mu \partial_\mu - \frac{q}{c} \gamma^\mu A_\mu - mc
+				\right) \psi = 0
+			} 
+		& \gamma_\mu &= \beta \vec{\alpha},& \beta &= \gamma_0
+	\end{align*}
+	\begin{align*}
+		A^\mu &= 
+		\begin{pmatrix}
+			\Phi \\ \vec{A}
+		\end{pmatrix}
+		& \vec{\alpha} &=
+		\begin{pmatrix}
+			0 & \vec{\sigma} \\
+			\vec{\sigma} & 0
+		\end{pmatrix}
+		& \beta &= 
+		\begin{pmatrix}
+			\mathds{1} & 0 \\
+			0 & \mathds{1}
+		\end{pmatrix}
+		& \psi &=
+		\begin{pmatrix}
+			\phi \\ \chi
+		\end{pmatrix}
+	\end{align*}
+	\begin{align*}
+		\left(
+			i\hbar \frac{\partial}{\partial t} - q \Phi - mc^2
+		\right) \phi 
+		&= (c\vec{p} - q \vec{A}) \vec{\sigma} \chi \\
+		\left(
+			i \hbar \frac{\partial}{\partial t} - q \Phi + mc^2
+		\right) \chi
+		&= (c \vec{p} - q \vec{A}) \vec{\sigma} \phi
+	\end{align*}
+Stationäre Gleichungen $\left(i\hbar \frac{\partial \chi}{\partial t} = E \chi,~ i\hbar \frac{\partial \phi}{\partial t} = E \phi \right)$.
+	\begin{align*}
+		\left(E - q\Phi - mc^2\right) \phi 
+		&= (c \vec{p} - q \vec{A}) \cdot \vec{\sigma} \chi \\
+		\left(E - q \Phi + mc^2\right) \chi
+		&= (c \vec{p} - q \vec{A}) \cdot \vec{\sigma} \phi
+	\end{align*}
+Was heißt
+	\begin{align*}
+		\vec{A} \vec{\sigma} \phi =
+		\underbrace{
+				\left(A_x\sigma_x + A_y\sigma_y + A_z\sigma_z\right)
+			}_{\substack{
+					\begin{pmatrix}
+						A_z & A_x - iA_y \\
+						A_x + iA_y & -A_z
+					\end{pmatrix}
+				}}
+		\underbrace{\phi}_{\mathclap{
+					\begin{pmatrix}
+						\phi_1 \\ \phi_2
+					\end{pmatrix}
+				}}
+	\end{align*}
+Nichtrelativistischer Grenzfall:
+	\begin{align*}
+		E &= mc^2 + E' ,& 
+		|E'| &\approx \frac{\vec{p}}{2m} + \ldots \ll mc^2 ,&
+		|q\Phi| &\ll mc^2 \\
+		(E' - q \Phi) \phi &\approx (c \vec{p} - q \vec{A}) \vec{\sigma} \chi \\
+		2mc^2 \chi &\approx (c \vec{p} - q \vec{A}) \vec{\sigma} \phi \\
+		(E' - q\Phi) \phi &= 
+		\frac{1}{2mc^2} \left[(c \vec{p} - q \vec{A}) \vec{\sigma}\right]^2 \phi  
+	\end{align*}
+Nebenrechnung:
+	\begin{align*}
+		(\vec{\alpha} \cdot \vec{\sigma}) (\vec{b} \cdot \vec{\sigma}) 
+		&= (\vec{a} \cdot \vec{b}) \mathds{1} + i (\vec{a} \times \vec{b}) \cdot \vec{\sigma}
+	\end{align*}
+	\begin{align*}
+		(E'- q\Phi) \phi &=
+		\left[\frac{1}{2m} (\vec{p} - \frac{q}{c} \vec{A})^2 - \frac{q \hbar}{2mc} \vec{\sigma} \cdot \vec{B}\right] \phi
+	\end{align*}
+Hier fehlt eine skurile Rechnung, bei der jeder den Überblick so verloren hatte, dass ich sie nicht mitgeschrieben hab.
+	\begin{align*}
+		&\boxed{\left[
+			\frac{1}{2m} (\vec{p} - \frac{q}{c} \vec{A})^2 + q\Phi -\frac{q}{mc} \vec{S} \cdot \vec{B}
+		\right] \phi
+		= E\phi}
+		&\text{mit }
+		\vec{S} &= \frac{\hbar}{2} \vec{\sigma} ~(\text{Spinoperator}) \\
+		&\text{Pauligleichung mit }
+		-\frac{q}{mc} \vec{S} \cdot \vec{B} = g \frac{e}{2mc} \vec{S} \cdot \vec{B}
+	\end{align*}
+Gyromagnetischer Faktor $g=2$
+	\begin{align*}
+		\vec{L} + g \vec{S} = \vec{L} + 2\vec{S} = \vec{J} + \vec{S}
+	\end{align*}
+Es existieren Korrekturen zu $g=2$ (Quantenelektrodynamik)\\
+$4\times4$ Spin matrizen:
+	\begin{align*}
+		\vec{\Sigma} &=
+		\begin{pmatrix}
+			\vec{\sigma} & 0 \\
+			0 & \vec{\sigma} 
+		\end{pmatrix}
+	\end{align*}
+Spinoperator, der auf Dirac-Spinoren wirkt: $\vec{S} = \frac{\hbar}{2} \vec{\Sigma}$
+	\begin{align*}
+		\text{Diracgleichung } &\Rightarrow
+		\begin{aligned}
+			&1.\text{ Spin} \\
+			&2.\text{ Positron} \\
+			&3.\text{ Pauli} \\
+			&4. ~g=2 \\
+		\end{aligned}
+	\end{align*}
+	\begin{align*}
+		[S_j,S_k] &= i\epsilon_{jk \ell} S_\ell \\
+		\vec{S}^2 &= 3 \frac{\hbar^2}{4} =
+		S(S + 1) \hbar^2 \text{ mit } S=\frac{1}{2}
+	\end{align*}
+Bahndrehimpuls $\vec{L} = \vec{r} \times \vec{p}$
+	\begin{align*}
+		H &= c \vec{\alpha} \vec{p} + \beta mc^2 & &(A^\mu = 0) \\
+		[\vec{L}, H] &= i\hbar c \vec{\alpha} \times \vec{p}
+		& [\vec{S}, H] &= -i\hbar c \vec{\alpha} \times \vec{p} \\
+		\Rightarrow [\vec{J}, H] &= 0
+		& \text{mit Gesamtdrehimpuls } 
+		\vec{J} &= \vec{L} + \vec{S} = \vec{L} \otimes \mathds{1}_4 + \mathds{1}_{2\ell} \otimes \vec{S}
+	\end{align*}
+	\begin{align*}
+		S_z u^{(1)} &= \frac{\hbar}{2} u^{(1)} &
+		S_z u^{(3)} &= \frac{\hbar}{2} u^{(3)} &
+		S_z u^{(2)} &= -\frac{\hbar}{2} u^{(2)} &
+		S_z u^{(4)} &= -\frac{\hbar}{2} u^{(4)}
+	\end{align*}
+	\begin{align*}
+		\phi &= 
+		\begin{pmatrix}
+			u^{(1)} \\
+			u^{(3)}
+		\end{pmatrix}
+	\end{align*}
+(Teilchen für $|E| - mc^2$ klein) $u^{(1)}$: spin ``up'', $u^{(3)}$: spin ``down'' 
