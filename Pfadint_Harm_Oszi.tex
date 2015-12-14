@@ -1,0 +1,80 @@
+\subsection{Harmonischer Oszillator}
+	\begin{align*}
+		S = \int \diff t \left(
+			\frac{m}{2} \dot{x}^2 - \frac{1}{2} m \omega^2 x^2
+		\right)
+	\end{align*}
+QM: Betrachte Summe über alle Pfade von $x_i \rightarrow x_f$ 
+
+klassische Lösung:
+	\begin{align*}
+		x_c(t) = x_i \frac{\sin (\omega(t_f - t))}{\sin (\omega(t_f - t_i))}
+		+ x_f \frac{\sin (\omega(t - t_i))}{\sin (\omega (t_f - t_i))} 
+	\end{align*}
+Einsetzen von $x_c$ in Wirkungsfunktional 
+	\begin{align*}
+		S_c &= \frac{1}{2} m \omega 
+		\left(
+			\frac{(x_i^2 + x_f^2) \cos(\omega(t_f - t_i)) - 2 x_ix_f}{\sin(\omega(t_f - t_i))}
+		\right) \\
+		x(t) &= x_c(t) + y(t) \\
+		y(t) &\text{ ist Quantenfluktuation und es gilt: } y(t_i) = y(t_f) = 0 \\
+		S[x(t)] &= \underbrace{S[x_c]}_{\mathclap{S_c}} + 
+		(\text{linearer Term } = 0) +
+		\underbrace{\frac{m}{2} \int\limits_0^T \diff t \left(\dot{y}^2 - \omega^2 y^2\right)}_{\mathclap{= \frac{m}{2} \int\limits_0^T \diff t~ y(t)\left(-\frac{\diff^2}{\diff t^2} - \omega^2\right)y}}
+	\end{align*}
+Entwickle $y$ in Eigenfunktionen von $-\frac{\diff^2}{\diff t^2} - \omega^2$
+	\begin{align*}
+		y_n &= \sqrt{\frac{2}{T}} \sin \left(\frac{n \pi t}{T}\right) \\
+		\int\limits_{0}^T \diff t~y_n(t) y_m(t) &= \delta_{nm} \\
+		y(t) &= \sum\limits_{n=1}^\infty a_n y_n(t) 
+	\end{align*}
+Eigenwerte: $\lambda_n=\frac{n^2 \pi^2}{T^2} - \omega^2$
+	\begin{align*}
+		&\int [\diff x] e^{\frac{i}{\hbar} S_c} e^{\frac{i}{\hbar} S[y]} \\
+		&[dx] \rightarrow [dy] \rightarrow [d a_n] \\
+		&S[y] = \sum_{n = 1}^{\infty} \frac{m}{2} \lambda_n a_n^2 \\
+		&\text{kann wieder à la Gauß integriert werden}
+	\end{align*}
+	\begin{align*}
+		\braket{x_f, T | x_i, 0} 
+		&= const. \int \prod \diff a_1 \exp\left(\frac{i}{\hbar} \frac{m}{2} \sum_{1}^{\infty} \lambda_n a_n^2\right) \\
+		&= const. \prod_{n=1}^{\infty}
+		\left[
+			\frac{m}{2 \pi i \hbar} \lambda_n
+		\right]^{\frac{1}{2}} \\
+	\end{align*}
+freies Teilchen (Grenzfall $\omega \rightarrow 0$):
+	\begin{align*}
+		\lambda_n^{(0)} &= \frac{n^2 \pi^2}{T^2} \\
+		\prod_{n=1}^{\infty} \left(\frac{\lambda_n}{\lambda_n^0}\right)^{-\frac{1}{2}} &=
+		\prod_{n=1}^{\infty} \left(1 - \frac{n^2 \pi^2}{T^2}\right)^{-\frac{1}{2}}
+	\end{align*}
+Durch Vergleich mit $\omega \rightarrow 0$
+	\begin{align*}
+		\left(\frac{m \omega}{2 \pi i \hbar \sin(\omega T)}\right) &= 
+		\braket{x_f , T | x, 0}
+	\end{align*}
+für $\omega \rightarrow 0$ Vorfaktor $\left(\frac{m}{2 \pi i \hbar T}\right)$
+
+Richtiges Ergebnis für ein freies Teilchen, welches von $x_i = 0$ nach $x_f = 0$ läuft ($y(t_i)= y(t_f) = 0$) 
+	\begin{align*}
+		E_n = \hbar \omega\left(n + \frac{1}{2}\right)
+	\end{align*}
+Wellenfunktionen lassen sich alle aus den Matrixelementen $\braket{x_f, T | x_i , 0}$ extrahieren.
+\\
+Numerische Simulation von Pfadintegralen
+	\begin{enumerate}[1)]
+		\item endliches $a$ (Gitterabstand) 
+		\item endliches Volumen
+		\begin{align*}
+			\text{Extrapoliere }& &
+			\begin{aligned}
+				a &\rightarrow 0 \\
+				V &\rightarrow \infty
+			\end{aligned}
+			& &t_i
+		\end{align*}
+	\end{enumerate}
+fragt mich nicht, was das letzte heißt, keine Ahnung
+

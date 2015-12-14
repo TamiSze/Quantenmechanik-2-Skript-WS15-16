@@ -102,6 +102,108 @@ Füge ein:
 \marginpar{nicht von Prof.Bali gehalten}
 	\begin{figure*} [h]
 		\begin{center}
-			\includegraphics[width=10cm]{Uebergangsamplituden2}
+			\includegraphics[width=8cm]{Uebergangsamplituden2}
 		\end{center}
 	\end{figure*}
+	\begin{align*}
+		\braket{x_f, t_f | x_i , t_i} &=
+		\int \diff x_1 \ldots \diff x_{N-1} 
+		\braket{x_f, t_f | x_{N-1}, t_{N-1}} 
+		\braket{x_{N-1}; t_{N-1}| x_{N-2};t_{N-2}} \\
+		&\ldots
+		\braket{x_{j+1}, t_{j+1}| x_j, t_j} \\
+		\braket{x_{j+1},t_{j+1} | x_j, t_j}
+		&= \sqrt{\frac{m}{2\pi\hbar ia}} e^{\frac{ia}{\hbar}} 
+		\left[
+			\left(m \frac{x_{j+1} - x_j}{a}\right)^2 \frac{1}{2 m}
+			-\frac{1}{2} \left(V(x_{j+1}) + V(x_j)\right)
+		\right] \\
+		&\left(H = \frac{\hat{p}^2}{2m} + V(x)\right) 
+	\end{align*}
+$a \rightarrow 0,~ N \rightarrow \infty,~ aN = t_f - t_i$
+	\begin{align*}
+		\Rightarrow& \braket{x_f,t_f | x_i,t_i} =
+		\sqrt{\frac{m}{2 \pi i a \hbar}}^N 
+		\int \prod_i \diff x_i e^{\frac{i}{\hbar} \sum_i a L_i} \\
+		&\rightarrow \int [dx] e^{\frac{i}{\hbar} \int \diff t L} 
+		& S &= \int \diff t L
+	\end{align*}
+$S$ ist Funktional : $S[x(t)] = $ Zahl
+	\begin{align*}
+		\braket{x_f,t_f | x_i,t_i} &= \int [\diff x] e^{\frac{i}{\hbar} S[x]} \\
+		S &= \int \limits_{t_i}^{t_f} \diff t L[x(t)]
+	\end{align*} 
+wenn $S \gg \hbar$.
+
+fluktuiert die Phase stark, Beiträge in diesem Term (zu diesem Pfad) klein.
+\\
+Der Hauptbeitrag kommt von Pfaden, in denen $S$ möglichst klein ist. 
+\\
+$\rightarrow$ Prinzip der minimalen Wirkung
+
+Funktionales Differenzieren:
+	\begin{align*}
+		F[f]& &
+		\frac{\delta F}{\delta f(y)} &=
+		\lim\limits_{\epsilon \rightarrow 0} 
+		\frac{F\left(f(x) + \epsilon \delta(x-y)\right) - F[f(x)]}{\epsilon} \\
+		F[f] &= \int \diff x g(x) f(x) 
+	\end{align*}
+	\begin{align*}
+		\frac{\delta F}{\delta f(y)} &= 
+		\lim\limits_{\epsilon \rightarrow 0}
+		\int \frac{\diff x g(x) [f(x) + \epsilon \delta(x-y) - f(x)]}{\epsilon} 
+		= g(y) \\
+		\frac{\delta S[x]}{\delta x(t)} &=
+		\lim\limits_{\epsilon \rightarrow 0} \frac{1}{\epsilon}
+		\left(
+			\int \diff t' \left(\frac{1}{2} m \frac{\diff}{\diff t'} \left(x(t') + \epsilon \delta(t-t')\right)\right)
+		\right)^2 \\
+		&- V(x + \epsilon \delta(t-t')) - \int \diff t \left(\frac{1}{2} m \dot{x}^2 - V(x)\right) \\
+		&\overset{\epsilon^2 \rightarrow 0}{=}
+		\int \diff t'
+		\left(
+			m \frac{\diff x}{\diff t} \frac{\diff (\delta(t-t'))}{\diff t} 
+			- \frac{\partial V}{\partial x} \delta(t-t')
+		\right) \\
+		&= \int \diff t'
+		\left(
+			- m \frac{\diff^2 x}{\diff t^2} - \frac{\partial V}{\partial x}
+		\right) \delta(t'- t)
+	\end{align*}
+	\begin{align*}
+		\frac{\delta S}{\delta x} = 0 &\Longleftrightarrow 
+		m \frac{\diff^2 x}{\diff t^2} = - \frac{\partial V}{\partial x} \\
+		\int\limits_{-\infty}^\infty \diff x e^{-x^2} &= \sqrt{\pi} \\
+		\int\limits_{-\infty}^\infty e^{-ax^2 + bx + c} &=
+		\exp \left(\frac{b^2}{4a} + c\right) \left(\frac{\pi}{a}\right)^{\frac{1}{2}}
+	\end{align*}
+$a \neq 0,~ \mathrm{Re} ~a \geq 0$ \\
+Freie Teilchen, $V=0$
+	\begin{align*}
+		&\left(\frac{m}{2 \pi i \hbar a}\right)^{\frac{3}{2}}
+		\int\limits_{-\infty}^\infty \diff x_1 \exp 
+		\left(
+			\frac{im}{2\hbar a} \left[
+				(x_2 - x_1)^2 + (x_1 - x_0)^2
+			\right]
+		\right) \\
+		&= \left(\frac{m}{2\pi i \hbar 2 a}\right)^{\frac{1}{2}}
+		\exp \left(
+			\frac{im}{2 \hbar 2 a} (x_2 - x_0)^2
+		\right)
+	\end{align*}
+nächster Schritt: Integration über $x_2$
+	\begin{align*}
+		\left(\frac{m}{2 \pi i \hbar 3 a}\right)^{\frac{1}{2}}
+		\exp \left(
+			\left(\frac{im}{2\hbar 3 a}\right) (x_3 - x_0)^2
+		\right)
+	\end{align*}
+nach $N$ Schritten:
+	\begin{align*}
+		\braket{x_f,t_f | x_i; t_i} &=
+		\left(\frac{m}{2 \pi i \hbar (t_f -t_i)}\right)^{\frac{1}{2}}
+		\exp \left(\frac{im (x_f - x_i)^2}{2 \hbar (t_f - t_i)}\right)
+	\end{align*}
+Dies ist das Ergebnis für freies Teilchen.
