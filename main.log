@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.9.8)  13 DEC 2015 20:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.9.8)  14 DEC 2015 11:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1175,41 +1175,42 @@ LaTeX Warning: Marginpar on page 73 moved.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [73 <./Uebergangsamplituden1.jpg>] [74 <./Uebergangsamplituden2.jpg>]
-(./main.aux) ) 
+[73 <./Uebergangsamplituden1.jpg>]) (./Aharanov-Bohn-Effekt.tex [74 <./Uebergan
+gsamplituden2.jpg>] [75]) [76] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 6215 strings out of 493117
- 93981 string characters out of 6138985
+ 6221 strings out of 493117
+ 94133 string characters out of 6138985
  212366 words of memory out of 5000000
- 9401 multiletter control sequences out of 15000+600000
+ 9404 multiletter control sequences out of 15000+600000
  60885 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  47i,19n,43p,365b,387s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texl
-ive/2014/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2014/texmf-dist/fo
-nts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/l
-m-mathit.enc}{c:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}<c:/t
-exlive/2014/texmf-dist/fonts/type1/public/doublestroke/dsrom12.pfb><c:/texlive/
-2014/texmf-dist/fonts/type1/public/doublestroke/dsrom8.pfb><c:/texlive/2014/tex
-mf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2014/texmf-dist/fonts/type
-1/public/lm/lmmi10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmmi12
-.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/texlive/20
-14/texmf-dist/fonts/type1/public/lm/lmmi7.pfb><c:/texlive/2014/texmf-dist/fonts
-/type1/public/lm/lmmi8.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lm
-r10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive
-/2014/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2014/texmf-dist/fon
-ts/type1/public/lm/lmr7.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/l
-mr8.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/texl
-ive/2014/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2014/texmf-dis
-t/fonts/type1/public/lm/lmsy6.pfb><c:/texlive/2014/texmf-dist/fonts/type1/publi
-c/lm/lmsy8.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/
-msam10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm
-10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pf
-b><c:/texlive/2014/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on main.pdf (74 pages, 19822192 bytes).
+{c:/texlive/2014/texmf-dist/fonts/
+enc/dvips/lm/lm-rm.enc}{c:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
+}{c:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2014/
+texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2014/texmf-dist/fonts/e
+nc/dvips/lm/lm-mathex.enc}<c:/texlive/2014/texmf-dist/fonts/type1/public/double
+stroke/dsrom12.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/doublestroke/
+dsrom8.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/tex
+live/2014/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2014/texmf-di
+st/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2014/texmf-dist/fonts/type1/pub
+lic/lm/lmmi6.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmmi7.pfb><c
+:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2014/texm
+f-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/
+public/lm/lmr12.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmr6.pfb>
+<c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2014/tex
+mf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2014/texmf-dist/fonts/type1/
+public/lm/lmssbx10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmsy10
+.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmsy6.pfb><c:/texlive/20
+14/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2014/texmf-dist/fonts
+/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2014/texmf-dist/fonts/typ
+e1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/p
+ublic/amsfonts/symbols/msbm7.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public
+/rsfs/rsfs10.pfb>
+Output written on main.pdf (76 pages, 19830419 bytes).
 PDF statistics:
- 358 PDF objects out of 1000 (max. 8388607)
- 242 compressed objects within 3 object streams
+ 364 PDF objects out of 1000 (max. 8388607)
+ 246 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
