@@ -1,10 +1,10 @@
 \subsection{Der Aharanov-Bohn-Effekt} (5.3)\marginpar{14.12.15}
 (Ehrenberg-Siday 1949, (wieder entdeckt bzw mathematisch besser:)Aharanov-Bohn 1959)
-%	\begin{figure*} [h]
-%	\begin{center}
-%		\includegraphics[width=10cm]{Uebergangsamplituden2}
-%	\end{center}
-%	\end{figure*} bild1
+	\begin{figure*} [h]
+	\begin{center}
+		\includegraphics[width=8cm]{Aharanov-Bohn-Effekt1}
+	\end{center}
+	\end{figure*}
 Behauptung: $\vec{B}$ beeinflusst Interferenzmuster
 
 Klassische Physik:
@@ -45,11 +45,12 @@ Lagrangefunktion:
 		&= S_0 + \frac{q}{c} \int_{\vec{r}(t_0) = \vec{y}}^{\vec{r}(t_1) = \vec{x}} \diff \vec{r} \cdot \vec{A}(\vec{r}) 
 	\end{align*}
 $\vec{A}(\vec{r}) \neq \vec{\nabla}$ (Skalarfeld)(Problem bei $x=y=0$), deshalb wird das zweite Integral wegabhängig sein
-	%	\begin{figure*} [h]
-	%	\begin{center}
-	%		\includegraphics[width=10cm]{Uebergangsamplituden2}
-	%	\end{center}
-	%	\end{figure*} bild2
+	\begin{figure*} [h]
+		\begin{center}
+			\includegraphics[width=8cm]{Aharanov-Bohn-Effekt2}
+		\end{center}
+	\end{figure*}
+\FloatBarrier
 	\begin{align*}
 		\int_{c_a} \diff \vec{r} \cdot \vec{A}(\vec{r}) - \int_{c_b} \diff \vec{r} \cdot \vec{A}(\vec{r}) &=
 		\oint_{c_a-c_b} \overset{Stokes}{=} 
@@ -58,19 +59,23 @@ $\vec{A}(\vec{r}) \neq \vec{\nabla}$ (Skalarfeld)(Problem bei $x=y=0$), deshalb 
 		\int_{c_a} \diff \vec{r} \vec{A}(\vec{r}) = \int_{c_b} \diff \vec{r} \vec{A}(\vec{r}) =
 		\alpha_1 = \int_{c^{(1)}} \diff \vec{r} \cdot \vec{A}(\vec{r})
 	\end{align*}
-	%	\begin{figure*} [h]
-	%	\begin{center}
-	%		\includegraphics[width=10cm]{Uebergangsamplituden2}
-	%	\end{center}
-	%	\end{figure*} bild3
+\FloatBarrier
+		\begin{figure*} [h]
+		\begin{center}
+			\includegraphics[width=10cm]{Aharanov-Bohn-Effekt3}
+		\end{center}
+		\end{figure*} 
+\FloatBarrier
 	\begin{align*}
 		\int_{c^{(2)}} \diff \vec{r} \vec{A}(\vec{r}) = \alpha_2
 	\end{align*}
-	%	\begin{figure*} [h]
-	%	\begin{center}
-	%		\includegraphics[width=10cm]{Uebergangsamplituden2}
-	%	\end{center}
-	%	\end{figure*} bild4
+\FloatBarrier
+		\begin{figure*} [h]
+		\begin{center}
+			\includegraphics[width=10cm]{Aharanov-Bohn-Effekt4}
+		\end{center}
+		\end{figure*}
+\FloatBarrier
 	\begin{align*}
 		\int_{c_a} \diff \vec{r} \cdot \vec{A}(\vec{r}) - \int_{c_c} \diff \vec{r} \cdot \vec{A}(\vec{r}) &=
 		\int_{c^{(1)}} \diff \vec{r} \cdot \vec{A}(\vec{r}) - \int_{c^{(2)}} \diff \vec{r} \cdot \vec{A}(\vec{r}) = \alpha_1 - \alpha_2 \\
@@ -113,7 +118,7 @@ Korrekte Lösung:
 	\begin{align*}
 		|\braket{\vec{x}; t_1 | \vec{y} , t_0}|^2 &=
 		\left|
-			\sum_{n\in\mathds{Z}} K_{n+1} e^{in \frac{q}{\hbar c} \Phi_m}
+			\sum_{n\in\mathds{Z}} K_{n} e^{in \frac{q}{\hbar c} \Phi_m}
 		\right|^2
 	\end{align*}
 $n$ ist Windungszahl.
@@ -125,3 +130,25 @@ $\Rightarrow$ Magnetfeld hat keinen Einfluss.
 Ansonsten beeinflusst $\vec{B}$ das Interferenzmuster. 
 \\
 NB: Flussquantisierung in Supraleitern (London 1948)
+\\ \\
+Aufgabe 9:
+
+Eichtransformation $\Lambda (\vec{r}, t)$
+	\begin{align*}
+		\vec{A} (\vec{r}, t) &\mapsto \vec{A} (\vec{r}, t) + \vec{\nabla} \Lambda \\
+		\Phi (\vec{r}, t) &\mapsto \Phi (\vec{r}, t) + \frac{1}{c} \frac{\partial \Lambda}{\partial t} \\
+		\psi (\vec{r}, t) &\mapsto \exp \left(i \frac{q}{\hbar c} \Lambda (\vec{r}, t)\right)
+		\psi (\vec{r}, t)
+	\end{align*}
+damit Schrödingergleichung für Teilchen mit Ladung $q$ eichunabhängig ist.
+$\Rightarrow$ Kann Interferenzeffekte beeinflussen.
+
+Kovariante Ableitung:
+	\begin{align*}
+		\vec{D} &= \vec{\nabla} - i\frac{q}{\hbar c} \vec{A} (\vec{r},t) \\
+		\vec{j} &= \frac{\hbar}{2 i m} \left(
+			\psi^* \vec{D} \psi + \psi \vec{D} \psi^*
+		\right),&
+		\vec{\nabla} \vec{j} + \frac{\partial \rho}{\partial t} &= 0
+	\end{align*}
+
