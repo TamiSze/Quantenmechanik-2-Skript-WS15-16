@@ -43,9 +43,32 @@ $\tau$ ist keine ``echte'' Zeit mehr.\\
 	\begin{tabular}{l l}
 		Vorteil: & Keine komplexen Phasen. Nicht-klassische Pfade werden exponentiell \\
 		 & mit $e^{-\frac{S_E}{\hbar}}$ unterdrückt.\\
+		 Vorteil 2: & $\int [\diff x] e^{-\frac{S_E[x(t)]}{\hbar}}$ lässt sich als relative Wahrscheinlichkeit (Maß) interpretieren \\
 		 Nachteil: & Wir haben Information über zeitliche Entwicklung verloren. \\
 		 NB: & Pfadintegrale lassen sich auch in euklidischer Raumzeit herleiten:\\
 		 & Transferoperator: 
-		 $T_E = \exp\left(-\frac{a}{2\hbar} V(\hat{x})\right) \exp\left(-\frac{a}{\hbar} \frac{\hat{p}^2}{2m}\right) \exp\left(-\frac{a}{2\hbar} V(\hat{x})\right)$\\
-		 Vorteil 2: & $\int [\diff x] e^{-\frac{S[x(t)]}{\hbar}}$ lässt sich als relative Wahrscheinlichkeit (Maß) interpretieren
-	\end{tabular}
+		 $T_E = \exp\left(-\frac{a}{2\hbar} V(\hat{x})\right) \exp\left(-\frac{a}{\hbar} \frac{\hat{p}^2}{2m}\right) \exp\left(-\frac{a}{2\hbar} V(\hat{x})\right)$
+	\end{tabular}\\
+\\	
+Wdh:\marginpar{17.12.15}
+	\begin{align*}
+		&\int [\diff x] e^{\frac{i}{\hbar} S[x]} ,& S[x] &= \int_{-\infty}^{\infty} \diff t L(x, \dot{x}) 
+	\end{align*}
+Euklidische Zeit: $\tau = i t$
+	\begin{align*}
+		Z &= Z_E = \int [ \diff x] e^{-\frac{S_E[x]}{\hbar}} & x &= x(\tau) \\
+		S_E &= \int\limits_{-\infty}^{\infty} \diff \tau L_E \left(x, \frac{\diff x}{\diff \tau}\right) ,&
+		L_E &=``-L\text{''} = \frac{1}{2} m \dot{x}_E^2 +V(x)
+	\end{align*}
+Zeitentwicklung: 
+	\begin{align*}
+		e^{-H_E t} &\overset{a\rightarrow 0 }{\longleftarrow} \left(\hat{\mathrm{T}}_E\right)^{\frac{\tau}{a}} &
+		H_E &= -\frac{1}{2} m \dot{x}_c^2 + V(x) 
+	\end{align*}
+Von jetzt an $\hbar = 1$
+	\begin{align*}
+		[\hat{x},\hat{p}] &= -i & 
+		\Delta x \Delta p &= \frac{1}{2} \text{ etc.}
+	\end{align*}
+
+

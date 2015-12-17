@@ -1,0 +1,44 @@
+\subsection{2-Punkt Funktion}
+	\begin{align*}
+		G^{(2)} (\tau_2, \tau_1) &=
+		\frac{{}_H\braket{x_f; \tau_f = \infty | \hat{x} (\tau_2) \hat{x}(\tau_1) | x_i; \tau_i = \infty}_H}{{}_H\braket{x_f | x_i}_H} \\
+		\text{Enwickle nach Eigenzuständen von }H& \\
+		&= \sum_{m, n} \frac{\braket{x_f | e^{-\hat{H} \tau_f} | m} 
+		\braket{m | \hat{x} (\tau_2) \hat{x} (\tau_1)| n} \braket{n | e^{\hat{H} \tau_i} | x_i}}{\sum_n \braket{x_f | e^{-\hat{H}\tau_f} | n} \braket{n | e^{\hat{H} \tau_i} | x_i}} \\
+		&= \frac{\sum_{m,n} e^{-E_m\tau_f}e^{E_n\tau_i} \braket{x_f | m} \braket{n|x_i} \braket{m | \hat{x} (\tau_2) \hat{x} (\tau_1) | n}}{\sum_n e^{-E_n(\tau_f -\tau_i)} \braket{x_f | n} \braket{x_i | m}}\\
+		&\overset{\tau_f \rightarrow \infty,~\tau_i \rightarrow \infty}{\longrightarrow}
+		\frac{\braket{x_f | 0} \braket{0 | x_i}}{\braket{x_f | 0} \braket{0 | x_i}} \braket{m | \hat{x} (\tau_2) \hat{x} (\tau_1) | n}
+	\end{align*}
+Trick: Kompaktifiziere Zeit:
+	\begin{align*}
+		\tau_i &= 0,& \tau_f&= \tau & &\circlearrowright \\
+		x(0) &= x(\tau) = x(\tau_i) = x(\tau_f) = x_i = x_f
+	\end{align*}
+	\begin{align*}
+		\sum_x \braket{x | x} &= 
+		\sum_x \braket{x | \hat{\mathrm{T}}_E^n | x} = \mathrm{Sp} \hat{\mathrm{T}_E^n} \\
+		&\overset{n \rightarrow \infty}{=} \mathrm{Sp} e^{-H\tau} = Z_E = 
+		\int \diff x_0 \ldots \diff x_{n-1} e^{-S_E[x]}
+	\end{align*}
+$[x]$ periodische Pfade in $\tau$.  $x_f$, $x_i$ nicht fest
+	\begin{align*}
+		G^{(2)}(\tau_2, \tau_1) &=
+		\frac{\int \diff x \braket{x | x(\tau_2) x(\tau_1) | x}}{\int \diff x\braket{x | x}} 
+		= \braket{0 | x(\tau_2) x(\tau_1) | 0} 
+		& \tau_2 &> \tau_1 \\
+		&= \sum_n \braket{0 | e^{H \tau_2} \hat{x} (0) e^{-H \tau_2} | n}
+		\braket{n | e^{H \tau_1} \hat{x} (0) e^{-H \tau_1} | 0} \\
+		&= \sum_n e^{E_0(\tau_2 - \tau_1)} e^{-E_n(\tau_2 - \tau_1)}
+		\braket{0 | \hat{x} (0) | n} \braket{n | \hat{x} (0) | 0} \\
+		&\overset{E_0 = 0}{=} |\braket{0 | \hat{x} | 0 }|^2 + e^{-E_1(\tau_2 - \tau_1)} 
+		|\braket{0 | \hat{x} | 1}|^2 + \ldots
+	\end{align*}
+$E_1$ Abfall der 2-Punkt funktion mit euklidischer Zeit ergibt Spektrum von $H [(E_0), E_1 ,E_2, \ldots]$
+
+Wie berechne ich $G^{(2)}$? 
+	\begin{align*}
+		G^{(2)} (\tau_2, \tau_1) &\coloneqq 
+		\braket{0 | \mathrm{T} \hat{x}(\tau_2) \hat{x}(\tau_1) | 0} \\ 
+		&= \frac{\int [\diff x] e^{-S_E[x]} x(\tau_2) x(\tau_1)}{Z_E}
+	\end{align*}
+Hier ist kein T (Zeitordnung) notwendig, kein ``1''. Zahlen, keine Operatoren. 

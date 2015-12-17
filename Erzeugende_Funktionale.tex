@@ -1,0 +1,22 @@
+\subsection{Erzeugende Funktionale}
+$n$-Punkt Funktionen $\Rightarrow$ Alle Observablen \\
+Erzeugendes Funktional bekannt $\Rightarrow$ alle $n$-Punkt-Funktionen sind berechenbar.
+	\begin{align*}
+		Z_E [j] &= \frac{\int [\diff x] e^{-S_E + \int \diff \tau j(\tau) x(\tau)}}{\int[\diff x] e^{-S_E}}
+		&\Rightarrow Z_E[0] &= 1 \neq Z_E (\text{weil unten ja }Z_E) 
+	\end{align*}
+$j = j(\tau)$
+
+Funktionalableitung
+	\begin{align*}
+		\left.\frac{\delta Z_E(j)}{\delta j(\tau_1)} \right|_{j = 0} 
+		&= \frac{\int [\diff x] e^{-S_E}x(\tau_1)}{Z_E} 
+		= \braket{0 | \hat{x} (\tau_1) | 0} \\
+		\left.\frac{\delta Z_E(j)}{\delta j (\tau_1) \delta j(\tau_2)} \right|_{j = 0}
+		&= \frac{\int [\diff x] e^{-S_E[x]} x(\tau_2) x(\tau_1)}{Z_E}
+		= \braket{0 | \mathrm{T} \hat{x} (\tau_2) \hat{\tau_1} | 0} 
+	\end{align*}
+	\begin{align*}
+		\Rightarrow \braket{0 | \mathrm{T} x(\tau_1) \ldots x(\tau_N) | 0} = 
+		\left.\frac{\delta^N Z[j]}{\delta j(\tau_1) \ldots \delta j(\tau_N)} \right|_{j= 0}
+	\end{align*}
