@@ -1,110 +1,109 @@
-\section{Systeme mit mehr als 2 ``Teilchen''}
-	\subsection{Das Pauliprinzip}
-		Beispiel: Atom mit $N$ Elektronen $e^-$.
-			\begin{align*}
-				H &= \sum_{i=1}^N H^{(i)} ,& 
-				H^{(i)} &= - \frac{\vec{p}^{(i)2}}{2m} + V(\vec{r}^{(i)}) 
-			\end{align*}
-		Hierbei wurde die $e^- -e^- -$ Wechselwirkung ungerechtfertigerweise vernachlässigt.
-		
-		stationäre Schrödinger Gleichung:
-			\begin{align*}
-				H \phi_{\vec{\alpha}} &= E_{\vec{\alpha}} \phi_{\vec{\alpha}} 
-				&\text{mit } \phi_{\vec{\alpha}} &= \prod_{i=1}^N \phi_{\alpha_i} \\
-				H^{(i)} \phi_{\alpha_i} &= E_{\alpha_i} \phi_{\alpha_i} 
-				&E_{\vec{\alpha}} &= \sum_{i=1}^N E_{\alpha_i} \\
-				\alpha_i &= (n_i, \ell_i , m_i) 
-				&\text{oder mit } &(\vec{p}+e \vec{A})^2 
-				\text{ Pauligleichung} \\
-				\alpha_i &= (n_i, j_i, m_i , \ell_i ,(s_i))
-			\end{align*}
-		und $s_i = \frac{1}{2}$
-			\begin{align*}
-				n_i &: \text{Hauptquantenzahlen} \\
-				j_i &: \text{Drehimpulsquantenzahl } ( \text{Gesamtdrehimpuls } \vec{J}_i = \vec{L}_i + \vec{S}_i) \\
-				m_i &: \text{Magnetsiche Quantenzahl } (\vec{J}_i)_z \ket{\phi_{\alpha_i}} = m_i \ket{\phi_{\alpha_i}} \\
-				\ell_i &: \text{Bahndrehimpulsquantenzahl}
-			\end{align*}
-		Grundzustand:
-			\begin{align*}
-				\alpha_i = (1, \frac{1}{2}, \pm \frac{1}{2}, 0)
-			\end{align*}
-		Pauliverbot (Ausschließungsprinzip):
-		
-		Jeder Einteilchenzustand $\phi_\alpha$ kann höchstens mit einem $e^-$ besetzt sein. \\
-		Pauliprinzip (Dirac + Heisenberg):
-		
-		Die Wellenfunktion eines Systems von Elektronen ist total antisymmetrisch. \\
-		Definiere Permutation
-			\begin{align*}
-				\pi &\in S_N ,~ \sigma (\pi) = \mathrm{sign}(\pi) \in \{+1, -1\} \\	
-				\sigma &: \text{Signum der Permutation}\\
-				\sigma (\pi) &=
-				\left\{
-					\begin{aligned}
-						&+1 \text{ gerade} ,& &\text{gerade Anzahl von paarweise VerIRGENDWAS} \\
-						& & &\text{führt } (1,2,3, \ldots) \text{ in } \prod (1,2,3,\ldots) \text{ über}\\
-						&-1 \text{ ungerade} ,& &\text{ungerade Anzahl} (\ldots)
-					\end{aligned}
-				\right.
-			\end{align*}
-		\underline{Antisymmetrisierungsoperator}:
-			\begin{align*}
-				A &= \frac{1}{\sqrt{N!}} \sum_{\pi \in S_N} \sigma (\pi) \cdot \pi 
-				&\Rightarrow (A \phi) (\vec{r}_1, \ldots, \vec{r}_N) 
-				&= \frac{1}{\sqrt{N!}} \sum_{\pi \in S_N} \sigma(\pi)
-				\phi \left((\vec{r}_{\pi(1)}, \vec{r}_{\pi(2)}, \ldots ,\vec{r}_{\pi(N)}\right)   
-			\end{align*}
-			\begin{align*}
-				A \phi_{\vec{\alpha}} (\vec{r}_1, \ldots, \vec{r}_N)
-				&= \frac{1}{\sqrt{N!}} 
-				\det
-				\begin{pmatrix}
-					\phi_{\alpha_1}(\vec{r}_1, \sigma_1) & \cdots & \phi_{\alpha_1}(\vec{r}_N, \sigma_N) \\
-					\vdots & \ddots & \vdots\\
-					\phi_{\alpha_N}(\vec{r}_1, \sigma_1) & \cdots & \phi_{\alpha_N}(\vec{r}_N, \sigma_N)
-				\end{pmatrix}
-			\end{align*}
-	Wdh: 1-Teilchen Wellenfunktionen (Fermionen)\marginpar{16.11.2015}
-		\begin{align*}
-			\phi_{\alpha_1}(\vec{r}_1, \sigma_1), \ldots, \phi_{\alpha_N}(\vec{r}_N, \sigma_N)
-		\end{align*}
-	Das $\sigma$ zeigt Spin an.
-		\begin{align*}
-			\phi_{\alpha_1} &= 
-			\begin{pmatrix}
-				\phi_{+, \alpha_1 (\vec{r}_1)} \\
-				\phi_{-, \alpha_1 (\vec{r}_1)}
-			\end{pmatrix}
-		\end{align*}
-	hier kommt irgendwas von flavour, was uns nur verwirren kann.
+\subsection{Das Pauliprinzip}
+Beispiel: Atom mit $N$ Elektronen $e^-$.
+	\begin{align*}
+		H &= \sum_{i=1}^N H^{(i)} ,& 
+		H^{(i)} &= - \frac{\vec{p}^{(i)2}}{2m} + V(\vec{r}^{(i)}) 
+	\end{align*}
+Hierbei wurde die $e^- -e^- -$ Wechselwirkung ungerechtfertigerweise vernachlässigt.
 	
-	Fermionische Gesamtwellenfunktion ist total antisymmetrisch
-		\begin{align*}
-			\text{Spin } &\in \left\{ 0, \frac{1}{2}, 1 , \frac{3}{2}, 2 , \ldots \right\} 
-			& (\text{Pauliprinzip})
-		\end{align*}
-	wobei $0, 1 , 2$ Bosonen sind und $\frac{1}{2}, \frac{3}{2}$ Fermionen sind.
+stationäre Schrödinger Gleichung:
+	\begin{align*}
+		H \phi_{\vec{\alpha}} &= E_{\vec{\alpha}} \phi_{\vec{\alpha}} 
+		&\text{mit } \phi_{\vec{\alpha}} &= \prod_{i=1}^N \phi_{\alpha_i} \\
+		H^{(i)} \phi_{\alpha_i} &= E_{\alpha_i} \phi_{\alpha_i} 
+		&E_{\vec{\alpha}} &= \sum_{i=1}^N E_{\alpha_i} \\
+		\alpha_i &= (n_i, \ell_i , m_i) 
+		&\text{oder mit } &(\vec{p}+e \vec{A})^2 
+		\text{ Pauligleichung} \\
+		\alpha_i &= (n_i, j_i, m_i , \ell_i ,(s_i))
+	\end{align*}
+und $s_i = \frac{1}{2}$
+	\begin{align*}
+		n_i &: \text{Hauptquantenzahlen} \\
+		j_i &: \text{Drehimpulsquantenzahl } ( \text{Gesamtdrehimpuls } \vec{J}_i = \vec{L}_i + \vec{S}_i) \\
+		m_i &: \text{Magnetsiche Quantenzahl } (\vec{J}_i)_z \ket{\phi_{\alpha_i}} = m_i \ket{\phi_{\alpha_i}} \\
+		\ell_i &: \text{Bahndrehimpulsquantenzahl}
+	\end{align*}
+Grundzustand:
+	\begin{align*}
+		\alpha_i = (1, \frac{1}{2}, \pm \frac{1}{2}, 0)
+	\end{align*}
+Pauliverbot (Ausschließungsprinzip):
+		
+Jeder Einteilchenzustand $\phi_\alpha$ kann höchstens mit einem $e^-$ besetzt sein. \\
+Pauliprinzip (Dirac + Heisenberg):
+		
+Die Wellenfunktion eines Systems von Elektronen ist total antisymmetrisch. \\
+Definiere Permutation
+	\begin{align*}
+		\pi &\in S_N ,~ \sigma (\pi) = \mathrm{sign}(\pi) \in \{+1, -1\} \\	
+		\sigma &: \text{Signum der Permutation}\\
+		\sigma (\pi) &=
+		\left\{
+			\begin{aligned}
+				&+1 \text{ gerade} ,& &\text{gerade Anzahl von paarweise VerIRGENDWAS} \\
+				& & &\text{führt } (1,2,3, \ldots) \text{ in } \prod (1,2,3,\ldots) \text{ über}\\
+				&-1 \text{ ungerade} ,& &\text{ungerade Anzahl} (\ldots)
+			\end{aligned}
+		\right.
+	\end{align*}
+\underline{Antisymmetrisierungsoperator}:
+	\begin{align*}
+		A &= \frac{1}{\sqrt{N!}} \sum_{\pi \in S_N} \sigma (\pi) \cdot \pi 
+		&\Rightarrow (A \phi) (\vec{r}_1, \ldots, \vec{r}_N) 
+		&= \frac{1}{\sqrt{N!}} \sum_{\pi \in S_N} \sigma(\pi)
+		\phi \left((\vec{r}_{\pi(1)}, \vec{r}_{\pi(2)}, \ldots ,\vec{r}_{\pi(N)}\right)   
+	\end{align*}
+	\begin{align*}
+		A \phi_{\vec{\alpha}} (\vec{r}_1, \ldots, \vec{r}_N)
+		&= \frac{1}{\sqrt{N!}} 
+		\det
+		\begin{pmatrix}
+			\phi_{\alpha_1}(\vec{r}_1, \sigma_1) & \cdots & \phi_{\alpha_1}(\vec{r}_N, \sigma_N) \\
+			\vdots & \ddots & \vdots\\
+			\phi_{\alpha_N}(\vec{r}_1, \sigma_1) & \cdots & \phi_{\alpha_N}(\vec{r}_N, \sigma_N)
+		\end{pmatrix}
+	\end{align*}
+Wdh: 1-Teilchen Wellenfunktionen (Fermionen)\marginpar{16.11.2015}
+	\begin{align*}
+		\phi_{\alpha_1}(\vec{r}_1, \sigma_1), \ldots, \phi_{\alpha_N}(\vec{r}_N, \sigma_N)
+	\end{align*}
+Das $\sigma$ zeigt Spin an.
+	\begin{align*}
+		\phi_{\alpha_1} &= 
+		\begin{pmatrix}
+			\phi_{+, \alpha_1 (\vec{r}_1)} \\
+			\phi_{-, \alpha_1 (\vec{r}_1)}
+		\end{pmatrix}
+	\end{align*}
+hier kommt irgendwas von flavour, was uns nur verwirren kann.
 	
-	Antisymmmetris... siehe oben
+Fermionische Gesamtwellenfunktion ist total antisymmetrisch
+	\begin{align*}
+		\text{Spin } &\in \left\{ 0, \frac{1}{2}, 1 , \frac{3}{2}, 2 , \ldots \right\} 
+		& (\text{Pauliprinzip})
+	\end{align*}
+wobei $0, 1 , 2$ Bosonen sind und $\frac{1}{2}, \frac{3}{2}$ Fermionen sind.
+
+Antisymmmetris... siehe oben
 	
-	Beispiel: $N = 2$
-		\begin{align*}
-			\psi_{\alpha_1 \alpha_2} (\vec{r}_1, \sigma_1; \vec{r}_2, \sigma_2)
-			&= A \overbrace{(\phi_{\alpha_1 \alpha_2} (\vec{r}_1, \sigma_1; \vec{r}_2, \sigma_2))}^{\mathclap{\phi_{\alpha_1} (\vec{r}_1, \sigma_1) \cdot \phi_{\alpha_2}(\vec{r}_2, \sigma_2)}} \\
-			&= \frac{1}{\sqrt{2}}
-			\left(\phi_{\alpha_1} (\vec{r}_1, \sigma_1) \cdot \phi_{\alpha_2}(\vec{r}_2, \sigma_2)
-			- \phi_{\alpha_1} (\vec{r}_2, \sigma_2) \cdot \phi_{\alpha_2}(\vec{r}_1, \sigma_1)\right)
-		\end{align*}
-	Antisymmetrische Gesamtwellenfunktion von $2 e^-$ im Zustand $\alpha_1$ und $\alpha_2$ 
-		\begin{align*}
-			\alpha_1 &= \alpha_2 \Rightarrow \psi = 0 ~(\text{Pauliverbot})
-		\end{align*}
-		\begin{align*}
-			\text{Bosonen } \longleftrightarrow& 
-			\text{ ganzzahliger Spin (Beispiel: Photon)} \\
-			&\Rightarrow \text{ Total symmetrische Wellenfunktion}\\
-			\text{Fermionen } \longleftrightarrow& 
-			\text{ halbzahliger Spin (Beispiel: Elektron)} \\
-			&\Rightarrow \text{ Total antisymmetrische Wellenfunktion}
-		\end{align*}
+Beispiel: $N = 2$
+	\begin{align*}
+		\psi_{\alpha_1 \alpha_2} (\vec{r}_1, \sigma_1; \vec{r}_2, \sigma_2)
+		&= A \overbrace{(\phi_{\alpha_1 \alpha_2} (\vec{r}_1, \sigma_1; \vec{r}_2, \sigma_2))}^{\mathclap{\phi_{\alpha_1} (\vec{r}_1, \sigma_1) \cdot \phi_{\alpha_2}(\vec{r}_2, \sigma_2)}} \\
+		&= \frac{1}{\sqrt{2}}
+		\left(\phi_{\alpha_1} (\vec{r}_1, \sigma_1) \cdot \phi_{\alpha_2}(\vec{r}_2, \sigma_2)
+		- \phi_{\alpha_1} (\vec{r}_2, \sigma_2) \cdot \phi_{\alpha_2}(\vec{r}_1, \sigma_1)\right)
+	\end{align*}
+Antisymmetrische Gesamtwellenfunktion von $2 e^-$ im Zustand $\alpha_1$ und $\alpha_2$ 
+	\begin{align*}
+		\alpha_1 &= \alpha_2 \Rightarrow \psi = 0 ~(\text{Pauliverbot})
+	\end{align*}
+	\begin{align*}
+		\text{Bosonen } \longleftrightarrow& 
+		\text{ ganzzahliger Spin (Beispiel: Photon)} \\
+		&\Rightarrow \text{ Total symmetrische Wellenfunktion}\\
+		\text{Fermionen } \longleftrightarrow& 
+		\text{ halbzahliger Spin (Beispiel: Elektron)} \\
+		&\Rightarrow \text{ Total antisymmetrische Wellenfunktion}
+	\end{align*}

@@ -2,7 +2,10 @@
 	\begin{align*}
 		G^{(2)} (\tau_2, \tau_1) &=
 		\frac{{}_H\braket{x_f; \tau_f = \infty | \hat{x} (\tau_2) \hat{x}(\tau_1) | x_i; \tau_i = \infty}_H}{{}_H\braket{x_f | x_i}_H} \\
-		\text{Enwickle nach Eigenzuständen von }H& \\
+	\end{align*}
+	Entwickle nach Eigenzuständen von $H$
+%		\text{Entwickle nach}&\text{ Eigenzuständen von }H \\
+	\begin{align*}
 		&= \sum_{m, n} \frac{\braket{x_f | e^{-\hat{H} \tau_f} | m} 
 		\braket{m | \hat{x} (\tau_2) \hat{x} (\tau_1)| n} \braket{n | e^{\hat{H} \tau_i} | x_i}}{\sum_n \braket{x_f | e^{-\hat{H}\tau_f} | n} \braket{n | e^{\hat{H} \tau_i} | x_i}} \\
 		&= \frac{\sum_{m,n} e^{-E_m\tau_f}e^{E_n\tau_i} \braket{x_f | m} \braket{n|x_i} \braket{m | \hat{x} (\tau_2) \hat{x} (\tau_1) | n}}{\sum_n e^{-E_n(\tau_f -\tau_i)} \braket{x_f | n} \braket{x_i | m}}\\
@@ -11,12 +14,12 @@
 	\end{align*}
 Trick: Kompaktifiziere Zeit:
 	\begin{align*}
-		\tau_i &= 0,& \tau_f&= \tau & &\circlearrowright \\
+		\tau_i &= 0,~ \tau_f = \tau~ \circlearrowright \\
 		x(0) &= x(\tau) = x(\tau_i) = x(\tau_f) = x_i = x_f
 	\end{align*}
 	\begin{align*}
 		\sum_x \braket{x | x} &= 
-		\sum_x \braket{x | \hat{\mathrm{T}}_E^n | x} = \mathrm{Sp} \hat{\mathrm{T}_E^n} \\
+		\sum_x \braket{x | \hat{\mathrm{T}}_E^n | x} = \mathrm{Sp} \hat{\mathrm{T}}_E^n \\
 		&\overset{n \rightarrow \infty}{=} \mathrm{Sp} e^{-H\tau} = Z_E = 
 		\int \diff x_0 \ldots \diff x_{n-1} e^{-S_E[x]}
 	\end{align*}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.9.8)  17 DEC 2015 11:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.9.8)  18 DEC 2015 10:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -735,22 +735,22 @@ Overfull \hbox (3.73553pt too wide) in paragraph at lines 13--13
  []
 
 [5]) (./Zeitabh.Stoerungsth_Und_WWbild.tex [6] [7]
-Underfull \hbox (badness 10000) in alignment at lines 100--105
+Underfull \hbox (badness 10000) in alignment at lines 99--104
 [][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--108
+Underfull \hbox (badness 10000) in paragraph at lines 98--107
 
  []
 
 
-Overfull \hbox (50.82614pt too wide) in paragraph at lines 132--132
+Overfull \hbox (50.82614pt too wide) in paragraph at lines 131--131
 [] 
  []
 
 [8]
-Overfull \hbox (3.73553pt too wide) in paragraph at lines 185--185
+Overfull \hbox (3.73553pt too wide) in paragraph at lines 184--184
 []\T1/lmr/m/n/12 19.10.2015 
  []
 
@@ -783,10 +783,12 @@ Package marginnote Info: right page because not two side mode on input line 23.
 
 Package marginnote Info: xpos not known,
 (marginnote)             using \marginnoterightadjust on input line 23.
+Package marginnote Info: Margin note 13.2 is on absolute page 13
+(marginnote)              on input line 23.
 Package marginnote Info: right page because not two side mode on input line 23.
 
-Package marginnote Info: xpos not known,
-(marginnote)             using \marginnoterightadjust on input line 23.
+Package marginnote Info: xpos seems to be 151.68016pt,
+(marginnote)             \marginnoterightadjust ignored on input line 23.
 
 <Ersatzgraph3.jpg, id=64, 3276.24pt x 2457.18pt>
 File: Ersatzgraph3.jpg Graphic file (type jpg)
@@ -904,23 +906,22 @@ Overfull \hbox (3.73553pt too wide) in paragraph at lines 7--7
  []
 
 [28] [29 <./Bild3.jpg>]) (./Quatrupoluebergaenge.tex [30])
-(./Stat.Streuproblem_Wirkungsquerschnitt.tex
-Overfull \hbox (58.33754pt too wide) in paragraph at lines 43--1
+Overfull \hbox (58.33754pt too wide) in paragraph at lines 43--25
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--1
+Underfull \hbox (badness 10000) in paragraph at lines 43--25
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 34--39
+(./Stat.Streuproblem_Wirkungsquerschnitt.tex
+Underfull \hbox (badness 10000) in paragraph at lines 33--38
 
  []
 
 [31] [32]
-Underfull \hbox (badness 10000) in paragraph at lines 121--121
+Underfull \hbox (badness 10000) in paragraph at lines 120--120
 []\T1/lmr/m/n/12 heute
  []
 
@@ -928,7 +929,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--121
 LaTeX Warning: Marginpar on page 33 moved.
 
 [33] [34]
-Overfull \hbox (10.30902pt too wide) in paragraph at lines 196--196
+Overfull \hbox (10.30902pt too wide) in paragraph at lines 195--195
 [] 
  []
 
@@ -983,7 +984,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 143--143
  []
 
 [41] [42]) (./Pauliprinzip.tex [43]
-Overfull \hbox (3.73553pt too wide) in paragraph at lines 68--68
+Overfull \hbox (3.73553pt too wide) in paragraph at lines 67--67
 []\T1/lmr/m/n/12 16.11.2015 
  []
 
@@ -1070,34 +1071,34 @@ Package pdftex.def Info: Homonukleare_Molekuele4.jpg used on input line 213.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[58]) (./Dirac-Gleichung.tex
-Overfull \hbox (31.37448pt too wide) in paragraph at lines 217--1
+[58])
+Overfull \hbox (31.37448pt too wide) in paragraph at lines 217--37
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 217--1
+Underfull \hbox (badness 10000) in paragraph at lines 217--37
 
  []
 
-
-Overfull \hbox (15.86055pt too wide) in paragraph at lines 28--29
+(./Dirac-Gleichung.tex
+Overfull \hbox (15.86055pt too wide) in paragraph at lines 27--28
 []\T1/lmr/m/n/12 unsymmetrisch im Raum und Zeit (nicht for-min-va-ri-ant un-ter
  Lorentz-Transformation) 
  []
 
 [59 <./Homonukleare_Molekuele4.jpg>]
-Underfull \hbox (badness 1132) in paragraph at lines 32--32
+Underfull \hbox (badness 1132) in paragraph at lines 31--31
 []\T1/lmr/m/n/12 ?? punkt
  []
 
 [60]
-Overfull \hbox (3.73553pt too wide) in paragraph at lines 159--159
+Overfull \hbox (3.73553pt too wide) in paragraph at lines 158--158
 []\T1/lmr/m/n/12 30.11.2015 
  []
 
 [61] [62] [63] [64]
-Overfull \hbox (3.73553pt too wide) in paragraph at lines 493--493
+Overfull \hbox (3.73553pt too wide) in paragraph at lines 492--492
 []\T1/lmr/m/n/12 03.12.2015 
  []
 
@@ -1105,7 +1106,7 @@ Overfull \hbox (3.73553pt too wide) in paragraph at lines 493--493
 File: Dirac-Gleichung1.jpg Graphic file (type jpg)
 
 <use Dirac-Gleichung1.jpg>
-Package pdftex.def Info: Dirac-Gleichung1.jpg used on input line 520.
+Package pdftex.def Info: Dirac-Gleichung1.jpg used on input line 519.
 (pdftex.def)             Requested size: 284.52756pt x 132.59686pt.
 
 
@@ -1115,19 +1116,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.525 	\begin
+l.524 	\begin
              {tabular}{l l}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ) (./Kopplung_an_em_Felder.tex
-Overfull \hbox (154.76pt too wide) in paragraph at lines 525--1
+Overfull \hbox (154.76pt too wide) in paragraph at lines 524--1
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 525--1
+Underfull \hbox (badness 10000) in paragraph at lines 524--1
 
  []
 
@@ -1250,57 +1251,79 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--54
 
  []
 
-) (./2-Punkt_Funktion.tex
-Overfull \hbox (6.76645pt too wide) in paragraph at lines 11--11
-[] 
- []
-
-[83]
-Overfull \hbox (19.26137pt too wide) in paragraph at lines 35--37
+) (./2-Punkt_Funktion.tex [83]
+Overfull \hbox (19.26137pt too wide) in paragraph at lines 38--40
 $\OML/lmm/m/it/12 E[]$ \T1/lmr/m/n/12 Ab-fall der 2-Punkt funk-ti-on mit eu-kli
 -di-scher Zeit er-gibt Spek-trum von $\OML/lmm/m/it/12 H\OT1/lmr/m/n/12 [(\OML/
 lmm/m/it/12 E[]\OT1/lmr/m/n/12 )\OML/lmm/m/it/12 ; E[]; E[]; []\OT1/lmr/m/n/12 
 ]$ 
  []
 
-) (./Erzeugende_Funktionale.tex) [84] (./main.aux)
+) (./Erzeugende_Funktionale.tex [84]) (./Pfadint_Harm_Oszi2.tex
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+[]\T1/lmr/m/n/12 keine
+ []
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
- ) 
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+\T1/lmr/m/n/12 Ah-nung
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+\T1/lmr/m/n/12 wann
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+\T1/lmr/m/n/12 die-ser
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+\T1/lmr/m/n/12 Punkt
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+\T1/lmr/m/n/12 vor-bei
+ []
+
+[85] [86]) [87] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 6271 strings out of 493117
- 95503 string characters out of 6138985
+ 6276 strings out of 493117
+ 95631 string characters out of 6138985
  212366 words of memory out of 5000000
- 9437 multiletter control sequences out of 15000+600000
+ 9439 multiletter control sequences out of 15000+600000
  60885 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  47i,19n,43p,365b,387s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2014/tex
-mf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2014/texmf-dist/fonts/enc/dvip
-s/lm/lm-mathsy.enc}{c:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
-}{c:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}<c:/texlive/2014/
-texmf-dist/fonts/type1/public/doublestroke/dsrom12.pfb><c:/texlive/2014/texmf-d
-ist/fonts/type1/public/doublestroke/dsrom8.pfb><c:/texlive/2014/texmf-dist/font
-s/type1/public/lm/lmex10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/
-lmmi10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/tex
-live/2014/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/texlive/2014/texmf-dis
-t/fonts/type1/public/lm/lmmi7.pfb><c:/texlive/2014/texmf-dist/fonts/type1/publi
-c/lm/lmmi8.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/
-texlive/2014/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2014/texmf-
-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2014/texmf-dist/fonts/type1/pub
-lic/lm/lmr7.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/
-texlive/2014/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/texlive/2014/tex
-mf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2014/texmf-dist/fonts/type
-1/public/lm/lmsy6.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmsy8.p
-fb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><
-c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/t
-exlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb><c:/texliv
-e/2014/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on main.pdf (84 pages, 21028433 bytes).
+{c:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm
+-rm.enc}{c:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/20
+14/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2014/texmf-dist/font
+s/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-
+mathex.enc}<c:/texlive/2014/texmf-dist/fonts/type1/public/doublestroke/dsrom12.
+pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/doublestroke/dsrom8.pfb><c:/
+texlive/2014/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2014/texmf
+-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/
+public/lm/lmmi12.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmmi6.pf
+b><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmmi7.pfb><c:/texlive/2014/
+texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2014/texmf-dist/fonts/ty
+pe1/public/lm/lmr10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmr12
+.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/201
+4/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2014/texmf-dist/fonts/t
+ype1/public/lm/lmr8.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmssb
+x10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texliv
+e/2014/texmf-dist/fonts/type1/public/lm/lmsy6.pfb><c:/texlive/2014/texmf-dist/f
+onts/type1/public/lm/lmsy8.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/a
+msfonts/symbols/msam10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfo
+nts/symbols/msbm10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/
+symbols/msbm7.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/rsfs/rsfs10.pf
+b>
+Output written on main.pdf (87 pages, 21035600 bytes).
 PDF statistics:
- 394 PDF objects out of 1000 (max. 8388607)
- 263 compressed objects within 3 object streams
+ 404 PDF objects out of 1000 (max. 8388607)
+ 270 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  106 words of extra memory for PDF output out of 10000 (max. 10000000)
 

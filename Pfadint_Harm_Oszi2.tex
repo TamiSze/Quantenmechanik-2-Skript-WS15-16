@@ -1,0 +1,92 @@
+\subsection{Beispiel: Harmonischer Oszillator}
+	\begin{align*}
+		S_E &= \int \diff \tau \left(\frac{m}{2} \dot{x}^2 + \frac{1}{2} m \omega^2 x^2\right)
+		& &\dot{x}^2 = \left(\frac{\diff}{\diff \tau} x \right)^2\\
+		&= \frac{m}{2} \int_{-\infty}^\infty \diff \tau ~x(\tau) \left(- \frac{\diff^2}{\diff \tau^2} + \omega^2\right) x(\tau) \\
+		S_E [x, j] &= \frac{m}{2} \int_{-\infty}^\infty \diff \tau ~x(\tau)
+		\left(- \frac{\diff^2}{\diff \tau^2} + \omega^2\right) x(\tau)
+		- \int_{-\infty}^\infty \diff \tau j(\tau) x(\tau)
+	\end{align*}
+Berechne 
+	\begin{align*}
+		Z_E [j] = \frac{\int [\diff x] e^{-S_E[x, j]}}{Z_E} 
+	\end{align*}
+2 Möglichkeiten der Berechnung	
+	\begin{enumerate}[1)]
+		\item Integral hat die Form
+			\begin{align*}
+				\int [\diff x] e^{-S_E[x, j]} \overset{n \rightarrow \infty}{=}
+				\int \diff x_0 \ldots \diff x_{n - 1} 
+				e^{-\frac{1}{2} x^T A x + b x} 
+			\end{align*}
+			mit $A= A^\dagger$, $x\in \mathds{R}^n$ 
+		\item Entwickle um klassische Lösung \marginpar{keine Ahnung wann dieser Punkt vorbei war}
+			\begin{align*}
+				0 &= \frac{\delta S_E[x, j]}{\delta x(\tau)} =
+				m \left(- \frac{\diff^2}{\diff \tau^2} + \omega^2\right) x(\tau) - j(\tau)
+			\end{align*}
+			Randbedingung $x(\tau) \rightarrow 0$ für $\tau \rightarrow \pm \infty$
+			\begin{align*}
+				A &= - \frac{\diff^2}{\diff \tau^2} + \omega^2 \\
+				Ax &= \frac{j}{m} ~(\text{Bewegungsgleichung}) 
+				& \int \diff \tau' A(\tau, \tau') x(\tau') &= \frac{1}{m} j(\tau) \\
+				x &= \frac{1}{m} A^{-1} j
+			\end{align*}
+			Konvention: $D_E = -A^{-1} = ?$
+			\begin{align*}
+				x(\tau) &= \int\limits_{-\infty}^{\infty} \frac{\diff \Omega}{2 \pi} e^{-i\Omega \tau} \tilde{x}(\Omega) ,&
+				j(\tau) &= \int\limits_{-\infty}^{\infty} \frac{\diff \Omega}{2 \pi} e^{-i\Omega \tau} \tilde{j}(\Omega)
+			\end{align*}
+			\begin{align*}
+				&\Rightarrow (\Omega^2 + \omega^2) \tilde{x}(\Omega) = \frac{1}{m} \tilde{j}(\Omega) &
+				\Rightarrow \tilde{x}(\Omega) &= \frac{1}{m} \frac{\tilde{j}(\Omega)}{\Omega^2 + \omega^2} \\
+				x(\tau) &= \int\limits_{-\infty}^{\infty} \frac{\diff \Omega}{2 \pi}
+				\frac{1}{m} \frac{1}{\Omega^2 + \omega^2} e^{-i\Omega \tau} 
+				\int \diff \tau' e^{i\Omega \tau'} j(\tau') \\
+				&= -\frac{1}{m} \int \diff \tau' D_E(\tau - \tau') j(\tau') &
+				\text{mit }D_E(\tau, \tau') &= - \int \frac{\diff \Omega}{2 \pi} \frac{e^{-i \Omega (\tau-\tau')}}{\Omega^2 + \omega^2}
+			\end{align*}
+			\begin{align*}
+				x &= \frac{1}{m} A^{-1} j = - \frac{1}{m} D_E j \\
+				D_E (\tau) &= \int \frac{\diff \Omega}{2 \pi} \frac{e^{-\Omega \tau}}{(\Omega^2 + \omega^2)(\Omega^2 - \omega^2)} \\
+				&= \Theta(\tau) \frac{e^{-\omega \tau}}{2 \omega} 
+				+ \Theta (-\tau) \frac{e^{-\omega \tau}}{2 \omega} = \frac{e^{-\omega|\tau|}}{2 \omega}
+			\end{align*}
+			$+$ für $\tau < 0$ und $-$ für $\tau > 0$
+			\begin{align*}
+				A D_E(\tau) &= -\delta(\tau) & 
+				\text{bzw. } A \cdot D_E = - \mathds{1} 
+			\end{align*}
+			$D_E$ ist Green-Funktion für $A$
+			\begin{align*}
+				\boxed{D_E (\tau) = \frac{e^{-\omega|\tau|}}{2 \omega}}
+			\end{align*}
+			Pfad 
+			\begin{align*}
+				x(\tau) &= x_c(\tau) + y(\tau) ,& x_c(\tau) &= \left(-\frac{1}{m} D_E j\right) (\tau)
+			\end{align*}
+			\begin{align*}
+				S_E[x, j] &= S_E [x_c ,j]
+				+ \frac{m}{2} \int \diff \tau y (\tau) \left(-\frac{\diff^2}{\diff^2 \tau} + \omega^2\right)y(\tau) \\
+				S_E[x , j] &= \frac{1}{2m} \int \diff \tau \diff \sigma 
+				j(\tau) D_E (\tau - \sigma) j(\sigma) \\
+				Z[j] Z_E &= \int [dx] e^{-\frac{m}{2} x^T A x + j^T x}  \\
+				&= \int[\diff y] e^{-\frac{1}{2m} j^T D_E j} e^{-\frac{m}{2} y^T A y}
+			\end{align*}
+			\begin{align*}
+				Z_E &= \int [\diff y] e^{-\frac{m}{2} y^T A y} \\
+			\Rightarrow &
+			\boxed{
+					Z[j] = \exp \left(
+						-\frac{1}{2 m} \int \diff \tau \diff \sigma j(\tau) D_E (\tau - \sigma) j(\sigma)
+					\right)
+				}
+			\end{align*}
+			weil Green-Integral
+			\begin{align*}
+			\braket{0 | \mathrm{T} \hat{x} (\tau_1) \hat{x}(\tau_2)| 0} &=
+			\frac{\delta^2}{\delta j(\tau_1) \delta j(\tau_2)} \left.Z_E[x, j]\right|_{j = 0}\\
+			&= -\frac{1}{m} D_E (\tau_1 - \tau_2) 
+			\end{align*}
+			2-Punkt Greenfunktion.. n-Punktfunktionen sind $\sim$ Greenfunktion
+	\end{enumerate}

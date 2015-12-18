@@ -14,9 +14,23 @@ Funktionalableitung
 		= \braket{0 | \hat{x} (\tau_1) | 0} \\
 		\left.\frac{\delta Z_E(j)}{\delta j (\tau_1) \delta j(\tau_2)} \right|_{j = 0}
 		&= \frac{\int [\diff x] e^{-S_E[x]} x(\tau_2) x(\tau_1)}{Z_E}
-		= \braket{0 | \mathrm{T} \hat{x} (\tau_2) \hat{\tau_1} | 0} 
+		= \braket{0 | \mathrm{T} \hat{x} (\tau_2) \hat{x}(\tau_1) | 0} 
 	\end{align*}
 	\begin{align*}
-		\Rightarrow \braket{0 | \mathrm{T} x(\tau_1) \ldots x(\tau_N) | 0} = 
-		\left.\frac{\delta^N Z[j]}{\delta j(\tau_1) \ldots \delta j(\tau_N)} \right|_{j= 0}
+		&\Rightarrow \braket{0 | \mathrm{T} x(\tau_1) \ldots x(\tau_N) | 0} = 
+		\left.\frac{\delta^N Z[j]}{\delta j(\tau_1) \ldots \delta j(\tau_N)} \right|_{j= 0} \\
+		&\Rightarrow \text{Alle }n\text{-Punktfunktionen lassen sich aus }Z_E[j]\text{ berechnen!}
 	\end{align*}
+Taylorentwicklung 
+	\begin{align*}
+		Z_E[j] &= \sum_{k = 0}^{\infty} \frac{1}{k!} 
+		\int \diff \tau_1 \diff \tau_2 \ldots \diff \tau_k 
+		j(\tau_1) j(\tau_2) \ldots j(\tau_k) 
+		\frac{\delta^k Z_E [j]}{\delta j(\tau_1) \cdots \delta j(\tau_k)} \\
+		&= \sum_{k = 0}^{\infty} \frac{1}{k!}
+		\int \diff \tau_1 \ldots \diff \tau_k j(\tau_1) \ldots j(\tau_k) 
+		\braket{0 | \mathrm{T} \hat{x} (\tau_1) \ldots \hat{x} (\tau_k) | 0} \\
+		&= \braket{0 | \mathrm{T} \exp \left[\int \diff \tau j (\tau) \hat{x}(\tau)\right] | 0} \\
+		&= \frac{1}{Z_E} \int [\diff x] e^{-S_E} e^{\int \diff \tau j(\tau) x(\tau)}
+	\end{align*}	
+	
