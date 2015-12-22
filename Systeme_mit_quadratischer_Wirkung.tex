@@ -1,0 +1,47 @@
+\subsection{Systeme mit quadratischer Wirkung}
+	\begin{align*}
+		S_E &= \frac{1}{2} (x, Ax) \coloneqq
+		\frac{1}{2} \int \diff \tau_1 \tau_2 x(\tau_1) A(\tau_1, \tau_2) x(\tau_2)
+	\end{align*}
+Beispiel: Harmonischer Oszillator
+	\begin{align*}
+		A &= m \left(-\frac{\diff^2}{\diff \tau^2} + \omega^2\right) & 
+		\text{Kern von }A:~ A(\tau_1, \tau_2) &= m \left(-\frac{\diff^2}{\diff \tau^2} + \omega^2\right) \delta(\tau_1 - \tau_2) \\
+		(j, x) = \int \diff \tau j(\tau) x(\tau) 
+	\end{align*}
+``Zustandssumme'': 
+	\begin{align*}
+		Z_E &= \int [\diff x] e^{-\frac{1}{2} (x, Ax)} 
+	\end{align*}
+Erzeugendes Funktional
+	\begin{align*}
+		Z_E[j] &= \frac{1}{Z_E} \int [\diff x] e^{-\frac{1}{2} (x, Ax) + (j,x)} 
+		&\Rightarrow Z_E[0] &= 1 
+	\end{align*}
+$Z_E$ lässt sich berechnen
+	\begin{align*}
+		\int \limits_{-\infty}^{\infty} \diff x e^{-\frac{a}{2} x^2 + bx} &=
+		\sqrt{\frac{2 \pi}{a}} e^{\frac{b^2}{2a}} &
+		a &> 0
+	\end{align*}
+Endlich dimensionaler Vektorraum:
+	\begin{align*}
+		A_{ij} , i,j &= 1, \ldots, n, A \text{ symmetrisch + positiv} \\
+		\leadsto (x, Ax) &= \sum_{i,j} x_i A_{ij} x_j \\
+		Z_E &= \int \diff^n x e^{-\frac{1}{2} (x, Ax)}
+		= \int \diff^n x e^{-\frac{1}{2} \sum_{i = 1}^{n} \lambda_i x_i'^2}
+		= \prod_{i = 1}^{n} \int \diff x' e^{-\frac{1}{2} \lambda_i x'^2} \\
+		&= \frac{(\sqrt{2 \pi})^n}{\sqrt{\prod_i \lambda_i}} = 
+		\left(\frac{(2 \pi)^n}{\det A}\right)^{\frac{1}{2}} \\
+		Z_E [j] &= \frac{1}{Z_E} \int \diff^n x e^{-\frac{1}{2} (x, Ax) + (j,x)} 
+		= e^{\frac{1}{2} (j, A^{-1} j)} \\
+		\text{für } n= 1 &: e^{\frac{j_1^2}{e^{2A_{11}}}}
+	\end{align*}
+Pfadintegral mit $i \mapsto$ koninuierlicher ``Index'' $\tau_1$:
+	\begin{align*}
+		Z_E [j] &= \exp \left\{\frac{1}{2} (j, A^{-1}j)\right\} =
+		\exp \left\{-\frac{1}{2}\int \diff \tau_1 \diff \tau_2  j(\tau_1) D_E (\tau_1, \tau_2) j(\tau_2)\right\} \\
+		\text{mit } D_E &= A^{-1} \Rightarrow A D_E = - \mathds{1} \\
+		\int \diff \tau' A(\tau_1, \tau') D_E (\tau', \tau_2) &= -\delta (\tau_1- \tau_2)
+	\end{align*}
+$D_E$ ist Greenfunktion von $A$
