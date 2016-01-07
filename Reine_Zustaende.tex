@@ -1,0 +1,309 @@
+\subsection{Reine Zustände} 
+Wiederholung: Quantenmechanik Regeln
+	\begin{enumerate}[1.]
+		\item Vorhersagen von Messergebnissen an einem ansonsten isolierten System sind probabilistisch. In Situationen, in denen die \underline{maximal mögliche} Information bekannt ist, kann diese dargestellt werden durch einen Vektor/Strahl $\ket{\psi}$ in einem komplexen Hilbertraum $\Hil$.
+		\item Jede Observable $A$ kann dargestellt werden als selbstadjungierter Operator $\hat{A}$, welcher auf Vektoren in $\Hil$ wirkt.
+		
+		(NB: $\vec{x}$ ist z.B. keine echte Observable, da nicht-normierbarer Eigenvektor (uneigentlich). Es existiert auch kein Messinstrument, mit welchem sich $\vec{x}$ beliebig genau bestimmen lässt.)
+		\item Erwartungswert einer Messung von $A$: $\erw{A}_\psi = \braket{\psi | A | \psi}$
+		\item In einem \underline{abgeschlossenen} System ist
+			\begin{align*}
+				i \hbar \frac{\diff}{\diff t} \ket{\psi (t)} = \hat{H} \ket{\psi(t)}
+			\end{align*}
+		$\hat{H}$ : Hamiltonoperator
+		\begin{enumerate}[(a)]
+			\item Einzigen möglichen Messergebnisse von $A$ sind Eigenwerte (EW) $a_i$ von $\hat{A}$.
+			\item Wahrscheinlichkeit
+				\begin{align*}
+					&W(A = a_n \ket{\psi}) = \braket{\psi | \hat{P}_n | \psi} \\
+					\text{mit}~
+					&\boxed{\hat{P}_n = \sum_{j = 1}^{dim (n)} \ket{a_n, j} \bra{a_n, j}}
+					~\text{: Projektor}
+				\end{align*}
+			$dim$ von Eigenwert zum EW $a_n$ (Entartung)
+			
+			(NB: $\braket{\psi | \hat{P}_n | \psi} = \sum_{j= 1}^{dim(n)}|\braket{a_n, j | \psi}|^2$)
+			
+			Beweis: Statistsisches Mittel
+				\begin{align*}
+					\erw{F(A)} = \sum_m F(\alpha_m) W(A = \alpha_m)
+				\end{align*}
+				
+			Beispiel für $\mathscr{F}$:
+				\begin{align*}
+					\chi_r (A) &= 
+					\left\{
+					\begin{aligned}
+						1&, A = r \\
+						0&, A \neq r
+					\end{aligned}
+					\right. \\
+					\Rightarrow W (A = r) &= \erw{\chi_r (A)} \\
+					\text{QM: } \\
+					\erw{\mathscr{F}(A)}_\psi &= \sum_m \mathscr{F}(\alpha_m) W(A = \alpha_m; \ket{\psi}) \\
+					\erw{\chi_r(A)} &\underset{\text{Regel 3}}{=}
+					\braket{\psi | \chi_r(\hat{A}) | \psi} = \sum_m \chi_r (\alpha_m) W(A = \alpha_m ; \ket{\psi}) \\
+					\chi_r (\hat{A}) &= \sum_m \chi_r (a_m) \hat{P}_m \\
+					\Rightarrow \sum_m \chi_r (a_m) \braket{\psi | \hat{P}_m | \psi} 
+					&= \sum_m \chi_r (\alpha_m) W(A = \alpha_m; \psi) \\
+					\braket{\psi | \hat{P}_m | \psi} &=
+					\left\{
+					\begin{aligned}
+						\braket{\psi | \hat{P}_m | \psi} &, a_m = r \\
+						0 &, \text{ sonst}
+					\end{aligned}
+					\right. \\
+					W(A = \alpha_m; \psi) &=
+					\left\{
+					\begin{aligned}
+						W(A = \alpha_m; \psi) &, \alpha_m = r \\
+						0 &, \text{ sonst}
+					\end{aligned}
+					\right.
+				\end{align*}
+				$\Rightarrow$
+				\begin{enumerate}[(a)] 
+					\item $\alpha_m = a_m$
+					\item $\braket{\psi | \hat{P}_m | \psi} = 
+					W(A = a_m ; \ket{\psi}) = 
+					\sum_{j = 1}^{dim(m)} |\braket{a_m, j | \psi}|^2$
+				\end{enumerate}
+				\begin{align*}
+				\mathds{1} \underset{\text{weil } \ket{a_m, j} \text{ Basis von }\Hil}{=}
+				\sum_m \hat{P}_m \Rightarrow
+				1 = \braket{\psi | \psi} &= \sum_m \braket{\psi | \hat{P}_m | \psi} 
+				= \sum_m W(A = a_m ; \ket{\psi}) \\
+				\sum \text{ Wahrscheinlichkeiten} &= 1 \checkmark \\
+				\hat{P}_m \text{ist ``Projektionsoperator''}& \\
+				\hat{P}_m^2 = \sum_{j, k = 1}^{dim(m)} \ket{a_m, j} \braket{a_m j | a_m, k} \bra{a_m, k} &= \hat{P}_m
+				\end{align*}
+				$\hat{P}^2 = \hat{P} \Rightarrow$ Nur Eigenwerte 0 oder 1 sind möglich
+		\end{enumerate}
+	\end{enumerate}	
+\subsection{Statistische Gemische und Dichtematrix}
+	Beispiel: Wir wissen, dass ein System mit einer Wahrscheinlichkeit $W_1$ sich in einem quantenmechanischen Zustand $\ket{\psi_1}$ und $W_2$ in $\ket{\psi_2}$ etc. befindet.
+	
+	Man nennt dies ein statistisches Gemisch:
+		\begin{align*}
+			(\ket{\psi_1}, \ket{\psi_2}, \ldots; W_1, W_2, \ldots) \text{ mit } \sum_d W_{d} = 1.
+		\end{align*}
+	Die $W_d$ sind \underline{klassische} Wahrscheinlichkeiten, die additiv sind. Sie haben ihren Ursprung z.B. in nicht-perfekten Instrumenten bei der Präsentation eines Zustands
+	$\Rightarrow$ von Regel 3.
+	\subsubsection*{Stern-Gerlach Experiment}
+%		\begin{figure}
+%			\begin{center}
+%				\includegraphics[content...]{imagefile}
+%			\end{center}
+%		\end{figure}
+	Was ist mit Gemischen?
+	\begin{align*}
+		\alpha \ket{\uparrow} &+ \beta \ket{\downarrow},& \alpha^2 + \beta^2 &= 1 \\
+		W_\uparrow\ket{\uparrow} &+ W_\downarrow \ket{\downarrow},& W_\uparrow + W_\downarrow &= 1.
+	\end{align*}
+	\begin{align*}
+		W(A = a_n; \ket{\psi}) &= \braket{\psi | \hat{P}_n | \psi} \\
+		\rho &\coloneqq (\ket{\psi_1}, \ket{\psi_2}, \ldots; W_1, W_2, \ldots) \\
+		W(A=a_m; \rho) &= \sum_{d} W_d (A = a_m ; \ket{\psi_d}) \\
+		&= \sum_d W_d \braket{\psi_d | \hat{P_n} | \psi_d} 
+	\end{align*}
+	Grundannahme: quantenmechanische und klassische Wahrscheinlichkeiten sind unkorreliert
+	
+	Basis $\{\ket{e_1}, \ket{e_2}, \ldots \}$ von $\Hil$
+		\begin{align*}
+			\mathrm{Sp } \hat{B} &\coloneqq \sum_i \braket{e_i | \hat{B} | e_i} &
+			\sum_i \ket{e_i} \bra{e_i} &= \mathds{1} \\
+			\braket{\psi| \hat{B} | \psi} &= 
+			\sum_i \braket{\psi | \hat{B} | e_i} \braket{e_i | \psi} \\
+			&= \sum_i \braket{e_i | \psi} \braket{\psi | \hat{B} | e_i} \\
+			&= \mathrm{Sp }(\ket{\psi} \bra{\psi} \hat{B}) \\
+			&= \mathrm{Sp } (\hat{P}_{\ket{\psi}} \hat{B}) &
+			\text{mit } \hat{P}_{\ket{\psi}} &= \ket{\psi} \bra{\psi} 
+		\end{align*}
+	$\hat{P}^2_{\ket{\psi}} =\hat{P}_{\ket{\psi}}$ weil $\braket{\psi | \psi} = 1$
+	
+	Analog:
+		\begin{align*}
+			W(A = a_n; \ket{\psi}) &= \braket{\psi | \hat{P}_n | \psi} = 
+			\mathrm{Sp } \hat{P}_{\ket{\psi}} \hat{P}_n \\
+			\erw{A}_\psi &= \mathrm{Sp} \, (\hat{P}_{\ket{\psi}}, \hat{A}) 
+		\end{align*}
+	Dichte - ``Matrix'':
+		\begin{align*}
+			\boxed{
+					\hat{\rho} \coloneqq \sum_d W_d \hat{P}_{\ket{\psi_d}} = 
+					\sum_d W_d \ket{\psi_d} \bra{\psi_d}
+				}
+		\end{align*}
+		\begin{align*}
+			W(A = a_n; \rho) &= \sum_d W_d \mathrm{Sp}\, (\hat{P}_{\ket{\psi_d}} \hat{P}_n) \\
+			&= \mathrm{Sp}\, \left(
+				\left(
+					\sum_d W_d \hat{P}_{\ket{\psi_d}} 
+				\right) \hat{P}_n
+			\right)
+		\end{align*}
+	Wahrscheinlichkeit bei Messung von $A$ auf Gemisch $\rho$ das Ergebnis $a_n$ zu finden:
+		\begin{empheq}[box = \boxed]{align*}
+			W(A = a_n; \rho) &= \mathrm{Sp} \, (\hat{\rho} \hat{P}_n)\\
+			\erw{A}_\rho = \mathrm{Sp}\, (\hat{\rho} \cdot \hat{A}) 
+		\end{empheq}	
+		\begin{align*}
+			\mathrm{Sp}\, \hat{\rho} &= \sum_d W_d = 1 \\
+			\mathrm{Sp}\, (\hat{\rho}^2) &\leq 1
+		\end{align*}
+	Eigenschaften der Dichtematrix eines Gemisches $\rho$:
+		\begin{enumerate}[1.]
+			\item $\hat{\rho} = \hat{\rho}^\dagger$
+			\item $\braket{\psi | \hat{\rho} | \psi} \geq 0 ~\text{für alle} \ket{\psi} \in \Hil$ 
+			\item $\mathrm{Sp}\, \hat{\rho} =1$.
+			\item $\mathrm{Sp}\, \hat{\rho}^2 \leq 1, ~
+			\mathrm{Sp}\,\hat{\rho}^2 \Leftrightarrow \rho$ ist ein Reiner Zustand
+		\end{enumerate}
+	Beispiel
+		\begin{align*}
+			S_z &= \frac{\hbar}{2} \sigma_z =
+			\begin{pmatrix}
+				1 & 0 \\
+				0 & -1
+			\end{pmatrix} ,&
+			S_x &= \frac{\hbar}{2} 
+			\begin{pmatrix}
+				0 & 1 \\
+				1 & 0 
+			\end{pmatrix} \\
+			&\text{EV} : 
+			\begin{pmatrix}
+			1 \\
+			0 
+			\end{pmatrix},
+			\begin{pmatrix}
+			0 \\
+			1
+			\end{pmatrix} 
+			& &\frac{1}{\sqrt{2}}
+			\begin{pmatrix}
+			1 \\
+			1 
+			\end{pmatrix} ,
+			\frac{1}{\sqrt{2}}
+			\begin{pmatrix}
+			1 \\
+			-1
+			\end{pmatrix} \\
+			\hat{P}_{S_z = \frac{\hbar}{2}} &=
+			\begin{pmatrix}
+			1 \\
+			0
+			\end{pmatrix} 
+			\begin{pmatrix}
+			1 & 0
+			\end{pmatrix} =
+			\begin{pmatrix}
+			1 & 0 \\
+			0 & 0
+			\end{pmatrix}, &
+			\hat{P}_{S_z = -\frac{\hbar}{2}} &= 
+			\begin{pmatrix}
+				0 & 0 \\
+				0 & 1
+			\end{pmatrix} \\
+			\hat{P}_{S_x = \frac{\hbar}{2}} &= 
+			\frac{1}{2} 
+			\begin{pmatrix}
+				1 \\
+				1
+			\end{pmatrix} 
+			\begin{pmatrix}
+			1 & 1
+			\end{pmatrix}
+			= \frac{1}{2} 
+			\begin{pmatrix}
+			1 & 1 \\
+			1 & 1
+			\end{pmatrix}, &
+			\hat{P}_{S_x = -\frac{\hbar}{2}} &=
+			\frac{1}{2} 
+			\begin{pmatrix}
+				1 & - 1 \\
+				-1 & 1 
+			\end{pmatrix}
+		\end{align*}
+	Dichtematrix
+		\begin{align*}
+			\hat{\rho} &\coloneqq \frac{1}{2}
+			\begin{pmatrix}
+			1 & 0 \\
+			0 & 1
+			\end{pmatrix}
+			~ \mathrm{Sp}\, \hat{\rho} = 1 \checkmark \\
+			\hat{\rho}^2 &= \frac{1}{4} 
+			\begin{pmatrix}
+				1 & 0 \\
+				0 & 1
+			\end{pmatrix}
+			\Rightarrow \mathrm{Sp}\, \hat{\rho}^2 = \frac{1}{2} \Rightarrow \text{Gemisch} \\
+			\hat{\rho} &= \frac{1}{2} 
+			\left(
+				\hat{P}_{S_z = \frac{\hbar}{2}} + \hat{P}_{S_z = -\frac{\hbar}{2}}
+			\right) =
+			\frac{1}{2}
+			\left(
+				\hat{P}_{S_x = \frac{\hbar}{2}} + \hat{P}_{S_x = -\frac{\hbar}{2}}
+			\right) \\
+			&= \frac{\alpha}{2}
+			\left(
+			\hat{P}_{S_z = \frac{\hbar}{2}} + \hat{P}_{S_z = -\frac{\hbar}{2}}
+			\right) +
+			\frac{1 - \alpha}{2}
+			\left(
+			\hat{P}_{S_x = \frac{\hbar}{2}} + \hat{P}_{S_x = -\frac{\hbar}{2}}
+			\right)
+		\end{align*}
+	Zerlegung der Dichtematrix nach reinen Zuständen ist nicht eindeutig.
+	
+	$\{\hat{\rho}_1, \ldots, \hat{\rho}_k\}:$ Dichtematrizen, $\{r_1, \ldots, r_k\}$ positive reelle Zahlen mit $(\sum_{k = 1}^{K} r_k = 1) ~\sum_{k = 1}^{K} r_k \hat{\rho}_k$ ist Dichtematrix, weil 
+	
+	$\mathrm{Sp}\, (\sum_k r_k \hat{\rho}_k) = 1 \Rightarrow$ Menge aller Dichtematrizen ist konvex.
+	
+	Lediglich Dichtematrizen reiner Zustände $\hat{P}_{\ket{\psi}} = \ket{\psi} \bra{\psi}$ lassen sich nicht weiter zerlegen.
+	
+	Vorgriff auf statistische Physik: Thermisches Gemisch
+		\begin{align*}
+			\hat{\rho}_T &= \frac{e^{-\beta \hat{H}}}{Z (\beta)} ,&
+			\beta &= \frac{1}{k T},&
+			T&: \text{Temperatur} 
+		\end{align*}
+	Zustandssumme: 
+		\begin{align*}
+			Z(\beta) = \mathrm{Sp}\, e^{-\beta \hat{H}} 
+			&= \sum_n \braket{E_n | e^{-\beta H} | E_n} \\
+			&= \sum_n e^{-\beta E_n} \braket{E_n | E_n} \\
+			&= \sum_n e^{-\beta E_n}
+		\Rightarrow \mathrm{Sp}\, \hat{\rho}_T = 1 \\
+		\hat{\rho}_T &= \sum_n \frac{e^{-\beta E_n}}{Z (\beta)} \ket{E_n} \bra{E_n}
+		\end{align*}
+
+	Bsp: $\{\ket{\uparrow}, \ket{\downarrow} \}$ mit Wahrheitswerten $w_1, w_2$ 
+		\begin{align*}
+			\hat{\rho} &= w_\uparrow \hat{P}_\uparrow + w_\downarrow \hat{P}_\downarrow =
+			\begin{pmatrix}
+				w_\uparrow & 0 \\
+				0 & w_\downarrow 
+			\end{pmatrix}&
+			\sigma_z &= 
+			\begin{pmatrix}
+				1 & 0 \\
+				0 & -1
+			\end{pmatrix} \\
+			\erw{S_z} \rho &= 
+			\frac{\hbar}{2} \mathrm{Sp}\, (\hat{\rho} \sigma_z) =
+			\frac{\hbar}{2} \mathrm{Sp}\, 
+			\begin{pmatrix}
+			w_\uparrow & 0 \\
+			0 & w_\downarrow 
+			\end{pmatrix} =
+			\frac{\hbar}{2} (w_\uparrow - w_\downarrow) 
+		\end{align*}
+	Spezialfall: $w_\uparrow = w_\downarrow = \frac{1}{2}$ Isotropes Gemisch $\erw{S_z} = 0$
+	\\
+	Spezialfall 2: $w_\uparrow = 1, w_\downarrow = 0$ reiner Zustand $\erw{S_z}_{\ket{\uparrow}} = \frac{\hbar}{2}$

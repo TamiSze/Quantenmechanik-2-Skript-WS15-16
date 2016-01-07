@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.9.8)  22 DEC 2015 10:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.9.8)  7 JAN 2016 12:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -782,10 +782,12 @@ Package marginnote Info: right page because not two side mode on input line 23.
 
 Package marginnote Info: xpos not known,
 (marginnote)             using \marginnoterightadjust on input line 23.
+Package marginnote Info: Margin note 14.2 is on absolute page 14
+(marginnote)              on input line 23.
 Package marginnote Info: right page because not two side mode on input line 23.
 
-Package marginnote Info: xpos not known,
-(marginnote)             using \marginnoterightadjust on input line 23.
+Package marginnote Info: xpos seems to be 151.68016pt,
+(marginnote)             \marginnoterightadjust ignored on input line 23.
 
 <Ersatzgraph3.jpg, id=68, 3276.24pt x 2457.18pt>
 File: Ersatzgraph3.jpg Graphic file (type jpg)
@@ -1372,44 +1374,55 @@ File: Zugaenge_zur_Quantenmechanik1.jpg Graphic file (type jpg)
 Package pdftex.def Info: Zugaenge_zur_Quantenmechanik1.jpg used on input line 5
 .
 (pdftex.def)             Requested size: 403.31511pt x 258.12965pt.
-) [94 <./Zugaenge_zur_Quantenmechanik1.jpg>] (./main.aux)
+)
+Overfull \hbox (3.73553pt too wide) in paragraph at lines 55--55
+[]\T1/lmr/m/n/12 07.01.2016 
+ []
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+[94 <./Zugaenge_zur_Quantenmechanik1.jpg>] (./Reine_Zustaende.tex [95] [96]
+[97]
+Overfull \hbox (32.20454pt too wide) in paragraph at lines 264--265
+[]$\OMS/lmsy/m/n/12 f[]\OML/lmm/m/it/12 ; [] ; []\OMS/lmsy/m/n/12 g \OT1/lmr/m/
+n/12 :$ \T1/lmr/m/n/12 Dich-te-ma-tri-zen, $\OMS/lmsy/m/n/12 f\OML/lmm/m/it/12 
+r[]; [] ; r[]\OMS/lmsy/m/n/12 g$ \T1/lmr/m/n/12 po-si-ti-ve re-el-le Zah-len mi
+t $\OT1/lmr/m/n/12 ([][] \OML/lmm/m/it/12 r[] \OT1/lmr/m/n/12 = 1)  [][] \OML/l
+mm/m/it/12 r[][]$
+ []
 
- ) 
+[98]) [99] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 6340 strings out of 493117
- 98297 string characters out of 6138985
- 212366 words of memory out of 5000000
- 9485 multiletter control sequences out of 15000+600000
+ 6346 strings out of 493117
+ 98410 string characters out of 6138985
+ 212372 words of memory out of 5000000
+ 9488 multiletter control sequences out of 15000+600000
  60885 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  47i,19n,43p,365b,387s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2014/tex
-mf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2014/texmf-dist/fonts/enc/dvip
-s/lm/lm-mathsy.enc}{c:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
-}{c:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}<c:/texlive/2014/
-texmf-dist/fonts/type1/public/doublestroke/dsrom12.pfb><c:/texlive/2014/texmf-d
-ist/fonts/type1/public/doublestroke/dsrom8.pfb><c:/texlive/2014/texmf-dist/font
-s/type1/public/lm/lmex10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/
-lmmi10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/tex
-live/2014/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/texlive/2014/texmf-dis
-t/fonts/type1/public/lm/lmmi7.pfb><c:/texlive/2014/texmf-dist/fonts/type1/publi
-c/lm/lmmi8.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/
-texlive/2014/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2014/texmf-
-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2014/texmf-dist/fonts/type1/pub
-lic/lm/lmr7.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/
-texlive/2014/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/texlive/2014/tex
-mf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2014/texmf-dist/fonts/type
-1/public/lm/lmsy6.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmsy8.p
-fb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><
-c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/t
-exlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb><c:/texliv
-e/2014/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on main.pdf (94 pages, 27216660 bytes).
+{c:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-rm.e
+nc}{c:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2014/te
+xmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2014/texmf-dist/fonts/enc
+/dvips/lm/lm-mathit.enc}{c:/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-mathe
+x.enc}<c:/texlive/2014/texmf-dist/fonts/type1/public/doublestroke/dsrom12.pfb><
+c:/texlive/2014/texmf-dist/fonts/type1/public/doublestroke/dsrom8.pfb><c:/texli
+ve/2014/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2014/texmf-dist
+/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/publi
+c/lm/lmmi12.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:
+/texlive/2014/texmf-dist/fonts/type1/public/lm/lmmi7.pfb><c:/texlive/2014/texmf
+-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2014/texmf-dist/fonts/type1/p
+ublic/lm/lmr10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmr12.pfb>
+<c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2014/tex
+mf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2014/texmf-dist/fonts/type1/
+public/lm/lmr8.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmssbx10.p
+fb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/201
+4/texmf-dist/fonts/type1/public/lm/lmsy6.pfb><c:/texlive/2014/texmf-dist/fonts/
+type1/public/lm/lmsy8.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfon
+ts/symbols/msam10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/s
+ymbols/msbm10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbo
+ls/msbm7.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
+Output written on main.pdf (99 pages, 27231511 bytes).
 PDF statistics:
- 435 PDF objects out of 1000 (max. 8388607)
- 285 compressed objects within 3 object streams
+ 451 PDF objects out of 1000 (max. 8388607)
+ 296 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  151 words of extra memory for PDF output out of 10000 (max. 10000000)
 
