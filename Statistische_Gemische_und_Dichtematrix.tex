@@ -227,3 +227,309 @@
 	Spezialfall: $W_\uparrow = W_\downarrow = \frac{1}{2}$ Isotropes Gemisch $\erw{S_z} = 0$
 	\\
 	Spezialfall 2: $W_\uparrow = 1, W_\downarrow = 0$ reiner Zustand $\erw{S_z}_{\ket{\uparrow}} = \frac{\hbar}{2}$
+	
+	Reiner Zustand $\ket{\psi}$ \marginpar{11.01.16} \\
+	Projektor auf reinem Zustand $ \hat{P}_{\ket{\psi}} = \ket{\psi} \bra{\psi}$ \\
+	Projektor auf UR von Eigenzuständen von $\hat{A}$ mit EW $a_m$ : 
+	$\hat{P}_m = \sum_{j = 1}^{d(j)} \ket{a_m, j} \bra{a_m, j}$ \\
+	Dichteoperator/matrix (statistischer Operator) : $\hat{\rho}$ \\
+	reiner Zustand: $\hat{\rho} = \ket{\psi} \bra{\psi} = \hat{P}_{\ket{\psi}}$,
+	$\hat{\rho}^2 = \hat{\rho} , \mathrm{Sp} \hat{\rho}^2 = 1$ (Sp $\hat{\rho} = 1$ immer)\\
+	Gemischter Zustand: $\hat{\rho} = \sum_d W_d \ket{\psi_d} \bra{\psi_d}$ \\
+	Siehe oben
+	
+	Anderes Beispiel:
+	
+	Reiner Zustand
+		\begin{align*}
+			\ket{\phi} &= \frac{1}{\sqrt{2}} \left(
+				\ket{\uparrow} + e^{i\phi} \ket{\downarrow}
+			\right) = \frac{1}{\sqrt{2}} 
+			\begin{pmatrix}
+				1 \\
+				e^{i\phi}
+			\end{pmatrix}
+		\end{align*}
+	Eigenwerte von $\hat{S}_{\vec{e}}$ mit $\vec{e} = (\cos\phi , \sin \phi, 0)$
+	$(\hat{S}_{\vec{e}} = \vec{S} \cdot \vec{e}) : \pm \frac{\hbar}{2}$ \\
+	Eigenzustand von $\hat{S}_{\vec{e}}$ mit Eigenwert $+ \frac{\hbar}{2}$ 
+		\begin{align*}
+			\hat{S}_{\vec{e}} &= 
+			\frac{\hbar}{2} \left(
+				\cos \phi \sigma_x + \sin \phi \sigma_y 
+			\right) = 
+			\frac{\hbar}{2}
+			\left. 
+			\begin{pmatrix}
+				0 & e^{i\phi} \\
+				e^{i\phi} & 0 
+			\end{pmatrix}
+			\right| 
+			\text{Test: }
+			\begin{pmatrix}
+				-1 & e^{i\phi} \\
+				e^{i\phi} & -1
+			\end{pmatrix}
+			\begin{pmatrix}
+			1 \\
+			e^{i\phi}
+			\end{pmatrix}
+			= 0 \checkmark
+		\end{align*}
+		\begin{align*}
+			\hat{\rho}_\phi &= \hat{P}_{\ket{\psi}} = \ket{\phi} \bra{\phi} 
+			= \frac{1}{2} 
+			\begin{pmatrix}
+				1 \\
+				e^{i\phi}
+			\end{pmatrix}
+			\begin{pmatrix}
+				1 & e^{i\phi}
+			\end{pmatrix}
+			= \frac{1}{2}
+			\begin{pmatrix}
+				1 & e^{-\phi} \\
+				e^{i\phi} & 1
+			\end{pmatrix} \\
+			(\hat{\rho}_\phi)^2 &= \hat{\rho}_\phi, ~
+			\mathrm{Sp}\, \hat{\rho}_\phi = \mathrm{Sp}\, ((\hat{\rho}_\phi)^2) = 1
+		\end{align*}
+	BILD
+	
+	Annahme: Abgeschlossenes System, $[\hat{S}_z, \hat{H}] = 0$ \\
+	Statistisches Gemisch aus $\ket{\uparrow}$ und $e^{i\phi} \ket{\downarrow}$ 
+		\begin{align*}
+			\hat{\rho}_G &\underset{W_\uparrow = W_\downarrow \text{isotrop. Gemisch}}{=} 
+			\frac{1}{2} 
+			\left(
+				\ket{\uparrow} \bra{\uparrow} + \ket{\downarrow} \bra{\downarrow}
+			\right) = 
+			\frac{1}{2}
+			\begin{pmatrix}
+				1 & 0 \\
+				0 & 1
+			\end{pmatrix}
+		\end{align*}
+		\begin{align*}
+			\hat{\rho}^2_G &= \frac{1}{4} 
+			\begin{pmatrix}
+				1 & 0 \\
+				0 & 1 
+			\end{pmatrix} \neq \hat{\rho}_G,&
+			\mathrm{Sp}\, \hat{\rho}_G &= 1,&
+			\mathrm{Sp}\, \hat{\rho}^2_G &= \frac{1}{2} <1 
+		\end{align*}
+		\begin{align*}
+			\erw{S_x}_\phi &= \mathrm{Sp}\, (\hat{\rho}_\phi \cdot S_x) =
+			\mathrm{Sp}\, \left(
+				\frac{\hbar}{2} \frac{1}{2} 
+				\begin{pmatrix}
+					1 & e^{-i\phi} \\
+					e^{i \phi} & 1 
+				\end{pmatrix}
+				\begin{pmatrix}
+				0 & 1 \\
+				1 & 0 
+				\end{pmatrix}
+			\right) = \frac{\hbar}{2} \cos \phi \\
+			\erw{S_x}_{\rho_G} &= \mathrm{Sp}\,
+			\left(
+				\frac{\hbar}{4}
+				\begin{pmatrix}
+				1 & 0 \\
+				0 & 1 
+				\end{pmatrix}
+				\begin{pmatrix}
+				0 & 1 \\
+				1 & 0 
+				\end{pmatrix}
+			\right) = 0
+		\end{align*}
+	Herstellung des Gemisches:
+	BILD2
+	
+	Kann durch äußere Einflüsse geschehen, z.B. Statistische Schwankungen der relativen Phase:
+		\begin{align*}
+%			\hat{\rho}_G &= \frac{1}{2 \phi} 
+%			\int_{0}^{\2 \pi} \diff \phi \rho_\phi = \frac{1}{2} 
+			\begin{pmatrix}
+				0 & 1 \\
+				1 & 0 
+			\end{pmatrix} 
+		\end{align*}
+	Reiner Zustand
+		\begin{align*}
+			\ket{\psi} &= \sum_m c_m \ket{a_m} & &\text{keine Entartung}\\
+			\hat{\rho}_\phi &= \ket{\psi} \bra{\psi} = 
+			\sum_{m, n} c_m c_n^* \ket{a_m} \bra{a_n} \\
+			&= \sum_m |c_m|^2 \ket{a_m} \bra{a_m} + \sum_{m \neq n} c_m c_n^* \ket{a_m} \bra{a_n}
+		\end{align*}
+	Erster Term: Gemisch mit wahrscheinlichkeit $W_m$, zweiter Term: Interferenzterm
+	
+	Beim Gemisch fehlen Interferenzterme.
+\subsection{Der Messprozess}
+	System $S$, Messaparat $M, M'$, Beobachter $B$
+	
+	Heisenbergscher Schnitt
+		\begin{align*}
+			S &| M, M', B,& S,M &| M', B,& S, M, M' &| B 
+		\end{align*}
+	Schnitt ist verschiebbar
+		\begin{align*}
+			\hat{A} \ket{a_n, j} &= a_n \ket{a_n, j}
+		\end{align*}
+	Oft nehme ich keine Entartung an: 
+		\begin{align*}
+		\hat{A} \ket{a_n} &= a_n \ket{a_n}
+		\end{align*}
+		\begin{align*}
+			\ket{\psi} &= \sum_m c_m \ket{a_m}, & c_m &= \braket{a_m | \psi}
+		\end{align*}
+	BILD3
+	
+	Vor der Messung: 
+		\begin{align*}
+			\hat{\rho}_0 &= \ket{\psi} \bra{\psi} = \hat{P}_{\ket{\psi}}
+		\end{align*}
+	Nach der Messung ist System in einem Zustand
+		\begin{align*}
+			\ket{a_m} (\text{oder } \sum_{j = 1}^{d(m)} d_j \ket{a_m, j})
+		\end{align*}
+	auch bevor $B$ das Ergebnis abgelesen hat.
+	
+	Wahrscheinlichkeit des Messwertes (z.B. der Zeigerstellung)
+		\begin{align*}
+			a_m \text{ ist } W_m &= |c_m|^2 = \mathrm{Sp}\, (\ket{\psi} \bra{\psi} P_m) = 
+			\mathrm{Sp}\, (\hat{P}_{\ket{\psi}} \hat{P}_m)
+		\end{align*}
+	$\Rightarrow$ Nach Messung liegt ein statistisches Gemisch vor mit 
+		\begin{align*}
+			\hat{\rho}_{\text{red}} &= \sum_m |c_m|^2 \ket{a_m} \bra{a_m} =
+			\sum_m \mathrm{Sp}\, (\hat{P}_{\ket{\psi}} \hat{P}_m) \hat{P}_m 
+			& \hat{P}_m &= \sum_{j}^{d(m)} \ket{a_m, j} \bra{a_m, j}
+		\end{align*}
+	Erster Teil ohne Entartung, weiter teil auch OK mit Entartung.	
+		
+	Übergang
+		\begin{align*}
+			\hat{\rho}_0 \underset{Messung}{\longmapsto} \hat{\rho}_{\text{red}}:
+			\text{\underline{Zustandsreduktion}}
+		\end{align*}
+		
+	Nächster Schritt: Ablesen des Ergebnisses durch $B$:
+	
+	$\Rightarrow$ reiner Zustand
+		\begin{align*}
+			\ket{a_m} \text{ mit } \hat{\rho}_B = \ket{a_m} \bra{a_m}
+		\end{align*}
+	Nebenbemerkung: Mit Entartung
+		
+	Lüdders- Projektion:
+		\begin{align*}
+			\ket{\psi} \underset{nach Ablesen des Ergebnisses}{\longmapsto} 
+			\frac{\hat{P}_m \ket{\psi}}{\braket{\psi | \hat{P}_m | \psi}^{\frac{1}{2}}}
+		\end{align*}
+	BILD4
+	
+	Eventuelles Problem: Messung von $B$, mit $[\hat{A}, \hat{B}] = 0$
+	
+	Unabhängig von diesem eventuellen Problem ist
+		\begin{align}
+			\hat{\rho}_{\text{red}} &= 
+			\sum_m \mathrm{Sp}\, (\hat{P}_{\ket{\psi}} \hat{P}_m) \hat{P}_m =
+			\sum_m \hat{P}_m \ket{\psi} \bra{\psi} \hat{P}_m 
+		\end{align}
+	Nebenbemerkung 2: Was passiert, wenn man mit einem Gemisch anfängt
+		\begin{align*}
+			\hat{\rho}_{\text{red}} = \sum_m \hat{P}_m \hat{\rho}_0 \hat{P}_m.
+		\end{align*}
+%	\begin{tabular}{l l l}
+%			Vor der Messung & Nach Messung & Nach Beobachtung des Messergebnisses \\
+%			\begin{align*}
+%			\ket{\psi} &= \sum_n c_n \ket{\psi}
+%			\end{align*}
+%			& Strich von links unten nach rechts oben & 
+%			\begin{align*}
+%				\ket{a_m} (\text{rein}) (\text{oder Liddersprojektion})
+%			\end{align*} \\
+%			\begin{align*}
+%			\hat{\rho}_0 &= \hat{P}_{\ket{\psi}} (\text{rein})
+%			\end{align*} 
+%			&
+%			\begin{align*}
+%				\hat{\rho}_{\text{red}} = \sum_m \hat{P}_m \hat{P}_{\ket{\psi}} \hat{P}_m 
+%				= \sum_m \mathrm{Sp}\,  (\hat{P}_{\ket{\psi}} \hat{P}_m) \hat{P}_m =
+%				\sum_m |c_m|^2 \hat{P}_m 
+%			\end{align*} Gemisch
+%			& 
+%			\begin{align*}
+%				\hat{\rho}_B = \hat{P}_m \text{oder} \ket{a_m }\bra{a_m}
+%			\end{align*}
+%	\end{tabular}
+	Behauptung: Unitäre Zeitentwicklung lässt reine Zustände rein und verwandelt Gemische in Gemische.
+	
+	Beweis: 
+		\begin{enumerate}[(a)]
+			\item \begin{align*}
+				\ket{\psi (t)} &= \U (t) \ket{\psi(t)} \\
+				\hat{\rho}(t) &= \ket{\psi(t)} \bra{\psi (t)} = 
+				\U (t) \hat{\rho}(0) \U^\dagger (t) \\
+				\mathrm{Sp}\, ((\hat{\rho}(t))^2) &= 
+				\mathrm{Sp}\, ((\U (t) \hat{\rho} (0) \U^\dagger(t))^2) = 1 
+			\end{align*}
+			\item \begin{align*}
+				\hat{\rho}(0) &= \sum_j W_j \ket{\psi_d (0)} \bra{\psi_d (0)} \\
+				\hat{\rho}(t) &= \sum_d W_d \U (t) \ket{\psi_d (0)} \bra{\psi_d (0)}
+				\U^\dagger(t) =
+				\U(t) \left(
+					\sum_d W_d \ket{\psi_d (0)} \bra{\psi_d (0)}
+				\right) \U^\dagger(t) \\
+				\mathrm{Sp}\, ((\hat{\rho}(t))^2) &= 
+				\mathrm{Sp}\, ((\hat{\rho}(0))^2) < 1
+ 			\end{align*}
+		\end{enumerate}
+	John von Neumann:
+		\begin{enumerate}[1.]
+			\item Unitäre Zeitentwicklung durch die Schrödinger Gleichung
+			\item Zustandsreduktion bei Messungen, nicht - unitär
+		\end{enumerate}
+	Wir haben $S$ als isoliertes System betrachtet, bei einer Messung gibt es aber Wechselwirkungen mit dem Messgerät.
+	
+	Zustand des Messapparates vor der Messung $\ket{M_0}$ 
+	(Dies ist stark vereinfacht, da Messapparat im Allgemeinen ein statistisches Gemisch ist)
+	
+	Produktraum der Zustände von $S + M$:
+		\begin{align*}
+			\ket{\psi} \otimes \ket{M} &= \ket{\psi, M_0}
+		\end{align*}
+	Erster Zustand von $S$, zweiter Messgerät vor der Messung
+	
+	Falls $\ket{\psi}$ im Zustand $\ket{a_k}$ gemessen wird, ist $M$ im Zustand $\ket{M_k}$ ( nach der Messung) 
+		\begin{align*}
+			\ket{a_k, M_0} \underset{Messung}{\longmapsto} \ket{a_k, M_k}
+			= \ket{a_k} \otimes \ket{M_k}
+		\end{align*}
+	Annahme $\braket{M_k | M_\ell} = \delta_{k\ell}$
+		\begin{align*}
+			\ket{\psi, M_0} = \sum_m c_m \ket{a_m, M_0} \overset{Messung}{\longmapsto}
+			\sum_m c_m \ket{a_m, M_m}
+		\end{align*}
+	$c_m = \braket{a_m | \psi}$
+	
+	$\ket{a_m, M_0} = (\sum_m c_m \ket{a_m}) \otimes \ket{M_0}$ faktorisiert
+	
+	$\sum_m c_m \ket{a_m, M_m} = \sum_m c_m (\ket{a_m} \otimes \ket{M_0})$ faktorisiert nicht
+	\begin{align*}
+		\hat{\rho}_0 \mapsto \hat{\rho}_k &=
+		\sum_{m,n} c_m c^*_n \ket{a_m, M_m} \bra{a_n, M_n} =
+		\sum_m |c_m|^2 \ket{a_m| M_m }\bra{a_n, M_n} + \text{Interferenzterm}
+	\end{align*}
+	Wie kommen wir zum Gemisch
+		\begin{align*}
+			\sum_m |c_m|^2 \ket{a_m, M_m} \bra{a_m, M_m} ?
+		\end{align*}
+	Was passiert mit der Interferenztermen?
+	
+	Ist Messapparat QM Natur?
+	
+	Ist Messapparat makroskopisch, sollte er den Gesetzen der klassischen Physik folgen.
