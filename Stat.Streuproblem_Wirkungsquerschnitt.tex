@@ -1,19 +1,33 @@
 \subsection{Stationäres Streuproblem und Wirkungsquerschnitt}
-	BILD
-		
+	\begin{figure*} [h]
+		\begin{center}
+			\includegraphics[width=12cm]{Stat_Streuproblem_Wirkungsquerschnitt}
+		\end{center}
+	\end{figure*}		
 	Stromdichte des einlaufenden Teilchenstrahls: $\vec{j}_{ein}$
 	\\
-	BILD
-	
+
+	\begin{minipage}[c]{0.3\textwidth}
+				\includegraphics[width=\textwidth]{Stat_Streuproblem_Wirkungsquerschnitt2}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[c]{0.5\textwidth}
 	Anzahl der Teilchen, die durch $\diff \vec{A}$ läuft:
 		\begin{align*}
 			\diff N &= 
 			\underbrace{\vec{j}_{ein} \cdot \diff \vec{A}}_{\mathclap{\text{Strom}}}
 			\cdot \diff t
 		\end{align*}
-	NOCH EIN BILD
+	\end{minipage}
+	\\	
+	
+	\begin{figure*} [h]
+		\begin{center}
+			\includegraphics[width=10cm]{Stat_Streuproblem_Wirkungsquerschnitt3}
+		\end{center}
+	\end{figure*}
 		\begin{align*}
-			\diff A &= r^2 \diff \Omega = r^2 \diff \Theta \sin \Theta \diff \phi
+			\diff A &= r^2 \diff \Omega = r^2 \diff \theta \sin \theta \diff \phi
 		\end{align*}
 	Differentieller Wirklungsquerschnitt $(r \rightarrow \infty)$
 		\begin{empheq}[box=\boxed]{align*}
@@ -23,7 +37,7 @@
 	Homogener Strahl von Punktteilchen : $\vec{j} = \vec{v} \rho$ ($\rho$ ist Dichte)
 		\begin{empheq}[box=\boxed]{align*}
 			\frac{\diff \sigma}{\diff \Omega} &=
-			\frac{|\vec{j}_{aus}(r, \Theta, \phi)|}{|\vec{j}_{ein}|} ~r^2
+			\frac{|\vec{j}_{aus}(r, \theta, \phi)|}{|\vec{j}_{ein}|} ~r^2
 		\end{empheq}
 	$ \leadsto |\vec{j}_{aus}| \propto \frac{1}{r^2}$ (bei gleichen Detektorflächen $\diff A$)
 	
@@ -33,8 +47,11 @@
 		\end{align*}
 	Beispiel: Streuung an Scheibe der Fläche A:
 	\\
-	BILD
-	\\
+	\begin{figure*} [h]
+		\begin{center}
+			\includegraphics[width=10cm]{Stat_Streuproblem_Wirkungsquerschnitt4}
+		\end{center}
+	\end{figure*}
 		\begin{align*}
 			\sigma &= \int \diff \Omega \frac{\diff \sigma}{\diff \Omega}
 			= \frac{1}{|\vec{j}_{ein}|} \int \diff \Omega \frac{\diff N}{\diff \Omega ~\diff t}\\
@@ -48,22 +65,28 @@
 		\end{equation*}
 	Einlaufendes Wellenpaket
 	
-	BILD
-	
+	\begin{figure*} [h]
+		\begin{center}
+			\includegraphics[width=10cm]{Stat_Streuproblem_Wirkungsquerschnitt5}
+		\end{center}
+	\end{figure*}
 		\begin{equation*}
 			\psi (\vec{r} , t) = 
 			\int \frac{\diff^3 k}{(2 \pi)^3} A(\vec{k}) e^{i(\vec{k} \vec{r} - \omega(\vec{k}) t)}
 		\end{equation*}
 	Annahme:
 		\begin{align*}
-			v_G \ll c &\Rightarrow \omega(\vec{k}) = \frac{\hbar \vec{k}^2}{2 m} & &(V(\vec{r}) = 0 (\text{Potential}))
+			v_G \ll c &\Rightarrow \omega(\vec{k}) = \frac{\hbar \vec{k}^2}{2 m} & &(V(\vec{r}) = 0 ~(\text{Potential}))
 		\end{align*}
 	Nebenbemerkung:
 	
 	Wir kennen bislang nur die nichtrelativistische Quantenmechanik. Die Streutheorie relativistischer Teilchen unterscheidet sich nicht \underline{wesentlich}.
 	
-	Bild
-	
+	\begin{figure*} [h]
+		\begin{center}
+			\includegraphics[width=12cm]{Stat_Streuproblem_Wirkungsquerschnitt6}
+		\end{center}
+	\end{figure*}
 		\begin{align*}
 			r &\gg R ,& r &\gg \lambda = \frac{2 \pi}{k} &\Rightarrow 
 			&\text{gestreute Welle ist \underline{lokal} eine Kugelwelle} 
@@ -119,8 +142,11 @@
 	
 	Kurze Wiederholung \marginpar{heute nicht Bali}
 	
-	BILD
-	
+	\begin{figure*} [h]
+		\begin{center}
+			\includegraphics[width=10cm]{Stat_Streuproblem_Wirkungsquerschnitt7}
+		\end{center}
+	\end{figure*}
 		\begin{align*}
 			\diff A &= r^2 \diff \Omega ,& 
 			\vec{j} &= \frac{\hbar}{2 m i} \left(\psi^* \vec{\nabla} \psi - \psi \vec{\nabla} \psi^* \right)
@@ -149,8 +175,14 @@
 			\underbrace{P_\ell (\cos \Theta)}_{\mathclap{\sqrt{\frac{4 \pi}{2\ell+1}} 
 					Y_{\ell 0}(\cos \Theta)}} 
 			& &[H, L_z] = 0 ~(\text{Drehimpulserhaltung})
-		\end{align*}
-	BILD \\
+		\end{align*}	
+	\begin{figure*} [h]
+		\begin{center}
+			\includegraphics[width=10cm]{Stat_Streuproblem_Wirkungsquerschnitt8}
+		\end{center}
+	\end{figure*}
+Symmetrisch bezüglich Drehachse
+\FloatBarrier
 	\underline{Legendre-Polynome $P_\ell (\cos \Theta)$}
 		\begin{align*}
 			P_0 (\cos \Theta) &= P_0 (z) = 1\\
@@ -272,8 +304,12 @@
 	
 	Behauptung: Bei kleinen Energien dominieren kleine $\ell$
 	
-	BILD
-	
+	\begin{figure*} [h]
+		\begin{center}
+			\includegraphics[width=8cm]{Stat_Streuproblem_Wirkungsquerschnitt9}
+		\end{center}
+	\end{figure*}
+\FloatBarrier
 	Wir haben den Stoßparameter $b$ und es gilt
 		\begin{align*}
 			L &= r \times p = \sqrt{2mE} ~b & &\text{ wenn } b > R \rightarrow \text{ kaum Streuung} \\
