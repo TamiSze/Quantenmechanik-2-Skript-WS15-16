@@ -82,7 +82,7 @@
 		\begin{align*}
 			\hat{\rho}_{\text{red}} = \sum_m \hat{P}_m \hat{\rho}_0 \hat{P}_m.
 		\end{align*}
-	\begin{tabular}{l l l}
+	\begin{tabular}{l | l | l}
 			Vor der Messung & Nach Messung & Nach Beobachtung des Messergebnisses \\
 			\hline  
 			$\ket{\psi} = \sum_n c_n \ket{\psi}$
@@ -167,8 +167,57 @@
 		\begin{align*}
 			\sum_m |c_m|^2 \ket{a_m, M_m} \bra{a_m, M_m} ?
 		\end{align*}
-	Was passiert mit der Interferenztermen?
+%	Was passiert mit der Interferenztermen?
 	
-	Ist Messapparat QM Natur?
+%	Ist Messapparat QM Natur?
+%	
+%	Ist Messapparat makroskopisch, sollte er den Gesetzen der klassischen Physik folgen.
+%	
+	Ist Messapparat ``quantenmechanisch''? \marginpar{18.01.2016}Ist dann eine Superposition von Zeigerstellungen denkbar?
 	
-	Ist Messapparat makroskopisch, sollte er den Gesetzen der klassischen Physik folgen.
+	Ist Messapparat ``makroskopisch'', dann sollte er den Gesetzen der klassischen Physik folgen. Interferenzterme??
+	
+	\begin{enumerate}[1)]
+		\item Interferenzterme sind sehr klein :
+			\begin{align*}
+				\braket{M_n | \hat{B} | M_m} &\approx 0 &\text{ für eine Messgröße }B \text{ und } m\neq n
+			\end{align*}
+			Das hat was mit der ``Irreversibilität'' der Aufzeichnung zu tun. Interferenz ist auch im Prinzip ``da'', wenn kombiniertes System $S + M$ abgeschlossen ist.
+		\item Realität: $S + M$ sind nie ganz abgeschlossen. Messgerät $M$ wechselwirkt mit der Umgebung (z.B. Strahlungsfelder) $\Rightarrow$ Vernichtung von Interferenztermen. (``Dekohärenz'')
+	\end{enumerate}
+Unterschiedliche Vorstellungen davon, was ein ``Zustand'' ist:
+	\begin{enumerate}[1)]
+		\item Unser Wissen über ein System $\Rightarrow$ ``Sprünge'' nach Messungen sind natürlich, gehorchen aber Gesetzen der klassischen Physik.
+		\item $\ket{\psi}$ repräsentiert System selbst.
+		
+		Was ist dann eine ``ideale'' Messung?
+		
+		Messprozess ist prinzipiell unsymmetrisch.
+		
+		Das Messinstrument ist immer ``klassischer'' als das gemessene System, d.h. Interferenzen von $S + M$ sind unterdrückt, relativ zu $S$. 
+	\end{enumerate}	 
+Egal, ob wir betrachten 
+	\begin{align*}
+		S &| M, M', B ,& S , M&| M', B ,& S, M, M'&| B
+	\end{align*}
+``Schnitt'' mit ``Reduktion'' ist immer vorhanden.
+
+$\overset{?}{\Rightarrow}$ Wellenfunktion es Universums inklusive $B$. Wer ist dann Beobachter? Was ist Realität?
+	\begin{itemize}
+		\item Viel-Welten Interpretation (Everett und Anderen)
+			\begin{align*}
+				\ket{\psi} = \sum_{i,j} \psi_{ij} \ket{\chi_i} \ket{\phi_j}
+			\end{align*}
+		$\psi_{ij}$ soll ein relativer Zustand sein
+			\begin{align*}
+				\sum_j \psi_{ij} \ket{\phi_j} \text{ bzgl. } \ket{\chi_i}
+			\end{align*}
+		Problem: Zerlegung von $\ket{\psi}$ ist nicht eindeutig. Beispiel
+			\begin{align*}
+				\ket{\downarrow}, \ket{\uparrow} \text{ oder } \ket{\rightarrow}, \ket{leftarrow} 
+			\end{align*}
+		$\Rightarrow$ Consistent Histories Approach
+		\item Verborgene Parameter: $\ket{\psi}$ enthält nicht die gesamte Information über das System (De Broglie, Bohm) Könnte Determinismus wiederherstellen?
+		
+		Lässt sich experimentell testen (Bell-Ungleichungen)
+	\end{itemize}
