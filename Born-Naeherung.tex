@@ -32,7 +32,7 @@
 		\begin{align*}
 			\phi(\vec{r}) &= \phi_0 (\vec{r}) + 
 			\int \diff^3 r' ~G(\vec{r} - \vec{r}') \frac{2m}{\hbar^2} V(\vec{r}') \phi (\vec{r}') \\
-			&= \underbrace{e^{ikr \cos \Theta}}_{\substack{\text{einlaufende Welle}}}
+			&= \underbrace{e^{ikr \cos \theta}}_{\substack{\text{einlaufende Welle}}}
 			\underbrace{- \frac{m}{2 \pi \hbar^2} \int \diff^3 r' ~V(\vec{r}') 
 			\frac{e^{ik |\vec{r} - \vec{r}'|}}{|\vec{r} - \vec{r}'|} \phi (\vec{r}')}_{\mathclap{[
 				B\phi] (\vec{r}) \text{ mit } ``B=\frac{2m}{\hbar^2} GV''}} 
@@ -46,16 +46,16 @@
 		\end{align*}
 	oder
 		\begin{align*}
-			\phi (\vec{r}) &= e^{ikr \cos \Theta}
+			\phi (\vec{r}) &= e^{ikr \cos \theta}
 			- \frac{m}{2 \pi \hbar^2} \int \diff^3 r' ~V(\vec{r}') 
 			\frac{e^{ik |\vec{r} - \vec{r}'|}}{|\vec{r} - \vec{r}'|}
-			e^{ikr' \cos \Theta'} \\
+			e^{ikr' \cos \theta'} \\
 			&+ \frac{m^2}{4 \pi^2 \hbar^4} \int \diff^3 r' ~\diff^3 r'' 
 			~V(\vec{r}') 
 			\frac{e^{ik |\vec{r} - \vec{r}'|}}{|\vec{r} - \vec{r}'|}
 			~V(\vec{r}'') 
 			\frac{e^{ik |\vec{r}' - \vec{r}''|}}{|\vec{r}' - \vec{r}''|}
-			e^{ikr'' \cos \Theta''} \\
+			e^{ikr'' \cos \theta''} \\
 			&- \ldots
 		\end{align*}
 	1.Ordnung:
@@ -65,11 +65,11 @@
 			r \left(1 - \frac{2 \vec{r} \vec{r}'}{r^2} + \frac{r'^2}{r^2}\right)^{\frac{1}{2}}\\
 			&\approx r - \frac{\vec{r} \cdot \vec{r}'}{r} = r - \vec{e}_r \cdot \vec{r}'\\
 			\phi (\vec{r}) &\underset{r\rightarrow \infty}{\longrightarrow} 
-			e^{ikr \cos \Theta} 
+			e^{ikr \cos \theta} 
 			- \frac{m}{2 \pi \hbar^2} \frac{e^{ikr}}{r}
 			\int \diff^3 r' ~V(\vec{r}') 
 			\frac{e^{ik (z' - \vec{e}_r \cdot \vec{r}')}}{1} + \ldots \\
-			&= e^{ikr \cos \Theta} - \frac{e^{ikr}}{r}
+			&= e^{ikr \cos \theta} - \frac{e^{ikr}}{r}
 			\left[ \frac{m}{2 \pi \hbar^2} \int \diff^3 r' ~V(\vec{r}') 
 				e^{ik \vec{r}' (\vec{e}_r \cdot \vec{r}_r)} 
 			\right] + \ldots
@@ -88,7 +88,7 @@
 		
 	Born-Näherung für Streuamplitude:
 		\begin{empheq}[box=\boxed]{align*}
-			f^{(1)} (\Theta, \phi) &= -\frac{m}{2 \pi \hbar^2} 
+			f^{(1)} (\theta, \phi) &= -\frac{m}{2 \pi \hbar^2} 
 			\int \diff^3 r' ~V(\vec{r}') e^{-i \vec{q} \vec{r}}
 		\end{empheq}
 		\begin{align*}
@@ -113,7 +113,7 @@
 	
 	Born-Näherung für Streuamplitude
 		\begin{empheq}[box=\boxed]{align*}
-			f^{(1)}(\Theta, \phi) =
+			f^{(1)}(\theta, \phi) =
 			-\frac{m}{2 \pi \hbar} 
 			\int \diff^3 r' ~V(\vec{r}') e^{-i \vec{q} \cdot \vec{r}}
 		\end{empheq} 
@@ -128,19 +128,19 @@
 			\vec{q}^2 &= (\vec{k} - \vec{k}_0)^2 
 			= k^2 \left( 1 - \frac{2 \vec{k} \vec{k}_0}{k^2}
 			+ 1 \right)	
-			= 2 k^2 (1- \cos \Theta) \\
-			&= 4 k^2 \sin^2 \frac{\Theta}{2}
+			= 2 k^2 (1- \cos \theta) \\
+			&= 4 k^2 \sin^2 \frac{\theta}{2}
 		\end{empheq}
 	wobei $k^2 = |\vec{k}| |\vec{k}_0|$
 	
-	Setze $\vec{q} = \left[ 4 k^2 \sin^2 \frac{\Theta}{2} 
+	Setze $\vec{q} = \left[ 4 k^2 \sin^2 \frac{\theta}{2} 
 	\right]$ in Born-Näherung ein:
 		\begin{align*}
 			\int \diff^3 r ~V(\vec{r}') e^{-i \vec{q} \vec{r}}
 			&= 2 \pi \int_{-\infty}^{\infty} \diff r' 
 			~r'^2 V(r') 
-			\underbrace{\int_{-1}^1 \diff \cos \Theta 
-			e^{-iqr \cos \Theta}}_{\substack{*}} \\
+			\underbrace{\int_{-1}^1 \diff \cos \theta 
+			e^{-iqr \cos \theta}}_{\substack{*}} \\
 			\left(
 			*: \int_{-1}^1 \diff t ~e^{-iqr t} \right.
 			\left. 
@@ -155,19 +155,19 @@
 		\end{align*}
 	Streuamplitude: \marginpar{beim zweiten bruch steht noch ein q irgendwie drunter}
 		\begin{empheq}[box=\boxed]{align*}
-			f^{(1)} (\Theta, \phi) = f^{(1)}(\Theta)
-			= -\frac{2m}{\hbar^2} \frac{1}{2 k \sin \frac{\Theta}{2}} 
+			f^{(1)} (\theta, \phi) = f^{(1)}(\theta)
+			= -\frac{2m}{\hbar^2} \frac{1}{2 k \sin \frac{\theta}{2}} 
 			\int_0^{\infty} \diff r' ~r' V(r') \sin (qr')
 		\end{empheq}
 	Streuamplitude in Born-Näherung für rotationssymmetrische Wechselwirkung.
 	
 	Optisches Theorem:
 		\begin{align*}
-			\mathrm{Im} f(\Theta = 0) &= \frac{k}{4 \pi} \sigma
+			\mathrm{Im} f(\theta = 0) &= \frac{k}{4 \pi} \sigma
 			& &\text{Problem: } f^{(1)} \text{ ist reell!}
 		\end{align*}
 	Die Born-Näherung verletzt das optische Theorem.
-	Unzuverlässig bei kleinen $\Theta$. Kann nur ``funktionieren'' weg von Vorwärtsentwicklung.
+	Unzuverlässig bei kleinen $\theta$. Kann nur ``funktionieren'' weg von Vorwärtsentwicklung.
 	
 	``Gültigkeitsbereich'' (2 Fälle):
 		\begin{itemize}
@@ -177,25 +177,25 @@
 			\item hohe Energien ($kR \gg 1$):
 			$ | \int_0^\infty \diff r ~V(r)| 
 			\gg \frac{\hbar^2 k}{2m}$ 
-			+ nur für $\Theta > 0$
+			+ nur für $\theta > 0$
 		\end{itemize}
 	Beispiel: Yukawa-Potential: 
 		\begin{align*}
 			V(r) &= \frac{g^2}{4 \pi} \frac{e^{-\mu r}}{r}
 			& &\text{Reichweite } R \sim \frac{1}{\mu} \\
-			f^{(1)} (\Theta) 
-			&= - \frac{2m}{\hbar^2} \frac{1}{2 k \sin \left(\frac{\Theta}{2}\right)} 
+			f^{(1)} (\theta) 
+			&= - \frac{2m}{\hbar^2} \frac{1}{2 k \sin \left(\frac{\theta}{2}\right)} 
 			\int_0^\infty \diff r' ~r' V(r')
-			\sin \left(2 k \sin \frac{\Theta}{r} r'\right) \\
-			&= - \frac{g^2}{4 \pi} \frac{m}{\hbar k \sin \frac{\Theta}{2}}
+			\sin \left(2 k \sin \frac{\theta}{r} r'\right) \\
+			&= - \frac{g^2}{4 \pi} \frac{m}{\hbar k \sin \frac{\theta}{2}}
 			\int_0^\infty \diff r' ~e^{-\mu r'} 
-			\sin \left(2 k \sin \frac{\Theta}{2} r' \right)
+			\sin \left(2 k \sin \frac{\theta}{2} r' \right)
 		\end{align*}
 	2 fache partielle Integration:
 		\begin{align*}
-			f^{(1)}(\Theta) 
+			f^{(1)}(\theta) 
 			&= - \frac{g^2}{4 \pi} \frac{2m}{\hbar^2}
-			\frac{1}{\mu^2 +  4 k^2 \sin^2 \frac{\Theta}{2}}
+			\frac{1}{\mu^2 +  4 k^2 \sin^2 \frac{\theta}{2}}
 			& \mu \rightarrow 0 
 			&\Rightarrow \text{ Coulombpotential} \\
 			\text{mit } \frac{g^2}{4 \pi} 
@@ -209,7 +209,7 @@
 			= \left(
 				\frac{Z_1 Z_2 \alpha \hbar c}{4 E}
 			\right)^2
-			\frac{1}{\sin^4 \left(\frac{\Theta}{2} \right)}
+			\frac{1}{\sin^4 \left(\frac{\theta}{2} \right)}
 		\end{empheq}
 	Dies ist die \underline{Rutherfordstreuung}.
 	
@@ -219,11 +219,11 @@
 		\end{align*}
 	exakte Coulombamplitude unterswcheidet sich von Born-Näherung in diesem Fall nur durch eine Phase.
 		\begin{align*}
-			f^{\text{exakt}}_{\text{Coulomb}} (\Theta) 
-			&= -\frac{Z_1 Z_2 \alpha \hbar c}{4 E \sin^2 \frac{\Theta}{2}} 
+			f^{\text{exakt}}_{\text{Coulomb}} (\theta) 
+			&= -\frac{Z_1 Z_2 \alpha \hbar c}{4 E \sin^2 \frac{\theta}{2}} 
 			\exp \left[ 2 i \sigma_0 - 
 			2 i \frac{Z_1 Z_2 \alpha \hbar c}{4 E} k 
-			\ln \left(\sin^2 \frac{\Theta}{2} \right)
+			\ln \left(\sin^2 \frac{\theta}{2} \right)
 			\right] \\
 			\text{Streuphase }: \sigma 
 			&= \sum_\ell \sigma_\ell 
@@ -233,34 +233,34 @@
 		\begin{align*}
 			e^{i \vec{k_0} \vec{r}'} 
 			&= \sum_\ell \sqrt{4 \pi (2 \ell + 1)} 
-			i^\ell j_\ell (kr') Y_{\ell 0} (\Theta') \\
+			i^\ell j_\ell (kr') Y_{\ell 0} (\theta') \\
 			e^{-i \vec{k} \vec{r}} 
 			&= \sum_\ell \sum_{m = -\ell}^\ell
-			4 \pi (-i)^\ell j_\ell (kr') Y_{\ell m} (\Theta, \phi) Y^*_{\ell m} (\Theta', \phi')
+			4 \pi (-i)^\ell j_\ell (kr') Y_{\ell m} (\theta, \phi) Y^*_{\ell m} (\theta', \phi')
 		\end{align*}
 	Nebenbemerkung:
 		\begin{align*}
-			\sum_m Y_{\ell m} (\Theta, \phi) Y^*_{\ell m} (\Theta', \phi') 
+			\sum_m Y_{\ell m} (\theta, \phi) Y^*_{\ell m} (\theta', \phi') 
 			&= \frac{2 \ell + 1}{4 \pi} P_\ell (\cos \sphericalangle (\vec{r},\vec{r}'))
 		\end{align*}
 		\begin{align*}
 			\Rightarrow \int \diff \Omega' 
 			e^{i(\vec{k}-\vec{k}_0) \vec{r}'} 
 			&= 4 \pi \sum_{\ell=0}^\infty (2\ell + 1)
-			P_\ell (\cos \Theta) j_\ell^2 (kr') \\
-			f^{(1)} (\Theta) 
+			P_\ell (\cos \theta) j_\ell^2 (kr') \\
+			f^{(1)} (\theta) 
 			&= -\frac{m}{2 \pi \hbar^2} 
 			\int \diff^3 r' V(r') e^{i(\vec{k}-\vec{k}_0)\vec{r}} \\
 			&= - \frac{2 m}{\hbar^2}
 			\int \limits_0^r \diff r' ~r'^2 V(r') 
 			\sum_{\ell = 0}^\infty j_\ell^2 (k r') 
-			(2 \ell + 1) P_\ell (\cos \Theta) 
+			(2 \ell + 1) P_\ell (\cos \theta) 
 		\end{align*}
 	Vergleich mit:
 		\begin{align*}
-			f^{(1)}(\Theta) 
+			f^{(1)}(\theta) 
 			&= \frac{1}{k} \sum_{\ell=0}^{\infty} (2\ell + 1)
-			\underline{e^{i\delta_\ell} \sin \delta_\ell} P_\ell (\cos \Theta) \\
+			\underline{e^{i\delta_\ell} \sin \delta_\ell} P_\ell (\cos \theta) \\
 			\Rightarrow e^{i\delta_\ell} \sin \delta_\ell
 			&= - \frac{k 2 m}{\hbar^2} 
 			\int \limits_0^\infty \diff r ~V(r) 

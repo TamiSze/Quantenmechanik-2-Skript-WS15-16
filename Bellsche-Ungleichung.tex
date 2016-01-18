@@ -1,0 +1,91 @@
+\subsection{Bellsche-Ungleichung} (J.Bell 64)
+	\\
+	Messung der Spinkomponente $S_{\vec{a}}^{(A)} = \vec{S}^{(A)} \cdot \vec{a}$, $|\vec{a}| = 1$ bei $A$ und $S_{\vec{b}}^{(B)}$ bei $B$.
+	\\
+	Annahme: Die Messergebnisse stehen schon vor der Messung für alle Richtung $\vec{a}, \vec{b}$ fest.
+
+	Messergebnisse (in Einheiten von $\frac{\hbar}{2}$):
+		\begin{align*}
+			M_A(\vec{a}) &= \pm 1 ,& M_B(\vec{b}) &= \pm 1 \\
+			M_A(\vec{a}) &= -M_B (\vec{a})
+		\end{align*}
+	Viele Messungen $i= 1, \cdot, N$ für jeweils 3, Spinrichtung $\vec{a},~\vec{b},~ \vec{c}$. Mittel: \marginpar{wirklich, gegen 0?}
+		\begin{align*}
+			\erw{M_A(\vec{a})} &= \frac{1}{N} \sum_{i = 1}^{N} M_A^2(\vec{a})
+			&\rightarrow 0 (N \rightarrow \infty)
+		\end{align*}
+	$\Rightarrow$ Korrelationsfunktion:
+		\begin{align*}
+			C(\vec{a}, \vec{b}) &=
+			\braket{M_A(\vec{a}) M_B(\vec{b})} \left(- \erw{M_A(\vec{a})} \vec{M_B(\vec{b})}\right) \\
+			&= - \braket{M_A(\vec{a}) M_A(\vec{b})}
+		\end{align*}
+	Bellsche-Ungleichung
+		\begin{align*}
+		\left|C(\vec{a}, \vec{b}) - C(\vec{a}, \vec{c})\right| \leq 1 + C(\vec{b}, \vec{c})
+		\end{align*}
+	Beweis: $n(\alpha, \beta, \gamma)$: Relative Häufigkeit von $M_A(\vec{a}) = \alpha,~ M_A(\vec{b}) = \beta,~ M_A(\vec{c}) = \gamma$,
+		\begin{align*}
+			\alpha, \beta, \gamma &= \pm 1 
+			\Rightarrow \sum_{\alpha, \beta, \gamma} n(\alpha, \beta, \gamma) = 1,&
+			n(\alpha, \beta, \gamma) &\geq 0 
+		\end{align*}
+		\begin{align*}
+			C(\vec{a}, \vec{b}) &= - \braket{M_A(\vec{a}) M_A(\vec{b})} = 
+			- \sum_{\alpha, \beta, \gamma} n(\alpha, \beta, \gamma) \alpha \beta \\
+			C(\vec{a}, \vec{b}) - C(\vec{a}, \vec{c}) &=
+			- \sum_{\alpha, \beta, \gamma} n(\alpha, \beta, \gamma) \alpha(\beta - \gamma)
+			= - \sum_{\alpha, \beta, \gamma} n(\alpha, \beta, \gamma) \alpha \beta (1 - \beta \gamma) \\
+			\left|C(\vec{a}, \vec{b}) - C(\vec{a}, \vec{c})\right| &\leq 
+			\sum_{\alpha, \beta, \gamma} n(\alpha, \beta, \gamma) (1 - \beta \gamma) = 
+			1 + C(\vec{b}, \vec{c})
+		\end{align*} ($\beta^2 = 1$)
+		
+	Bellsche-Ungleichung(en) müssen gelten, wenn
+		\begin{enumerate}[1.]
+			\item Messergebnisse vor der Messung feststehen (``Realismus'')
+			\item Messergebnisse wird von der Messung an anderen Teilchen nicht beeinflusst (Lokalität).
+		\end{enumerate} 
+	Beispiel:
+		\begin{align*}
+			\vec{a} &= 
+			\begin{pmatrix}
+			1 \\ 0 \\ 0
+			\end{pmatrix},&
+			\vec{b} &= 
+			\begin{pmatrix}
+			0 \\ 1 \\ 0
+			\end{pmatrix},&
+			\vec{c} &= \frac{1}{\sqrt{2}}
+			\begin{pmatrix}
+			1 \\ 1 \\ 0
+			\end{pmatrix}
+		\end{align*}
+		\begin{align*}
+			C(\vec{a}, \vec{b}) &= \frac{4}{\hbar^2} \braket{\hat{S}_{\vec{a}}^{(A)}~ \hat{S}_{\vec{b}}^{(B)}} = -\frac{4}{\hbar^2} \braket{\hat{S}_{\vec{a}}^{(A)}~\hat{S}_{\vec{b}}^{(A)}} 
+			= - \vec{a} ~\vec{b} = 0 \\
+			C(\vec{a}, \vec{c}) &= C(\vec{b}, \vec{c}) = - \frac{1}{\sqrt{2}} \\ 
+			\left|C(\vec{a}, \vec{b}) - C(\vec{a}, \vec{c})\right| &= 
+			\frac{1}{\sqrt{2}} \underset{falsch}{\leq} 1 - \frac{1}{\sqrt{2}} = 1 - C(\vec{b}, \vec{c})
+		\end{align*}
+	Quantenmechanik verletzt Bellsche-Ungleichung.
+	
+	NB: Weiter Bellsche-Ungleichung:
+		\begin{align*}
+			\left|C(\vec{a}, \vec{b}) + C(\vec{a}, \vec{d}) + C(\vec{c}, \vec{b}) - C(\vec{c}, \vec{d})\right| \leq 2
+		\end{align*}
+	A Aspect et al (1981-82) 
+		\begin{itemize}
+			\item Alle Ergebnisse sind verträglich mit Quantenmechanik. 
+			\item Bellsche-Ungleichungen sind verletzt.
+		\end{itemize}
+	$\Rightarrow$ Es existiert keine im obigen Sinn lokale und relativistische Quantentheorie.
+	
+	Verletzung der Bellschen Ungleichung bedeutet, dass es langreichweitige Korrelationen gibt, die sich nicht realistisch + lokal interpretieren lassen. Man spricht von ``EPR-Korrelationen''
+	
+	Klassische Korrelationen erfüllen die Bellschen Ungleichungen.
+	
+	Einzelne Messreihen in $A$ oder in $B$ lassen keine Rückschlüsse auf Geschehen an anderem Ort zu. Erst die Kombination der Messreihen zu $C (\vec{a}, \vec{b})$
+	zeigt die Korrelation.
+	
+	$\Rightarrow$ Es existieren ``instantane'' Korrelationen, aber (Relativitätstheorie) es existieren keine instantanen Wechselwirkungen.

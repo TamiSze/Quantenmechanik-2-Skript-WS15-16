@@ -124,14 +124,14 @@
 		\end{empheq}
 	Ansatz:
 		\begin{align*}
-			\phi_S (\vec{r}) &\underset{r \rightarrow \infty}{\sim} f(\Theta) \frac{e^{i k_0 r}}{r} &
-			&\text{mit Streuamplitude } f(\Theta)\\
-			\vec{j} &= \frac{\hbar k_0}{m} \frac{|f(\Theta)|^2}{r^2}
-			\hat{e}_r (\Theta , \phi) + \mathscr{O} \left(\frac{1}{r^3}\right)
+			\phi_S (\vec{r}) &\underset{r \rightarrow \infty}{\sim} f(\theta) \frac{e^{i k_0 r}}{r} &
+			&\text{mit Streuamplitude } f(\theta)\\
+			\vec{j} &= \frac{\hbar k_0}{m} \frac{|f(\theta)|^2}{r^2}
+			\hat{e}_r (\theta , \phi) + \mathscr{O} \left(\frac{1}{r^3}\right)
 		\end{align*}
 		\begin{empheq}[box = \boxed]{align*}
 			\frac{\diff \sigma}{\diff \Omega} = r^2 \frac{|\vec{j}_S|}{|\vec{j}_0|}
-			= |f(\Theta)|^2
+			= |f(\theta)|^2
 		\end{empheq}
 	Dieser Ansatz löst die Schrödingergleichung für $r \rightarrow \infty$ 
 		\begin{align*}
@@ -172,8 +172,8 @@
 	$\phi$ ist im Bereich $r>R$ übereinstimmend mit Lösung der freien Schrödinger Gleichung.
 		\begin{align*}
 			\phi = \sum_{\ell = 0}^{\infty} R_\ell (r) 
-			\underbrace{P_\ell (\cos \Theta)}_{\mathclap{\sqrt{\frac{4 \pi}{2\ell+1}} 
-					Y_{\ell 0}(\cos \Theta)}} 
+			\underbrace{P_\ell (\cos \theta)}_{\mathclap{\sqrt{\frac{4 \pi}{2\ell+1}} 
+					Y_{\ell 0}(\cos \theta)}} 
 			& &[H, L_z] = 0 ~(\text{Drehimpulserhaltung})
 		\end{align*}	
 	\begin{figure*} [h]
@@ -183,9 +183,9 @@
 	\end{figure*}
 Symmetrisch bezüglich Drehachse
 \FloatBarrier
-	\underline{Legendre-Polynome $P_\ell (\cos \Theta)$}
+	\underline{Legendre-Polynome $P_\ell (\cos \theta)$}
 		\begin{align*}
-			P_0 (\cos \Theta) &= P_0 (z) = 1\\
+			P_0 (\cos \theta) &= P_0 (z) = 1\\
 			P_1 (z) &= z \\
 			P_2 (z) &= \frac{1}{2} (3z^2-1) \\
 			(\ell + 1) P_{\ell + 1} (z) &= (2 \ell + 1) z P_\ell (z) - \ell P_{\ell - 1} (z) \\
@@ -198,7 +198,7 @@ Symmetrisch bezüglich Drehachse
 			\left( \frac{\partial^2}{\partial r^2} + \frac{2}{r} \frac{\partial}{\partial r} 
 			- \frac{|\hat{L}|^2}{\hbar^2 r^2} + k^2
 			\right) \phi &= 0 \\
-			\sum_{\ell = 0}^{\infty} \underbrace{P_\ell (\cos \Theta)}_{\mathclap{\text{orthogonal}}}
+			\sum_{\ell = 0}^{\infty} \underbrace{P_\ell (\cos \theta)}_{\mathclap{\text{orthogonal}}}
 			\left( \frac{\partial^2}{\partial r^2} + \frac{2}{r} \frac{\partial}{\partial r} 
 			- \frac{\ell(\ell+1)}{r^2} + k^2
 			\right) R_\ell (r) &= 0
@@ -238,10 +238,10 @@ Symmetrisch bezüglich Drehachse
 			\frac{\sin(kr-\frac{\ell \pi}{2})}{kr} &
 			n_\ell(kr) &\overset{\text{große }kr}{\longrightarrow} 
 			- \frac{\cos(kr-\frac{\ell \pi}{2})}{kr} \\
-			\phi_0 &= e^{ikz} = e^{ikr \cos \Theta} =
+			\phi_0 &= e^{ikz} = e^{ikr \cos \theta} =
 		\end{align*}
 		\begin{empheq}[box=\boxed]{align*}
-			= \sum_{\ell = 0}^{\infty} (2\ell + 1) i^\ell j_\ell(kr) P_\ell (\cos \Theta)
+			= \sum_{\ell = 0}^{\infty} (2\ell + 1) i^\ell j_\ell(kr) P_\ell (\cos \theta)
 		\end{empheq}
 	Für große $r$:
 		\begin{align*}	
@@ -249,7 +249,7 @@ Symmetrisch bezüglich Drehachse
 			&= \sum_{\ell = 0}^{\infty} 
 			\left[ \frac{c_\ell(kr)}{kr} \sin \left(kr-\frac{\ell \pi}{2} + \delta_\ell \right)
 				-(2\ell +1)i^\ell \frac{\sin \left(kr-\frac{\ell \pi}{2}\right)}{kr}
-			\right] P_\ell (\cos \Theta)
+			\right] P_\ell (\cos \theta)
 		\end{align*}
 	wobei $\delta_\ell \neq 0$ wegen $V \neq 0$.
 	
@@ -258,32 +258,32 @@ Symmetrisch bezüglich Drehachse
 			-c_\ell i^\ell e^{-i\delta_\ell} + (2 \ell + 1) i^{-2\ell} &= 0 &
 			&(\text{ist nur erfüllt mit } e^{i\frac{\pi}{2}} = i^\ell) \\
 			c_\ell &= i^{\ell} (2\ell + 1) e^{i \delta_\ell}\\
-			\phi = \phi_0 + \phi_S &= e^{ikr \cos \Theta} + f(\Theta, k) \frac{e^{ikr}}{r}
+			\phi = \phi_0 + \phi_S &= e^{ikr \cos \theta} + f(\theta, k) \frac{e^{ikr}}{r}
 		\end{align*}
-	$f(\Theta,k)$ ist die Streuamplitude.
+	$f(\theta,k)$ ist die Streuamplitude.
 		\begin{align*}
-			f(\Theta,k) &= \frac{1}{2ik} \sum_{\ell = 0}^{\infty} (2 \ell +1) P_\ell (\cos \Theta) 
+			f(\theta,k) &= \frac{1}{2ik} \sum_{\ell = 0}^{\infty} (2 \ell +1) P_\ell (\cos \theta) 
 			\left(e^{2i\delta_\ell} - 1\right) & 
 			&\text{ist } 0 \text{ für } \delta_\ell \rightarrow 0 \\
 			\vec{j}_{\text{aus}} &= 
 			\frac{\hbar}{2mi} \left(\phi_S^* \vec{\nabla} \phi_S
 				- \phi_S \vec{\nabla} \phi_S^*
 			\right) 
-			= \frac{\hbar k}{m} \frac{|f(\Theta, k)|^2}{r^2} \vec{e}_r
+			= \frac{\hbar k}{m} \frac{|f(\theta, k)|^2}{r^2} \vec{e}_r
 			+ \mathscr{O}\left(\frac{1}{r^3}\right) \\
 			\vec{j}_{\text{ein}} &= \frac{\hbar k}{m} \vec{e}_r \\
-			&\Rightarrow \frac{\diff \sigma}{\diff \Omega} = |f(\Theta, k)|^2
+			&\Rightarrow \frac{\diff \sigma}{\diff \Omega} = |f(\theta, k)|^2
 		\end{align*}
 	Der totale Wirkungsqerschnitt ist nun:
 		\begin{align*}
 			\sigma &= \int \diff \Omega \left(\frac{\diff \sigma}{\diff \Omega}\right)
-			= \int \diff \Omega ~|f(\Theta, k)|^2 
-			= 2 \pi \int \diff \cos \Theta ~|f(\Theta, k)|^2 \\
-			&= 2 \pi \sum_{\ell, \ell'} \int \diff \cos \Theta 
-			\frac{P_\ell (\cos \Theta)~P_{\ell'} (\cos \Theta)}{k^2} 
+			= \int \diff \Omega ~|f(\theta, k)|^2 
+			= 2 \pi \int \diff \cos \theta ~|f(\theta, k)|^2 \\
+			&= 2 \pi \sum_{\ell, \ell'} \int \diff \cos \theta 
+			\frac{P_\ell (\cos \theta)~P_{\ell'} (\cos \theta)}{k^2} 
 			\sin\delta_\ell ~\sin\delta_{\ell'} (2\ell+1) (2\ell' +1) \\
 			&\left(
-				\int_{-1}^{1} \diff \cos \Theta ~ P_\ell P_{\ell'} = \frac{2}{2 \ell + 1} \delta_{\ell,\ell'}
+				\int_{-1}^{1} \diff \cos \theta ~ P_\ell P_{\ell'} = \frac{2}{2 \ell + 1} \delta_{\ell,\ell'}
 			\right) \\
 			&= \frac{4 \pi}{k^2} \sum_{\ell = 0}^{\infty}
 			(2 \ell + 1) \sin^2 \delta_\ell
@@ -291,14 +291,14 @@ Symmetrisch bezüglich Drehachse
 	Für kleine Energien nur $\delta_{\ell=0}$ wichtig
 		\begin{align*}
 			0 \lesssim \frac{4 \pi}{k^2} \\
-			f(\Theta, k) &= \sum_{\ell = 0}^{\infty} \frac{2 \ell + 1}{k} e^{i \delta_\ell}
+			f(\theta, k) &= \sum_{\ell = 0}^{\infty} \frac{2 \ell + 1}{k} e^{i \delta_\ell}
 			\sin \delta_\ell 
-			\underbrace{P_\ell (\cos \Theta)}_{\mathclap{P_\ell(\cos \Theta = 1) = 1}} \\
-			\mathrm{Im} f(\Theta =0, k) &= \sum_\ell \frac{2 \ell + 1}{k} \sin^2 \delta_\ell
+			\underbrace{P_\ell (\cos \theta)}_{\mathclap{P_\ell(\cos \theta = 1) = 1}} \\
+			\mathrm{Im} f(\theta =0, k) &= \sum_\ell \frac{2 \ell + 1}{k} \sin^2 \delta_\ell
 		\end{align*}
 		\begin{empheq}[box=\boxed]{align*}
 			0 = \frac{4 \pi}{k} 
-			\underbrace{\mathrm{Im} f(\Theta = 0, k)}_{\substack{\text{Imaginärteil der Vorwärtsamplitude}}}
+			\underbrace{\mathrm{Im} f(\theta = 0, k)}_{\substack{\text{Imaginärteil der Vorwärtsamplitude}}}
 		\end{empheq}
 	Dies ist das optische Theorem.
 	
