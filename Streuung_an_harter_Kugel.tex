@@ -13,13 +13,13 @@
 	$V(r)= 0$ für $r>R \rightarrow$ Schrödingergleichung $-\frac{\hbar^2}{2m} \vec{\nabla}^2 \phi(\vec{r})
 	\propto \phi(\vec{r})$
 	Einsetzen in Schrödingergleichung $\Rightarrow$ Bedingungen für Koeffizienten $R_\ell(r)$:
-%		\begin{align*}
-%			R_\ell(r) &= a_\ell j_\ell (kr) + b_\ell n_\ell (kr) ,& &\text{wobei}\\
-%			j_\ell(\rho) &= (-\rho)^\ell \left(\frac{1}{\rho} \frac{\partial}{\partial \rho}\right)^\ell
-%			\frac{\sin \rho}{\rho} :& &\text{sphärische Besselfunktion}\\
-%			n_\ell(\rho) &= (-\rho)^\ell \left(\frac{1}{\rho} \frac{\partial}{\partial \rho}\right)^\ell
-%			\frac{\cos \rho}{\rho} :& &\text{\sphärische Neumannfunktionen}
-%		\end{align*}
+		\begin{align*}
+			R_\ell(r) &= a_\ell j_\ell (kr) + b_\ell n_\ell (kr) ,& &\text{wobei}\\
+			j_\ell(\rho) &= (-\rho)^\ell \left(\frac{1}{\rho} \frac{\partial}{\partial \rho}\right)^\ell
+			\frac{\sin \rho}{\rho} :& &\text{sphärische Besselfunktion}\\
+			n_\ell(\rho) &= (-\rho)^\ell \left(\frac{1}{\rho} \frac{\partial}{\partial \rho}\right)^\ell
+			\frac{\cos \rho}{\rho} :& &\text{sphärische Neumannfunktionen}
+		\end{align*}
 	$\rho \rightarrow \infty : j_\ell (\rho) \simeq \frac{1}{\rho} \sin(\rho-\ell\frac{\pi}{2})$,
 	$n_\ell (\rho) \approx -\frac{1}{\rho}  \cos(\rho-\ell\frac{\pi}{2})$
 	
@@ -28,7 +28,7 @@
 	Auslaufende Welle $ %geschwungen
 	\frac{1}{r} e^{ikr}$ (Kugelwelle)
 		\begin{align*}
-			h_\ell^+ (\rho) &= j_\ell (rho) + in_\ell(\rho) %geschwungen mit unterschrift r \rightarrow \infty
+			h_\ell^+ (\rho) &= j_\ell (\rho) + n_\ell(\rho) \underset{r \rightarrow \infty}{\leadsto} 
 			\frac{1}{i\rho} e^{i(\rho-\ell\frac{\pi}{2})} &
 			&\text{(sphärische Hantelfunktion 1ter Art)} \\
 			\Rightarrow \phi (\vec{r}) &= \sum_{\ell=0}^{\infty} (2 \ell +1) i^\ell
@@ -52,10 +52,10 @@
 			\gamma_\ell &= \frac{1}{2} (e^{2i\delta_\ell} - 1)
 			= -\frac{j_\ell(kR)}{j_\ell(kR)+ in_\ell (kR)}
 		\end{align*}
-		$\Rightarrow$
-		\begin{empheq}[box=\boxed]{align*}
-			\tan \delta_\ell = \frac{j_\ell (kR)}{n_\ell (kR)}
-		\end{empheq}
+		
+		\begin{align*}
+		\Rightarrow \boxed{\tan \delta_\ell = \frac{j_\ell (kR)}{n_\ell (kR)}}
+		\end{align*}
 		\begin{align*}
 			\sigma &= \frac{4 \pi}{k^2} \sum_{\ell} (2\ell +1) 
 			\frac{j_\ell^2 (kR)}{j_\ell^2 (kR)+ n_\ell^2 (kR)}
