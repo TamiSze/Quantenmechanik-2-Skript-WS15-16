@@ -1,0 +1,193 @@
+\subsection{Klassische Feldtheorie}
+	Wirkung (Mechanik):
+		\begin{align*}
+			S &= \int \diff t L(\vec{x}, \dot{\vec{x}}) \\
+			t &\mapsto x = (t, \vec{x}) & t&= x^0 (c=1)\\
+			\vec{x}(t) &\mapsto \Phi (x),&  \text{z.\,B. } \Phi_a(x), a &= 1,\ldots,N, A_\mu (x) \text{ etc.} \\
+			L(\vec{x}, \dot{\vec{x}}) &\mapsto \La (\Phi(x), \partial_\mu \Phi),& \partial_\mu &= \frac{\partial}{\partial x^{\mu}} (\text{Lagrangedichte})		
+		\end{align*}
+		\begin{align*}
+			\boxed{S= \int \diff^4 x \La (\Phi (x), \partial_\mu \Phi(x)}
+			&= \int \diff t L (\Phi (t), \partial_\mu \Phi(x)) & &\text{mit }L(t) \int \diff^3 x \La
+		\end{align*}
+		\begin{align*}
+			\delta S &= 0 \\
+			&= \int \diff^4x \left(
+				\frac{\partial \La}{\partial \Phi} \delta \Phi(x)
+				+ \frac{\partial \La}{\partial (\partial_\mu \Phi)} \delta (\partial_\mu \Phi (x))
+			\right)	 \\
+			&= \int \diff^4 x \left(
+				\frac{\partial \La}{\partial \Phi} - \partial_\mu \frac{\partial \La}{\partial (\partial_\mu \Phi)}
+			\right) \delta \Phi (x) +
+			\int \diff^4 x \partial_\mu \left(
+				\frac{\partial \La}{\partial (\partial_\mu \Phi)} \delta \Phi
+			\right)
+		\end{align*}
+	letztes Integral: $\int \diff^3x (\ldots) = \delta \Phi (x) = 0$
+	wenn $\delta \Phi(x) = 0$ für $x \in$ Oberfläche.
+		\begin{align*}
+			\Rightarrow \frac{\partial \La}{\partial \Phi(x)} = \partial_\mu \frac{\partial \La}{\partial(\partial_\mu \Phi)} = 0
+		\end{align*}
+	Falls $\Phi$ mehrere Komponenten hat $\Rightarrow 1$  Euler-Lagrange-Gleichungen (ELG) pro Komponenten.
+	Lagrange-Formalismus ist der natürliche Ausgangspunkt für relativistische Quantenfeldtheorie.
+	
+	Stattdessen betrachten wir die Hamiltonformulierung, da dies auch der Ausgangspunkt bei der ``Quantisierung'' der klassischen Mechanik war.
+	
+	Mechanik: Hamiltonfunktion:
+		\begin{align*}
+			H &= (\sum_i p_i \dot{q}_i) - L (q_i, \dot{q}_i),& H&= H(p_i, q_i),
+		\end{align*}
+	kanonisch konjugierter Impuls:
+		\begin{align*}
+			p_i &= \frac{\partial L}{\partial q_i} 
+		\end{align*}
+	Feldtheorie:
+		\begin{align*}
+			H &= ``\sum_{\vec{x}} p(x) \cdot \dot{\Phi}(x) - L (\Phi, \dot{\Phi})\text{''} \\
+			&= \int \diff^3 x \underbrace{\pi (x)}_{\mathclap{\text{kan.konj.Impulsdichte}}} \dot{\Phi}(x) - \La(\Phi, \dot{\Phi}) 
+		\end{align*}
+		\begin{align*}
+			\pi(x) &= \frac{\partial \La}{\partial \dot{\Phi}(\vec{x})} = 
+			\left(
+				= \frac{\delta L}{\delta \dot{\Phi}(\vec{x})} = 
+				\frac{\delta}{\delta \dot{\Phi}(\vec{x})}
+				\int \diff^3y \La (\Phi (\vec{y}), \dot{\Phi}(\vec{y})
+			\right) \\
+			&\left(
+				\frac{\delta L}{\delta \dot{\Phi}(\vec{x})} \Rightarrow \frac{\delta}{\delta f(\vec{x})} \int \diff^3y F(f(\vec{y})) = \int \diff^3 y \delta^{(3)}(\vec{x}-\vec{y}) \frac{\partial F(f(\vec{x}))}{\partial f(\vec{x})}
+			\right)
+		\end{align*}
+	Hamiltondichte:	
+		\begin{align*}
+			\mathscr{H} (\Phi, p) = p (\vec{x}) \dot{\Phi} (\vec{x}) = 
+			\La (\Phi(\vec{x}), \dot{\Phi} (\vec{x}))
+		\end{align*}
+	NB: ``Echte'' relativistische Verallgemeinerung von H ist der Energie-Impulstensor:
+		\begin{align*}
+			T^{\mu \nu} &= \frac{\partial \La}{\partial(\partial_\mu \Phi)} \partial^{\nu} \Phi - \eta^{\mu \nu} \La ,& T^{00} &= \mathscr{H}
+		\end{align*}
+	Def von $T^{\mu \nu}$ in gekrümmter Raumzeit:
+		\begin{align*}
+			S &= \int \diff^4 x \sqrt{-g} \La, & g&= \det (g^{\mu \nu}) \\
+			T_{\text{ART}}^{\mu \nu} &= \frac{2}{\sqrt{-g}} \frac{\delta (S)}{\delta g_{\mu \nu}(x)} = -2 \frac{\partial \La}{\partial \eta_{\mu \nu}} &
+			\text{für } g^{\mu \nu} &= \eta^{\mu \nu} \\
+			&= T^{\mu \nu}
+		\end{align*}
+	Beispiel: 
+		\begin{align*}
+			\La &= \frac{1}{2} \dot{\Phi}^2 - \frac{1}{2} (\vec{\nabla} \Phi)^2 - \frac{1}{2} m^2 \Phi^2 \\
+			&= \frac{1}{2} (\partial_\mu \Phi) (\partial^\mu \Phi) - \frac{1}{2}m^2 \Phi^2 
+		\end{align*}
+	ELG:
+		\begin{align*}
+			\underbrace{\partial_\mu \partial^\mu \Phi}_{\mathclap{\partial_\mu \frac{\partial \La}{\partial(\partial_\mu \Phi)}}} + \underbrace{m^2 \Phi}_{\mathclap{-\frac{\partial \La}{\partial\Phi}}} = 0 \\
+		\end{align*}
+	Klein-Gordon-Gleichung:
+		\begin{align*}
+			(\partial_\mu \partial^\mu + m^2) \Phi &= 0 \\
+			\pi(\vec{x}) &= \dot{\Phi}(\vec{x}) \\
+			H = \int \diff^3 x \mathscr(H) = 
+			\int \diff^3 x \underbrace{\left(
+				\frac{\pi^2}{2} + \frac{1}{2}(\vec{\nabla} \Phi)^2 + \frac{1}{2}m^2 \Phi^2
+			\right)}_{\mathclap{\mathscr{H}}}
+		\end{align*}
+	Noether Theorem: Transformation, welche die Bewegungsgleichungen invariant lässt.
+		\begin{align*}
+			\Phi(x) &\mapsto \Phi' (x) = \Phi (x) + \alpha \Delta \Phi (x) \\
+			\La(x) &\mapsto \La(x) + \alpha \delta_\mu J^\mu = \La + \alpha \Delta \La
+		\end{align*}
+		\begin{align*}
+			\alpha \partial_\mu J^\mu &= \alpha \Delta \La = 
+			\alpha \left[
+				\frac{\partial \La}{\partial \Phi} \Delta \Phi + 
+				\frac{\partial \La}{\partial(\partial_\mu \Phi)} \partial_\mu \Delta \Phi
+			\right] \\
+			&= \alpha \left[ \vphantom{\partial_\mu \left(
+				\frac{\partial \La}{\partial (\partial_\mu \Phi)} \Delta \Phi
+				\right)} \right.
+				\partial_\mu \left(
+					\frac{\partial \La}{\partial (\partial_\mu \Phi)} \Delta \Phi
+				\right)
+				+ \underbrace{\left(
+					\frac{\partial \La}{\partial \Phi} - \left(
+						\partial_\mu \frac{\partial \La}{\partial(\partial_\mu \Phi)}
+					\right)	\Delta \Phi			
+				\right)}_{\mathclap{= 0 (\text{ELG})}}
+				\left.\vphantom{\partial_\mu \left(
+				\frac{\partial \La}{\partial (\partial_\mu \Phi)} \Delta \Phi
+				\right)
+			}\right] \\
+			\Rightarrow \partial_\mu (j^\mu) &= 0 \text{ mit }
+			j^\mu = \left(
+				\frac{\partial \La}{\partial (\partial_\mu \Phi)} \Delta \Phi - J^\mu
+			\right): \text{ Noether-Strom}
+		\end{align*}
+	Zu jedem Symmetrie korrespondiert ein erhaltener Strom.
+		\begin{align*}
+			\partial_\mu j^\mu &= 0,& &= \underbrace{j^0}_{\mathclap{\dot{\rho}}} + \vec{\nabla} \vec{j}  \\
+			\dot{Q} &= \int_V \diff^3 \dot{\rho} = -\int_V \diff^3 x \vec{\nabla} \vec{j} = 0 \text{ für } V= \mathds{R}^3
+		\end{align*}
+	$V$ ist räumliches Volumen, $\dot{Q}$ ist erhaltene Ladung.
+	
+	Beispiel	
+		\begin{align*}
+			\La &= \frac{1}{2} (\partial_\mu \Phi) (\partial^\mu \Phi) &
+			\Phi &\mapsto \Phi + \alpha \\
+			\alpha \Delta \La &= 0 \Rightarrow J^\mu = 0 &
+			\Delta \Phi &= 1 
+		\end{align*}
+		\begin{align*}
+			j^\mu &= \delta^\mu \Phi \underbrace{1}_{\mathclap{\Delta \Phi}} - 
+			\underbrace{0}_{\mathclap{J^\mu}} = \delta^\mu \Phi\\
+			\Rightarrow \partial_\mu j^\mu &= 0
+			\Leftrightarrow	\delta_\mu \underbrace{(\delta^\mu \Phi)}_{\mathclap{\text{Bewegungsgleichung (ELG)}}} = 0 \checkmark
+		\end{align*}
+	Beispiel 2:
+		\begin{align*}
+			\Phi &\in \mathds{C},&
+			\La &= \frac{1}{2} (\partial_\mu \Phi)(\partial^\mu \Phi) + \frac{m^2}{2} |\Phi|^2 \\
+			\Phi(x) &\mapsto e^{i\alpha} \Phi(x)&  
+			&\approx \Phi(x) + \alpha \underbrace{i \Phi(x)}_{\mathclap{\Delta \Phi}} + \cdots \\
+			\partial^\mu &= 0 &
+			\Phi(x)^* &\mapsto \Phi^* (x) - \alpha \Delta \Phi^* 
+		\end{align*}
+		\begin{align*}
+			\Delta \Phi^* &= + i \Phi = -(i \Phi)^* \\
+			j^\mu &= \frac{1}{2} \left(
+				(\partial^\mu \Phi^*) \Phi - (\partial^\mu \Phi) \Phi*
+			\right) \\
+			\underline{\partial_\mu j^\mu} &= 0
+		\end{align*}
+	Erhaltungsgröße: Elektrische Ladung
+	
+	Beispiel 3:
+		\begin{align*}
+			x^\mu &\mapsto x^\mu - a^\mu ~(4a^\mu \text{ statt } 1\alpha) \\
+			\Phi' (x) &= \Phi(x + a) = \Phi(x) + a^\nu \partial_\nu \Phi(x) \\
+			\La' &= \La + a^\nu \partial_\nu \La = 
+			\La + a^\nu \partial_\mu \overbrace{\eta_\nu^\mu \La}^{\mathclap{J^\mu \text{ für festes } \nu}}
+		\end{align*}
+	Strom für $\nu = 0$
+		\begin{align*}
+			j_{(0)}^\mu &= \frac{\partial \La}{\partial(\partial_\mu \Phi)} \partial_0 \Phi - \eta_0^\mu \La \\
+		\end{align*}
+	4 Ströme:
+		\begin{align*}
+			T^\mu_\nu &= \frac{\partial \La}{\partial(\partial_\mu \Phi)} \partial_\nu \Phi - \eta_\nu^\mu \La \text{ (Energie- Impulsstrom)}
+		\end{align*}
+	Für jedes $\nu = 0, 1, 2, 3, \ldots$
+		\begin{align*}
+			\partial_\mu T_\nu^\mu &= 0
+		\end{align*}
+		\begin{align*}
+			H &= \int \diff^3 x \Ha (x) = \int \diff^3 x T^{00} (x) & &t\text{ fest}
+		\end{align*}
+	$\Rightarrow \frac{\diff}{\diff t} \Ha = const.$ für $\Ha(x)$ integiert über $\mathds{R}^3$ 
+	
+	Kontinuität für 0te Spalte von $T^{\mu \nu}$ gibt Energieerhaltung (Zeittranslation)
+	\begin{align*}
+		\underbrace{p^i}_{\substack{\text{Physikalischer Impuls} \\ \text{des Feldes} \\ \text{ist erhalten} \\ \text{(Translationsinvarianz im Raum)}}} &= \int \diff^3 x 
+		\underbrace{T^{0 i}}_{\substack{\text{Impulsdichte} \\ \text{des Feldes} \\
+				\text{(Poyntingvektor)}}}
+		= - \int \diff^3 x \underbrace{\pi(x)}_{\substack{\text{Kanontisch konj.} \\ \text{Impulsdichte}}} (\vec{\nabla}\Phi)
+	\end{align*}

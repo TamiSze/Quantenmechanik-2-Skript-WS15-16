@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.9.8)  20 JAN 2016 09:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.9.8)  21 JAN 2016 12:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -759,7 +759,7 @@ LaTeX Info: Redefining \nameref on input line 4.
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
- <LOGO_UR.jpg, id=188, 593.3367pt x 427.5975pt>
+ <LOGO_UR.jpg, id=200, 593.3367pt x 427.5975pt>
 File: LOGO_UR.jpg Graphic file (type jpg)
 
 <use LOGO_UR.jpg>
@@ -834,7 +834,13 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 41.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 41.
- [2])
+ [2]
+Overfull \hbox (5.46187pt too wide) in paragraph at lines 50--50
+ [][] [][][]\T1/lmr/m/n/12 Klein-Gordon-Feld und har-mo-ni-sche Os-zil-la-to-re
+n im Schrö-din-ger-bild (Ope- 
+ []
+
+)
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
@@ -846,8 +852,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 28.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 28.
-
-[3]
+ [3]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 32.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1008,7 +1013,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<Ersatzgraph1.jpg, id=330, 3276.24pt x 2457.18pt>
+<Ersatzgraph1.jpg, id=347, 3276.24pt x 2457.18pt>
 File: Ersatzgraph1.jpg Graphic file (type jpg)
  <use Ersatzgraph1.jpg>
 Package pdftex.def Info: Ersatzgraph1.jpg used on input line 17.
@@ -1023,7 +1028,7 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 30.
 
 [13 <./Ersatzgraph1.jpg>]
-<Ersatzgraph2.jpg, id=336, 2093.8225pt x 1490.56876pt>
+<Ersatzgraph2.jpg, id=353, 2093.8225pt x 1490.56876pt>
 File: Ersatzgraph2.jpg Graphic file (type jpg)
  <use Ersatzgraph2.jpg>
 Package pdftex.def Info: Ersatzgraph2.jpg used on input line 33.
@@ -1060,7 +1065,7 @@ Package marginnote Info: right page because not two side mode on input line 23.
 
 Package marginnote Info: xpos seems to be 151.68016pt,
 (marginnote)             \marginnoterightadjust ignored on input line 23.
- <Ersatzgraph3.jpg, id=342, 3276.24pt x 2457.18pt>
+ <Ersatzgraph3.jpg, id=358, 3276.24pt x 2457.18pt>
 File: Ersatzgraph3.jpg Graphic file (type jpg)
 
 <use Ersatzgraph3.jpg>
@@ -1180,7 +1185,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 278.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 278.
-[21] <Bild1.jpg, id=372, 3276.24pt x 2457.18pt>
+[21] <Bild1.jpg, id=388, 3276.24pt x 2457.18pt>
 File: Bild1.jpg Graphic file (type jpg)
  <use Bild1.jpg>
 Package pdftex.def Info: Bild1.jpg used on input line 285.
@@ -1259,7 +1264,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 290--290
 []\T1/lmr/m/n/12 kA was
  []
 
-<Bild2.jpg, id=394, 2652.91125pt x 1696.3375pt>
+<Bild2.jpg, id=410, 2652.91125pt x 1696.3375pt>
 File: Bild2.jpg Graphic file (type jpg)
  <use Bild2.jpg>
 Package pdftex.def Info: Bild2.jpg used on input line 302.
@@ -1314,7 +1319,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
-<Bild3.jpg, id=411, 3276.24pt x 2457.18pt>
+<Bild3.jpg, id=427, 3276.24pt x 2457.18pt>
 File: Bild3.jpg Graphic file (type jpg)
  <use Bild3.jpg>
 Package pdftex.def Info: Bild3.jpg used on input line 4.
@@ -1358,7 +1363,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<Stat_Streuproblem_Wirkungsquerschnitt.jpg, id=421, 2825.55624pt x 680.5425pt>
+<Stat_Streuproblem_Wirkungsquerschnitt.jpg, id=437, 2825.55624pt x 680.5425pt>
 File: Stat_Streuproblem_Wirkungsquerschnitt.jpg Graphic file (type jpg)
 
 <use Stat_Streuproblem_Wirkungsquerschnitt.jpg>
@@ -1378,7 +1383,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--9
 
  []
 
-<Stat_Streuproblem_Wirkungsquerschnitt2.jpg, id=426, 1292.83pt x 1266.7325pt>
+<Stat_Streuproblem_Wirkungsquerschnitt2.jpg, id=442, 1292.83pt x 1266.7325pt>
 File: Stat_Streuproblem_Wirkungsquerschnitt2.jpg Graphic file (type jpg)
 
 <use Stat_Streuproblem_Wirkungsquerschnitt2.jpg>
@@ -1390,7 +1395,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--23
 
  []
 
-<Stat_Streuproblem_Wirkungsquerschnitt3.jpg, id=427, 2338.7375pt x 919.435pt>
+<Stat_Streuproblem_Wirkungsquerschnitt3.jpg, id=443, 2338.7375pt x 919.435pt>
 File: Stat_Streuproblem_Wirkungsquerschnitt3.jpg Graphic file (type jpg)
 
 <use Stat_Streuproblem_Wirkungsquerschnitt3.jpg>
@@ -1407,7 +1412,7 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 44.
  [33 <./Stat_Streuproblem_Wirkungsquerschnitt.jpg> <./Stat_Streuproblem_Wirkung
 squerschnitt2.jpg> <./Stat_Streuproblem_Wirkungsquerschnitt3.jpg>]
-<Stat_Streuproblem_Wirkungsquerschnitt4.jpg, id=432, 1861.95625pt x 715.67375pt
+<Stat_Streuproblem_Wirkungsquerschnitt4.jpg, id=448, 1861.95625pt x 715.67375pt
 >
 File: Stat_Streuproblem_Wirkungsquerschnitt4.jpg Graphic file (type jpg)
  <use Stat_Streuproblem_Wirkungsquerschnitt4.jpg>
@@ -1415,14 +1420,14 @@ Package pdftex.def Info: Stat_Streuproblem_Wirkungsquerschnitt4.jpg used on inp
 ut line 52.
 (pdftex.def)             Requested size: 284.52756pt x 109.35576pt.
 
-<Stat_Streuproblem_Wirkungsquerschnitt5.jpg, id=433, 2697.07625pt x 837.1275pt>
+<Stat_Streuproblem_Wirkungsquerschnitt5.jpg, id=449, 2697.07625pt x 837.1275pt>
 File: Stat_Streuproblem_Wirkungsquerschnitt5.jpg Graphic file (type jpg)
 <use Stat_Streuproblem_Wirkungsquerschnitt5.jpg>
 Package pdftex.def Info: Stat_Streuproblem_Wirkungsquerschnitt5.jpg used on inp
 ut line 70.
 (pdftex.def)             Requested size: 284.52756pt x 88.30334pt.
 
-<Stat_Streuproblem_Wirkungsquerschnitt6.jpg, id=434, 3076.49374pt x 969.6225pt>
+<Stat_Streuproblem_Wirkungsquerschnitt6.jpg, id=450, 3076.49374pt x 969.6225pt>
 File: Stat_Streuproblem_Wirkungsquerschnitt6.jpg Graphic file (type jpg)
 <use Stat_Streuproblem_Wirkungsquerschnitt6.jpg>
 Package pdftex.def Info: Stat_Streuproblem_Wirkungsquerschnitt6.jpg used on inp
@@ -1455,7 +1460,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 143--143
 LaTeX Warning: Marginpar on page 36 moved.
 
 
-<Stat_Streuproblem_Wirkungsquerschnitt7.jpg, id=443, 2424.05624pt x 919.435pt>
+<Stat_Streuproblem_Wirkungsquerschnitt7.jpg, id=459, 2424.05624pt x 919.435pt>
 File: Stat_Streuproblem_Wirkungsquerschnitt7.jpg Graphic file (type jpg)
 
 <use Stat_Streuproblem_Wirkungsquerschnitt7.jpg>
@@ -1471,7 +1476,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 178.
  [36 <./Stat_Streuproblem_Wirkungsquerschnitt7.jpg>]
-<Stat_Streuproblem_Wirkungsquerschnitt8.jpg, id=448, 2174.1225pt x 801.99625pt>
+<Stat_Streuproblem_Wirkungsquerschnitt8.jpg, id=464, 2174.1225pt x 801.99625pt>
 File: Stat_Streuproblem_Wirkungsquerschnitt8.jpg Graphic file (type jpg)
 <use Stat_Streuproblem_Wirkungsquerschnitt8.jpg>
 Package pdftex.def Info: Stat_Streuproblem_Wirkungsquerschnitt8.jpg used on inp
@@ -1499,7 +1504,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 276.
 [38]
-<Stat_Streuproblem_Wirkungsquerschnitt9.jpg, id=458, 1482.53876pt x 875.27pt>
+<Stat_Streuproblem_Wirkungsquerschnitt9.jpg, id=474, 1482.53876pt x 875.27pt>
 File: Stat_Streuproblem_Wirkungsquerschnitt9.jpg Graphic file (type jpg)
 
 <use Stat_Streuproblem_Wirkungsquerschnitt9.jpg>
@@ -1542,7 +1547,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 37.
 [40 <./Stat_Streuproblem_Wirkungsquerschnitt9.jpg>]
-<Annaherung_harte_Kugel1.jpg, id=467, 1689.31125pt x 1225.57875pt>
+<Annaherung_harte_Kugel1.jpg, id=484, 1689.31125pt x 1225.57875pt>
 File: Annaherung_harte_Kugel1.jpg Graphic file (type jpg)
 
 <use Annaherung_harte_Kugel1.jpg>
@@ -1560,7 +1565,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 87.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 87.
-[41] <Annaherung_harte_Kugel2.jpg, id=472, 2591.6825pt x 1586.92876pt>
+[41] <Annaherung_harte_Kugel2.jpg, id=489, 2591.6825pt x 1586.92876pt>
 File: Annaherung_harte_Kugel2.jpg Graphic file (type jpg)
 
 <use Annaherung_harte_Kugel2.jpg>
@@ -1580,7 +1585,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 8.
  [42 <./Annaherung_harte_Kugel1.jpg> <./Annaherung_harte_Kugel2.jpg>]
-<Born_Naeherung.jpg, id=477, 2730.2pt x 1691.31876pt>
+<Born_Naeherung.jpg, id=494, 2730.2pt x 1691.31876pt>
 File: Born_Naeherung.jpg Graphic file (type jpg)
  <use Born_Naeherung.jpg>
 Package pdftex.def Info: Born_Naeherung.jpg used on input line 28.
@@ -1595,7 +1600,7 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 46.
 
 [43 <./Born_Naeherung.jpg>]
-<Born_Naeherung2.jpg, id=484, 1895.08pt x 1152.305pt>
+<Born_Naeherung2.jpg, id=500, 1895.08pt x 1152.305pt>
 File: Born_Naeherung2.jpg Graphic file (type jpg)
 
 <use Born_Naeherung2.jpg>
@@ -1720,7 +1725,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 77.
  [50]
-<Termschema.jpg, id=514, 2967.085pt x 1559.8275pt>
+<Termschema.jpg, id=530, 2967.085pt x 1559.8275pt>
 File: Termschema.jpg Graphic file (type jpg)
  <use Termschema.jpg>
 Package pdftex.def Info: Termschema.jpg used on input line 120.
@@ -1828,14 +1833,14 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 8.
  [56]
-<Born-Oppenh_Approx1.jpg, id=540, 3251.14626pt x 1206.5075pt>
+<Born-Oppenh_Approx1.jpg, id=556, 3251.14626pt x 1206.5075pt>
 File: Born-Oppenh_Approx1.jpg Graphic file (type jpg)
 
 <use Born-Oppenh_Approx1.jpg>
 Package pdftex.def Info: Born-Oppenh_Approx1.jpg used on input line 28.
 (pdftex.def)             Requested size: 224.06548pt x 83.13864pt.
 
-<Born-Oppenh_Approx2.jpg, id=541, 3276.24pt x 2457.18pt>
+<Born-Oppenh_Approx2.jpg, id=557, 3276.24pt x 2457.18pt>
 File: Born-Oppenh_Approx2.jpg Graphic file (type jpg)
 
 <use Born-Oppenh_Approx2.jpg>
@@ -1868,7 +1873,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
-<Homonukleare_Molekuele1.jpg, id=549, 3272.225pt x 1732.4725pt>
+<Homonukleare_Molekuele1.jpg, id=565, 3272.225pt x 1732.4725pt>
 File: Homonukleare_Molekuele1.jpg Graphic file (type jpg)
 
 <use Homonukleare_Molekuele1.jpg>
@@ -1886,7 +1891,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 13.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 13.
-[58] <Homonukleare_Molekuele2.jpg, id=558, 3275.23625pt x 1364.09625pt>
+[58] <Homonukleare_Molekuele2.jpg, id=574, 3275.23625pt x 1364.09625pt>
 File: Homonukleare_Molekuele2.jpg Graphic file (type jpg)
 
 <use Homonukleare_Molekuele2.jpg>
@@ -1905,7 +1910,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
  []
 
-<Homonukleare_Molekuele3.jpg, id=564, 3223.04124pt x 1718.42pt>
+<Homonukleare_Molekuele3.jpg, id=580, 3223.04124pt x 1718.42pt>
 File: Homonukleare_Molekuele3.jpg Graphic file (type jpg)
 
 <use Homonukleare_Molekuele3.jpg>
@@ -1942,7 +1947,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 211.
  [62]
-<Homonukleare_Molekuele4.jpg, id=578, 3226.0525pt x 1930.21124pt>
+<Homonukleare_Molekuele4.jpg, id=594, 3226.0525pt x 1930.21124pt>
 File: Homonukleare_Molekuele4.jpg Graphic file (type jpg)
 
 <use Homonukleare_Molekuele4.jpg>
@@ -2047,7 +2052,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 515.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 515.
-[69] <Dirac-Gleichung1.jpg, id=612, 3049.3925pt x 1421.31pt>
+[69] <Dirac-Gleichung1.jpg, id=629, 3049.3925pt x 1421.31pt>
 File: Dirac-Gleichung1.jpg Graphic file (type jpg)
 
 <use Dirac-Gleichung1.jpg>
@@ -2113,7 +2118,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 112.
  [73]
-<Relativistisches_Coulombproblem1.jpg, id=631, 2424.05624pt x 1653.17625pt>
+<Relativistisches_Coulombproblem1.jpg, id=647, 2424.05624pt x 1653.17625pt>
 File: Relativistisches_Coulombproblem1.jpg Graphic file (type jpg)
 
 <use Relativistisches_Coulombproblem1.jpg>
@@ -2152,7 +2157,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 29.
  [75 <./Relativistisches_Coulombproblem1.jpg>] <Uebergangsamplituden1.jpg, id=6
-40, 2328.7pt x 1468.48625pt>
+56, 2328.7pt x 1468.48625pt>
 File: Uebergangsamplituden1.jpg Graphic file (type jpg)
 
 <use Uebergangsamplituden1.jpg>
@@ -2175,7 +2180,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 102--102
 \T1/lmr/m/n/12 Prof.Bali
  []
 
-<Uebergangsamplituden2.jpg, id=645, 2225.31375pt x 1623.06375pt>
+<Uebergangsamplituden2.jpg, id=661, 2225.31375pt x 1623.06375pt>
 File: Uebergangsamplituden2.jpg Graphic file (type jpg)
 
 <use Uebergangsamplituden2.jpg>
@@ -2234,7 +2239,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<Aharanov-Bohn-Effekt1.jpg, id=663, 1796.7125pt x 1932.21875pt>
+<Aharanov-Bohn-Effekt1.jpg, id=679, 1796.7125pt x 1932.21875pt>
 File: Aharanov-Bohn-Effekt1.jpg Graphic file (type jpg)
 
 <use Aharanov-Bohn-Effekt1.jpg>
@@ -2252,7 +2257,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 28.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 28.
-[81] <Aharanov-Bohn-Effekt2.jpg, id=670, 764.8575pt x 547.04375pt>
+[81] <Aharanov-Bohn-Effekt2.jpg, id=686, 764.8575pt x 547.04375pt>
 File: Aharanov-Bohn-Effekt2.jpg Graphic file (type jpg)
 
 <use Aharanov-Bohn-Effekt2.jpg>
@@ -2271,14 +2276,14 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 53.
 [82 <./Aharanov-Bohn-Effekt1.jpg>]
-<Aharanov-Bohn-Effekt3.jpg, id=675, 1057.9525pt x 856.19875pt>
+<Aharanov-Bohn-Effekt3.jpg, id=691, 1057.9525pt x 856.19875pt>
 File: Aharanov-Bohn-Effekt3.jpg Graphic file (type jpg)
 
 <use Aharanov-Bohn-Effekt3.jpg>
 Package pdftex.def Info: Aharanov-Bohn-Effekt3.jpg used on input line 65.
 (pdftex.def)             Requested size: 284.52756pt x 230.26224pt.
 
-<Aharanov-Bohn-Effekt4.jpg, id=676, 819.06pt x 569.12625pt>
+<Aharanov-Bohn-Effekt4.jpg, id=692, 819.06pt x 569.12625pt>
 File: Aharanov-Bohn-Effekt4.jpg Graphic file (type jpg)
 
 <use Aharanov-Bohn-Effekt4.jpg>
@@ -2316,7 +2321,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<euklidisches_Pfradintegral1.jpg, id=685, 2129.9575pt x 1910.13625pt>
+<euklidisches_Pfradintegral1.jpg, id=701, 2129.9575pt x 1910.13625pt>
 File: euklidisches_Pfradintegral1.jpg Graphic file (type jpg)
 
 <use euklidisches_Pfradintegral1.jpg>
@@ -2464,7 +2469,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<Tunneln_durch_eine_Potentialbarriere1.jpg, id=720, 2259.44125pt x 1821.80624pt
+<Tunneln_durch_eine_Potentialbarriere1.jpg, id=736, 2259.44125pt x 1821.80624pt
 >
 File: Tunneln_durch_eine_Potentialbarriere1.jpg Graphic file (type jpg)
  <use Tunneln_durch_eine_Potentialbarriere1.jpg>
@@ -2480,7 +2485,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 10.
  [92]
-<Tunneln_durch_eine_Potentialbarriere2.jpg, id=725, 2673.99pt x 1321.93875pt>
+<Tunneln_durch_eine_Potentialbarriere2.jpg, id=741, 2673.99pt x 1321.93875pt>
 File: Tunneln_durch_eine_Potentialbarriere2.jpg Graphic file (type jpg)
 
 <use Tunneln_durch_eine_Potentialbarriere2.jpg>
@@ -2488,7 +2493,7 @@ Package pdftex.def Info: Tunneln_durch_eine_Potentialbarriere2.jpg used on inpu
 t line 15.
 (pdftex.def)             Requested size: 224.06548pt x 110.7597pt.
 
-<Tunneln_durch_eine_Potentialbarriere3.jpg, id=726, 2763.32375pt x 1418.29875pt
+<Tunneln_durch_eine_Potentialbarriere3.jpg, id=742, 2763.32375pt x 1418.29875pt
 >
 File: Tunneln_durch_eine_Potentialbarriere3.jpg Graphic file (type jpg)
  <use Tunneln_durch_eine_Potentialbarriere3.jpg>
@@ -2505,7 +2510,7 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 25.
  [93 <./Tunneln_durch_eine_Potentialbarriere1.jpg> <./Tunneln_durch_eine_Potent
 ialbarriere2.jpg> <./Tunneln_durch_eine_Potentialbarriere3.jpg>]
-<Tunneln_durch_eine_Potentialbarriere4.jpg, id=731, 2785.40625pt x 997.7275pt>
+<Tunneln_durch_eine_Potentialbarriere4.jpg, id=747, 2785.40625pt x 997.7275pt>
 File: Tunneln_durch_eine_Potentialbarriere4.jpg Graphic file (type jpg)
 
 <use Tunneln_durch_eine_Potentialbarriere4.jpg>
@@ -2513,7 +2518,7 @@ Package pdftex.def Info: Tunneln_durch_eine_Potentialbarriere4.jpg used on inpu
 t line 29.
 (pdftex.def)             Requested size: 448.13095pt x 160.50743pt.
 
-<Tunneln_durch_eine_Potentialbarriere5.jpg, id=732, 2277.50874pt x 2431.0825pt>
+<Tunneln_durch_eine_Potentialbarriere5.jpg, id=748, 2277.50874pt x 2431.0825pt>
 File: Tunneln_durch_eine_Potentialbarriere5.jpg Graphic file (type jpg)
 <use Tunneln_durch_eine_Potentialbarriere5.jpg>
 Package pdftex.def Info: Tunneln_durch_eine_Potentialbarriere5.jpg used on inpu
@@ -2523,7 +2528,7 @@ t line 49.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Tunneln_durch_eine_Potentialbarriere6.jpg, id=733, 2360.82pt x 1492.57625pt>
+<Tunneln_durch_eine_Potentialbarriere6.jpg, id=749, 2360.82pt x 1492.57625pt>
 File: Tunneln_durch_eine_Potentialbarriere6.jpg Graphic file (type jpg)
 
 <use Tunneln_durch_eine_Potentialbarriere6.jpg>
@@ -2547,7 +2552,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 72--75
 
  []
 
-<Tunneln_durch_eine_Potentialbarriere7.jpg, id=738, 1348.03625pt x 1469.49pt>
+<Tunneln_durch_eine_Potentialbarriere7.jpg, id=755, 1348.03625pt x 1469.49pt>
 File: Tunneln_durch_eine_Potentialbarriere7.jpg Graphic file (type jpg)
 
 <use Tunneln_durch_eine_Potentialbarriere7.jpg>
@@ -2568,7 +2573,7 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 82.
 [95 <./Tunneln_durch_eine_Potentialbarriere5.jpg> <./Tunneln_durch_eine_Potenti
 albarriere6.jpg>]
-<Tunneln_durch_eine_Potentialbarriere8.jpg, id=743, 1513.655pt x 1586.92876pt>
+<Tunneln_durch_eine_Potentialbarriere8.jpg, id=760, 1513.655pt x 1586.92876pt>
 File: Tunneln_durch_eine_Potentialbarriere8.jpg Graphic file (type jpg)
 
 <use Tunneln_durch_eine_Potentialbarriere8.jpg>
@@ -2591,7 +2596,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<Zugaenge_zur_Quantenmechanik1.jpg, id=748, 2978.12625pt x 1906.12125pt>
+<Zugaenge_zur_Quantenmechanik1.jpg, id=765, 2978.12625pt x 1906.12125pt>
 File: Zugaenge_zur_Quantenmechanik1.jpg Graphic file (type jpg)
 
 <use Zugaenge_zur_Quantenmechanik1.jpg>
@@ -2636,7 +2641,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<Statistische_Gemische_und_Dichtematrix1.jpg, id=774, 2399.96625pt x 920.43875p
+<Statistische_Gemische_und_Dichtematrix1.jpg, id=790, 2399.96625pt x 920.43875p
 t>
 File: Statistische_Gemische_und_Dichtematrix1.jpg Graphic file (type jpg)
  <use Statistische_Gemische_und_Dichtematrix1.jpg>
@@ -2687,7 +2692,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 243.
 [102]
-<Statistische_Gemische_und_Dichtematrix2.jpg, id=798, 2621.795pt x 815.045pt>
+<Statistische_Gemische_und_Dichtematrix2.jpg, id=814, 2621.795pt x 815.045pt>
 File: Statistische_Gemische_und_Dichtematrix2.jpg Graphic file (type jpg)
 
 <use Statistische_Gemische_und_Dichtematrix2.jpg>
@@ -2695,7 +2700,7 @@ Package pdftex.def Info: Statistische_Gemische_und_Dichtematrix2.jpg used on in
 put line 299.
 (pdftex.def)             Requested size: 358.50612pt x 111.44409pt.
 
-<Statistische_Gemische_und_Dichtematrix3.jpg, id=799, 3156.79375pt x 784.9325pt
+<Statistische_Gemische_und_Dichtematrix3.jpg, id=815, 3156.79375pt x 784.9325pt
 >
 File: Statistische_Gemische_und_Dichtematrix3.jpg Graphic file (type jpg)
  <use Statistische_Gemische_und_Dichtematrix3.jpg>
@@ -2720,7 +2725,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<Messung1.jpg, id=805, 2543.5025pt x 1135.24126pt>
+<Messung1.jpg, id=821, 2543.5025pt x 1135.24126pt>
 File: Messung1.jpg Graphic file (type jpg)
  <use Messung1.jpg>
 Package pdftex.def Info: Messung1.jpg used on input line 21.
@@ -2734,7 +2739,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 32.
  [104 <./Statistische_Gemische_und_Dichtematrix3.jpg>]
-<Messung2.jpg, id=810, 2888.7925pt x 2013.5225pt>
+<Messung2.jpg, id=826, 2888.7925pt x 2013.5225pt>
 File: Messung2.jpg Graphic file (type jpg)
  <use Messung2.jpg>
 Package pdftex.def Info: Messung2.jpg used on input line 69.
@@ -2792,7 +2797,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 8.
  [108]
-<EPR_Paradox.jpg, id=835, 2654.91875pt x 1079.03125pt>
+<EPR_Paradox.jpg, id=851, 2654.91875pt x 1079.03125pt>
 File: EPR_Paradox.jpg Graphic file (type jpg)
  <use EPR_Paradox.jpg>
 Package pdftex.def Info: EPR_Paradox.jpg used on input line 13.
@@ -2825,29 +2830,88 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 73.
 [110])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 101.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 101.
+(babel)             in language  on input line 88.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 101.
+(babel)             in language  on input line 88.
+ (./Klassische_Feldtheorie.tex
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 101.
+(babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 101.
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 12.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 12.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 12.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 12.
  [111]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 101.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 75.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 75.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 75.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 75.
+ [112]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 129.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 129.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 129.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 129.
+ [113]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 181.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 181.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 181.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 181.
+ [114])
+(./Klein-Gordon-Feld_harm_Oszi_Schroedingerb.tex
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 49.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 49.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 49.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 49.
+ [115])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 111.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 111.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 111.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 111.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 111.
+ [116]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 111.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 101.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 101.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 111.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 111.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C2D24AB1526A10F4781F35BBB5C9F664;3471.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 101.
+(rerunfilecheck)             Checksum: 74CA13025C5391623306335294411461;3766.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 111.
  ) 
 Here is how much of TeX's memory you used:
- 10293 strings out of 493117
- 160135 string characters out of 6138985
- 291799 words of memory out of 5000000
- 13172 multiletter control sequences out of 15000+600000
+ 10318 strings out of 493117
+ 160701 string characters out of 6138985
+ 291811 words of memory out of 5000000
+ 13183 multiletter control sequences out of 15000+600000
  72912 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,19n,43p,365b,552s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2873,11 +2937,11 @@ pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/lm/lmsy6.pfb><c:/texlive/201
 type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2014/texmf-dist/fonts/type
 1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/pu
 blic/amsfonts/symbols/msbm7.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/
-rsfs/rsfs10.pfb>
-Output written on main.pdf (111 pages, 30155377 bytes).
+rsfs/rsfs10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/rsfs/rsfs5.pfb>
+Output written on main.pdf (116 pages, 30176036 bytes).
 PDF statistics:
- 982 PDF objects out of 1000 (max. 8388607)
- 773 compressed objects within 8 object streams
- 205 named destinations out of 1000 (max. 500000)
- 624 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1025 PDF objects out of 1200 (max. 8388607)
+ 809 compressed objects within 9 object streams
+ 213 named destinations out of 1000 (max. 500000)
+ 648 words of extra memory for PDF output out of 10000 (max. 10000000)
 

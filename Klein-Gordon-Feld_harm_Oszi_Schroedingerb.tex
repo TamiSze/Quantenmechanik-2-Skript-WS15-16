@@ -1,0 +1,61 @@
+\subsection{Klein-Gordon-Feld und harmonische Oszillatoren im Schrödingerbild (Operatoren sind zeitunabhängig)}
+	\begin{align*}
+		[\hat{q}_i, \hat{p}_j] &= i \delta_{ij},&
+		[\hat{q}_i, \hat{q}_j] &= 0 = [\hat{p}_i, \hat{p}_j]
+	\end{align*}
+	Analog für Felder:
+		\begin{align*}
+			[\hat{\Phi}(\vec{x}), \hat{\pi}(\vec{y})] &= 
+			i \delta^{(3)}(\vec{x}- \vec{y}),&
+			[\hat{\Phi}(\vec{x}), \hat{\Phi}(\vec{y})] &= 0 = 
+			[\hat{\pi}(\vec{x}), \hat{\pi}(\vec{y})]
+		\end{align*}
+	$\hat{\Phi}(\vec{x})$ ist Feldoperator.
+		\begin{align*}
+			\hat{H} = \hat{H} (\hat{\Phi}, \hat{\pi})&: 
+			\text{ Hamiltonoperator},&
+			\hat{\Ha}&: \text{ Hamiltondichteopeator} \\
+			\Phi(\vec{x},t) &= \int \frac{\diff^3 p}{(2 \pi)^3} e^{i\vec{p}\vec{x}} \Phi(\vec{p},t),& 
+			\Phi(\vec{x},t) \in \mathds{R}&\Rightarrow \Phi^* (\vec{p}) = \Phi (-\vec{p}) 
+		\end{align*}
+		\begin{align*}
+			\left(
+				\frac{\partial^2}{\partial t^2} - \vec{\nabla}^2 + m^2
+			\right) \Phi(\vec{x}, t) &= 0 \\
+			\Rightarrow \left(
+				\frac{\partial^2}{\partial t^2} + \vec{p}^2 + m^2
+			\right) \Phi(\vec{p}, t) &= 0
+		\end{align*}
+	Harmonischer Oszillator mit $\omega_{\vec{p}} = \sqrt{\vec{p}^2 + m^2}$
+		\begin{align*}
+			H_{\text{HO}} &= \frac{\hat{p}^2}{2} + \frac{\omega^2}{2} \hat{\Phi}^2 : \text{ QM} \\
+			[\hat{\Phi}, \hat{p}] &= i \\
+			\hat{\Phi} &= \frac{1}{\sqrt{2 \omega}} (\hat{a} + \hat{a}^\dagger),&
+			\hat{p} &= i \sqrt{\frac{\omega}{2}}( \hat{a} - \hat{a}^\dagger) \\
+			[a, a^\dagger] &= 1 & \Rightarrow
+			H_{\text{HO}} &= \omega(a^\dagger a + \frac{1}{2})
+		\end{align*}
+	$\ket{n} \La (a^\dagger)^n \ket{0}$ ist Eigenzustand zu $H_{HO}$ mit Eigenwert $\omega (n + \frac{1}{2})$ 
+		\begin{align*}
+			\hat{\Phi} (\vec{x}) &= 
+			\int \frac{\diff^3 p}{(2 \pi)^3} \frac{1}{\sqrt{2 \omega_{\vec{p}}}}
+			\left(	
+				\hat{a}_{\vec{p}} \,e^{i\vec{p}\vec{a}} + \hat{a}^\dagger_{\vec{p}}\, e^{-i\vec{p}\vec{a}}
+			\right) \\
+			\Phi (\vec{p},t) &= \frac{1}{2} (\Phi(\vec{p},t) + \Phi^*(-\vec{p},t)) \\
+			\hat{\pi}(\vec{x}) &= \int \frac{\diff^3 p}{(2\pi)^3}
+			\sqrt{\frac{\omega_{\vec{p}}}{2}} (\hat{a}_{\vec{p}} \,e^{i \vec{p} \vec{x}} -
+			\hat{a}^\dagger_{\vec{p}} \,e^{- i \vec{p} \vec{x}}) 
+		\end{align*}
+	Ab jetzt alles Operatoren, was wie Operator aussieht $\rightarrow$ lasse \,$\hat{}$\, weg.
+		\begin{align*}
+			\Phi(\vec{x}) &= \int \frac{\diff^3 p}{(2\pi)^3} 
+			\sqrt{\frac{\omega_{\vec{p}}}{2}} \left(
+				a_{\vec{p}}\, e^{i \vec{p} \vec{x}} -
+				a^\dagger_{\vec{p}} \,e^{- i \vec{p} \vec{x}}
+			\right) \\
+			\pi (\vec{x}) &= \int \frac{\diff^3 p}{(2 \pi)^3} (-i) \sqrt{\frac{\omega_{\vec{p}}}{2}} (a_{\vec{p}} - a_{\vec{p}}^\dagger)
+			e^{i \vec{p}\vec{x}} \\
+			[a_{\vec{p}}, a_{\vec{p}}^\dagger] &= (2\pi)^3 \delta^{(3)}(\vec{p}- \vec{p}') \\
+			\text{Nachrechnen: } \\ [\Phi(\vec{x}), H(\vec{x})] &= i \delta^{(3)}(\vec{x}- \vec{x}')
+		\end{align*}
