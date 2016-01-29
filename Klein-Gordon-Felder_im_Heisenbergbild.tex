@@ -1,0 +1,100 @@
+\subsection{Klein Gordon Felder im Heisenbergbild}
+	\begin{align*}
+		\phi (x) &= \phi(\vec{x}, t) = e^{i H t} \phi_s (x) e^{-i H t}
+	\end{align*}
+Der Index s steht für Schrödinger wie oben. 
+\\
+Analog:
+	\begin{align*}
+		\pi(x) = \pi(\vec{x}, t) 
+	\end{align*}
+Zeitentwicklung:
+	\begin{align*}
+		i \frac{\diff}{\diff t} A &= [A, H] + \ldots  
+	\end{align*}
+($\ldots$ ist 0, weil Zeitabhänigkeit wird durch $H$ konvergent) \marginpar{ich hab da ein wort nicht lesen können}
+	\begin{align*}
+		i \frac{\diff \phi(\vec{x}, t)}{\diff t} &= 
+		\left[
+			\phi(x, t), \int \diff^3 x' 
+			\left[ \vphantom{\frac{1}{2}} \right.
+				\frac{1}{2} \,\underset{\text{wichtig}}{\underline{\pi^2(\vec{x}\,', t)}} + \frac{1}{2}
+				\left[
+					\vec{\nabla} \phi (\vec{x}\,', t) 
+				\right]^2 + \frac{1}{2} m^2 \phi^2(\vec{x}, t)
+			\left. \vphantom{\frac{1}{2}} \right]
+		\right] \\
+		&= \int \diff^3 x' 
+		\left(
+			i \delta^{(3)} (\vec{x} - \vec{x}\,' \pi (\vec{x}\,', t) 
+		\right) 
+		= i \pi (\vec{x}, t) \\
+		\pi (\vec{x}, t) &= \frac{\diff \phi}{\diff t} ~(\text{wie } p = m \dot{x} \text{ in Mechanik})
+	\end{align*}
+	\begin{align*}
+		\frac{\diff \pi (\vec{x}, t)}{\diff t} &= 
+		\left[
+			\pi (\vec{x}, t) , \int \diff^3 x' \frac{1}{2} \phi (\vec{x}\,', t)
+			\left(
+				-\vec{\nabla}^2\,' + m^2
+			\right) \phi(\vec{x}\,', t)
+		\right] \\
+		&= \int \diff^3 x' 
+		\left(
+			-i \delta^{(3)}(\vec{x} - \vec{x}\,') 
+			\left(
+				-\vec{\nabla}^2\,' + m^2 
+			\right) \phi (\vec{x}\,', t)
+		\right) \\
+		&= -i \left(
+			- \vec{\nabla}^2\,' + m^2
+		\right) \phi(\vec{x}, t) = i \frac{\diff^2 \phi}{\diff t^2}
+	\end{align*}
+	\begin{align*}
+		\Rightarrow \frac{\diff^2 \phi(\vec{x}, t)}{\diff t^2} \underset{\vec{x} \neq \vec{x}(t)}{=} \frac{\partial^2 \phi(\vec{x}, t)}{\partial t^2} 
+		= \left(
+			\vec{\nabla}^2 -m^2 
+		\right) \phi(\vec{x}, t)
+	\end{align*}
+Klein-Gordon-Gleichung für Feldoperator $\phi$.
+\\ \\	
+Feldoperator gehorcht Klein-Gordon-Gleichung.	\marginpar{28.01.2016}
+	\begin{align*}
+		(\Box + m^2) \phi(x) &= 0
+	\end{align*}
+Letztes Mal war $H = \int a^\dagger a \ldots$ irgendwie so.
+	\begin{align*}
+		H_{a_{\vec{p}}} &= a_{\vec{p}}(H - E_{\vec{p}}) \\
+		H^n a_{\vec{p}} &= a_{\vec{p}}(H - E_p)^n
+	\end{align*}
+Analog 
+	\begin{align*}
+		H_{a^\dagger_{\vec{p}}} &= a^\dagger_{\vec{p}}(H + E_{\vec{p}}) \\
+		H^n a^\dagger_{\vec{p}} &= a^\dagger_{\vec{p}} (H + E_{\vec{p}})^n
+	\end{align*}
+$a_{\vec{p}} = a_{\vec{p}} (t = 0) = a_{\vec{p}}$ (Schrödingerbild) 
+	\begin{empheq}[box = \boxed]{align*}
+		e^{i H t} \,a_{\vec{p}}\, e^{-iHt} &= a_{\vec{p}} \,e^{i (H- E_p) t} e^{-iHt} = a_{\vec{p}} \,e^{-i E_p t} \\
+		e^{iHt} \,a^\dagger_{\vec{p}}\, e^{-iHt} &= a\dagger_{\vec{p}} \,e^{iE_p t}
+	\end{empheq}
+	\begin{align*}
+		\phi (\vec{x}, t) &= \int \frac{\diff^3 p}{(2 \pi)^3} \frac{1}{\sqrt{2 E_p}}
+		\left(
+			a_{\vec{p}} \,e^{-ip. x} + a\dagger_{\vec{p}} \,e^{ip. x}
+		\right)
+	\end{align*}
+$p.$ war der vierer Impuls $\Rightarrow ip^0t + i \vec{p} \vec{x}$ , $p^0 = E_p$
+	\begin{align*}
+		\pi(\vec{x}, t) &= \frac{\partial \Phi (\vec{x}, t)}{\partial t} &
+		\vec{P} &= -\int \frac{\diff^3 p}{(2\pi)^3} \pi \vec{\nabla} \phi
+	\end{align*}
+	\begin{align*}
+		e^{-i \vec{P} \vec{x}} a_{\vec{p}} e^{i \vec{P} \vec{x}} &= 
+		a_{\vec{p}} e^{i \vec{p} \vec{x}}
+	\end{align*}
+$\vec{p}$ ist Eigenwert von $\vec{P}$ für Teilchenzustand.
+	\begin{align*}
+		\phi(x) &= e^{i(Ht - \vec{P} \vec{x})} \phi (0) e^{- (Ht- \vec{P} \vec{x})} 
+		= e^{i P. x} \phi(0) e^{-i P. x}
+	\end{align*}
+mit $P^\mu = (H, \vec{P})$. $\vec{P}$: Gesamtimpulsoperator des  Systems                              

@@ -13,8 +13,8 @@
 		\end{align*}
 	Greenfunktion
 		\begin{align*}
-			\left(\vec{\nabla}^2 + k^2 \right) G (\vec{r} - \vec{r}') 
-			&= \delta^{(3)}(\vec{r} - \vec{r}') \\
+			\left(\vec{\nabla}^2 + k^2 \right) G (\vec{r} - \vec{r}\,') 
+			&= \delta^{(3)}(\vec{r} - \vec{r}\,') \\
 			G(\vec{r}) &= 
 			\int \frac{\diff^3 q}{(2 \pi)^3} e^{i \vec{q} \cdot \vec{r}} \tilde{G}(\vec{q})
 			&\text{mit } \tilde{G} (\vec{r}) &= \frac{1}{k^2-q^2} \\
@@ -31,10 +31,10 @@
 	Lösung der inhomogenen Gleichung:
 		\begin{align*}
 			\phi(\vec{r}) &= \phi_0 (\vec{r}) + 
-			\int \diff^3 r' ~G(\vec{r} - \vec{r}') \frac{2m}{\hbar^2} V(\vec{r}') \phi (\vec{r}') \\
+			\int \diff^3 r' ~G(\vec{r} - \vec{r}\,') \frac{2m}{\hbar^2} V(\vec{r}\,') \phi (\vec{r}\,') \\
 			&= \underbrace{e^{ikr \cos \theta}}_{\substack{\text{einlaufende Welle}}}
-			\underbrace{- \frac{m}{2 \pi \hbar^2} \int \diff^3 r' ~V(\vec{r}') 
-			\frac{e^{ik |\vec{r} - \vec{r}'|}}{|\vec{r} - \vec{r}'|} \phi (\vec{r}')}_{\mathclap{[
+			\underbrace{- \frac{m}{2 \pi \hbar^2} \int \diff^3 r' ~V(\vec{r}\,') 
+			\frac{e^{ik |\vec{r} - \vec{r}\,'|}}{|\vec{r} - \vec{r}\,'|} \phi (\vec{r}\,')}_{\mathclap{[
 				B\phi] (\vec{r}) \text{ mit } ``B=\frac{2m}{\hbar^2} GV''}} 
 		\end{align*}
 		\begin{align*}
@@ -47,31 +47,31 @@
 	oder
 		\begin{align*}
 			\phi (\vec{r}) &= e^{ikr \cos \theta}
-			- \frac{m}{2 \pi \hbar^2} \int \diff^3 r' ~V(\vec{r}') 
-			\frac{e^{ik |\vec{r} - \vec{r}'|}}{|\vec{r} - \vec{r}'|}
+			- \frac{m}{2 \pi \hbar^2} \int \diff^3 r' ~V(\vec{r}\,') 
+			\frac{e^{ik |\vec{r} - \vec{r}\,'|}}{|\vec{r} - \vec{r}\,'|}
 			e^{ikr' \cos \theta'} \\
 			&+ \frac{m^2}{4 \pi^2 \hbar^4} \int \diff^3 r' ~\diff^3 r'' 
-			~V(\vec{r}') 
-			\frac{e^{ik |\vec{r} - \vec{r}'|}}{|\vec{r} - \vec{r}'|}
-			~V(\vec{r}'') 
-			\frac{e^{ik |\vec{r}' - \vec{r}''|}}{|\vec{r}' - \vec{r}''|}
+			~V(\vec{r}\,') 
+			\frac{e^{ik |\vec{r} - \vec{r}\,'|}}{|\vec{r} - \vec{r}\,'|}
+			~V(\vec{r}\,'') 
+			\frac{e^{ik |\vec{r}\,' - \vec{r}\,''|}}{|\vec{r}\,' - \vec{r}\,''|}
 			e^{ikr'' \cos \theta''} \\
 			&- \ldots
 		\end{align*}
 	1.Ordnung:
 		\begin{align*}
-			|\vec{r} - \vec{r}'| &= (r^2+r'^2 - 2 \vec{r} \vec{r}')^{\frac{1}{2}} 
+			|\vec{r} - \vec{r}\,'| &= (r^2+r'^2 - 2 \vec{r} \vec{r}\,')^{\frac{1}{2}} 
 			\overset{r \gg r'}{\approx}
-			r \left(1 - \frac{2 \vec{r} \vec{r}'}{r^2} + \frac{r'^2}{r^2}\right)^{\frac{1}{2}}\\
-			&\approx r - \frac{\vec{r} \cdot \vec{r}'}{r} = r - \vec{e}_r \cdot \vec{r}'\\
+			r \left(1 - \frac{2 \vec{r} \vec{r}\,'}{r^2} + \frac{r'^2}{r^2}\right)^{\frac{1}{2}}\\
+			&\approx r - \frac{\vec{r} \cdot \vec{r}\,'}{r} = r - \vec{e}_r \cdot \vec{r}\,'\\
 			\phi (\vec{r}) &\underset{r\rightarrow \infty}{\longrightarrow} 
 			e^{ikr \cos \theta} 
 			- \frac{m}{2 \pi \hbar^2} \frac{e^{ikr}}{r}
-			\int \diff^3 r' ~V(\vec{r}') 
-			\frac{e^{ik (z' - \vec{e}_r \cdot \vec{r}')}}{1} + \ldots \\
+			\int \diff^3 r' ~V(\vec{r}\,') 
+			\frac{e^{ik (z' - \vec{e}_r \cdot \vec{r}\,')}}{1} + \ldots \\
 			&= e^{ikr \cos \theta} - \frac{e^{ikr}}{r}
-			\left[ \frac{m}{2 \pi \hbar^2} \int \diff^3 r' ~V(\vec{r}') 
-				e^{ik \vec{r}' (\vec{e}_r \cdot \vec{r}_r)} 
+			\left[ \frac{m}{2 \pi \hbar^2} \int \diff^3 r' ~V(\vec{r}\,') 
+				e^{ik \vec{r}\,' (\vec{e}_r \cdot \vec{r}_r)} 
 			\right] + \ldots
 		\end{align*}
 	\begin{minipage}{0.5\textwidth}
@@ -89,7 +89,7 @@
 	Born-Näherung für Streuamplitude:
 		\begin{empheq}[box=\boxed]{align*}
 			f^{(1)} (\theta, \phi) &= -\frac{m}{2 \pi \hbar^2} 
-			\int \diff^3 r' ~V(\vec{r}') e^{-i \vec{q} \vec{r}}
+			\int \diff^3 r' ~V(\vec{r}\,') e^{-i \vec{q} \vec{r}}
 		\end{empheq}
 		\begin{align*}
 			f^{(1)} &= -\frac{m}{2 \pi \hbar^2}  \braket{\vec{k}| V | \vec{k}_0}
@@ -114,7 +114,7 @@
 		\begin{empheq}[box=\boxed]{align*}
 			f^{(1)}(\theta, \phi) =
 			-\frac{m}{2 \pi \hbar} 
-			\int \diff^3 r' ~V(\vec{r}') e^{-i \vec{q} \cdot \vec{r}}
+			\int \diff^3 r' ~V(\vec{r}\,') e^{-i \vec{q} \cdot \vec{r}}
 		\end{empheq} 
 		\begin{align*}
 			``f^{(1)} = -\frac{m}{2 \pi \hbar} 
@@ -135,7 +135,7 @@
 	Setze $\vec{q} = \left[ 4 k^2 \sin^2 \frac{\theta}{2} 
 	\right]$ in Born-Näherung ein:
 		\begin{align*}
-			\int \diff^3 r ~V(\vec{r}') e^{-i \vec{q} \vec{r}}
+			\int \diff^3 r ~V(\vec{r}\,') e^{-i \vec{q} \vec{r}}
 			&= 2 \pi \int_{-\infty}^{\infty} \diff r' 
 			~r'^2 V(r') 
 			\underbrace{\int_{-1}^1 \diff \cos \theta 
@@ -148,7 +148,7 @@
 			&= 
 				\left. \frac{2}{qr} \sin (qr)
 			\right) \\
-			\int \diff^3 r ~V(\vec{r}') e^{-i \vec{q} \vec{r}}
+			\int \diff^3 r ~V(\vec{r}\,') e^{-i \vec{q} \vec{r}}
 			&= \frac{4 \pi}{q} \int_{0}^{\infty}
 			\diff r' ~r' V(r') \sin (qr')
 		\end{align*}
@@ -230,7 +230,7 @@
 		\end{align*}
 	Born-Näherung für Streuphasen $\delta_\ell$: Einlaufendes Teilen (vgl. harte Kugel)
 		\begin{align*}
-			e^{i \vec{k_0} \vec{r}'} 
+			e^{i \vec{k_0} \vec{r}\,'} 
 			&= \sum_\ell \sqrt{4 \pi (2 \ell + 1)} 
 			i^\ell j_\ell (kr') Y_{\ell 0} (\theta') \\
 			e^{-i \vec{k} \vec{r}} 
@@ -240,11 +240,11 @@
 	Nebenbemerkung:
 		\begin{align*}
 			\sum_m Y_{\ell m} (\theta, \phi) Y^*_{\ell m} (\theta', \phi') 
-			&= \frac{2 \ell + 1}{4 \pi} P_\ell (\cos \sphericalangle (\vec{r},\vec{r}'))
+			&= \frac{2 \ell + 1}{4 \pi} P_\ell (\cos \sphericalangle (\vec{r},\vec{r}\,'))
 		\end{align*}
 		\begin{align*}
 			\Rightarrow \int \diff \Omega' 
-			e^{i(\vec{k}-\vec{k}_0) \vec{r}'} 
+			e^{i(\vec{k}-\vec{k}_0) \vec{r}\,'} 
 			&= 4 \pi \sum_{\ell=0}^\infty (2\ell + 1)
 			P_\ell (\cos \theta) j_\ell^2 (kr') \\
 			f^{(1)} (\theta) 

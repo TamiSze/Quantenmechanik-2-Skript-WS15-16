@@ -3,59 +3,234 @@
 		[\hat{q}_i, \hat{p}_j] &= i \delta_{ij},&
 		[\hat{q}_i, \hat{q}_j] &= 0 = [\hat{p}_i, \hat{p}_j]
 	\end{align*}
-	Analog für Felder:
-		\begin{align*}
-			[\hat{\Phi}(\vec{x}), \hat{\pi}(\vec{y})] &= 
-			i \delta^{(3)}(\vec{x}- \vec{y}),&
-			[\hat{\Phi}(\vec{x}), \hat{\Phi}(\vec{y})] &= 0 = 
-			[\hat{\pi}(\vec{x}), \hat{\pi}(\vec{y})]
-		\end{align*}
-	$\hat{\Phi}(\vec{x})$ ist Feldoperator.
-		\begin{align*}
-			\hat{H} = \hat{H} (\hat{\Phi}, \hat{\pi})&: 
-			\text{ Hamiltonoperator},&
-			\hat{\Ha}&: \text{ Hamiltondichteopeator} \\
-			\Phi(\vec{x},t) &= \int \frac{\diff^3 p}{(2 \pi)^3} e^{i\vec{p}\vec{x}} \Phi(\vec{p},t),& 
-			\Phi(\vec{x},t) \in \mathds{R}&\Rightarrow \Phi^* (\vec{p}) = \Phi (-\vec{p}) 
-		\end{align*}
-		\begin{align*}
+Analog für Felder:
+	\begin{align*}
+		[\hat{\Phi}(\vec{x}), \hat{\pi}(\vec{y})] &= 
+		i \delta^{(3)}(\vec{x}- \vec{y}),&
+		[\hat{\Phi}(\vec{x}), \hat{\Phi}(\vec{y})] &= 0 = 
+		[\hat{\pi}(\vec{x}), \hat{\pi}(\vec{y})]
+	\end{align*}
+$\hat{\Phi}(\vec{x})$ ist Feldoperator.
+	\begin{align*}
+		\hat{H} = \hat{H} (\hat{\Phi}, \hat{\pi})&: 
+		\text{ Hamiltonoperator},&
+		\hat{\Ha}&: \text{ Hamiltondichteopeator} \\
+		\Phi(\vec{x},t) &= \int \frac{\diff^3 p}{(2 \pi)^3} e^{i\vec{p}\vec{x}} \Phi(\vec{p},t),& 
+		\Phi(\vec{x},t) \in \mathds{R}&\Rightarrow \Phi^* (\vec{p}) = \Phi (-\vec{p}) 
+	\end{align*}
+	\begin{align*}
+		\left(
+			\frac{\partial^2}{\partial t^2} - \vec{\nabla}^2 + m^2
+		\right) \Phi(\vec{x}, t) &= 0 \\
+		\Rightarrow \left(
+			\frac{\partial^2}{\partial t^2} + \vec{p}^2 + m^2
+		\right) \Phi(\vec{p}, t) &= 0
+	\end{align*}
+Harmonischer Oszillator mit $\omega_{\vec{p}} = \sqrt{\vec{p}^2 + m^2}$
+	\begin{align*}
+		H_{\text{HO}} &= \frac{\hat{p}^2}{2} + \frac{\omega^2}{2} \hat{\Phi}^2 : \text{ QM} \\
+		[\hat{\Phi}, \hat{p}] &= i \\
+		\hat{\Phi} &= \frac{1}{\sqrt{2 \omega}} (\hat{a} + \hat{a}^\dagger),&
+		\hat{p} &= i \sqrt{\frac{\omega}{2}}( \hat{a} - \hat{a}^\dagger) \\
+		[a, a^\dagger] &= 1 & \Rightarrow
+		H_{\text{HO}} &= \omega(a^\dagger a + \frac{1}{2})
+	\end{align*}
+$\ket{n} \La (a^\dagger)^n \ket{0}$ ist Eigenzustand zu $H_{HO}$ mit Eigenwert $\omega (n + \frac{1}{2})$ 
+	\begin{align*}
+		\hat{\Phi} (\vec{x}) &= 
+		\int \frac{\diff^3 p}{(2 \pi)^3} \frac{1}{\sqrt{2 \omega_{\vec{p}}}}
+		\left(	
+			\hat{a}_{\vec{p}} \,e^{i\vec{p}\vec{a}} + \hat{a}^\dagger_{\vec{p}}\, e^{-i\vec{p}\vec{a}}
+		\right) \\
+		\Phi (\vec{p},t) &= \frac{1}{2} (\Phi(\vec{p},t) + \Phi^*(-\vec{p},t)) \\
+		\hat{\pi}(\vec{x}) &= \int \frac{\diff^3 p}{(2\pi)^3}
+		\sqrt{\frac{\omega_{\vec{p}}}{2}} (\hat{a}_{\vec{p}} \,e^{i \vec{p} \vec{x}} -
+		\hat{a}^\dagger_{\vec{p}} \,e^{- i \vec{p} \vec{x}}) 
+	\end{align*}
+Ab jetzt alles Operatoren, was wie Operator aussieht $\rightarrow$ lasse \,$\hat{}$\, weg.
+	\begin{align*}
+		\Phi(\vec{x}) &= \int \frac{\diff^3 p}{(2\pi)^3} 
+		\sqrt{\frac{\omega_{\vec{p}}}{2}} 
+		\left(
+			a_{\vec{p}}\, e^{i \vec{p} \vec{x}} -
+			a^\dagger_{\vec{p}} \,e^{- i \vec{p} \vec{x}}
+		\right) \\
+		\pi (\vec{x}) &= \int \frac{\diff^3 p}{(2 \pi)^3} (-i) \sqrt{\frac{\omega_{\vec{p}}}{2}} (a_{\vec{p}} - a_{\vec{p}}^\dagger)
+		e^{i \vec{p}\vec{x}} \\
+		[a_{\vec{p}}, a_{\vec{p}}^\dagger] &= (2\pi)^3 \delta^{(3)}(\vec{p}- \vec{p}\,') \\			
+		\text{Nachrechnen: } \\ [\Phi(\vec{x}), H(\vec{x})] &= i \delta^{(3)}(\vec{x}- \vec{x}\,')
+	\end{align*}
+$[a_{\vec{p}}, a_{\vec{p}}^\dagger] = (2\pi)^3 \delta^{(3)} (\vec{p} - \vec{p}\,')$ \marginpar{25.01.2016}
+	\begin{align*}
+		\overbrace{\phi (\vec{x})}^{\mathclap{\text{Feld Operator}}} &= \int \frac{\diff^3 p}{(2 \pi)^3} \frac{1}{\sqrt{2 \omega_{\vec{p}}}} 
+		\left(
+			a_{\vec{p}} e^{i \vec{p} \vec{x}} + a_{\vec{p}}^\dagger e^{-i\vec{p} \vec{x}}
+		\right) 
+		= \int \frac{\diff^3 p}{(2\pi)^3} \frac{1}{2 \omega_{\vec{p}}} (a_{\vec{p}} + a_{\vec{p}}^\dagger) e^{i \vec{p} \vec{x}}
+	\end{align*}
+Kanonischer Impulsoperator (hier fehlt noch ein Wort):
+	\begin{align*}
+		\pi (\vec{x}) &= \int \frac{\diff^3 p}{(2\pi)^3} (-i) \sqrt{\frac{\omega_{\vec{p}}}{2}} 
+		\left(
+			a_{\vec{p}} e^{i\vec{p} \vec{x}} - a^\dagger_{\vec{p}} e^{-i\vec{p} \vec{x}}
+		\right) 
+		= \int \frac{\diff^3 p}{(2\pi)^3} (-i) \sqrt{\frac{\omega_{\vec{p}}}{2}} 
+		(a_{\vec{p}} - a_{\vec{-p}}^\dagger) e^{ipx} \\
+		[\phi(\vec{x}), \pi(\vec{x}\,')] &=
+		\int \frac{\diff p^3 \diff p\,'^3}{(2\pi)^6} (-i) \sqrt{\frac{\omega_{p\,'}}{4 \omega_p}} 
+		\underbrace{
+		\left[
+			(a_{\vec{p}} + a_{-\vec{p}}^\dagger), (a_{\vec{p}\,'} - a_{-\vec{p}\,'}^\dagger)
+		\right]}_{\mathclap{
+				[a_{\vec{p}}^\dagger, a_{\vec{p}\,'}] - [a_{\vec{p}}, a_{-\vec{p}\,'}^\dagger] = -2 (2\pi)^3 \delta (\vec{p}+\vec{p}\,')
+			}}
+		e^{i\vec{p}\vec{x}} e^{i p\,' x\,'} \\
+		&= \int \frac{\diff^3 p}{(2\pi)^3} (+i) e^{i \vec{p} (\vec{x}- \vec{x}\,')} = 
+		i\delta^3(\vec{x}- \vec{x}\,')
+	\end{align*}
+	\begin{align*}
+		H &= \int \diff^3 x 
+		\left(
+			\frac{\pi^2}{2} + \frac{1}{2} (\vec{\nabla} \phi)^2 + \frac{m^2}{2} \phi^2
+		\right) \\
+		&= \int \diff^3 x \int \frac{\diff^3 p \diff^3 p\,'}{(2\pi)^6} e^{i (\vec{p} + \vec{p}\,')\vec{x}} 
+		\left[
+			- \frac{\sqrt{\omega_{\vec{p}} \omega_{\vec{p}\,'}}}{4} 
+			(a_{\vec{p}} - a_{-\vec{p}}^\dagger) \cdot (a_{\vec{p}\,'} - a_{-\vec{p}\,'}^\dagger)
+		\right.\\
+		&\left.
+			+ \frac{m^2 - \vec{p} \cdot \vec{p}\,'}{4\sqrt{\omega_p \omega_{p\,'}}}
+			(a_{\vec{p}} + a_{-\vec{p}}^\dagger \cdot (a_{\vec{p}\,'} + a_{-\vec{p}\,'}^\dagger)
+		\right] \\
+		&= \int \frac{\diff^3 p}{(2 \pi)^3} \omega_{\vec{p}} 
+		\left(
+			a^\dagger_{\vec{p}} a_{\vec{p}}) + \frac{1}{2} [a_{\vec{p}}, a^\dagger_{\vec{p}}]
+		\right)
+	\end{align*}
+$\frac{1}{2}$ für jeden harmonischen Oszilator (jedes der unendlichen $\vec{p}$)
+\\ 
+Wir können nur Energiedifferenzen bestimmen (Ausnahme Gravitation):
+ 
+Definiere Nullpunktsenergie $E_0 = 0$
+	\begin{align*}
+		\Rightarrow \boxed{H = \int \frac{\diff^3 p}{(2 \pi)^3} \omega_{\vec{p}}\, a_{\vec{p}}^\dagger \,a_{\vec{p}}}
+	\end{align*}
+	\begin{align*}
+		[H, a_{\vec{p}}^\dagger] &= \omega_{\vec{p}}\, a_{\vec{p}}^\dagger ,&
+		[H, a_{\vec{p}}] &= - \omega_{\vec{p}} \,a_{\vec{p}}
+	\end{align*}
+Grundzustand (Vakuum): 
+$\ket{0}, ~a_{\vec{p}}\ket{0} = 0 ~\text{für alle }p^0 \text{ ist }E_0 = 0$
+	\begin{align*}
+		a_{\vec{p}}^\dagger \,a_{\vec{p}}^\dagger \ldots \ket{0} \text{ ist Eigenzustand von } H \text{ mit Energie: }  E= E\vec{p} + E\vec{q} + \ldots
+	\end{align*}
+Physikalischer Gesamtimpuls: $\vec{P}$
+	\begin{align*}
+		\vec{P} &= - \int \diff^3 x \overbrace{\pi (\vec{x})}^{\mathclap{\text{Impulsdichte Operator}}} \vec{\nabla} \underbrace{\phi(\vec{x})}_{\mathclap{\text{Feldoperator}}}
+		= \int \frac{\diff^3 p \diff^3 p\,'}{(2\pi)^6} \frac{1}{2} (a_{\vec{p}} - a_{-\vec{p}}^\dagger) i (- \vec{p}\,') (a_{\vec{p}} + a_{\vec{p}\,'}) e^{-i\vec{p} \vec{x}} e^{i \vec{p}\,' \vec{x}} \ldots \\
+		&= \int \frac{\diff^3 p}{(2\pi)^3} \vec{P} 
+		\left(
+			a_{\vec{p}}^\dagger \,a_{\vec{p}} + \left(\frac{1}{2} [a_{\vec{p}}, a_{\vec{p}}^\dagger] \right)
+		\right)
+	\end{align*}
+$a_{\vec{p}}^\dagger a_{\vec{q}}^\dagger \ket{0}$ hat Gesamtimpuls $\vec{p} + \vec{q}$
+
+Anregung $a_{\vec{p}}^\dagger \ket{0}$ wird ``Teilchen\,'\,' genannt da, es sich um diskrete Objekte handelt mit: \marginpar{bei diskret bin ich mir nicht sicher}
+	\begin{align*}
+		E \vec{p} &= \omega_{\vec{p}} = \sqrt{\vec{p}^2 + m^2} 
+	\end{align*}
+	\begin{align*}
+		a_{\vec{p}}^\dagger \ket{0} &: \text{1-Teilchenzustand} \\
+		a_{\vec{p}}^\dagger\, a_{\vec{q}}^\dagger \ket{0} &: \text{2-Teilchenzustand etc}
+	\end{align*}
+	\begin{align*}
+		N_{\vec{p}} &= a_{\vec{p}}^\dagger \,a_{\vec{p}} & 
+		N_{\vec{p}} \ket{\psi} &= \underbrace{\omega_{\vec{p}}}_{\mathclap{\text{Anzahl der Teilchen mit Impuls }\vec{p}}} \ket{\psi} \\
+		a_{\vec{p}}^\dagger\, a_{\vec{q}}^\dagger \ket{0} &= a_{\vec{q}}^\dagger\, a_{\vec{p}}^\dagger \ket{0} &
+		\text{weil } [a_{\vec{p}}^\dagger, a_{\vec{q}}^\dagger] &= [a_{\vec{p}}, a_{\vec{q}}] = 0
+	\end{align*}
+Zustand ist symmetrisch im Bezug auf Vertauschen von Teilchen. 
+\\
+$\Rightarrow \Phi$ Feldoperator für Bosonen (Bose-Einstein-Statistik) 
+
+NB: Für Fermionen gilt: $ \{a_{\vec{p}}^\dagger, a_{\vec{p}}^\dagger\} = 0 = \{a_{\vec{p}}, a_{\vec{p}}\}$ 
+	\begin{align*}
+		\{a_{\vec{p}}, a_{\vec{p}\,'}^\dagger\} &= (2 \pi)^3 \delta (\vec{p} - \vec{p}\,') 
+		& \text{mit Antikommutator} \{A, B\} &= A\, B + B\, A
+	\end{align*}
+$\Rightarrow n_p > 1$ nicht möglich.
+\\
+\underline{Normierung:} $\braket{0 | 0} = 1$ 
+
+Einteilchenzustand mit Impuls: %$\vec{p} : \ket{\vec{p}} \propto a_{\vec{p}}^\dagger \ket{0}$
+	\begin{align*}
+		\vec{p} : \ket{\vec{p}} \propto a_{\vec{p}}^\dagger \ket{0}
+	\end{align*}
+
+Naive Normierung: %$\braket{\vec{p} | \vec{q}} = (2 \pi)^3 \delta^{(3)}(\vec{q} - \vec{p})$
+	\begin{align*}
+		\braket{\vec{p} | \vec{q}} = (2 \pi)^3 \delta^{(3)}(\vec{q} - \vec{p})
+	\end{align*}
+
+ist nicht relativistisch invariant.
+\\
+Beispiel Lorentzboost mit Geschwindigkeit $v$ in 3-Richtungen:
+	\begin{align*}
+		p_3\,' &= \gamma (p_3 + v E) & p_0\,'&= E = \gamma (E+ vp_3),& &KANN ICH NICHT LESEN
+	\end{align*}
+Jetzt $x_0$ einfache Nullstelle
+	\begin{align*}
+		\delta (f(x) - f(x_0)) &= \frac{1}{|f\,'(x)|} \delta (x - x_0) \\
+		\delta^{(3)} (\vec{p}- \vec{q}) &= \delta^{(3)} (\vec{p}\,'- \vec{q}\,') 
+		= \delta^{(3)}(\vec{p}\,' - \vec{q}\,') \gamma 
+		\left(
+			1 + v \frac{\diff E}{\diff p_3} 
+		\right) \\
+		&= \delta^{(3)} (\vec{p}\,' - \vec{q}\,') \frac{\gamma}{E} (E + v p_3) 
+		= \delta^{(3)} (\vec{p}\,' - \vec{q}\,') \frac{E\,'}{E}
+	\end{align*}
+$\Rightarrow 2E \delta^{(3)} (\vec{p} - \vec{q})$ ist Lorentzinvariant.
+\\
+\underline{NB:} 
+	\begin{align*}
+		\int \frac{\diff^3 p}{(2\pi)^3} \frac{1}{2 E_{\vec{p}}} &=
+		\int \frac{\diff^4 p}{(2 \pi)^4} \left.\delta (p^2 - m^2)\right|_{p^0 = E_{\vec{p}}}
+	\end{align*} 
+\marginpar{ich konnte nicht genau erkennen, auf was eingeschränkt}
+ist auch explizit Lorentzinvariant.
+	\begin{align*}
+		\Rightarrow \ket{\vec{p}} &\coloneqq \sqrt{2 E_{\vec{p}}}\, a_{\vec{p}}^\dagger \ket{0} \\
+		&\Rightarrow \braket{\vec{p} | \vec{q}} = 2 E_{\vec{p}} \,(2 \pi)^3 \delta^{(3)} (\vec{q} - \vec{p}) \\
+		&\phi (x) = \int \frac{\diff^3 p}{(2\pi)^3} \frac{\sqrt{2 E_p}}{2 E_p} 
+		\left(
+			a_{\vec{p}} \, e^{i\vec{p} \vec{x}} + a_{\vec{p}}^\dagger \, e^{-i\vec{p} \vec{x}}
+		\right) \checkmark 
+	\end{align*}
+Lorentztrafo von $\ket{\vec{p}}$: 
+	\begin{align*}
+		p\,'^\mu &= \Lambda^\mu_m p^\mu & \text{defniniere } \vec{p}\,' &= \Lambda^\mu_m (\vec{p}) ~(\text{massenunabhängig}) 
+	\end{align*}
+Auf dem Hilbertraum ist die Lorentz Trafo eine unitäre Transformation $\U (\Lambda)$ 
+	\begin{align*}
+		\U(\Lambda) \ket{\vec{p}}&= \U(\Lambda) \sqrt{2 E_{\vec{p}}} \,a_{\vec{p}}^\dagger \, \U^{-1}(\Lambda) \underbrace{(\U(\Lambda) \ket{0})}_{\mathclap{= \ket{0}}} \\
+		&= \ket{\Lambda_m(\vec{p})} = a_{\Lambda_m (\vec{p})}^\dagger \sqrt{2 E_{\vec{p}\,'}} \ket{0} \\
+		\U(\Lambda) \, a_{\vec{p}}^\dagger \, \U^{-1} (\Lambda) &= 
+		\sqrt{\frac{E_{\Lambda_m (\vec{p})}}{E_{\vec{p}}}} a^\dagger_{\Lambda_m (\vec{p})} 
+	\end{align*}
+	\begin{align*}
+		\mathds{1}_{\text{1-Teilchen}} &= \int \frac{\diff^3 p}{(2\pi)^3} \ket{\vec{p}} \frac{1}{2 E_{\vec{p}}} \bra{\vec{p}} \\
+		\phi(x) \ket{0} &= \int \frac{\diff^3 p}{(2\pi)^3} \frac{1}{2 E_{\vec{p}}} e^{-i\vec{p} \vec{x}} 
+		\underbrace{\sqrt{2 E_{\vec{p}}} a^\dagger \ket{0}}_{\mathclap{\ket{\vec{p}}}} \\
+		&= \int \frac{\diff^3 p}{(2 \pi)^3} \frac{1}{2 E_{\vec{p}}} e^{-i\vec{p} \vec{x}} \ket{\vec{p}} \text{ Fouriertrafo von } \ket{\vec{p}}
+	\end{align*}
+$\Rightarrow \phi (\vec{x})$ erzeugt ein Teilchen auf der Position $\vec{x}$. 
+	\begin{align*}
+		\braket{0 | \phi(\vec{x}) | 0} &= 
+		\braket{0 | \int \frac{\diff^3 p}{(2 \pi)^3} \frac{1}{\sqrt{2 E_{\vec{p}}}} 
 			\left(
-				\frac{\partial^2}{\partial t^2} - \vec{\nabla}^2 + m^2
-			\right) \Phi(\vec{x}, t) &= 0 \\
-			\Rightarrow \left(
-				\frac{\partial^2}{\partial t^2} + \vec{p}^2 + m^2
-			\right) \Phi(\vec{p}, t) &= 0
-		\end{align*}
-	Harmonischer Oszillator mit $\omega_{\vec{p}} = \sqrt{\vec{p}^2 + m^2}$
-		\begin{align*}
-			H_{\text{HO}} &= \frac{\hat{p}^2}{2} + \frac{\omega^2}{2} \hat{\Phi}^2 : \text{ QM} \\
-			[\hat{\Phi}, \hat{p}] &= i \\
-			\hat{\Phi} &= \frac{1}{\sqrt{2 \omega}} (\hat{a} + \hat{a}^\dagger),&
-			\hat{p} &= i \sqrt{\frac{\omega}{2}}( \hat{a} - \hat{a}^\dagger) \\
-			[a, a^\dagger] &= 1 & \Rightarrow
-			H_{\text{HO}} &= \omega(a^\dagger a + \frac{1}{2})
-		\end{align*}
-	$\ket{n} \La (a^\dagger)^n \ket{0}$ ist Eigenzustand zu $H_{HO}$ mit Eigenwert $\omega (n + \frac{1}{2})$ 
-		\begin{align*}
-			\hat{\Phi} (\vec{x}) &= 
-			\int \frac{\diff^3 p}{(2 \pi)^3} \frac{1}{\sqrt{2 \omega_{\vec{p}}}}
-			\left(	
-				\hat{a}_{\vec{p}} \,e^{i\vec{p}\vec{a}} + \hat{a}^\dagger_{\vec{p}}\, e^{-i\vec{p}\vec{a}}
-			\right) \\
-			\Phi (\vec{p},t) &= \frac{1}{2} (\Phi(\vec{p},t) + \Phi^*(-\vec{p},t)) \\
-			\hat{\pi}(\vec{x}) &= \int \frac{\diff^3 p}{(2\pi)^3}
-			\sqrt{\frac{\omega_{\vec{p}}}{2}} (\hat{a}_{\vec{p}} \,e^{i \vec{p} \vec{x}} -
-			\hat{a}^\dagger_{\vec{p}} \,e^{- i \vec{p} \vec{x}}) 
-		\end{align*}
-	Ab jetzt alles Operatoren, was wie Operator aussieht $\rightarrow$ lasse \,$\hat{}$\, weg.
-		\begin{align*}
-			\Phi(\vec{x}) &= \int \frac{\diff^3 p}{(2\pi)^3} 
-			\sqrt{\frac{\omega_{\vec{p}}}{2}} \left(
-				a_{\vec{p}}\, e^{i \vec{p} \vec{x}} -
-				a^\dagger_{\vec{p}} \,e^{- i \vec{p} \vec{x}}
-			\right) \\
-			\pi (\vec{x}) &= \int \frac{\diff^3 p}{(2 \pi)^3} (-i) \sqrt{\frac{\omega_{\vec{p}}}{2}} (a_{\vec{p}} - a_{\vec{p}}^\dagger)
-			e^{i \vec{p}\vec{x}} \\
-			[a_{\vec{p}}, a_{\vec{p}}^\dagger] &= (2\pi)^3 \delta^{(3)}(\vec{p}- \vec{p}') \\
-			\text{Nachrechnen: } \\ [\Phi(\vec{x}), H(\vec{x})] &= i \delta^{(3)}(\vec{x}- \vec{x}')
-		\end{align*}
+				a_{\vec{p}\,'} e^{+i \vec{p}\,' \vec{x}} + a_{\vec{p}\,'}^\dagger e^{-i\vec{p}\,' \vec{x}}	
+			\right) \sqrt{2 E_{\vec{p}}} \,a_{\vec{p}}^\dagger\,
+		| 0} \\
+		&= e^{+ i \vec{p} \vec{x}}
+	\end{align*}
+Analog: $ \braket{\vec{x} | \vec{p}} = e^{+ i \vec{p} \vec{x}}$ in normaler QM
