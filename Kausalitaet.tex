@@ -86,51 +86,8 @@ $\phi^\dagger$ erzeugt positiv geladene Teilchen/zerstört negativ geladene Teil
 
 $\phi$ ~erzeugt negativ geladene Teilchen/zerstört positiv geladene Teilchen
 \\
-$\braket{0 | [\phi(x), \phi^\dagger(y)] | 0}$ Progatator für positiv geladenes Teilchen von $y$ nach $x$ und Propagator für negativ geladene Teilchcen von $x$ nach $y$.
+$\braket{0 | [\phi(x), \phi^\dagger(y)] | 0}$ Propagator für positiv geladenes Teilchen von $y$ nach $x$ und Propagator für negativ geladene Teilchcen von $x$ nach $y$.
 
-reeles Klein Gordon Feld $\Rightarrow q = 0,~\phi = \phi^\dagger$ 
+reelles Klein Gordon Feld $\Rightarrow q = 0,~\phi = \phi^\dagger$ 
 
 Konsequenz: zu jedem Teilchen existiert ein Antiteilchen gleicher Masse, aber mit negativen Quantenzahlen (hier Ladung) (Reelles K.G. Feld: Teilchen und Antiteilchen sind miteinander identisch).
-
-\subsection{Der Klein-Gordon-Propagator}
-	\begin{align*}
-		\braket{0 | [\phi(x), \phi(y)] | 0} &= 
-		\int \frac{\diff^3 p}{(2 \pi)^3} \frac{1}{2 E_p} (e^{-i p(x- y)} - e^{ip (y-x)}) \\
-		&= \int \frac{\diff^3 p}{(2 \pi)^3}  
-		\left[
-			 \left. \frac{1}{2 E_p} e^{-ip(x-y)} \right|_{p^0 = E_p}
-			 + \left.  \frac{1}{- 2 E_p} e^{ip(x-y)} \right|_{p^0 = -E_p}
-		\right] \\
-		&\overset{x^0 > y^0}{=}
-		\int \frac{\diff^3 p}{(2 \pi)^3} \frac{\diff p^0}{2 \pi i}
-		\frac{-1}{p^2 -m^2} e^{-ip(x-y)} \\
-		&\coloneqq D_R (x-y) = \theta(x^0 -y^0) 
-		\braket{0 | [\phi(x), \phi(y)] | 0}
-	\end{align*}
-
-	\begin{figure} [h]
-		\begin{center}
-			\includegraphics[width = 10cm]{Kausalitaet2}
-		\end{center}	
-	\end{figure}
-\FloatBarrier
-Beh: $D_R(x-y)$ ist retardierte Greenfunktion des K.G. Operators.
-	\begin{align*}
-		(\square + m^2) D_R(x-y) &= ? &
-		D_R(x-y) &= \int \frac{\diff^4 p}{(2 \pi)^4} e^{-ip(x-y)} \tilde{D}_R (p) \\
-		\tilde{D}_R(p) &= \frac{i}{p^2 - m^2} & 
-		(-p^2 + m^2) \tilde{D}_R(p) &= -i
-	\end{align*}
-$\Rightarrow (\square + m^2) D_R(x-y) = -i \delta^{(4)} (x-y)$
-
-Alternativ
-	\begin{align*}
-		& \square \braket{0 | [\phi(x), \phi(y)] | 0} \theta(x^0 - y^0) \\
-		&=
-		\left(
-			\partial_\mu \partial^\mu \theta(x^0 - y^0) \braket{0 | [\phi(x), \phi(y)] | 0} + 2 \partial_\mu \theta \braket{0 | [\partial^\mu \phi(x), \phi(y)] | 0}
-		\right) \\
-		&+ \theta(x^0 - y^0) (\square + m^2) \braket{0 | [\phi(x), \phi(y)] | 0} \\
-		&= \partial_0 (\theta(x^0 -y^0)) \braket{0 | [\partial^0 \phi(x), \phi(y)] | 0} \\
-		&= \delta(x^0 -y^0) \braket{0 | [\pi(x), \phi(y)] | 0} = -i \delta^{(4)}(x-y) \checkmark
-	\end{align*}
