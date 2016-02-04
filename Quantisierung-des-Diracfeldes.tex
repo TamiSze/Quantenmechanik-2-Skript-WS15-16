@@ -11,7 +11,7 @@ Lagrangedichte:
 		= \sum_{\alpha,\beta = 1}^{4} \bar{\psi}_\alpha 
 		\underbrace{\left(
 			i (\gamma^\mu)_{\alpha \beta} \partial_\mu - m \delta_{\alpha \beta} 
-		\right)}_{\mathclap{(i \partial(druchgestr - m \mathds{1})_{\alpha \beta})}} \psi 
+		\right)}_{\mathclap{(i \durch{\partial} - m \mathds{1})_{\alpha \beta}}} \psi 
 	\end{align*}
 	\begin{align*}
 		\Rightarrow \frac{\partial \La}{\partial_\nu (\partial_\mu \bar{\psi}_\alpha)}
@@ -87,12 +87,12 @@ Analog
 	\end{align*}
 $t =$ fest (Schrödingerbild (deshalb nur 3-dim))
 	\begin{align*}
-		h \underline{u^2(\vec{p}) e^{i \vec{p} \vec{x}}}_{\mathclap{\text{Eigenfunktion}}} &=
+		h \underset{\text{Eigenfunktion}}{\underline{u^2(\vec{p}) e^{i \vec{p} \vec{x}}}} &=
 		E_p u^s(\vec{p}) e^{i\vec{p} \vec{x}},&
 		hv^s(\vec{p}) e^{-i\vec{p} \vec{x}} &= 
 		E_p v^s(\vec{p}) e^{-i\vec{p} \vec{x}} 
 		\left(
-			= hv^s(-\vec{p} e^{i\vec{p} \vec{x}}
+			= h\,v^s(-\vec{p} e^{i\vec{p} \vec{x}}
 		\right)
 	\end{align*}
 	\begin{align*}
@@ -107,12 +107,12 @@ Entwickle $\psi(\vec{x})$ nach ebenen Wellen:
 		\psi (\vec{x}) &= 
 		\int \frac{\diff^3 p}{(2 \pi)^3} \sum_{s=1,2} 
 		\left(
-			a_{\vec{p}}^s u^s(\vec{p}) + b_{-\vec{p}}^s v^s(-\vec{p})
+			a_{\vec{p}}^s \,u^s(\vec{p}) + b_{-\vec{p}}^s\, v^s(-\vec{p})
 		\right) e^{i\vec{p} \vec{x}}
 	\end{align*}
 $a_{\vec{p}}^s$ und $b_{-\vec{p}}^s$ sind Operatoren (Quantisierung) 
 \\
-$u^s(\vec{p}$ und $v^s(-\vec{p})$ sind Lösungen des freien Falls (analog zu eb. Wellen)
+$u^s(\vec{p})$ und $v^s(-\vec{p})$ sind Lösungen des freien Falls (analog zu eb. Wellen)
 
 Antikommutator: $\{A, B\} = AB + BA$
 	\begin{align*}
@@ -127,12 +127,12 @@ Antikommutator: $\{A, B\} = AB + BA$
 	\end{align*}
 	\begin{align*}
 		\Rightarrow (b_{\vec{p}}^{s\dagger})^2 \ket{0} &= 0,&
-		(a_{\vec{p}}^{s\dagger})^2 \ket{0} &= 0
-	\end{align*}
-	\begin{align*}
+		&(a_{\vec{p}}^{s\dagger})^2 \ket{0} = 0 \\
+%	\end{align*}
+%	\begin{align*}
 		a_{\vec{q}}^{r\dagger} a_{\vec{p}}^{s\dagger} \ket{0} &= 
 		- a_{\vec{q}}^{s\dagger} a_{\vec{p}}^{s\dagger} \ket{0}
-		&(\text{Fermi-Dirac-Statistik})
+		& &(\text{Fermi-Dirac-Statistik})
 	\end{align*}
 	\begin{align*}
 		\{\psi(x), \psi^\dagger(x)\} &= 
@@ -176,13 +176,13 @@ Von jetzt ab: lasse $\tilde{}$ weg
 	\end{align*}
 Heisenbergbild:
 	\begin{align*}
-		e^{iHt}a_{\vec{p}}^{s} e^{-iHt} &= a_{\vec{p}}^{s} e^{-iE_p t},&
+		e^{iHt}a_{\vec{p}}^{s} \,e^{-iHt} &= a_{\vec{p}}^{s}\, e^{-iE_p t},&
 		e^{iHt}b_{\vec{p}}^{s\dagger} e^{-iHt} &= b_{\vec{p}}^{s\dagger} e^{-iE_p t}
 	\end{align*}
 	\begin{align*}
 		\psi(x) &= \int \frac{\diff^3 p}{(2\pi)^3} \frac{1}{\sqrt{2 E_p}} \sum_s
 		\left(
-			a_{\vec{p}}^{s} u^s(p) e^{-ipx} + b_{\vec{p}}^{s \dagger} v^s(p) e^{ipx}	
+			a_{\vec{p}}^{s} \,u^s(p) e^{-ipx} + b_{\vec{p}}^{s \dagger} v^s(p) e^{ipx}	
 		\right)
 	\end{align*}
 $a_{\vec{p}}^{s}$ vernichtet Teilchen, $b_{\vec{p}}^{s \dagger}$ erzeugt Antiteilchen.
@@ -197,7 +197,7 @@ Teilchen, welches von $y$ nach $x$ propagiert.
 	\begin{align*}
 		\braket{0 | \psi(x) \bar{\psi}(y) | 0} &=
 		\braket{0 | 
-			\left\{\int \frac{\diff^3 p \diff^3 q}{(2\pi)^6} \frac{1}{\sqrt{2 E_p 2 E_q}}\sum_{r,s} a_{\vec{p}}^{s} u^s(p) e^{-ip.x} a_{\vec{q}}^{r\dagger} \bar{u}^r(q) e^{iqy} 
+			\left\{\int \frac{\diff^3 p \diff^3 q}{(2\pi)^6} \frac{1}{\sqrt{2 E_p 2 E_q}}\sum_{r,s} a_{\vec{p}}^{s}\, u^s(p) e^{-ip.x} a_{\vec{q}}^{r\dagger} \bar{u}^r(q) e^{iqy} 
  			\right\}| 0}
 	\end{align*}
 Was ist 
