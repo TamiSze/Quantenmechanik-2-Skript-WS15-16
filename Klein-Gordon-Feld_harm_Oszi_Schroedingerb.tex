@@ -31,7 +31,7 @@ Harmonischer Oszillator mit $\omega_{\vec{p}} = \sqrt{\vec{p}^2 + m^2}$
 		H_{\text{HO}} &= \frac{\hat{\pi}^2}{2} + \frac{\omega_{\vec{p}}^2}{2} \hat{\phi}^2 : \text{ QM} \\
 		[\hat{\phi}, \hat{\pi}] &= i \\
 		\hat{\phi} &= \frac{1}{\sqrt{2 \omega_{\vec{p}}}} (\hat{a} + \hat{a}^\dagger),&
-		\hat{\pi} &= i \sqrt{\frac{\omega_{\vec{p}}}{2}}( \hat{a} - \hat{a}^\dagger) \\
+		\hat{\pi} &= - i \sqrt{\frac{\omega_{\vec{p}}}{2}}( \hat{a} - \hat{a}^\dagger) \\
 		[a, a^\dagger] &= 1 & \Rightarrow
 		H_{\text{HO}} &= \omega_{\vec{p}}(a^\dagger a + \frac{1}{2})
 	\end{align*}
@@ -57,16 +57,16 @@ Ab jetzt alles Operatoren, was wie Operator aussieht $\rightarrow$ lasse \,$\hat
 		\right) \\
 		\pi (\vec{x}) &= \int \frac{\diff^3 p}{(2 \pi)^3} (-i) \sqrt{\frac{\omega_{\vec{p}}}{2}} (a_{\vec{p}}e^{i \vec{p}\vec{x}} - a_{\vec{p}}^\dagger e^{-i \vec{p}\vec{x}})
 		\\
-		[a_{\vec{p}}, a_{\vec{p}}^\dagger] &= (2\pi)^3 \delta^{(3)}(\vec{p}- \vec{p}\,') \\			
+		[a_{\vec{p}}, a_{\vec{p}\,'}^\dagger] &= (2\pi)^3 \delta^{(3)}(\vec{p}- \vec{p}\,') \\			
 		\text{Nachrechnen: } \\ [\phi(\vec{x}), H(\vec{x})] &= i \delta^{(3)}(\vec{x}- \vec{x}\,')
 	\end{align*}
-$[a_{\vec{p}}, a_{\vec{p}}^\dagger] = (2\pi)^3 \delta^{(3)} (\vec{p} - \vec{p}\,')$ \marginpar{25.01.2016}
+$[a_{\vec{p}}, a_{\vec{p}\,'}^\dagger] = (2\pi)^3 \delta^{(3)} (\vec{p} - \vec{p}\,')$ \marginpar{25.01.2016}
 	\begin{align*}
 		\overbrace{\phi (\vec{x})}^{\mathclap{\text{Feld Operator}}} &= \int \frac{\diff^3 p}{(2 \pi)^3} \frac{1}{\sqrt{2 \omega_{\vec{p}}}} 
 		\left(
 			a_{\vec{p}} e^{i \vec{p} \vec{x}} + a_{\vec{p}}^\dagger e^{-i\vec{p} \vec{x}}
 		\right) 
-		= \int \frac{\diff^3 p}{(2\pi)^3} \frac{1}{2 \omega_{\vec{p}}} (a_{\vec{p}} + a_{\vec{p}}^\dagger) e^{i \vec{p} \vec{x}}
+		= \int \frac{\diff^3 p}{(2\pi)^3} \frac{1}{\sqrt{2 \omega_{\vec{p}}}} (a_{\vec{p}} + a_{-\vec{p}}^\dagger) e^{i \vec{p} \vec{x}}
 	\end{align*}
 Kanonischer Impulsoperator (hier fehlt noch ein Wort):
 	\begin{align*}
@@ -75,7 +75,7 @@ Kanonischer Impulsoperator (hier fehlt noch ein Wort):
 			a_{\vec{p}} e^{i\vec{p} \vec{x}} - a^\dagger_{\vec{p}} e^{-i\vec{p} \vec{x}}
 		\right) 
 		= \int \frac{\diff^3 p}{(2\pi)^3} (-i) \sqrt{\frac{\omega_{\vec{p}}}{2}} 
-		(a_{\vec{p}} - a_{\vec{-p}}^\dagger) e^{ipx} \\
+		(a_{\vec{p}} - a_{-\vec{p}}^\dagger) e^{ipx} \\
 		[\phi(\vec{x}), \pi(\vec{x}\,')] &=
 		\int \frac{\diff p^3 \diff p\,'^3}{(2\pi)^6} (-i) \sqrt{\frac{\omega_{p\,'}}{4 \omega_p}} 
 		\underbrace{
@@ -95,11 +95,11 @@ Kanonischer Impulsoperator (hier fehlt noch ein Wort):
 		\right) \\
 		&= \int \diff^3 x \int \frac{\diff^3 p \diff^3 p\,'}{(2\pi)^6} e^{i (\vec{p} + \vec{p}\,')\vec{x}} 
 		\left[
-			- \frac{\sqrt{\omega_{\vec{p}} \omega_{\vec{p}\,'}}}{4} 
+			- \frac{\sqrt{\omega_{\vec{p}} \omega_{\vec{p}\,'}}}{2} 
 			(a_{\vec{p}} - a_{-\vec{p}}^\dagger) \cdot (a_{\vec{p}\,'} - a_{-\vec{p}\,'}^\dagger)
 		\right.\\
 		&\left.
-			+ \frac{m^2 - \vec{p} \cdot \vec{p}\,'}{4\sqrt{\omega_p \omega_{p\,'}}}
+			+ \frac{m^2 - \vec{p} \cdot \vec{p}\,'}{2\sqrt{\omega_p \omega_{p\,'}}}
 			(a_{\vec{p}} + a_{-\vec{p}}^\dagger) \cdot (a_{\vec{p}\,'} + a_{-\vec{p}\,'}^\dagger)
 		\right] \\
 		&= \int \frac{\diff^3 p}{(2 \pi)^3} \omega_{\vec{p}} 
@@ -127,8 +127,8 @@ $\ket{0}, ~a_{\vec{p}}\ket{0} = 0 ~\text{für alle }p^0 \text{ ist }E_0 = 0$
 Physikalischer Gesamtimpuls: $\vec{P}$
 	\begin{align*}
 		\vec{P} &= - \int \diff^3 x \overbrace{\pi (\vec{x})}^{\mathclap{\text{Impulsdichte Operator}}} \vec{\nabla} \underbrace{\phi(\vec{x})}_{\mathclap{\text{Feldoperator}}}
-		= \int \frac{\diff^3 p \diff^3 p\,'}{(2\pi)^6} \frac{1}{2} (a_{\vec{p}} - a_{-\vec{p}}^\dagger) i (- \vec{p}\,') (a_{\vec{p}} + a_{\vec{p}\,'}) e^{-i\vec{p} \vec{x}} e^{i \vec{p}\,' \vec{x}} \ldots \\
-		&= \int \frac{\diff^3 p}{(2\pi)^3} \vec{P} 
+		= \int \frac{\diff^3 p \diff^3 p\,'}{(2\pi)^6} \frac{1}{2} (a_{\vec{p}} - a_{-\vec{p}}^\dagger) i (- \vec{p}\,') (a_{\vec{p}} + a_{\vec{p}\,'}^\dagger) e^{-i\vec{p} \vec{x}} e^{i \vec{p}\,' \vec{x}} \ldots \\
+		&= \int \frac{\diff^3 p}{(2\pi)^3} \vec{p} 
 		\left(
 			a_{\vec{p}}^\dagger \,a_{\vec{p}} + \left(\frac{1}{2} [a_{\vec{p}}, a_{\vec{p}}^\dagger] \right)
 		\right)
@@ -137,7 +137,7 @@ $a_{\vec{p}}^\dagger a_{\vec{q}}^\dagger \ket{0}$ hat Gesamtimpuls $\vec{p} + \v
 
 Anregung $a_{\vec{p}}^\dagger \ket{0}$ wird ``Teilchen\,'\,' genannt da, es sich um diskrete Objekte handelt mit: \marginpar{bei diskret bin ich mir nicht sicher}
 	\begin{align*}
-		E \vec{p} &= \omega_{\vec{p}} = \sqrt{\vec{p}^2 + m^2} 
+		E_{\vec{p}} &= \omega_{\vec{p}} = \sqrt{\vec{p}^2 + m^2} 
 	\end{align*}
 	\begin{align*}
 		a_{\vec{p}}^\dagger \ket{0} &: \text{1-Teilchenzustand} \\

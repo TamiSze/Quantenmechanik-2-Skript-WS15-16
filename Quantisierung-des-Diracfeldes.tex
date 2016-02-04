@@ -1,0 +1,248 @@
+\subsection{Quantisierung des Diracfeldes} \marginpar{04.02.2016}
+	
+Lagrangedichte:
+	\begin{align*}
+		\La = \bar{\psi} \left(
+			i \gamma^\mu \partial_\mu - m
+		\right) \psi 
+	\end{align*}	
+(ohne Ww mit anderen Feldern) $\gamma^\mu \partial_\mu = \durch{\partial}$, $\durch{p} = \gamma^\mu p_\mu$
+	\begin{align*}
+		= \sum_{\alpha,\beta = 1}^{4} \bar{\psi}_\alpha 
+		\underbrace{\left(
+			i (\gamma^\mu)_{\alpha \beta} \partial_\mu - m \delta_{\alpha \beta} 
+		\right)}_{\mathclap{(i \partial(druchgestr - m \mathds{1})_{\alpha \beta})}} \psi 
+	\end{align*}
+	\begin{align*}
+		\Rightarrow \frac{\partial \La}{\partial_\nu (\partial_\mu \bar{\psi}_\alpha)}
+		= \partial_\nu \frac{\partial \La}{\partial \bar{\psi}_\alpha}
+	\end{align*}
+	\begin{align*}
+		\Rightarrow (i\gamma^\mu \partial_\mu - m) \psi &= 0  \text{(Dirac-Gleichung)} \\
+		(\durch{p} - m) \psi &= 0
+	\end{align*}
+Kanonisch konjugierte Impulsdichte:
+	\begin{align*}
+		\pi &= \frac{\partial \La}{\partial(\partial_0 \psi)} = i \bar{\psi} \gamma^0 
+		= i \psi^\dagger 
+	\end{align*}
+Hamiltondichte:
+	\begin{align*}
+		\pi \cdot \partial_0 \psi - \La 
+	\end{align*}
+Hamiltonfunktion:
+	\begin{align*}
+		H &= \int \diff^3 x \bar{\psi} 
+		\left(
+			- i \vec{\gamma} \cdot \vec{\nabla} + m
+		\right) \psi \\
+		H &= \int \diff^3 x \psi^\dagger 
+		\underbrace{\left(
+			- i \gamma^\sigma \vec{\gamma} \cdot \vec{\nabla} + \gamma^\sigma m
+		\right)}_{\mathclap{h}} \psi
+	\end{align*}
+Eigenfunktionen von $h$? $(\sigma^\mu) = (\mathds{1}, \vec{\sigma}),~ (\vec{\sigma^\mu}) = (\mathds{1}, -\vec{\sigma})$
+	\begin{align*}
+		u^s (p) &=
+		\begin{pmatrix}
+			\sqrt{p. \sigma} & \chi^s \\
+			\sqrt{p. \sigma} & \chi^s
+		\end{pmatrix},&
+		\chi^s: \text{2. Spinor, z.B.: } \chi^1 &=
+		\begin{pmatrix}
+			1 \\ 0
+		\end{pmatrix},~
+		\chi^2 = 
+		\begin{pmatrix}
+			0 \\1
+		\end{pmatrix}
+		\\
+		v^s (p) &=
+		\begin{pmatrix}
+		\sqrt{p. \sigma} & \phi^s \\
+		-\sqrt{p. \sigma} & \phi^s
+		\end{pmatrix},&
+		\phi^1 &=
+		\begin{pmatrix}
+		1 \\ 0
+		\end{pmatrix},~
+		\phi^2 = 
+		\begin{pmatrix}
+		0 \\1
+		\end{pmatrix}
+	\end{align*}
+	\begin{align*}
+		\sum_s u^s(p) u^{-s} (p) &= 
+		\begin{pmatrix}
+			m & p. \vec{\sigma} \\
+			p.\vec{\sigma} & m
+		\end{pmatrix}
+		= \gamma. p + m\mathds{1} = \durch{p} + m\mathds{1}
+	\end{align*}
+Analog
+	\begin{align*}
+		\sum_s v^s(p) v^s(p) &= \durch{p} - m\mathds{1}\\
+		\durch{p}^2 &= p_\mu \gamma^\mu p_\nu \gamma^\nu = 
+		\frac{1}{2} p_\mu p_\nu \underbrace{\{\gamma^\mu, \gamma^\nu\}}_{\mathclap{2g^{\mu\nu}}} = p^2 = m^2
+	\end{align*}
+$t =$ fest (Schrödingerbild (deshalb nur 3-dim))
+	\begin{align*}
+		h \underline{u^2(\vec{p}) e^{i \vec{p} \vec{x}}}_{\mathclap{\text{Eigenfunktion}}} &=
+		E_p u^s(\vec{p}) e^{i\vec{p} \vec{x}},&
+		hv^s(\vec{p}) e^{-i\vec{p} \vec{x}} &= 
+		E_p v^s(\vec{p}) e^{-i\vec{p} \vec{x}} 
+		\left(
+			= hv^s(-\vec{p} e^{i\vec{p} \vec{x}}
+		\right)
+	\end{align*}
+	\begin{align*}
+		\left(
+			i \gamma^0 \partial 0 + \underbrace{i \vec{\gamma} \vec{\nabla} - m}_{\mathclap{-\gamma^0 h}}
+		\right) u^s(p) e^{-ipx} &= 0 &(\text{hier } px \text{ 4-Produkt}) \\
+		= \gamma^0 (i \partial_0 - h) u^s (p) e^{-i E_p x^0} e^{+ i\vec{p} \vec{x}}
+		&= \gamma^0 (i \partial_0 - E_p) u^s e^{-E_p x^0} e^{i \vec{p} \vec{x}}
+	\end{align*}
+Entwickle $\psi(\vec{x})$ nach ebenen Wellen:
+	\begin{align*}
+		\psi (\vec{x}) &= 
+		\int \frac{\diff^3 p}{(2 \pi)^3} \sum_{s=1,2} 
+		\left(
+			a_{\vec{p}}^s u^s(\vec{p}) + b_{-\vec{p}}^s v^s(-\vec{p})
+		\right) e^{i\vec{p} \vec{x}}
+	\end{align*}
+$a_{\vec{p}}^s$ und $b_{-\vec{p}}^s$ sind Operatoren (Quantisierung) 
+\\
+$u^s(\vec{p}$ und $v^s(-\vec{p})$ sind Lösungen des freien Falls (analog zu eb. Wellen)
+
+Antikommutator: $\{A, B\} = AB + BA$
+	\begin{align*}
+		\{a_{\vec{p}}^s, a_{\vec{p}}^{r \dagger} \} &= 
+		(2 \pi)^3 \delta^{(3)} (\vec{p} - \vec{q}) \delta^{rs} \\
+		\{b_{\vec{p}}^s, b_{\vec{p}}^{r \dagger} \} &= 
+		(2 \pi)^3 \delta^{(3)} (\vec{p} - \vec{q}) \delta^{rs} \\
+		\{b_{\vec{p}}^r, b_{\vec{p}}^{s} \} &= 
+		\{b_{\vec{p}}^{r\dagger}, b_{\vec{p}}^{s\dagger} \} 
+		= \{a_{\vec{p}}^r, a_{\vec{p}}^{s} \}
+		= \{a_{\vec{p}}^{r\dagger}, a_{\vec{p}}^{s\dagger} \} = 0
+	\end{align*}
+	\begin{align*}
+		\Rightarrow (b_{\vec{p}}^{s\dagger})^2 \ket{0} &= 0,&
+		(a_{\vec{p}}^{s\dagger})^2 \ket{0} &= 0
+	\end{align*}
+	\begin{align*}
+		a_{\vec{q}}^{r\dagger} a_{\vec{p}}^{s\dagger} \ket{0} &= 
+		- a_{\vec{q}}^{s\dagger} a_{\vec{p}}^{s\dagger} \ket{0}
+		&(\text{Fermi-Dirac-Statistik})
+	\end{align*}
+	\begin{align*}
+		\{\psi(x), \psi^\dagger(x)\} &= 
+		\int\frac{\diff^3 q \diff^3 p}{(2\pi)^6} 
+		\frac{1}{\sqrt{2 E_p 2 E_q}} e^{i(\vec{p} \vec{x} - \vec{q} \vec{x})} 
+		\sum_{r,s} 
+		\left(
+			\{a_{\vec{p}}^{r}, a_{\vec{p}}^{s\dagger}\} u^r(\vec{p} u^{s\dagger} (\vec{q}) 
+			+ \{b_{-\vec{p}}^{r}, b_{-\vec{p}}^{s\dagger}\} v^r(-\vec{p}) v^{s\dagger} (-\vec{p})
+		\right) \\
+		&= \int \frac{\diff^3 p}{(2\pi)^3} \frac{1}{2 E_p} \sum_{s = 1}^{2} 
+		\left(
+			u^s(\vec{p}) \bar{u}^s(\vec{p}) \gamma^0 + v^s(-\vec{p}) \bar{v}^s (-\vec{p}) \gamma^0
+		\right) e^{i \vec{p}(\vec{x}- \vec{y})} \\
+		&= \int \frac{\partial^3 p}{(2\pi)^3} e^{i\vec{p}(\vec{x}- \vec{y})} = 
+		\boxed{\delta^{(3)}(\vec{x} - \vec{y}) \mathds{1}_{4 \times 4}}
+	\end{align*}
+Setze $\psi(x)$ in $H$ ein:
+	\begin{align*}
+		H = \int \frac{\diff^3 p}{(2\pi)^3} E_p \sum_s 
+		\left(
+			a_{\vec{p}}^{s\dagger} a_{\vec{p}}^{s} - b_{\vec{p}}^{s\dagger} b_{\vec{p}}^{s} 
+		\right) + \text{0-Punktsenergie}
+	\end{align*}
+Problem (wegen $- b_{\vec{p}}^{s\dagger} b_{\vec{p}}^{s}$) : Energie kann beliebig kelin gemacht werden!
+
+Lösung: $\{b, b^\dagger\} = 2 \pi \delta \delta$
+	\begin{align*}
+		\tilde{b}^s_p &= b_p^{s\dagger} \\
+		\Rightarrow \{\tilde{b}^s_{\vec{p}}, \tilde{b}^{r\dagger}_{\vec{q}}\} &= 
+		(2 \pi)^3 \delta^{(3)} (\vec{p}- \vec{q}) \delta^{rs}
+	\end{align*}
+Von jetzt ab: lasse $\tilde{}$ weg 
+	\begin{align*}
+		H &= \int \frac{\diff^3 p}{(2\pi)^3} E_p \sum_s 
+		\left(
+			a_{\vec{p}}^{s\dagger} a_{\vec{p}}^{s}
+			+ b_{\vec{p}}^{s\dagger} b_{\vec{p}}^{s}
+		\right) \\
+		a_{\vec{p}}^{s} \ket{0}&= 0, ~b_{\vec{p}}^{s} \ket{0} = 0
+	\end{align*}
+Heisenbergbild:
+	\begin{align*}
+		e^{iHt}a_{\vec{p}}^{s} e^{-iHt} &= a_{\vec{p}}^{s} e^{-iE_p t},&
+		e^{iHt}b_{\vec{p}}^{s\dagger} e^{-iHt} &= b_{\vec{p}}^{s\dagger} e^{-iE_p t}
+	\end{align*}
+	\begin{align*}
+		\psi(x) &= \int \frac{\diff^3 p}{(2\pi)^3} \frac{1}{\sqrt{2 E_p}} \sum_s
+		\left(
+			a_{\vec{p}}^{s} u^s(p) e^{-ipx} + b_{\vec{p}}^{s \dagger} v^s(p) e^{ipx}	
+		\right)
+	\end{align*}
+$a_{\vec{p}}^{s}$ vernichtet Teilchen, $b_{\vec{p}}^{s \dagger}$ erzeugt Antiteilchen.
+	\begin{align*}
+		\bar{\psi} (x) &= 
+		\int \frac{\diff^3 p}{(2\pi)^3} \frac{1}{\sqrt{2 E_p}} \sum_s
+		\left[
+			a_{\vec{p}}^{s\dagger} \bar{u}^s(p) e^{ipx} + b_{\vec{p}}^{s} v^s(p) e^{-ipx}
+		\right]
+	\end{align*}
+Teilchen, welches von $y$ nach $x$ propagiert.
+	\begin{align*}
+		\braket{0 | \psi(x) \bar{\psi}(y) | 0} &=
+		\braket{0 | 
+			\left\{\int \frac{\diff^3 p \diff^3 q}{(2\pi)^6} \frac{1}{\sqrt{2 E_p 2 E_q}}\sum_{r,s} a_{\vec{p}}^{s} u^s(p) e^{-ip.x} a_{\vec{q}}^{r\dagger} \bar{u}^r(q) e^{iqy} 
+ 			\right\}| 0}
+	\end{align*}
+Was ist 
+	\begin{align*}
+		\braket{0 | a_{\vec{p}}^{s} \,a_{\vec{q}}^{r \dagger} | 0} &= 
+		\braket{0 | a_{\vec{p}}^{s} \, a_{\vec{q}}^{r \dagger}e^{i\vec{P}\vec{x}} | 0} \\
+		&= \braket{0 | e^{i\vec{P}\vec{x}} a_{\vec{p}}^{s}\, a_{\vec{q}}^{r \dagger} | 0}
+		e^{i\vec{p} \vec{x}} e^{-i\vec{q}\vec{x}} \\
+		&= e^{i\vec{x}(\vec{p} - \vec{q})} 
+		\braket{0 | a_{\vec{p}}^{s} \,a_{\vec{q}}^{r \dagger} | 0} \\
+		&= \braket{0 | \{a_{\vec{p}}^{s} , a_{\vec{q}}^{r \dagger}\} | 0} \\
+		&= \braket{0 | 0} (2\pi)^3 \delta^3 (\vec{p}- \vec{q}) \delta^{rs} 
+	\end{align*}
+	\begin{align*}
+		\Rightarrow \braket{0 | \psi(x) \bar{\psi}(y) | 0} &= 
+		\int \frac{\diff^3 p}{(2\pi)^3} \frac{1}{2 E_p} 
+		\underbrace{\sum_s u^s(p) \bar{u}(p)}_{\mathclap{\durch{p} + m}} e^{-ip(x -y)} \\
+		&= \int \frac{\diff^3 p}{(2 \pi)^3} \frac{1}{2 E_p} (\durch{p} + m) e^{-ip(x -y)} \\
+		\braket{0 | \psi_\alpha(x) \bar{\psi}_\beta(y) | 0} &= 
+		(i\gamma^\mu \partial_mu + m)_{\alpha \beta} 
+		\int \frac{\diff^3 p}{ (2 \pi)^3} \frac{e^{-ip(x-y)}}{2 E_p}
+	\end{align*}
+Analog:
+	\begin{align*}
+		\braket{0 | \bar{\psi}_\beta(y) \psi_\alpha(x) | 0} &= 
+		- (i \gamma^\mu) \partial_\mu + m)_{\alpha \beta} 
+		\int \frac{\diff^3 p}{(2\pi)^3} \frac{e^{ip(x-y)}}{2 E_p} &
+		&(-) \text{ wegen }ipx \text{ statt }-ipx\\
+		\braket{0 | \psi_\alpha(x) \bar{\psi}_\beta(y) | 0} &=
+		- \braket{0 | \bar{\psi}_\beta(y) \psi_\alpha(x) | 0}
+	\end{align*}
+$\Rightarrow$ Kausalität ist OK, weil für $(x-y)^2 < 0$ (raumartiger Abstand) lässt sich stetig differenzierbar fortsetzen und Reihenfolge von Messungen ist egal. 
+	\begin{align*}
+		S_R^{\alpha\beta} (x-y) &= \theta(x^0 - y^0) 
+		\braket{0 | \left\{\psi_\alpha(x) , \psi_\beta(y)\right\} | 0} \\
+		(i \durch{\partial} - m) S_R(x - y) &= 
+		\delta^{(4)} (x -y) \mathds{1}_{4 \times 4} & &(\text{G.F zu Dirac-Gleichung}) \\
+		S_F(x-y) &= \int \frac{\diff^4 x}{(2\pi)^4} \frac{i(\durch{p} + m)}{p^2 -m^2 +i\epsilon} e^{-ip (x -y)} \\
+		&=
+		\left\{
+			\begin{aligned}
+				\braket{0 | \psi(x) \bar{\psi}(y) | 0} ,& x^0 > y^0 \\
+				\braket{0 | \bar{\psi}(y) \psi(x) | 0} ,& x^0 < y^0
+			\end{aligned}
+		\right. 
+		= \braket{0 | \mathrm{T} \psi(x) \bar{\psi}(y) | 0}
+	\end{align*}
+Zeitordnung gibt neg. Vorzeichen für Vertauschung von 2 Fermionen.
