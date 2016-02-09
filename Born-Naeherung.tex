@@ -17,7 +17,7 @@
 			&= \delta^{(3)}(\vec{r} - \vec{r}\,') \\
 			G(\vec{r}) &= 
 			\int \frac{\diff^3 q}{(2 \pi)^3} e^{i \vec{q} \cdot \vec{r}} \tilde{G}(\vec{q})
-			&\text{mit } \tilde{G} (\vec{r}) &= \frac{1}{k^2-q^2} \\
+			&\text{mit } \tilde{G} (\vec{q}) &= \frac{1}{k^2-q^2} \\
 			&= \int \frac{\diff^3 q}{(2 \pi)^3} \frac{e^{i \vec{q} \cdot \vec{r}}}{k^2 - q^2} \\
 			&\underset{\text{E-Dynamik}}{=} - \frac{e^{\pm i k r}}{4 \pi r}
 		\end{align*}
@@ -77,7 +77,7 @@
 	\begin{minipage}{0.5\textwidth}
 	Impulsübertragung
 		\begin{align*}
-		\vec{q} = \vec{k} - \vec{k}_0 &= \vec{k} (\vec{e}_r - \vec{e}_z) \\
+		\vec{q} = \vec{k} - \vec{k}_0 &= k (\vec{e}_r - \vec{e}_z) \\
 		|\vec{k}_0| &= |\vec{k}|
 		\end{align*}
 	\end{minipage}
@@ -132,8 +132,7 @@
 		\end{empheq}
 	wobei $k^2 = |\vec{k}| |\vec{k}_0|$
 	
-	Setze $\vec{q} = \left[ 4 k^2 \sin^2 \frac{\theta}{2} 
-	\right]$ in Born-Näherung ein:
+	Setze $\vec{q} = 2 k \sin \frac{\theta}{2}$ in Born-Näherung ein:
 		\begin{align*}
 			\int \diff^3 r ~V(\vec{r}\,') e^{-i \vec{q} \vec{r}}
 			&= 2 \pi \int_{-\infty}^{\infty} \diff r' 
@@ -155,7 +154,7 @@
 	Streuamplitude: \marginpar{beim zweiten bruch steht noch ein q irgendwie drunter}
 		\begin{empheq}[box=\boxed]{align*}
 			f^{(1)} (\theta, \phi) = f^{(1)}(\theta)
-			= -\frac{2m}{\hbar^2} \frac{1}{2 k \sin \frac{\theta}{2}} 
+			= -\frac{2m}{\hbar^2} \frac{1}{2 k q \sin \frac{\theta}{2}} 
 			\int_0^{\infty} \diff r' ~r' V(r') \sin (qr')
 		\end{empheq}
 	Streuamplitude in Born-Näherung für rotationssymmetrische Wechselwirkung.

@@ -26,7 +26,7 @@
 			\Rightarrow \ket{\psi(t)} = \text{T} e^{-\frac{i}{\hbar} H^0 (t-t_0)} 
 			\ket{\psi(t_0)} = \U^0(t-t_0) \ket{\psi(t_0)}
 		\end{equation*}
-	Achntung: T ist Zeit\underline{ordnungs}operator und $\U^0(t-t_0)$ ist Zeit\underline{entwicklungs}operator.
+	Achtung: T ist Zeit\underline{ordnungs}operator und $\U^0(t-t_0)$ ist Zeit\underline{entwicklungs}operator.
 	Eigenschaften:
 		\begin{align*}
 			\left.
@@ -41,7 +41,7 @@
 			&= \braket{\psi(t_0) | \U^{0 \dagger} (t-t_0) \U^0 (t-t_0) | \psi(t_0)} \\
 			&= \braket{\psi(t_0) | \psi(t_0)}
 		\end{align*}
-	Norm bleibt erhalten $\Rightarrow U^0$ ist unitär! \\
+	Norm bleibt erhalten $\Rightarrow \U^0$ ist unitär! \\
 	Betrachte nun 
 		\begin{equation*}
 			i \hbar \frac{\diff}{\diff t} \ket{\psi(t)} = H(t) \ket{\psi(t)}
@@ -102,8 +102,7 @@
 			Schrödinger & Zeitentwicklung durch $H$ & Zeitunabhängig (hier aber $H(t))$ \\
 			Wechselwirkungs- & Entwicklung durch $H^1(t)$ & Entwicklung durch $H^0$
 		\end{tabular*} %bitte noch abtrennungen einführen
-		 \\
-	\newpage
+	\\ \\
 	Berechnung der $c_m(t)$:
 	
 	Aus dem Schrödingerbild: 
@@ -125,7 +124,7 @@
 		\begin{align*}
 			\ket{\psi_W(t)} &= \underbrace{\ket{\psi(t_0)}}_{\substack{=\ket{\psi_W(t_0)}}} 
 			\frac{i}{\hbar} \int_{t_0}^{t} \diff t' H^1_W(t') \ket{\psi(t_0)} + \ldots 
-			\left( \text{linearisierung von~} i\hbar \frac{\diff}{\diff t} \ket{\psi_W(t)} = H^1(t) \ket{\psi_W(t)}\right) \\
+			\left( \text{Linearisierung von~} i\hbar \frac{\diff}{\diff t} \ket{\psi_W(t)} = H^1(t) \ket{\psi_W(t)}\right) \\
 			c_m(t) &= \braket{m | \psi_W(t)} 
 			= \delta_{mn} - \frac{i}{\hbar} \sum_k \int_{t_0}^{t} \diff t' \braket{m | H^1(t') | k} e^{-i(\omega_n - \omega_m)(t'-t_0)} 
 			\underbrace{c_k(t_0)}_{\substack{\delta_{kn}}} + \ldots
